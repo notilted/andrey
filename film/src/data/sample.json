@@ -1,0 +1,22 @@
+{
+  "name": "sample",
+  "duration": 15.5,
+  "dialogue": [
+    {"id": "s1_alisa_1", "who": "alisa", "start": 10.3, "caption": "Пап… а что это *значит*?", "space": "room"},
+    {"id": "s1_mark_1", "who": "mark", "start": 12.75, "caption": "Одевайся. Нам нужно *в укрытие*.", "space": "room"}
+  ],
+  "sfx": [
+    {"file": "sfx/night_city.wav", "start": 0, "gain": -12, "fadeIn": 1.0, "end": 7.2, "fadeOut": 1.6, "bus": "amb"},
+    {"file": "music/m01_night.wav", "start": 0, "gain": -11, "fadeIn": 1.5, "end": 8.05, "fadeOut": 0.15, "bus": "music"},
+    {"file": "sfx/whoosh.wav", "start": 4.5, "gain": -14, "bus": "sfx"},
+    {"file": "sfx/tv_murmur.wav", "start": 1.2, "gain": -30, "end": 5.0, "fadeOut": 1.0, "bus": "amb"},
+    {"file": "sfx/room_tone.wav", "start": 5.4, "gain": -24, "fadeIn": 1.0, "bus": "amb"},
+    {"file": "sfx/pencil.wav", "start": 5.8, "gain": -20, "end": 8.0, "fadeOut": 0.05, "bus": "sfx"},
+    {"file": "sfx/stinger.wav", "start": 8.0, "gain": -5, "bus": "sfx"},
+    {"file": "sfx/phone_alert.wav", "start": 8.0, "gain": -9, "pan": -0.3, "bus": "sfx", "space": "room"},
+    {"file": "sfx/phone_alert.wav", "start": 8.09, "gain": -12, "pan": 0.35, "bus": "sfx", "space": "room"},
+    {"file": "music/m02_dread.wav", "start": 8.3, "gain": -10, "fadeIn": 0.8, "bus": "music"},
+    {"file": "sfx/siren_far.wav", "start": 9.0, "gain": -15, "fadeIn": 3.0, "bus": "amb"},
+    {"file": "sfx/chair.wav", "start": 12.15, "gain": -18, "bus": "sfx", "space": "room"}
+  ]
+}

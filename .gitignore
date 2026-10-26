@@ -1,0 +1,3 @@
+node_modules/
+film/public/mix/*_raw.wav
+*.log
