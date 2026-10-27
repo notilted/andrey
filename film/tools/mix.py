@@ -18,7 +18,7 @@ def load(rel):
 def reverb(x, space):
     if space not in IR:
         h, _ = sf.read(os.path.join(ROOT, "tools", f"ir_{space}.wav"), dtype="float32"); IR[space] = h
-    h = IR[space]; n = len(x) + len(h); wet = {"room": 0.12, "bunker": 0.3}[space]
+    h = IR[space]; n = len(x) + len(h); wet = {"room": 0.12, "bunker": 0.26, "stairs": 0.3}[space]
     y = np.stack([np.fft.irfft(np.fft.rfft(x[:, c], n) * np.fft.rfft(h, n), n) for c in range(2)], 1)
     y *= 0.5 * np.abs(x).max() / max(1e-9, np.abs(y).max())
     out = np.vstack([x, np.zeros((len(h), 2), np.float32)])
@@ -45,10 +45,10 @@ def main(path):
         envl = [float(np.sqrt(np.mean(mono[k:k + hop] ** 2))) for k in range(0, len(mono), hop)]
         m = max(envl) or 1; meta[d["id"]] = {"duration": dur, "mouth": [round(min(1, v / m * 1.4), 3) for v in envl]}
         if d.get("space"): x = reverb(x, d["space"])
-        if d.get("fx") == "door":  # голос за металлической дверью
-            x = np.stack([np.convolve(x[:, c], np.ones(24) / 24, "same") for c in range(2)], 1)
         place(buses["dialog"], x, d["start"], d.get("gain", 0), pan=d.get("pan", 0))
     for s in tl["sfx"]:
+        if s["start"] >= tl["duration"]:
+            continue
         x = load(s["file"])
         if s.get("space"): x = reverb(x, s["space"])
         place(buses[s.get("bus", "sfx")], x, s["start"], s.get("gain", 0), s.get("fadeIn", 0),

@@ -23,7 +23,7 @@ export type Pose = {
   rimColor?: string;
 };
 
-type Look = {
+export type Look = {
   skin: string;
   skinShade: string;
   hair: string;
@@ -94,8 +94,11 @@ export const Character: React.FC<{
   pose?: Pose;
   frame?: number;
   opacity?: number;
-}> = ({who, x, y, size = 1, facing = 1, pose = {}, frame = 0, opacity = 1}) => {
-  const L = LOOKS[who];
+  /** для массовки: замена цветов/пропорций и причёски поверх базового персонажа */
+  override?: Partial<Look>;
+  hair?: Who;
+}> = ({who, x, y, size = 1, facing = 1, pose = {}, frame = 0, opacity = 1, override, hair}) => {
+  const L = override ? {...LOOKS[who], ...override} : LOOKS[who];
   const gid = 'rim' + React.useId().replace(/[^a-zA-Z0-9]/g, '');
   const {
     sit = 0, lean = 0, headTilt = 0, look = 0, lookUp = 0, armF = [10, -20], armB = [-8, -15],
@@ -168,7 +171,7 @@ export const Character: React.FC<{
           <path d="M-32 -6 C-34 -36 -16 -46 -6 -46 C-20 -30 -22 10 -4 36 C-18 34 -31 18 -32 -6 Z" fill={L.skinShade} opacity={0.55} />
           {/* ухо */}
           <ellipse cx={-14 + lx * 0.3} cy={2} rx={6} ry={9} fill={L.skinShade} />
-          <Hair who={who} c={L.hair} f={frame} />
+          <Hair who={hair ?? who} c={L.hair} f={frame} />
           {/* черты лица — обрезаны по контуру головы, чтобы не выходили за щёку */}
           <clipPath id={`${gid}h`}>
             <path d="M-32 -6 C-34 -36 -16 -46 4 -46 C26 -46 36 -32 35 -8 C35 16 26 34 6 36 C-16 37 -31 20 -32 -6 Z" />
