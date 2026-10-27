@@ -1,0 +1,896 @@
+{
+ "name": "film",
+ "duration": 217.93,
+ "dialogue": [
+  {
+   "id": "s1_alisa_1",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 10.3,
+   "caption": "Пап… а что это *значит*?",
+   "space": "room"
+  },
+  {
+   "id": "s1_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 12.75,
+   "caption": "Одевайся. Нам нужно *в укрытие*.",
+   "space": "room"
+  },
+  {
+   "id": "s1_announce",
+   "who": "announcer",
+   "name": "ОПОВЕЩЕНИЕ",
+   "start": 15.88,
+   "caption": "Внимание! *Ракетная опасность*. Всем немедленно пройти в ближайшее *укрытие*.",
+   "space": null
+  },
+  {
+   "id": "s1_alisa_2",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 20.74,
+   "caption": "А куда мы пойдём?",
+   "space": "room"
+  },
+  {
+   "id": "s1_mark_3",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 22.24,
+   "caption": "В подвал. Там *убежище*.",
+   "space": "room"
+  },
+  {
+   "id": "s1_mark_2",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 29.84,
+   "caption": "Это… *мой номер*.",
+   "space": "room"
+  },
+  {
+   "id": "s2_mark_0",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 42.38,
+   "caption": "Держись за перила. Не беги.",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_galina_1",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 45.6,
+   "caption": "Подождите! А *животных*-то брать разрешили?",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 48.46,
+   "caption": "Думаю, да.",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_galina_2",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 49.81,
+   "caption": "А то я *кота* потеряла.",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_mark_2",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 51.98,
+   "caption": "У вас же *попугай*.",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_galina_3",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 53.49,
+   "caption": "Так кот его и *испугался*!",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_galina_4",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 58.01,
+   "caption": "Ой… Это что, уже *началось*?",
+   "space": "stairs"
+  },
+  {
+   "id": "s2_mark_3",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 61.31,
+   "caption": "Нет. Идём быстрее.",
+   "space": "stairs"
+  },
+  {
+   "id": "s3_galina_1",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 74.48,
+   "caption": "Молодой человек, у нас тут *конец света*, а вы в шахматы играете!",
+   "space": "bunker"
+  },
+  {
+   "id": "s3_lev_1",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 78.6,
+   "caption": "Я думаю.",
+   "space": "bunker"
+  },
+  {
+   "id": "s3_galina_2",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 80.43,
+   "caption": "Думает он… Хоть бы кто-нибудь объяснил, *что происходит*.",
+   "space": "bunker"
+  },
+  {
+   "id": "s3_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 91.32,
+   "caption": "Почему у вас *другое время*?",
+   "space": "bunker"
+  },
+  {
+   "id": "s3_lev_2",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 94.32,
+   "caption": "Хороший *вопрос*.",
+   "space": "bunker"
+  },
+  {
+   "id": "s3_lev_3",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 97.38,
+   "caption": "Ваши часы *спешат*. Или мои *отстают*.",
+   "space": "bunker"
+  },
+  {
+   "id": "s4_announce",
+   "who": "announcer",
+   "name": "ОПОВЕЩЕНИЕ",
+   "start": 104.13,
+   "caption": "Внимание. *Угроза отменена*. Немедленно покиньте помещение.",
+   "space": null
+  },
+  {
+   "id": "s4_galina_1",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 108.59,
+   "caption": "Слава богу! Домой пойду.",
+   "space": "bunker"
+  },
+  {
+   "id": "s4_lev_1",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 111.74,
+   "caption": "Подождите. Если тревога отменена, почему *сирены* всё ещё работают?",
+   "space": "bunker"
+  },
+  {
+   "id": "s4_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 118.3,
+   "caption": "Все стойте! *Никто не выходит*, пока это не подтвердят.",
+   "space": "bunker"
+  },
+  {
+   "id": "s4_galina_2",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 122.76,
+   "caption": "Да вы что? Сказали же, *отменили*!",
+   "space": "bunker"
+  },
+  {
+   "id": "s4_mark_2",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 126.15,
+   "caption": "*Сирены* не отменили.",
+   "space": "bunker"
+  },
+  {
+   "id": "s5_alisa_1",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 136.77,
+   "caption": "Пап, мне *страшно*.",
+   "space": "bunker"
+  },
+  {
+   "id": "s5_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 139.0,
+   "caption": "Я рядом.",
+   "space": "bunker"
+  },
+  {
+   "id": "s5_rescuer_1",
+   "who": "rescuer",
+   "name": "ГОЛОС ЗА ДВЕРЬЮ",
+   "start": 149.97,
+   "caption": "Откройте. Это *спасатели*.",
+   "space": null
+  },
+  {
+   "id": "s5_mark_2",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 154.11,
+   "caption": "Галина Петровна, стойте! *Не открывайте*.",
+   "space": "bunker"
+  },
+  {
+   "id": "s5_double_1",
+   "who": "double",
+   "name": "МАРК?",
+   "start": 159.63,
+   "caption": "Алиса, открой. *Это папа*.",
+   "space": null
+  },
+  {
+   "id": "s5_alisa_2",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 163.21,
+   "caption": "Пап… у него *твой голос*.",
+   "space": "bunker"
+  },
+  {
+   "id": "s6_lev_1",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 171.68,
+   "caption": "Марк. Посмотрите на это.",
+   "space": "bunker"
+  },
+  {
+   "id": "s6_double_1",
+   "who": "double",
+   "name": "МАРК?",
+   "start": 177.37,
+   "caption": "Марк. Ты уже *один раз* открыл эту дверь.",
+   "space": null
+  },
+  {
+   "id": "s6_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 181.85,
+   "caption": "Это… *я*?",
+   "space": "bunker"
+  },
+  {
+   "id": "s6_lev_2",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 185.7,
+   "caption": "Похоже, это была *не обычная* ракетная тревога.",
+   "space": "bunker"
+  },
+  {
+   "id": "s7_alisa_1",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 198.2,
+   "caption": "Пап… а *какой из вас настоящий*?",
+   "space": "bunker"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/night_city.wav",
+   "start": 0.0,
+   "gain": -12,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "end": 7.2,
+   "fadeOut": 1.6
+  },
+  {
+   "file": "music/m01_night.wav",
+   "start": 0.0,
+   "gain": -11,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "end": 8.05,
+   "fadeOut": 0.15
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 4.5,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tv_murmur.wav",
+   "start": 1.2,
+   "gain": -30,
+   "bus": "amb",
+   "end": 5.0,
+   "fadeOut": 1.0
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 5.4,
+   "gain": -24,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "end": 30.2
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 5.8,
+   "gain": -20,
+   "bus": "sfx",
+   "end": 8.0,
+   "fadeOut": 0.05
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 8.0,
+   "gain": -5,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phone_alert.wav",
+   "start": 8.0,
+   "gain": -9,
+   "bus": "sfx",
+   "pan": -0.3,
+   "space": "room"
+  },
+  {
+   "file": "sfx/phone_alert.wav",
+   "start": 8.09,
+   "gain": -12,
+   "bus": "sfx",
+   "pan": 0.35,
+   "space": "room"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 8.3,
+   "gain": -10,
+   "bus": "music",
+   "fadeIn": 0.8,
+   "end": 30.0,
+   "fadeOut": 0.3
+  },
+  {
+   "file": "sfx/siren_far.wav",
+   "start": 9.0,
+   "gain": -15,
+   "bus": "amb",
+   "fadeIn": 3.0
+  },
+  {
+   "file": "sfx/siren_near.wav",
+   "start": 15.0,
+   "gain": -17,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "end": 30.0,
+   "fadeOut": 1.0
+  },
+  {
+   "file": "sfx/chair.wav",
+   "start": 14.3,
+   "gain": -18,
+   "bus": "sfx",
+   "space": "room"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 15.38,
+   "gain": -22,
+   "bus": "sfx",
+   "end": 16.98,
+   "fadeOut": 0.3,
+   "space": "room"
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 24.74,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 25.24,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 24.74,
+   "gain": -13,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "end": 32.74,
+   "fadeOut": 1.0
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 27.94,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 33.03,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_crowd.wav",
+   "start": 33.28,
+   "gain": -16,
+   "bus": "amb",
+   "fadeIn": 0.3,
+   "end": 63.28,
+   "fadeOut": 2
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 33.28,
+   "gain": -26,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "end": 57.28,
+   "fadeOut": 2
+  },
+  {
+   "file": "music/m03_stairs.wav",
+   "start": 33.28,
+   "gain": -12,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "end": 60.28,
+   "fadeOut": 0.25
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 34.68,
+   "gain": -24,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 41.38,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 41.78,
+   "gain": -16,
+   "bus": "sfx",
+   "end": 55.78,
+   "fadeOut": 1
+  },
+  {
+   "file": "sfx/parrot.wav",
+   "start": 48.21,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wings.wav",
+   "start": 48.31,
+   "gain": -22,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/parrot.wav",
+   "start": 55.31,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 57.01,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 64.78,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/vent.wav",
+   "start": 65.08,
+   "gain": -22,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "end": 185.08
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 65.58,
+   "gain": -28,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "end": 92.08,
+   "fadeOut": 2
+  },
+  {
+   "file": "sfx/siren_muffled.wav",
+   "start": 65.08,
+   "gain": -26,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "end": 105.08,
+   "fadeOut": 0.5
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 65.58,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 3.0,
+   "end": 125.08,
+   "fadeOut": 2
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 72.68,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 87.82,
+   "gain": -22,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 96.48,
+   "gain": -20,
+   "bus": "sfx",
+   "end": 100.48
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 103.73,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 107.29,
+   "gain": -12,
+   "bus": "music"
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 107.69,
+   "gain": -16,
+   "bus": "amb"
+  },
+  {
+   "file": "sfx/footsteps_crowd.wav",
+   "start": 110.84,
+   "gain": -22,
+   "bus": "amb",
+   "end": 118.84,
+   "fadeOut": 1.5
+  },
+  {
+   "file": "sfx/siren_muffled.wav",
+   "start": 117.1,
+   "gain": -18,
+   "bus": "amb",
+   "fadeIn": 0.6,
+   "end": 123.6,
+   "fadeOut": 0.5
+  },
+  {
+   "file": "sfx/explosion.wav",
+   "start": 129.07,
+   "gain": -2,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/dust.wav",
+   "start": 129.37,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 129.57,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/breathing_fast.wav",
+   "start": 129.97,
+   "gain": -20,
+   "bus": "sfx",
+   "end": 132.97,
+   "fadeOut": 0.8
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 130.17,
+   "gain": -18,
+   "bus": "sfx",
+   "end": 132.97,
+   "fadeOut": 0.8
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 134.47,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 3.0,
+   "end": 163.97,
+   "fadeOut": 1.5
+  },
+  {
+   "file": "sfx/breathing.wav",
+   "start": 134.27,
+   "gain": -26,
+   "bus": "sfx",
+   "end": 141.97,
+   "fadeOut": 2
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 140.77,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 141.17,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 145.47,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 146.97,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 148.47,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 158.23,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 166.38,
+   "gain": -17,
+   "bus": "sfx",
+   "end": 170.88,
+   "fadeOut": 1
+  },
+  {
+   "file": "sfx/monitor_on.wav",
+   "start": 170.88,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 170.98,
+   "gain": -30,
+   "bus": "amb",
+   "end": 194.58,
+   "fadeOut": 1
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 171.08,
+   "gain": -12,
+   "bus": "music",
+   "fadeIn": 1.0
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 174.97,
+   "gain": -22,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 174.97,
+   "gain": -22,
+   "bus": "sfx",
+   "end": 183.47,
+   "fadeOut": 0.5
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 191.2,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 191.2,
+   "gain": -8,
+   "bus": "music"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 205.33,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 206.93,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 208.53,
+   "gain": -12,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "s1": 0.0,
+  "alert": 8.0,
+  "s1_alisa_1": 10.3,
+  "s1_alisa_1_end": 12.4,
+  "s1_mark_1": 12.75,
+  "s1_mark_1_end": 14.98,
+  "s1_window": 15.38,
+  "s1_announce": 15.88,
+  "s1_announce_end": 20.24,
+  "s1_alisa_2": 20.74,
+  "s1_alisa_2_end": 21.89,
+  "s1_mark_3": 22.24,
+  "s1_mark_3_end": 24.14,
+  "s1_msg": 24.74,
+  "s1_face": 28.94,
+  "s1_mark_2": 29.84,
+  "s1_mark_2_end": 32.03,
+  "s1_cut": 33.03,
+  "s2": 33.28,
+  "s2_close": 41.78,
+  "s2_mark_0": 42.38,
+  "s2_mark_0_end": 44.8,
+  "s2_galina_in": 45.3,
+  "s2_galina_1": 45.6,
+  "s2_galina_1_end": 48.11,
+  "s2_mark_1": 48.46,
+  "s2_mark_1_end": 49.51,
+  "s2_galina_2": 49.81,
+  "s2_galina_2_end": 51.53,
+  "s2_mark_2": 51.98,
+  "s2_mark_2_end": 53.19,
+  "s2_galina_3": 53.49,
+  "s2_galina_3_end": 55.16,
+  "s2_smile": 55.51,
+  "s2_flicker": 57.01,
+  "s2_galina_4": 58.01,
+  "s2_galina_4_end": 61.01,
+  "s2_mark_3": 61.31,
+  "s2_mark_3_end": 63.38,
+  "s2_end": 64.78,
+  "s3": 65.08,
+  "s3_chess": 71.08,
+  "s3_back": 74.08,
+  "s3_galina_1": 74.48,
+  "s3_galina_1_end": 78.0,
+  "s3_lev_1": 78.6,
+  "s3_lev_1_end": 79.83,
+  "s3_galina_2": 80.43,
+  "s3_galina_2_end": 85.62,
+  "s3_notice": 86.42,
+  "s3_phones": 87.82,
+  "s3_phones_end": 91.02,
+  "s3_mark_1": 91.32,
+  "s3_mark_1_end": 93.42,
+  "s3_lookup": 93.82,
+  "s3_lev_2": 94.32,
+  "s3_lev_2_end": 96.08,
+  "s3_phones2": 96.48,
+  "s3_lev_3": 97.38,
+  "s3_lev_3_end": 101.13,
+  "s3_end": 103.33,
+  "s4": 103.33,
+  "s4_announce": 104.13,
+  "s4_announce_end": 107.89,
+  "s4_rise": 108.09,
+  "s4_galina_1": 108.59,
+  "s4_galina_1_end": 110.84,
+  "s4_walk": 111.14,
+  "s4_lev_1": 111.74,
+  "s4_lev_1_end": 116.8,
+  "s4_listen": 117.1,
+  "s4_mark_1": 118.3,
+  "s4_mark_1_end": 122.36,
+  "s4_galina_2": 122.76,
+  "s4_galina_2_end": 125.65,
+  "s4_mark_2": 126.15,
+  "s4_mark_2_end": 127.67,
+  "s4_impact": 129.07,
+  "s4_dark": 129.57,
+  "s5": 133.97,
+  "s5_alisa_1": 136.77,
+  "s5_alisa_1_end": 138.55,
+  "s5_mark_1": 139.0,
+  "s5_mark_1_end": 139.97,
+  "s5_msg": 140.77,
+  "s5_msg_end": 144.77,
+  "s5_knock": 145.47,
+  "s5_knock_end": 149.47,
+  "s5_rescuer_1": 149.97,
+  "s5_rescuer_1_end": 152.71,
+  "s5_galina_go": 153.21,
+  "s5_mark_2": 154.11,
+  "s5_mark_2_end": 157.33,
+  "s5_knock2": 158.23,
+  "s5_double_1": 159.63,
+  "s5_double_1_end": 162.21,
+  "s5_alisa_2": 163.21,
+  "s5_alisa_2_end": 166.08,
+  "s5_turn": 166.38,
+  "s6": 170.58,
+  "s6_on": 170.88,
+  "s6_lev_1": 171.68,
+  "s6_lev_1_end": 174.37,
+  "s6_push": 174.97,
+  "s6_double_1": 177.37,
+  "s6_double_1_end": 180.85,
+  "s6_mark_1": 181.85,
+  "s6_mark_1_end": 183.5,
+  "s6_back": 184.9,
+  "s6_lev_2": 185.7,
+  "s6_lev_2_end": 190.0,
+  "s7": 191.2,
+  "s7_stage": 191.2,
+  "s7_back": 197.2,
+  "s7_alisa_1": 198.2,
+  "s7_alisa_1_end": 201.63,
+  "s7_black": 203.13,
+  "s7_knock": 205.33,
+  "s7_title": 210.93,
+  "end": 217.93
+ }
+}

@@ -3,7 +3,7 @@ import {C} from '../theme';
 import {rand} from '../util';
 
 /** Убежище в подвале дома. Пол y=1110, потолок y=330, мир шире кадра: x −260…1340. */
-export const SH = {left: -260, right: 1340, ceil: 330, floor: 1110, door: {x: -150, w: 230}, table: {x: 860, w: 300, top: 930}, monitor: {x: 1150, y: 780}};
+export const SH = {left: -260, right: 1340, ceil: 330, floor: 1110, door: {x: -150, w: 230}, table: {x: 800, w: 270, top: 930}, monitor: {x: 1270, y: 760}};
 
 export type ShelterLight = {
   lamps: number; // аварийные жёлтые лампы 0..1
@@ -165,12 +165,14 @@ export const ChessCloseup: React.FC<{f: number; moveT: number}> = ({moveT}) => {
         return <Piece key={i} x={px} y={py + 20} k={k} white={w} s={1.9 + y * 0.08} />;
       })}
       <Piece x={nx} y={ny + 20} k="n" white s={2.3} />
-      {/* рука Льва держит коня */}
+      {/* рука Льва держит коня: рукав свитера сверху справа, кисть */}
       {moveT < 1 && (
-        <g transform={`translate(${nx + 30} ${ny - 70})`}>
-          <path d="M0 0 C40 -20 120 -40 400 -160 L420 -110 C160 0 70 40 20 50 Z" fill="#2c3834" />
-          <ellipse cx={0} cy={20} rx={34} ry={26} fill="#b98e78" />
-          <ellipse cx={-26} cy={36} rx={12} ry={9} fill="#93705f" />
+        <g transform={`translate(${nx + 26} ${ny - 64})`}>
+          <path d="M-10 -10 C30 -60 120 -170 260 -420 L380 -360 C250 -160 120 -40 40 30 Z" fill="#2c3834" />
+          <path d="M-10 -10 C30 -60 120 -170 260 -420 L290 -405 C160 -170 60 -50 10 10 Z" fill="#202a27" />
+          <path d="M-30 6 C-34 -22 -6 -38 22 -30 C46 -22 52 8 34 30 C18 46 -20 40 -30 6 Z" fill="#b98e78" />
+          <path d="M-34 10 C-46 18 -50 34 -38 40 C-28 44 -20 34 -18 26" fill="#93705f" />
+          <path d="M-14 34 C-18 52 -8 60 2 54" stroke="#93705f" strokeWidth={9} strokeLinecap="round" fill="none" />
         </g>
       )}
     </g>
@@ -186,7 +188,7 @@ export const ShelterFront: React.FC<{f: number; light: ShelterLight; chessT?: nu
       <rect x={table.x} y={table.top} width={table.w} height={16} rx={3} fill="#4a3f3a" />
       <rect x={table.x + 14} y={table.top + 16} width={12} height={floor - table.top - 16} fill="#3a3230" />
       <rect x={table.x + table.w - 26} y={table.top + 16} width={12} height={floor - table.top - 16} fill="#3a3230" />
-      <ChessSide x={table.x + 130} y={table.top} moveT={chessT} />
+      <ChessSide x={table.x + 140} y={table.top} moveT={chessT} />
       {/* монитор на стойке у стены */}
       <g transform={`translate(${monitor.x} ${monitor.y})`}>
         <rect x={-10} y={70} width={20} height={floor - monitor.y - 70} fill="#1d2129" />

@@ -3,27 +3,16 @@ import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {ApartmentBack, ApartmentFront, Chair, ROOM} from '../components/Apartment';
 import {Character} from '../components/Character';
 import {FarSkyline, MidTowers, Sky, Street} from '../components/City';
-import {AlertPhone, BottomFade, Chip, fmt, StatusBar, Subtitle} from '../components/Overlay';
+import {AlertPhone, Chip} from '../components/Overlay';
 import {BLD, PanelBuilding, winPos, WIN_H, WIN_W} from '../components/PanelBuilding';
 import {C} from '../theme';
 import {blink, ease, keys, ramp} from '../util';
-import voice from '../data/sample.voice.json';
-import tl from '../data/sample.json';
+import {line, mk, mouth as mouthAt} from '../timeline';
+import {MessageScreen, PhoneFrame} from '../components/Phone';
+import {timerMark} from '../timers';
 
 const FPS = 30;
-const V = voice as Record<string, {duration: number; mouth: number[]}>;
-const line = (id: string) => {
-  const d = tl.dialogue.find((x) => x.id === id)!;
-  return {start: Math.round(d.start * FPS), dur: Math.round(V[id].duration * FPS), caption: d.caption};
-};
-/** Открытие рта по огибающей реплики. */
-export const mouthAt = (id: string, f: number) => {
-  const l = line(id);
-  const m = V[id].mouth[f - l.start];
-  return m === undefined ? 0 : Math.min(1, m * (0.75 + 0.25 * Math.sin(f * 1.7)));
-};
-
-export const ALERT = 240; // кадр оповещения
+export const ALERT = 240; // кадр оповещения (= маркер alert)
 const MARK_WIN = {row: 6, col: 3};
 const TV_WIN = {row: 4, col: 1};
 const KETTLE_WIN = {row: 5, col: 4};
@@ -76,17 +65,23 @@ const RoomShot: React.FC<{f: number}> = ({f}) => {
   const pulse = alertOn ? 0.5 + 0.5 * Math.sin(((f - ALERT) / FPS) * 2 * Math.PI * 2.2) : 0;
   const alertFade = alertOn ? Math.max(0.35, 1 - (f - ALERT) / 120) : 0;
   const red = pulse * alertFade;
+  const W = mk('s1_window');
+  const M3 = line('s1_mark_3');
+  const MSG = mk('s1_msg');
   // камера в комнате: «приземление» после наезда, общий план, затем средний
-  const s = keys(f, [[174, 1.5], [200, 1.0], [300, 1.0], [306, 1.22], [440, 1.28], [465, 1.33]]);
-  const cx = keys(f, [[174, 720], [200, 540], [300, 540], [306, 520], [400, 500], [465, 480]]);
-  const cy = keys(f, [[174, 640], [200, 720], [300, 720], [306, 790], [465, 780]]);
+  const s = keys(f, [[174, 1.5], [200, 1.0], [300, 1.0], [306, 1.22], [440, 1.28], [465, 1.33], [W + 10, 1.1], [MSG, 1.05]]);
+  const cx = keys(f, [[174, 720], [200, 540], [300, 540], [306, 520], [400, 500], [465, 480], [W + 10, 600], [MSG, 620]]);
+  const cy = keys(f, [[174, 640], [200, 720], [300, 720], [306, 790], [465, 780], [W + 10, 760]]);
 
   // Марк: сидит → встаёт (кадр 365) → смотрит в окно → поворачивается к Алисе
   const stand = ramp(f, 362, 378);
-  const markX = 250 + ramp(f, 376, 400) * 60;
+  const markX = 250 + ramp(f, 376, 400) * 60 + ramp(f, W, W + 45) * 280;
+  const atWindow = f >= W + 40 && f < M3.start - 6;
+  const turned = f >= M3.start - 6; // повернулся к Алисе
+  const aliceUp = ramp(f, W + 30, W + 46);
   const sitMark = 1 - stand;
-  const markLook = keys(f, [[0, 0.1], [244, 0.6], [300, 0.3], [330, 0.6], [372, -0.1], [392, 0.5]]);
-  const markLookUp = keys(f, [[0, -0.6], [244, -0.9], [300, 0], [372, 0.6], [392, 0]]);
+  const markLook = keys(f, [[0, 0.1], [244, 0.6], [300, 0.3], [330, 0.6], [372, -0.1], [392, 0.5], [W + 30, 0.2]]);
+  const markLookUp = atWindow ? 0.45 : turned ? -0.3 : keys(f, [[0, -0.6], [244, -0.9], [300, 0], [372, 0.6], [392, 0]]);
   const markBrow = keys(f, [[0, -0.3], [244, 0.7], [380, 0.5]]);
   const markHead = keys(f, [[0, 14], [244, 18], [300, 4], [372, -6], [392, 2]]);
   // Алиса рисует, после сигнала замирает и смотрит на папу
@@ -96,8 +91,6 @@ const RoomShot: React.FC<{f: number}> = ({f}) => {
   const pencil = drawing ? Math.sin(f / 3.2) * 8 : 0;
   const rimC = alertOn ? C.redHot : C.warm;
 
-  const a1 = line('s1_alisa_1');
-  const m1 = line('s1_mark_1');
   return (
     <>
     <svg viewBox="0 0 1080 1920" width={1080} height={1920} style={{position: 'absolute'}}>
@@ -110,6 +103,7 @@ const RoomShot: React.FC<{f: number}> = ({f}) => {
           x={markX}
           y={ROOM.floor}
           size={1.2}
+          facing={turned ? -1 : 1}
           frame={f}
           pose={{
             sit: sitMark,
@@ -119,30 +113,30 @@ const RoomShot: React.FC<{f: number}> = ({f}) => {
             lookUp: markLookUp,
             brow: markBrow,
             blink: blink(f, 1),
-            mouth: mouthAt('s1_mark_1', f),
-            armF: stand > 0.5 ? [8, -12] : [62, -58 + Math.sin(f / 40) * 4],
+            mouth: Math.max(mouthAt('s1_mark_1', f), mouthAt('s1_mark_3', f)),
+            armF: f >= MSG ? [150, -150] : stand > 0.5 ? [8, -12] : [62, -58 + Math.sin(f / 40) * 4],
             armB: [-6, -14],
-            step: f > 376 && f < 400 ? (f - 376) / 3 : 0,
+            step: (f > 376 && f < 400) || (f > W && f < W + 45) ? (f - 376) / 3 : 0,
             rimColor: rimC,
             rim: 0.6 + red * 0.6,
           }}
         />
         <Character
           who="alisa"
-          x={812}
-          y={ROOM.floor - 34}
+          x={812 - aliceUp * 40}
+          y={ROOM.floor - 34 * (1 - aliceUp)}
           size={1.2}
           facing={-1}
           frame={f}
           pose={{
-            sit: 1,
+            sit: 1 - aliceUp,
             lean: drawing ? 10 : 2,
             headTilt: aliceHead,
             look: aliceLook,
-            lookUp: drawing ? -0.8 : 0.3,
+            lookUp: drawing ? -0.8 : aliceUp > 0.5 ? 0.6 : 0.3,
             brow: alertOn ? 0.9 : -0.2,
             blink: blink(f, 4),
-            mouth: mouthAt('s1_alisa_1', f),
+            mouth: Math.max(mouthAt('s1_alisa_1', f), mouthAt('s1_alisa_2', f)),
             armF: drawing ? [70 + pencil * 0.4, -52 + pencil] : [40, -70],
             armB: [-4, -20],
             smile: alertOn ? 0 : 0.4,
@@ -154,20 +148,45 @@ const RoomShot: React.FC<{f: number}> = ({f}) => {
         <rect x={-200} y={-400} width={1480} height={2600} fill={C.red} opacity={red * 0.12} style={{mixBlendMode: 'screen'}} />
       </g>
     </svg>
-      {/* субтитры — вне камеры, в тёмной нижней трети */}
-      <BottomFade from={1150} />
-      <Subtitle text={a1.caption} who="АЛИСА" f={f} start={a1.start} dur={a1.dur} />
-      <Subtitle text={m1.caption} who="МАРК" f={f} start={m1.start} dur={m1.dur} />
     </>
   );
 };
 
-export const Scene1: React.FC = () => {
-  const f = useCurrentFrame();
+/** Крупный план лица Марка, свет телефона снизу. */
+const FaceShot: React.FC<{f: number; start: number}> = ({f, start}) => {
+  const k = interpolate(f, [start, start + 150], [1, 1.12], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: '#0c0f15'}}>
+      <svg viewBox="0 0 1080 1920" width={1080} height={1920}>
+        <defs>
+          <radialGradient id="phoneUp" cx="0.55" cy="1" r="0.8">
+            <stop offset="0" stopColor="#9ec0ff" stopOpacity={0.35} />
+            <stop offset="1" stopColor="#9ec0ff" stopOpacity={0} />
+          </radialGradient>
+        </defs>
+        <rect x={640} y={120} width={300} height={420} fill="#121826" />
+        <rect x={786} y={120} width={8} height={420} fill="#0c0f15" />
+        <circle cx={860} cy={200} r={20} fill={C.moon} opacity={0.6} />
+        <g transform={`translate(540 760) scale(${k}) translate(-540 -760)`}>
+          <Character who="mark" x={450} y={2520} size={5.6} frame={f}
+            pose={{look: 0.4, lookUp: -0.5, brow: 1, blink: blink(f, 2), mouth: mouthAt('s1_mark_2', f), rim: 0.9, rimColor: '#9ec0ff', armF: [30, -40]}} />
+        </g>
+        <rect width={1080} height={1300} fill="url(#phoneUp)" />
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+export const Scene1: React.FC<{f?: number}> = ({f: ff}) => {
+  const cf = useCurrentFrame();
+  const f = ff ?? cf;
   const cityOut = ramp(f, 164, 176);
   const roomIn = ramp(f, 174, 188);
   const phoneShot = f >= 252 && f < 306;
-  const remaining = 17 * 60 - Math.max(0, (f - ALERT) / FPS);
+  const remaining = timerMark(f);
+  const MSG = mk('s1_msg');
+  const FACE = mk('s1_face');
+  const CUT = mk('s1_cut');
   const flash = f >= ALERT ? Math.max(0, 1 - (f - ALERT) / 8) : 0;
   return (
     <AbsoluteFill style={{background: C.void}}>
@@ -186,6 +205,14 @@ export const Scene1: React.FC = () => {
           <AlertPhone f={f} start={252} remaining={remaining} y={760} scale={interpolate(f, [252, 306], [0.98, 1.06])} shake={f < 280 ? 1 : 0.3} />
         </AbsoluteFill>
       )}
+      {f >= MSG + 8 && f < FACE && (
+        <AbsoluteFill style={{background: 'rgba(6,8,13,0.9)', opacity: ramp(f, MSG + 8, MSG + 12) * (1 - ramp(f, FACE - 4, FACE))}}>
+          <PhoneFrame x={540} y={720} f={f} scale={interpolate(f, [MSG, FACE], [0.94, 1.02])} shake={f < MSG + 30 ? 0.8 : 0} glow="#7fa6e8" glowK={0.25}>
+            <MessageScreen f={f} start={MSG + 8} text="МАРК. НЕ СПУСКАЙСЯ В МЕТРО." time="23:44" remaining={remaining} />
+          </PhoneFrame>
+        </AbsoluteFill>
+      )}
+      {f >= FACE && f < CUT && <FaceShot f={f} start={FACE} />}
       <AbsoluteFill style={{background: '#fff', opacity: flash * 0.5, mixBlendMode: 'overlay'}} />
       {/* надписи и статус-строка */}
       {f < 120 && (
@@ -194,12 +221,6 @@ export const Scene1: React.FC = () => {
           <Chip x={540} y={398} text="ОБЫЧНАЯ НОЧЬ" kind="yellow" t={ramp(f, 34, 46)} tilt={1.5} size={22} />
         </div>
       )}
-      <StatusBar
-        time={f < ALERT ? '23:41' : fmt(remaining)}
-        label={f < ALERT ? 'МОСКВА' : 'ДО УДАРА'}
-        labelColor={f < ALERT ? C.grey : C.red}
-        opacity={ramp(f, 10, 24)}
-      />
     </AbsoluteFill>
   );
 };
