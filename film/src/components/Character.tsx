@@ -111,10 +111,11 @@ export const Character: React.FC<{
   const hw = L.width / 2;
   const hs = L.headScale;
   const headY = torsoTop - 40 * hs;
-  const lx = look * 8;
-  const ly = lookUp * -4;
+  const lx = look * 3.5;
+  const ly = lookUp * -3;
   const eyeH = 5.2 * Math.max(0.08, blink);
   const browA = brow * 12;
+  const browC = who === 'galina' ? '#7a7c80' : L.hair;
 
   const leg = (dx: number, phase: number, back: boolean) => {
     const kneeA = tA + phase;
@@ -168,29 +169,38 @@ export const Character: React.FC<{
           {/* ухо */}
           <ellipse cx={-14 + lx * 0.3} cy={2} rx={6} ry={9} fill={L.skinShade} />
           <Hair who={who} c={L.hair} f={frame} />
-          {/* черты лица */}
-          <g transform={`translate(${lx} ${ly})`}>
-            <path d={`M${3} ${-15 - browA * 0.3} l11 ${-2 + browA * 0.35}`} stroke={L.hair === '#a7a9ad' ? '#7a7c80' : L.hair} strokeWidth={3.4} strokeLinecap="round" />
-            <path d={`M${21} ${-17 + browA * 0.2} l10 ${2 + browA * 0.25}`} stroke={L.hair === '#a7a9ad' ? '#7a7c80' : L.hair} strokeWidth={3.4} strokeLinecap="round" />
-            <ellipse cx={9} cy={-4} rx={3.6} ry={eyeH} fill="#11131a" />
-            <ellipse cx={27} cy={-4} rx={3.4} ry={eyeH} fill="#11131a" />
-            {blink > 0.6 && <circle cx={10} cy={-6} r={1.1} fill="#fff" opacity={0.8} />}
-            <path d="M33 0 L38 12 L32 13" fill="none" stroke={L.skinShade} strokeWidth={2.6} strokeLinejoin="round" strokeLinecap="round" />
-            {mouth > 0.06 ? (
-              <ellipse cx={22} cy={22} rx={6 + mouth * 2} ry={1.5 + mouth * 6} fill="#3a1d1d" />
-            ) : (
-              <path d={`M15 ${21 - smile * 1} Q22 ${21 + smile * 5 - brow * 1.5} 29 ${21 - smile * 1}`} stroke="#5a2f2b" strokeWidth={2.6} fill="none" strokeLinecap="round" />
-            )}
-            {who === 'galina' && (
-              <g fill="none" stroke="#d9d2c0" strokeWidth={2.2} opacity={0.9}>
-                <circle cx={9} cy={-4} r={8} />
-                <circle cx={28} cy={-4} r={8} />
-                <path d="M17 -4 L20 -4 M1 -5 L-14 -8" />
-              </g>
-            )}
-            {who === 'mark' && <path d="M8 30 Q22 36 34 28" stroke={L.skinShade} strokeWidth={2} fill="none" opacity={0.6} />}
-            {who === 'lev' && <path d="M10 32 Q22 38 32 31" stroke="#2a2a2a" strokeWidth={3} fill="none" opacity={0.25} />}
+          {/* черты лица — обрезаны по контуру головы, чтобы не выходили за щёку */}
+          <clipPath id={`${gid}h`}>
+            <path d="M-32 -6 C-34 -36 -16 -46 4 -46 C26 -46 36 -32 35 -8 C35 16 26 34 6 36 C-16 37 -31 20 -32 -6 Z" />
+          </clipPath>
+          <g clipPath={`url(#${gid}h)`}>
+            <g transform={`translate(${lx} ${ly})`}>
+              <path d={`M${3} ${-15 - browA * 0.3} l10 ${-2 + browA * 0.35}`} stroke={browC} strokeWidth={3.2} strokeLinecap="round" />
+              <path d={`M${20} ${-17 + browA * 0.2} l9 ${2 + browA * 0.25}`} stroke={browC} strokeWidth={3.2} strokeLinecap="round" />
+              <ellipse cx={9} cy={-4} rx={3.5} ry={eyeH} fill="#11131a" />
+              <ellipse cx={25} cy={-4} rx={3.2} ry={eyeH} fill="#11131a" />
+              {blink > 0.6 && <circle cx={10} cy={-6} r={1.1} fill="#fff" opacity={0.8} />}
+              {/* нос — мягкая тень внутри лица */}
+              <path d="M27 2 Q32 9 29 12 Q25 13.5 22.5 11.5 Q26 9 27 2 Z" fill={L.skinShade} />
+              {/* рот: от линии к открытому, с верхней губой и языком */}
+              {mouth > 0.06 ? (
+                <g>
+                  <path d={`M${13} 21 Q${18.5} ${19.5 - mouth} 24 21 Q${24 - mouth * 0.5} ${21 + 2 + mouth * 6} 18.5 ${21 + 2 + mouth * 6} Q${13 + mouth * 0.5} ${21 + 2 + mouth * 6} 13 21 Z`} fill="#3d1f20" />
+                  {mouth > 0.35 && <ellipse cx={18.5} cy={21 + 1.5 + mouth * 5} rx={3} ry={mouth * 1.6} fill="#8a4a48" />}
+                </g>
+              ) : (
+                <path d={`M13 ${21 - smile} Q18.5 ${21 + smile * 4.5 - brow * 1.2} 24 ${21 - smile}`} stroke="#5a2f2b" strokeWidth={2.4} fill="none" strokeLinecap="round" />
+              )}
+              {who === 'galina' && (
+                <g fill="none" stroke="#d9d2c0" strokeWidth={2} opacity={0.9}>
+                  <circle cx={9} cy={-4} r={7} />
+                  <circle cx={25} cy={-4} r={6.5} />
+                  <path d="M16 -4 L18.5 -4" />
+                </g>
+              )}
+            </g>
           </g>
+          {who === 'galina' && <path d="M2 -6 L-14 -8" stroke="#d9d2c0" strokeWidth={2} opacity={0.9} />}
           <path d="M-32 -6 C-34 -36 -16 -46 4 -46 C26 -46 36 -32 35 -8 C35 16 26 34 6 36 C-16 37 -31 20 -32 -6 Z" fill={`url(#${gid})`} />
         </g>
         {/* передняя рука */}
