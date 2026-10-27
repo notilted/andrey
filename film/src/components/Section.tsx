@@ -99,7 +99,7 @@ const Apartment: React.FC<{x: number; y: number; w: number; seed: number; f: num
 /**
  * Разрез подъезда. lights — уровень света 0..1 (для мигания), people рисуются снаружи (как children).
  */
-export const BuildingSection: React.FC<{f: number; lights?: number; children?: React.ReactNode; front?: React.ReactNode}> = ({f, lights = 1, children, front}) => {
+export const BuildingSection: React.FC<{f: number; lights?: number; children?: React.ReactNode; front?: React.ReactNode; labelTop?: number}> = ({f, lights = 1, children, front, labelTop}) => {
   const {left, right, top, floorH, floors, stairL, stairR} = SEC;
   return (
     <g>
@@ -123,7 +123,7 @@ export const BuildingSection: React.FC<{f: number; lights?: number; children?: R
             <rect x={stairL + 174} y={y + 40} width={3} height={90} fill="#1a1e26" />
             <circle cx={stairR - 60} cy={y - floorH + 50} r={8} fill={C.lamp} opacity={fl} />
             <circle cx={stairR - 60} cy={y - floorH + 50} r={70} fill="url(#bulbHalo)" opacity={fl} />
-            <text x={stairL + 20} y={y - floorH + 60} fill="#6a707c" fontSize={30} fontWeight={900} fontFamily="Montserrat">{floors + 2 - i}</text>
+            <text x={stairL + 20} y={y - floorH + 60} fill="#6a707c" fontSize={30} fontWeight={900} fontFamily="Montserrat">{(labelTop ?? floors + 2) - i}</text>
           </g>
         );
       })}

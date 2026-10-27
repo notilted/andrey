@@ -1,0 +1,389 @@
+{
+ "name": "dm2",
+ "duration": 95.19,
+ "dialogue": [
+  {
+   "id": "d2_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.4,
+   "caption": "Первая волна — *не самая большая*. Это первое, что говорит старик, когда вода начинает отступать.",
+   "space": null
+  },
+  {
+   "id": "d2_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.07,
+   "caption": "Ты его не слышишь. Ты кричишь имя сына. *Снова и снова*.",
+   "space": null
+  },
+  {
+   "id": "d2_03",
+   "who": "narrator",
+   "name": "",
+   "start": 11.96,
+   "caption": "И тут с соседнего дома — тонкий голос: «Па-а-ап!»",
+   "space": null
+  },
+  {
+   "id": "d2_04",
+   "who": "narrator",
+   "name": "",
+   "start": 16.63,
+   "caption": "Миша. *Живой*. Без кепки. Сидит на подоконнике шестого этажа, а рядом — девчонка с ресепшена. Её зовут *Вика*. Волна перекинула их через парапет, и она не разжала руки.",
+   "space": null
+  },
+  {
+   "id": "d2_05",
+   "who": "narrator",
+   "name": "",
+   "start": 30.11,
+   "caption": "Между вами — двадцать метров *грязной воды*. Обломки. Провода.",
+   "space": null
+  },
+  {
+   "id": "d2_06",
+   "who": "narrator",
+   "name": "",
+   "start": 35.3,
+   "caption": "Старик смотрит на море: «Вторая придёт минут через *сорок*. И она будет выше этой крыши».",
+   "space": null
+  },
+  {
+   "id": "d2_07",
+   "who": "narrator",
+   "name": "",
+   "start": 41.81,
+   "caption": "Соседний дом — девять этажей. Вам нужно *туда*.",
+   "space": null
+  },
+  {
+   "id": "d2_08",
+   "who": "narrator",
+   "name": "",
+   "start": 45.7,
+   "caption": "Вы снимаете с петель двери. Связываете их шторами. Получается *плот*.",
+   "space": null
+  },
+  {
+   "id": "d2_09",
+   "who": "narrator",
+   "name": "",
+   "start": 51.39,
+   "caption": "Старика зовут Палыч. Он гребёт доской и рассказывает: «В пятьдесят втором мне было восемь. Я видел, как море *ушло*. И никто не побежал».",
+   "space": null
+  },
+  {
+   "id": "d2_10",
+   "who": "narrator",
+   "name": "",
+   "start": 62.41,
+   "caption": "«Я побежал. А мама — *нет*».",
+   "space": null
+  },
+  {
+   "id": "d2_11",
+   "who": "narrator",
+   "name": "",
+   "start": 65.72,
+   "caption": "Мимо проплывает табличка с гостиничной стойки: «Сирена на техобслуживании. Приносим *извинения*».",
+   "space": null
+  },
+  {
+   "id": "d2_12",
+   "who": "narrator",
+   "name": "",
+   "start": 72.6,
+   "caption": "Вика бледнеет: «Хозяин сам её выключил. Неделю назад. *Чтобы не пугать туристов*».",
+   "space": null
+  },
+  {
+   "id": "d2_13",
+   "who": "narrator",
+   "name": "",
+   "start": 80.13,
+   "caption": "Пятнадцать метров. Десять. Миша тянет к тебе руки.",
+   "space": null
+  },
+  {
+   "id": "d2_14",
+   "who": "narrator",
+   "name": "",
+   "start": 84.8,
+   "caption": "И тут вода под плотом начинает течь *обратно*. Всё быстрее.",
+   "space": null
+  },
+  {
+   "id": "d2_15",
+   "who": "narrator",
+   "name": "",
+   "start": 89.18,
+   "caption": "Море снова *уходит*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 0,
+   "gain": -16,
+   "bus": "amb",
+   "fadeIn": 0.3,
+   "fadeOut": 1.0,
+   "end": 30.11
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 2.58,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 30.11,
+   "gain": -22,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 84.8
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 7.07,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 45.7
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 12.56,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 34.8,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 46.2,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 47.7,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 45.7,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.0,
+   "end": 55.68
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 55.68,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 65.72
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 55.68,
+   "gain": -30,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 65.72
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 66.12,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 65.72,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 0.8,
+   "end": 91.79
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 80.13,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 84.8
+  },
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 84.8,
+   "gain": -10,
+   "bus": "amb",
+   "fadeIn": 0.6,
+   "fadeOut": 0.6,
+   "end": 92.29
+  },
+  {
+   "file": "sfx/wave_roar.wav",
+   "start": 89.18,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 92.18
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 91.59,
+   "gain": -8,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_after": 0.4,
+  "palych_says": 2.58,
+  "d2_01": 0.4,
+  "d2_01_end": 6.67,
+  "shout": 7.07,
+  "d2_02": 7.07,
+  "d2_02_end": 11.56,
+  "voice": 11.96,
+  "d2_03": 11.96,
+  "d2_03_end": 16.33,
+  "misha": 16.63,
+  "vika": 23.91,
+  "d2_04": 16.63,
+  "d2_04_end": 29.61,
+  "gap": 30.11,
+  "d2_05": 30.11,
+  "d2_05_end": 34.9,
+  "forty": 35.3,
+  "d2_06": 35.3,
+  "d2_06_end": 41.51,
+  "tower": 41.81,
+  "d2_07": 41.81,
+  "d2_07_end": 45.3,
+  "raft": 45.7,
+  "raft_done": 49.65,
+  "d2_08": 45.7,
+  "d2_08_end": 50.89,
+  "paddle": 51.39,
+  "flashback": 55.68,
+  "d2_09": 51.39,
+  "d2_09_end": 62.11,
+  "mama": 62.41,
+  "d2_10": 62.41,
+  "d2_10_end": 65.02,
+  "sign": 65.72,
+  "d2_11": 65.72,
+  "d2_11_end": 72.2,
+  "vika_pale": 72.6,
+  "d2_12": 72.6,
+  "d2_12_end": 79.53,
+  "close": 80.13,
+  "d2_13": 80.13,
+  "d2_13_end": 84.4,
+  "pull": 84.8,
+  "d2_14": 84.8,
+  "d2_14_end": 88.88,
+  "recede2": 89.18,
+  "d2_15": 89.18,
+  "d2_15_end": 90.79,
+  "title": 91.79,
+  "end": 95.19
+ },
+ "beats": {
+  "h_after": {
+   "start": 0.4,
+   "dur": 2.18
+  },
+  "palych_says": {
+   "start": 2.58,
+   "dur": 4.09
+  },
+  "shout": {
+   "start": 7.07,
+   "dur": 4.49
+  },
+  "voice": {
+   "start": 11.96,
+   "dur": 4.37
+  },
+  "misha": {
+   "start": 16.63,
+   "dur": 7.28
+  },
+  "vika": {
+   "start": 23.91,
+   "dur": 5.7
+  },
+  "gap": {
+   "start": 30.11,
+   "dur": 4.79
+  },
+  "forty": {
+   "start": 35.3,
+   "dur": 6.21
+  },
+  "tower": {
+   "start": 41.81,
+   "dur": 3.49
+  },
+  "raft": {
+   "start": 45.7,
+   "dur": 3.95
+  },
+  "raft_done": {
+   "start": 49.65,
+   "dur": 1.24
+  },
+  "paddle": {
+   "start": 51.39,
+   "dur": 4.29
+  },
+  "flashback": {
+   "start": 55.68,
+   "dur": 6.43
+  },
+  "mama": {
+   "start": 62.41,
+   "dur": 2.61
+  },
+  "sign": {
+   "start": 65.72,
+   "dur": 6.48
+  },
+  "vika_pale": {
+   "start": 72.6,
+   "dur": 6.93
+  },
+  "close": {
+   "start": 80.13,
+   "dur": 4.27
+  },
+  "pull": {
+   "start": 84.8,
+   "dur": 4.08
+  },
+  "recede2": {
+   "start": 89.18,
+   "dur": 1.61
+  }
+ }
+}

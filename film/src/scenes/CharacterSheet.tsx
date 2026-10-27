@@ -18,8 +18,12 @@ export const CharacterSheet: React.FC = () => {
         <Character who="galina" x={620} y={960} size={1.25} frame={f} pose={{brow: 0.5, mouth: 0.5}} />
         <Character who="lev" x={880} y={960} size={1.25} frame={f} facing={-1} pose={{look: -0.3}} />
         {label(150, 'МАРК')}{label(390, 'АЛИСА')}{label(620, 'ГАЛИНА')}{label(880, 'ЛЕВ')}
-        <Character who="mark" x={250} y={1600} size={1.25} frame={f} pose={{sit: 1, armF: [70, -60], brow: 0.8, look: 0.5}} />
-        <Character who="alisa" x={700} y={1600} size={1.25} frame={f} pose={{sit: 1, armF: [60, -40], lean: 10, headTilt: 12, blink: 0.1}} />
+        <Character who="misha" x={180} y={1640} size={1.25} frame={f} pose={{smile: 0.6}} />
+        <Character who="palych" x={420} y={1640} size={1.25} frame={f} pose={{brow: 0.4}} />
+        <Character who="vika" x={660} y={1640} size={1.25} frame={f} pose={{smile: 0.2}} />
+        <Character who="evgeny" x={900} y={1640} size={1.25} frame={f} facing={-1} />
+        <Character who="mark" x={250} y={1800} opacity={0} size={1.25} frame={f} pose={{sit: 1, armF: [70, -60], brow: 0.8, look: 0.5}} />
+        <Character who="alisa" x={700} y={1800} opacity={0} size={1.25} frame={f} pose={{sit: 1, armF: [60, -40], lean: 10, headTilt: 12, blink: 0.1}} />
       </svg>
     </AbsoluteFill>
   );

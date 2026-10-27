@@ -1,0 +1,436 @@
+{
+ "name": "dm3",
+ "duration": 94.52,
+ "dialogue": [
+  {
+   "id": "d3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.4,
+   "caption": "Когда море уходит второй раз, у тебя нет девяти минут. У тебя есть *две*.",
+   "space": null
+  },
+  {
+   "id": "d3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.46,
+   "caption": "Течение тащит плот прочь от дома. Палыч прыгает в воду и толкает его к стене. *Сам*.",
+   "space": null
+  },
+  {
+   "id": "d3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 12.06,
+   "caption": "Ты снимаешь Мишу с подоконника. Вика — следом за ним.",
+   "space": null
+  },
+  {
+   "id": "d3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 16.07,
+   "caption": "Наверх. По пожарной лестнице. Седьмой этаж. *Восьмой*.",
+   "space": null
+  },
+  {
+   "id": "d3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 20.34,
+   "caption": "Палыч лезет последним. И тут ржавая лестница *отрывается* от стены.",
+   "space": null
+  },
+  {
+   "id": "d3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 25.39,
+   "caption": "Он падает обратно, на плот. А с моря уже идёт *стена воды*.",
+   "space": null
+  },
+  {
+   "id": "d3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 30.27,
+   "caption": "Ты протягиваешь ему руку. Он качает головой.",
+   "space": null
+  },
+  {
+   "id": "d3_08",
+   "who": "narrator",
+   "name": "",
+   "start": 33.84,
+   "caption": "Снимает свою старую рыбацкую кепку и бросает её Мише: «Держи. Чтобы голова *не мёрзла*».",
+   "space": null
+  },
+  {
+   "id": "d3_09",
+   "who": "narrator",
+   "name": "",
+   "start": 40.51,
+   "caption": "«Я этому морю должен с пятьдесят второго. *Пора отдавать*».",
+   "space": null
+  },
+  {
+   "id": "d3_10",
+   "who": "narrator",
+   "name": "",
+   "start": 44.77,
+   "caption": "Он отталкивает плот от стены. Подальше. Чтобы волна не ударила вас *о дом*.",
+   "space": null
+  },
+  {
+   "id": "d3_11",
+   "who": "narrator",
+   "name": "",
+   "start": 52.85,
+   "caption": "Вторая волна проходит в метре под вашими ногами.",
+   "space": null
+  },
+  {
+   "id": "d3_12",
+   "who": "narrator",
+   "name": "",
+   "start": 56.93,
+   "caption": "Вы сидите на крыше до темноты. Миша молчит. Только сжимает старую *кепку*.",
+   "space": null
+  },
+  {
+   "id": "d3_13",
+   "who": "narrator",
+   "name": "",
+   "start": 63.62,
+   "caption": "Утром море *спокойное*. Как будто ничего не было.",
+   "space": null
+  },
+  {
+   "id": "d3_14",
+   "who": "narrator",
+   "name": "",
+   "start": 67.9,
+   "caption": "Вы спускаетесь на берег. Среди водорослей Миша находит свою *жёлтую кепку*. А рядом — сломанную удочку Палыча.",
+   "space": null
+  },
+  {
+   "id": "d3_15",
+   "who": "narrator",
+   "name": "",
+   "start": 76.85,
+   "caption": "Миша надевает обе кепки. Одну на другую. И долго смотрит на море.",
+   "space": null
+  },
+  {
+   "id": "d3_16",
+   "who": "narrator",
+   "name": "",
+   "start": 83.23,
+   "caption": "В пятьдесят втором Палыч успел *убежать*. А в этот раз — он успел *остаться*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 0,
+   "gain": -10,
+   "bus": "amb",
+   "fadeIn": 0.3,
+   "fadeOut": 1.0,
+   "end": 16.07
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 4.09,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 5.46,
+   "gain": -15,
+   "bus": "music",
+   "fadeOut": 0.6,
+   "end": 25.39
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 8.07,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 16.07,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 22.06
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 22.26,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 22.56,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wave_roar.wav",
+   "start": 27.59,
+   "gain": -10,
+   "bus": "sfx",
+   "end": 50.75
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 30.27,
+   "gain": -13,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 0.8,
+   "end": 50.25
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 30.27,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 50.25
+  },
+  {
+   "file": "sfx/big_impact.wav",
+   "start": 50.85,
+   "gain": -4,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 50.65,
+   "gain": -6,
+   "bus": "amb",
+   "fadeOut": 1.5,
+   "end": 57.33
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 53.85,
+   "gain": -22,
+   "bus": "sfx",
+   "fadeOut": 1.5,
+   "end": 56.85
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 56.93,
+   "gain": -26,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "fadeOut": 1.0,
+   "end": 63.62
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 56.93,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 1.5,
+   "end": 63.62
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 63.62,
+   "gain": -18,
+   "bus": "amb",
+   "fadeIn": 1.5,
+   "fadeOut": 1.5,
+   "end": 90.02
+  },
+  {
+   "file": "sfx/gulls.wav",
+   "start": 64.62,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 1.0,
+   "end": 74.62
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 67.9,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 1.5,
+   "end": 91.02
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 89.62,
+   "gain": -12,
+   "bus": "music",
+   "fadeIn": 1.0
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_two": 0.4,
+  "h_two_k": 4.09,
+  "d3_01": 0.4,
+  "d3_01_end": 5.16,
+  "current": 5.46,
+  "jump": 8.07,
+  "d3_02": 5.46,
+  "d3_02_end": 11.76,
+  "take": 12.06,
+  "d3_03": 12.06,
+  "d3_03_end": 15.87,
+  "climb": 16.07,
+  "d3_04": 16.07,
+  "d3_04_end": 20.04,
+  "last": 20.34,
+  "break": 22.06,
+  "d3_05": 20.34,
+  "d3_05_end": 25.19,
+  "fall": 25.39,
+  "wall": 27.59,
+  "d3_06": 25.39,
+  "d3_06_end": 29.87,
+  "hand": 30.27,
+  "d3_07": 30.27,
+  "d3_07_end": 33.44,
+  "cap": 33.84,
+  "d3_08": 33.84,
+  "d3_08_end": 40.11,
+  "debt": 40.51,
+  "d3_09": 40.51,
+  "d3_09_end": 44.37,
+  "push": 44.77,
+  "d3_10": 44.77,
+  "d3_10_end": 49.95,
+  "wave": 50.25,
+  "under": 52.85,
+  "d3_11": 52.85,
+  "d3_11_end": 55.93,
+  "night": 56.93,
+  "d3_12": 56.93,
+  "d3_12_end": 62.62,
+  "morning": 63.62,
+  "d3_13": 63.62,
+  "d3_13_end": 67.3,
+  "shore": 67.9,
+  "caps": 71.15,
+  "rod": 73.62,
+  "d3_14": 67.9,
+  "d3_14_end": 76.25,
+  "two_caps": 76.85,
+  "d3_15": 76.85,
+  "d3_15_end": 82.23,
+  "final": 83.23,
+  "d3_16": 83.23,
+  "d3_16_end": 88.62,
+  "title": 90.02,
+  "end": 94.52
+ },
+ "beats": {
+  "h_two": {
+   "start": 0.4,
+   "dur": 3.69
+  },
+  "h_two_k": {
+   "start": 4.09,
+   "dur": 1.07
+  },
+  "current": {
+   "start": 5.46,
+   "dur": 2.61
+  },
+  "jump": {
+   "start": 8.07,
+   "dur": 3.68
+  },
+  "take": {
+   "start": 12.06,
+   "dur": 3.81
+  },
+  "climb": {
+   "start": 16.07,
+   "dur": 3.97
+  },
+  "last": {
+   "start": 20.34,
+   "dur": 1.72
+  },
+  "break": {
+   "start": 22.06,
+   "dur": 3.13
+  },
+  "fall": {
+   "start": 25.39,
+   "dur": 2.2
+  },
+  "wall": {
+   "start": 27.59,
+   "dur": 2.28
+  },
+  "hand": {
+   "start": 30.27,
+   "dur": 3.17
+  },
+  "cap": {
+   "start": 33.84,
+   "dur": 6.27
+  },
+  "debt": {
+   "start": 40.51,
+   "dur": 3.86
+  },
+  "push": {
+   "start": 44.77,
+   "dur": 5.18
+  },
+  "wave": {
+   "start": 50.25,
+   "dur": 2.4
+  },
+  "under": {
+   "start": 52.85,
+   "dur": 3.08
+  },
+  "night": {
+   "start": 56.93,
+   "dur": 5.69
+  },
+  "morning": {
+   "start": 63.62,
+   "dur": 3.68
+  },
+  "shore": {
+   "start": 67.9,
+   "dur": 3.25
+  },
+  "caps": {
+   "start": 71.15,
+   "dur": 2.48
+  },
+  "rod": {
+   "start": 73.62,
+   "dur": 2.63
+  },
+  "two_caps": {
+   "start": 76.85,
+   "dur": 5.38
+  },
+  "final": {
+   "start": 83.23,
+   "dur": 5.39
+  }
+ }
+}

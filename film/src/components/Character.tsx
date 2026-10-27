@@ -4,7 +4,7 @@ import React from 'react';
  * Персонаж в плоской векторной стилистике. Начало координат — пол между стопами,
  * персонаж смотрит вправо (facing=-1 — зеркально влево). Размеры в единицах взрослого (~340).
  */
-export type Who = 'mark' | 'alisa' | 'galina' | 'lev' | 'sonya' | 'evgeny';
+export type Who = 'mark' | 'alisa' | 'galina' | 'lev' | 'sonya' | 'evgeny' | 'misha' | 'palych' | 'vika';
 
 export type Pose = {
   sit?: number; // 0 — стоит, 1 — сидит
@@ -43,6 +43,9 @@ export const LOOKS: Record<Who, Look> = {
   galina: {skin: '#c99f88', skinShade: '#a07e6d', hair: '#a7a9ad', top: '#6b2f38', topShade: '#52242c', bottom: '#2f3340', shoes: '#1b1d22', scale: 0.9, headScale: 1.02, torso: 128, width: 80},
   sonya: {skin: '#d6aa8e', skinShade: '#b0866f', hair: '#8a5a36', top: '#7f9bc4', topShade: '#647fa6', bottom: '#5d7396', shoes: '#c9c3b8', scale: 0.64, headScale: 1.24, torso: 118, width: 68},
   evgeny: {skin: '#b88a72', skinShade: '#94695a', hair: '#8f9196', top: '#4d4a36', topShade: '#3a3828', bottom: '#262a33', shoes: '#15171b', scale: 1.04, headScale: 1.02, torso: 138, width: 88},
+  misha: {skin: '#d6a88a', skinShade: '#b0846c', hair: '#6a4a30', top: '#4f8fbf', topShade: '#3d7099', bottom: '#2c3446', shoes: '#c9c3b8', scale: 0.62, headScale: 1.26, torso: 116, width: 66},
+  palych: {skin: '#b47e64', skinShade: '#8f6250', hair: '#d0d0cc', top: '#5a5a48', topShade: '#454536', bottom: '#2a2e38', shoes: '#1a1a1e', scale: 0.98, headScale: 1.02, torso: 134, width: 84},
+  vika: {skin: '#d2a488', skinShade: '#ac8068', hair: '#2a1a14', top: '#e8e4da', topShade: '#c9c3b8', bottom: '#1f2430', shoes: '#15171b', scale: 0.86, headScale: 1.04, torso: 124, width: 66},
   lev: {skin: '#b98e78', skinShade: '#93705f', hair: '#0f1115', top: '#2c3834', topShade: '#202a27', bottom: '#1d2128', shoes: '#101216', scale: 1.02, headScale: 0.97, torso: 136, width: 66},
 };
 
@@ -102,6 +105,33 @@ const Hair: React.FC<{who: Who; c: string; f: number}> = ({who, c, f}) => {
           <path d="M-26 -34 C-20 -40 -12 -42 -4 -42 C-14 -36 -20 -30 -22 -24 Z" fill={c} opacity={0.7} />
         </g>
       );
+    case 'misha':
+      // короткая стрижка + жёлтая кепка козырьком вперёд
+      return (
+        <g>
+          <path d="M-33 -2 C-36 -30 -20 -40 -4 -40 C-18 -30 -24 -16 -26 -2 Z" fill={c} />
+          <path d="M-34 -14 C-36 -46 -8 -58 14 -54 C34 -50 40 -34 38 -22 L-34 -14 Z" fill="#f2c230" />
+          <path d="M20 -26 L62 -22 Q60 -14 36 -16 L18 -18 Z" fill="#d9a920" />
+          <circle cx={4} cy={-55} r={4} fill="#d9a920" />
+        </g>
+      );
+    case 'palych':
+      // седые волосы из-под рыбацкой кепки
+      return (
+        <g>
+          <path d="M-33 4 C-38 -14 -34 -24 -28 -28 C-26 -16 -26 -6 -24 6 Z" fill={c} />
+          <path d="M-36 -16 C-38 -44 -10 -54 12 -50 C32 -46 40 -32 38 -20 L-36 -16 Z" fill="#3a4a5a" />
+          <path d="M18 -26 L58 -24 Q56 -16 34 -18 L16 -20 Z" fill="#2a3644" />
+          <rect x={-36} y={-22} width={74} height={6} fill="#2a3644" />
+        </g>
+      );
+    case 'vika':
+      return (
+        <g>
+          <path d={`M-30 -30 C-46 -28 ${-52 + Math.sin(f / 15) * 3} -6 ${-44 + Math.sin(f / 15) * 3} 18 C-40 6 -36 -10 -30 -16 Z`} fill={c} />
+          <path d="M-34 4 C-40 -36 -12 -52 8 -50 C28 -48 40 -36 36 -12 C30 -24 18 -32 2 -32 C-10 -30 -20 -22 -26 -10 C-28 -4 -30 0 -34 4 Z" fill={c} />
+        </g>
+      );
     case 'lev':
       return <path d="M-33 -4 C-36 -42 -10 -54 12 -50 C30 -47 40 -34 37 -20 C26 -34 6 -36 -10 -30 C-20 -24 -26 -14 -28 -2 Z" fill={c} />;
   }
@@ -140,7 +170,7 @@ export const Character: React.FC<{
   const ly = lookUp * -3;
   const eyeH = 5.2 * Math.max(0.08, blink);
   const browA = brow * 12;
-  const browC = who === 'galina' || who === 'evgeny' ? '#6f7176' : L.hair;
+  const browC = who === 'galina' || who === 'evgeny' || who === 'palych' ? '#8f9196' : who === 'misha' ? '#6a4a30' : L.hair;
 
   const leg = (dx: number, phase: number, back: boolean) => {
     const kneeA = tA + phase;
@@ -180,6 +210,9 @@ export const Character: React.FC<{
         />
         <path d={`M${-hw} ${torsoTop + 22} Q${-hw} ${torsoTop} ${-hw + 22} ${torsoTop - 2} L${-hw + 30} ${torsoTop - 2} L${-hw + 16} ${hipY + 8} L${-hw + 4} ${hipY + 8} Z`} fill={L.topShade} />
         {who === 'galina' && <path d={`M-6 ${torsoTop} L6 ${torsoTop} L4 ${hipY + 8} L-4 ${hipY + 8} Z`} fill="#4a1f27" />}
+        {who === 'palych' && <path d={`M${-hw + 8} ${torsoTop} L${-hw + 26} ${torsoTop} L${-hw + 30} ${hipY + 8} L${-hw + 8} ${hipY + 8} Z M${hw - 8} ${torsoTop} L${hw - 26} ${torsoTop} L${hw - 30} ${hipY + 8} L${hw - 8} ${hipY + 8} Z`} fill="#3a3a2c" />}
+        {who === 'vika' && <path d={`M${-hw + 6} ${torsoTop + 10} L${-6} ${torsoTop + 10} L${-4} ${hipY + 8} L${-hw + 6} ${hipY + 8} Z M${hw - 6} ${torsoTop + 10} L${6} ${torsoTop + 10} L${4} ${hipY + 8} L${hw - 6} ${hipY + 8} Z`} fill="#2a3040" />}
+        {who === 'vika' && <rect x={12} y={torsoTop + 30} width={18} height={10} rx={2} fill={'#f2b448'} />}
         {who === 'evgeny' && <rect x={-hw} y={hipY - 46} width={L.width} height={9} fill="#c9b458" opacity={0.85} />}
         {who === 'evgeny' && <rect x={-hw} y={hipY - 76} width={L.width} height={9} fill="#c9b458" opacity={0.85} />}
         {who === 'lev' && <rect x={-16} y={torsoTop - 12} width={32} height={18} rx={6} fill={L.top} />}
@@ -209,6 +242,7 @@ export const Character: React.FC<{
               {blink > 0.6 && <circle cx={10} cy={-6} r={1.1} fill="#fff" opacity={0.8} />}
               {/* нос — мягкая тень внутри лица */}
               <path d="M27 2 Q32 9 29 12 Q25 13.5 22.5 11.5 Q26 9 27 2 Z" fill={L.skinShade} />
+              {who === 'palych' && <path d="M-2 10 Q2 40 18 44 Q34 40 36 10 Q30 22 18 24 Q6 22 -2 10 Z" fill="#d0d0cc" />}
               {who === 'evgeny' && <path d="M10 17 Q18 12 24 15 Q30 12 33 17 Q29 22 22 19 Q15 22 10 17 Z" fill="#8f9196" />}
               {/* рот: от линии к открытому, с верхней губой и языком */}
               {mouth > 0.06 ? (

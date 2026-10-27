@@ -1,0 +1,518 @@
+{
+ "name": "dm1",
+ "duration": 96.08,
+ "dialogue": [
+  {
+   "id": "d1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.5,
+   "caption": "Если море вдруг отступает от берега на сотню метров — у тебя есть *девять минут*.",
+   "space": null
+  },
+  {
+   "id": "d1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.18,
+   "caption": "Последний тёплый день сентября. Ты с сыном на море. Мише семь, и он не снимает свою *жёлтую кепку*.",
+   "space": null
+  },
+  {
+   "id": "d1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 13.94,
+   "caption": "Земля под ногами чуть качнулась. Кто-то засмеялся. Никто не *испугался*.",
+   "space": null
+  },
+  {
+   "id": "d1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 19.66,
+   "caption": "А потом море начинает *уходить*. Метр за метром. Обнажая камни, водоросли и бьющуюся рыбу.",
+   "space": null
+  },
+  {
+   "id": "d1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 27.91,
+   "caption": "Люди выходят на мокрое дно. Фотографируют. Собирают *ракушки*.",
+   "space": null
+  },
+  {
+   "id": "d1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 32.94,
+   "caption": "И только старик-рыбак бросает удочку и кричит: «*Наверх!* Все наверх, это волна!»",
+   "space": null
+  },
+  {
+   "id": "d1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 39.3,
+   "caption": "Над ним смеются. Сирена *молчит*.",
+   "space": null
+  },
+  {
+   "id": "d1_08",
+   "who": "narrator",
+   "name": "",
+   "start": 42.28,
+   "caption": "Ты хватаешь Мишу на руки. Гостиница — пять этажей. *Восемь минут*.",
+   "space": null
+  },
+  {
+   "id": "d1_09",
+   "who": "narrator",
+   "name": "",
+   "start": 47.31,
+   "caption": "На ресепшене девчонка лет шестнадцати. Ты кричишь ей: «Крыша! Где выход на *крышу*?!»",
+   "space": null
+  },
+  {
+   "id": "d1_10",
+   "who": "narrator",
+   "name": "",
+   "start": 53.27,
+   "caption": "Она бросает всё и бежит первой. Старик — *следом* за вами.",
+   "space": null
+  },
+  {
+   "id": "d1_11",
+   "who": "narrator",
+   "name": "",
+   "start": 57.67,
+   "caption": "Лестница. Третий этаж. Пятый. Дверь на крышу *заперта*.",
+   "space": null
+  },
+  {
+   "id": "d1_12",
+   "who": "narrator",
+   "name": "",
+   "start": 62.4,
+   "caption": "Старик выбивает её плечом. С первого раза.",
+   "space": null
+  },
+  {
+   "id": "d1_13",
+   "who": "narrator",
+   "name": "",
+   "start": 66.09,
+   "caption": "И ты видишь горизонт. Он *поднимается*.",
+   "space": null
+  },
+  {
+   "id": "d1_14",
+   "who": "narrator",
+   "name": "",
+   "start": 70.8,
+   "caption": "Волна накрывает пляж за секунды. Машины, кафе, людей. Вода поднимается до *четвёртого этажа*.",
+   "space": null
+  },
+  {
+   "id": "d1_15",
+   "who": "narrator",
+   "name": "",
+   "start": 78.52,
+   "caption": "Здание дрожит. Ты держишь Мишу так, что болят руки.",
+   "space": null
+  },
+  {
+   "id": "d1_16",
+   "who": "narrator",
+   "name": "",
+   "start": 83.12,
+   "caption": "А потом — тишина. И ты понимаешь, что твои руки *пустые*.",
+   "space": null
+  },
+  {
+   "id": "d1_17",
+   "who": "narrator",
+   "name": "",
+   "start": 88.34,
+   "caption": "Внизу, среди обломков, плывёт *жёлтая кепка*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/surf.wav",
+   "start": 0,
+   "gain": -18,
+   "bus": "amb",
+   "fadeIn": 0.5,
+   "fadeOut": 1.0,
+   "end": 42.28
+  },
+  {
+   "file": "sfx/gulls.wav",
+   "start": 6.18,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 14.94
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 3.91,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 6.18,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.0,
+   "end": 19.66
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 6.18,
+   "gain": -24,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 42.28
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 13.94,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 19.66,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 0.5,
+   "end": 42.28
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 19.66,
+   "gain": -30,
+   "bus": "sfx",
+   "fadeOut": 1.0,
+   "end": 29.91
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 35.93,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 39.3,
+   "gain": -22,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 41.3
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 40.92,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 42.28,
+   "gain": -14,
+   "bus": "music",
+   "fadeOut": 0.6,
+   "end": 66.09
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 42.28,
+   "gain": -16,
+   "bus": "amb",
+   "fadeOut": 0.3,
+   "end": 66.09
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 60.63,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 63.0,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 66.82,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wave_roar.wav",
+   "start": 67.82,
+   "gain": -8,
+   "bus": "sfx",
+   "end": 71.1
+  },
+  {
+   "file": "sfx/big_impact.wav",
+   "start": 70.8,
+   "gain": -4,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 71.2,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 70.8,
+   "gain": -8,
+   "bus": "amb",
+   "fadeOut": 1.5,
+   "end": 84.12
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 87.34,
+   "gain": -22,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 92.68
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 70.8,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 1.0,
+   "end": 83.12
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 78.52,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 83.12
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 83.12,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 2,
+   "end": 87.12
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 84.63,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 93.68
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 92.48,
+   "gain": -8,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_recede": 0.5,
+  "h_nine": 3.91,
+  "d1_01": 0.5,
+  "d1_01_end": 5.48,
+  "beach": 6.18,
+  "cap": 10.13,
+  "d1_02": 6.18,
+  "d1_02_end": 13.54,
+  "quake": 13.94,
+  "laugh": 16.4,
+  "d1_03": 13.94,
+  "d1_03_end": 19.16,
+  "recede": 19.66,
+  "d1_04": 19.66,
+  "d1_04_end": 27.61,
+  "seabed": 27.91,
+  "d1_05": 27.91,
+  "d1_05_end": 32.54,
+  "palych": 32.94,
+  "shout": 35.93,
+  "d1_06": 32.94,
+  "d1_06_end": 39.0,
+  "mock": 39.3,
+  "siren": 40.72,
+  "d1_07": 39.3,
+  "d1_07_end": 41.88,
+  "grab": 42.28,
+  "hotel": 44.2,
+  "d1_08": 42.28,
+  "d1_08_end": 47.01,
+  "reception": 47.31,
+  "d1_09": 47.31,
+  "d1_09_end": 53.07,
+  "vika_run": 53.27,
+  "d1_10": 53.27,
+  "d1_10_end": 57.47,
+  "stairs": 57.67,
+  "locked": 60.23,
+  "d1_11": 57.67,
+  "d1_11_end": 62.2,
+  "kick": 62.4,
+  "d1_12": 62.4,
+  "d1_12_end": 65.69,
+  "roof": 66.09,
+  "horizon": 67.82,
+  "d1_13": 66.09,
+  "d1_13_end": 69.0,
+  "roar": 69.2,
+  "hit": 70.8,
+  "flood": 75.2,
+  "d1_14": 70.8,
+  "d1_14_end": 78.22,
+  "shake": 78.52,
+  "d1_15": 78.52,
+  "d1_15_end": 82.52,
+  "silence": 83.12,
+  "empty": 84.63,
+  "d1_16": 83.12,
+  "d1_16_end": 87.74,
+  "cap_float": 88.34,
+  "d1_17": 88.34,
+  "d1_17_end": 91.68,
+  "title": 92.68,
+  "end": 96.08
+ },
+ "beats": {
+  "h_recede": {
+   "start": 0.5,
+   "dur": 3.41
+  },
+  "h_nine": {
+   "start": 3.91,
+   "dur": 1.58
+  },
+  "beach": {
+   "start": 6.18,
+   "dur": 3.95
+  },
+  "cap": {
+   "start": 10.13,
+   "dur": 3.42
+  },
+  "quake": {
+   "start": 13.94,
+   "dur": 2.46
+  },
+  "laugh": {
+   "start": 16.4,
+   "dur": 2.76
+  },
+  "recede": {
+   "start": 19.66,
+   "dur": 7.95
+  },
+  "seabed": {
+   "start": 27.91,
+   "dur": 4.63
+  },
+  "palych": {
+   "start": 32.94,
+   "dur": 2.99
+  },
+  "shout": {
+   "start": 35.93,
+   "dur": 3.07
+  },
+  "mock": {
+   "start": 39.3,
+   "dur": 1.42
+  },
+  "siren": {
+   "start": 40.72,
+   "dur": 1.17
+  },
+  "grab": {
+   "start": 42.28,
+   "dur": 1.92
+  },
+  "hotel": {
+   "start": 44.2,
+   "dur": 2.81
+  },
+  "reception": {
+   "start": 47.31,
+   "dur": 5.76
+  },
+  "vika_run": {
+   "start": 53.27,
+   "dur": 4.2
+  },
+  "stairs": {
+   "start": 57.67,
+   "dur": 2.56
+  },
+  "locked": {
+   "start": 60.23,
+   "dur": 1.97
+  },
+  "kick": {
+   "start": 62.4,
+   "dur": 3.29
+  },
+  "roof": {
+   "start": 66.09,
+   "dur": 1.73
+  },
+  "horizon": {
+   "start": 67.82,
+   "dur": 1.18
+  },
+  "roar": {
+   "start": 69.2,
+   "dur": 1.6
+  },
+  "hit": {
+   "start": 70.8,
+   "dur": 4.4
+  },
+  "flood": {
+   "start": 75.2,
+   "dur": 3.02
+  },
+  "shake": {
+   "start": 78.52,
+   "dur": 4.0
+  },
+  "silence": {
+   "start": 83.12,
+   "dur": 1.51
+  },
+  "empty": {
+   "start": 84.63,
+   "dur": 3.11
+  },
+  "cap_float": {
+   "start": 88.34,
+   "dur": 3.34
+  }
+ }
+}

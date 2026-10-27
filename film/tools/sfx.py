@@ -375,8 +375,34 @@ def silent_pass(d=7):  # объект проходит без звука: тол
     x = t(d); k = np.sin(np.pi * x / d) ** 2
     return lp(noise(d), 90) * k * 1.5
 
+def surf(d=20):  # прибой: накаты шума раз в ~5 с
+    x = t(d); n = noise(d)
+    sw = np.clip(np.sin(2 * np.pi * x / 5.2), 0, 1) ** 3 + 0.25
+    return (lp(n, 900) * 0.8 + bp(n, 1500, 6000) * 0.3 * np.clip(np.sin(2 * np.pi * x / 5.2 - 0.6), 0, 1) ** 4) * sw
+
+def gulls(d=12):
+    out = np.zeros(int(d * SR))
+    for k in range(6):
+        st = rng.uniform(0, d - 1.2); ln = rng.uniform(0.4, 0.8); xx = t(ln)
+        f0 = 1200 + 700 * np.sin(np.pi * xx / ln) - 300 * xx / ln
+        y = np.sin(2 * np.pi * np.cumsum(f0) / SR) * env(len(xx), 0.03, 0.2) * (1 + 0.4 * np.sin(2 * np.pi * 30 * xx))
+        i = int(st * SR); out[i:i + len(y)] += bp(y, 800, 5000) * rng.uniform(0.3, 1)
+    return out
+
+def water_rush(d=12):  # поток воды: мощный шум с низами
+    x = t(d); n = noise(d)
+    return (lp(n, 400) * 1.4 + bp(n, 600, 4000) * 0.6) * env(len(x), 0.6, 2.5) * (0.85 + 0.15 * np.sin(2 * np.pi * 0.7 * x))
+
+def wave_roar(d=6):  # приближающийся рёв волны
+    x = t(d); k = x / d; n = noise(d)
+    return ((lp(n, 200) * (1 - k) + lp(n, 1000) * k) * 1.2 + bp(n, 800, 3000) * k ** 2 * 0.6) * k ** 1.5 * env(len(x), 0.1, 0.1)
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["dm"]:
+        for name, fn in [("surf", surf), ("gulls", gulls), ("water_rush", water_rush), ("wave_roar", wave_roar)]:
+            save(f"public/sfx/{name}.wav", fn())
+        sys.exit()
     if sys.argv[1:] == ["tw4"]:
         for name, fn in [("hum", hum), ("ringtone", ringtone), ("silent_pass", silent_pass)]:
             save(f"public/sfx/{name}.wav", fn())
