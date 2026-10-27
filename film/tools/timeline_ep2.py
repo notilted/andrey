@@ -7,7 +7,7 @@ import soundfile as sf
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 LINES = {l["id"]: l for l in json.load(open(os.path.join(ROOT, "..", "script", "ep2_lines.json")))}
-WHO = {"mark": "МАРК", "double": "ГОЛОС ЗА ДВЕРЬЮ", "alisa": "АЛИСА", "galina": "ГАЛИНА", "lev": "ЛЕВ", "parrot": "КЕША"}
+WHO = {"mark": "МАРК", "double": "ГОЛОС ЗА ДВЕРЬЮ", "alisa": "АЛИСА", "galina": "ГАЛИНА", "lev": "ЛЕВ", "parrot": "КЕША", "rescuer": "МУЖЧИНА"}
 
 HL = {
     "e2_lev_1": "Время пошло *заново*.",
@@ -27,6 +27,20 @@ HL = {
     "e2_double_2": "Теперь ты ответь. Как зовут *маму Алисы*?",
     "e2_mark_6": "Я… *не помню*.",
     "e2_alisa_5": "Пап?..",
+    "e2_mark_7": "*Тринадцатая*…",
+    "e2_galina_5": "Так. *Без паники*. Я в девяносто восьмом и не такое видела.",
+    "e2_man_1": "Да *откройте* вы уже! Может, там помощь!",
+    "e2_mark_9": "*Никто* не откроет эту дверь.",
+    "e2_mark_8": "А вы? Вы *настоящий*?",
+    "e2_lev_6": "Я единственный, кто *ни разу* не открыл эту дверь.",
+    "e2_lev_7": "*Ваш ход*, Марк.",
+    "e2_alisa_6": "Тут папа держит меня за руку. А этот *стоит за дверью*.",
+    "e2_mark_10": "*Который* из них я?",
+    "e2_lev_8": "Осторожно. Он *помнит всё*, что помните вы.",
+    "e2_mark_11": "Тогда проверим, *что помню я*.",
+    "e2_mark_12": "Алиса… как зовут *маму*?",
+    "e2_alisa_8": "Пап… ты же сам сказал. Её имя *нельзя называть*.",
+    "e2_double_3": "Алиса. *Пойдём домой*.",
 }
 
 dialogue, sfx, marks = [], [], {}
@@ -88,6 +102,12 @@ M("c1_phones_end", 3.6)
 L("e2_lev_1", 0.4)
 L("e2_mark_1", 0.4)
 L("e2_lev_2", 0.5)
+M("c1_msg", 0.8)
+S("sfx/vibrate.wav", 0, -12)
+S("sfx/ping.wav", 0.4, -14)
+M("c1_msg_end", 4.6)
+L("e2_mark_7", 0.3)
+L("e2_galina_5", 1.0)
 
 # ───────────── 2. ПОПУГАЙ ─────────────
 M("c2", 1.4)
@@ -114,9 +134,19 @@ S("sfx/static.wav", 0, -22, end=6, fadeOut=0.4)
 M("c3_monitor3", 2.6)
 S("sfx/recap_hit.wav", 0, -14)
 L("e2_galina_3", 1.0)
-M("c3_look", 0.2)
+S("sfx/crowd.wav", 0.3, -24, "amb", fadeIn=0.5, end=7, fadeOut=1.5)
+L("e2_man_1", 1.0)
+M("c3_block", 0.0)
+S("sfx/footsteps_two.wav", 0, -22, "amb", end=1.5, fadeOut=0.3)
+L("e2_mark_9", 0.6)
+L("e2_mark_8", 1.2)
+L("e2_lev_6", 0.6)
+M("c3_chess", 0.4)
+S("sfx/ui_tick.wav", 1.2, -18)
+L("e2_lev_7", 0.2)
+M("c3_look", 0.3)
 S("sfx/heartbeat.wav", 0, -20, end=3)
-M("c4", 2.6)
+M("c4", 2.4)
 
 # ───────────── 4. РИСУНОК ─────────────
 S("music/m04_shelter.wav", 0, -16, "music", fadeIn=2.0, end=40, fadeOut=2)
@@ -126,12 +156,17 @@ S("sfx/page_flip.wav", 0, -16)
 M("c4_draw_mid", 2.0)
 L("e2_mark_4", 0.8)
 L("e2_alisa_3", 0.5)
+L("e2_alisa_6", 0.6)
+L("e2_mark_10", 0.6)
+L("e2_alisa_7", 0.5)
 M("c4_end", 1.4)
 
 # ───────────── 5. ПРОВЕРКА ─────────────
 M("c5", 0.0)
-S("sfx/footsteps_two.wav", 0, -22, "amb", end=2.0, fadeOut=0.4)
-L("e2_mark_5", 2.2)
+L("e2_lev_8", 0.3)
+S("sfx/footsteps_two.wav", 0, -22, "amb", end=2.6, fadeOut=0.4)
+L("e2_mark_11", 0.4)
+L("e2_mark_5", 1.2)
 L("e2_double_1", 0.5)
 L("e2_alisa_4", 0.6)
 L("e2_double_2", 0.9)
@@ -140,6 +175,8 @@ S("sfx/heartbeat.wav", 0, -14, end=4.2, fadeOut=0.8)
 S("music/m06_double.wav", 0, -12, "music", fadeIn=1.0, end=26, fadeOut=1)
 L("e2_mark_6", 3.6)
 L("e2_galina_4", 0.9)
+L("e2_mark_12", 1.2)
+L("e2_alisa_8", 0.5)
 
 # ───────────── 6. КОПИЯ ОПОЗНАНА ─────────────
 M("c6", 1.2)
@@ -154,7 +191,8 @@ S("sfx/lock_click.wav", 0, -6)
 S("sfx/wheel_creak.wav", 0.4, -10)
 M("c6_open", 2.4)
 S("sfx/door_open.wav", 0, -8)
-M("c6_black", 3.0)
+L("e2_double_3", 2.2, space="bunker")
+M("c6_black", 1.4)
 M("title", 1.6)
 S("sfx/knock.wav", 0.6, -16)
 M("end", 7.0)

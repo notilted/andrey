@@ -1,0 +1,518 @@
+{
+ "name": "ep2",
+ "duration": 130.17,
+ "dialogue": [
+  {
+   "id": "e2_galina_1",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 12.2,
+   "caption": "Опять стучат…",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_lev_1",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 18.48,
+   "caption": "Время пошло *заново*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_mark_1",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 21.31,
+   "caption": "Что значит — заново?",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_lev_2",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 23.11,
+   "caption": "Значит, мы здесь *уже были*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_parrot_1",
+   "who": "parrot",
+   "name": "КЕША",
+   "start": 28.06,
+   "caption": "*Не открывай*. Не открывай.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_galina_2",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 30.7,
+   "caption": "*Кеша*! Ты где такого набрался?",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_alisa_1",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 33.1,
+   "caption": "Пап… он говорит *твоим голосом*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_mark_2",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 36.76,
+   "caption": "Он не мог этого слышать. Я этого *ещё не говорил*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_lev_3",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 40.31,
+   "caption": "Ещё не говорили. *В этот раз*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_lev_4",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 45.13,
+   "caption": "*Двенадцать партий*. Я записываю каждую.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_mark_3",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 49.33,
+   "caption": "Партий?",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_lev_5",
+   "who": "lev",
+   "name": "ЛЕВ",
+   "start": 50.54,
+   "caption": "Когда таймер доходит до нуля, *всё начинается снова*. И за дверью становится *на одного больше*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_galina_3",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 60.18,
+   "caption": "На одного *кого*?",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_alisa_2",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 64.75,
+   "caption": "Я это нарисовала дома. Но тут было *по-другому*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_mark_4",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 70.22,
+   "caption": "Когда ты это нарисовала?",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_alisa_3",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 72.27,
+   "caption": "Не помню. Пап, мне кажется, я это уже рисовала. *Много раз*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_mark_5",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 80.88,
+   "caption": "Если ты — это я… скажи, что Алиса *рисовала сегодня вечером*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_double_1",
+   "who": "double",
+   "name": "ГОЛОС ЗА ДВЕРЬЮ",
+   "start": 87.67,
+   "caption": "*Дом. Солнце.* И два дерева.",
+   "space": null
+  },
+  {
+   "id": "e2_alisa_4",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 91.61,
+   "caption": "Правильно…",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_double_2",
+   "who": "double",
+   "name": "ГОЛОС ЗА ДВЕРЬЮ",
+   "start": 93.58,
+   "caption": "Теперь ты ответь. Как зовут *маму Алисы*?",
+   "space": null
+  },
+  {
+   "id": "e2_mark_6",
+   "who": "mark",
+   "name": "МАРК",
+   "start": 101.13,
+   "caption": "Я… *не помню*.",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_galina_4",
+   "who": "galina",
+   "name": "ГАЛИНА",
+   "start": 104.07,
+   "caption": "Господи…",
+   "space": "bunker"
+  },
+  {
+   "id": "e2_alisa_5",
+   "who": "alisa",
+   "name": "АЛИСА",
+   "start": 114.45,
+   "caption": "Пап?..",
+   "space": "bunker"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 0.0,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "end": 7.4,
+   "fadeOut": 0.4
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 0.0,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 1.8,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 3.6,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 5.4,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phone_alert.wav",
+   "start": 0.05,
+   "gain": -16,
+   "bus": "sfx",
+   "end": 1.7,
+   "fadeOut": 0.2
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 1.8,
+   "gain": -20,
+   "bus": "sfx",
+   "end": 3.6,
+   "fadeOut": 0.2
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 3.6,
+   "gain": -16,
+   "bus": "sfx",
+   "end": 5.4,
+   "fadeOut": 0.3
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 7.7,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 9.0,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 10.3,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/vent.wav",
+   "start": 10.7,
+   "gain": -24,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "end": 237.2
+  },
+  {
+   "file": "sfx/siren_muffled.wav",
+   "start": 11.0,
+   "gain": -30,
+   "bus": "amb",
+   "fadeIn": 3.0,
+   "end": 67.2,
+   "fadeOut": 3
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 10.8,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m08_loop.wav",
+   "start": 11.3,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 4.0,
+   "end": 88.8,
+   "fadeOut": 3
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 14.48,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 14.48,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wings.wav",
+   "start": 27.56,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wings.wav",
+   "start": 30.2,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 44.63,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 45.23,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/monitor_on.wav",
+   "start": 56.58,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 56.58,
+   "gain": -22,
+   "bus": "sfx",
+   "end": 62.58,
+   "fadeOut": 0.4
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 59.18,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 61.55,
+   "gain": -20,
+   "bus": "sfx",
+   "end": 64.55
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 64.15,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "end": 104.15,
+   "fadeOut": 2
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 67.42,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 78.68,
+   "gain": -22,
+   "bus": "amb",
+   "end": 80.68,
+   "fadeOut": 0.4
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 97.53,
+   "gain": -14,
+   "bus": "sfx",
+   "end": 101.73,
+   "fadeOut": 0.8
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 97.53,
+   "gain": -12,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "end": 123.53,
+   "fadeOut": 1
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 106.65,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 106.65,
+   "gain": -8,
+   "bus": "music"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 111.65,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 116.17,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wheel_creak.wav",
+   "start": 116.57,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 118.57,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 123.77,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "recap": 0.0,
+  "recap_end": 7.2,
+  "c1_light": 10.8,
+  "e2_galina_1": 12.2,
+  "e2_galina_1_end": 13.88,
+  "c1_phones": 14.48,
+  "c1_phones_end": 18.08,
+  "e2_lev_1": 18.48,
+  "e2_lev_1_end": 20.91,
+  "e2_mark_1": 21.31,
+  "e2_mark_1_end": 22.61,
+  "e2_lev_2": 23.11,
+  "e2_lev_2_end": 26.16,
+  "c2": 27.56,
+  "e2_parrot_1": 28.06,
+  "e2_parrot_1_end": 30.1,
+  "e2_galina_2": 30.7,
+  "e2_galina_2_end": 32.6,
+  "e2_alisa_1": 33.1,
+  "e2_alisa_1_end": 36.31,
+  "e2_mark_2": 36.76,
+  "e2_mark_2_end": 39.61,
+  "e2_lev_3": 40.31,
+  "e2_lev_3_end": 43.33,
+  "c3": 44.33,
+  "c3_book": 44.53,
+  "e2_lev_4": 45.13,
+  "e2_lev_4_end": 48.93,
+  "e2_mark_3": 49.33,
+  "e2_mark_3_end": 49.94,
+  "c3_book_end": 50.14,
+  "e2_lev_5": 50.54,
+  "e2_lev_5_end": 59.18,
+  "c3_monitor": 56.58,
+  "c3_monitor3": 59.18,
+  "e2_galina_3": 60.18,
+  "e2_galina_3_end": 61.35,
+  "c3_look": 61.55,
+  "c4": 64.15,
+  "e2_alisa_2": 64.75,
+  "e2_alisa_2_end": 69.42,
+  "c4_draw": 67.42,
+  "c4_draw_mid": 69.42,
+  "e2_mark_4": 70.22,
+  "e2_mark_4_end": 71.77,
+  "e2_alisa_3": 72.27,
+  "e2_alisa_3_end": 77.28,
+  "c4_end": 78.68,
+  "c5": 78.68,
+  "e2_mark_5": 80.88,
+  "e2_mark_5_end": 87.17,
+  "e2_double_1": 87.67,
+  "e2_double_1_end": 91.01,
+  "e2_alisa_4": 91.61,
+  "e2_alisa_4_end": 92.68,
+  "e2_double_2": 93.58,
+  "e2_double_2_end": 97.33,
+  "c5_silence": 97.53,
+  "e2_mark_6": 101.13,
+  "e2_mark_6_end": 103.17,
+  "e2_galina_4": 104.07,
+  "e2_galina_4_end": 105.45,
+  "c6": 106.65,
+  "c6_back": 111.65,
+  "c6_turn": 112.05,
+  "e2_alisa_5": 114.45,
+  "e2_alisa_5_end": 115.17,
+  "c6_lock": 116.17,
+  "c6_open": 118.57,
+  "c6_black": 121.57,
+  "title": 123.17,
+  "end": 130.17
+ }
+}
