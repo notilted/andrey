@@ -1,0 +1,464 @@
+{
+ "name": "tw5",
+ "duration": 98.89,
+ "dialogue": [
+  {
+   "id": "w5_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.4,
+   "caption": "Ты берёшь трубку. И слышишь голос, который *больше не должен звучать*.",
+   "space": null
+  },
+  {
+   "id": "w5_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.18,
+   "caption": "«Дима… Если ты это слышишь — значит, дверь *выдержала*».",
+   "space": null
+  },
+  {
+   "id": "w5_03",
+   "who": "narrator",
+   "name": "",
+   "start": 9.86,
+   "caption": "Это не звонок. Это *сообщение*. Евгений записал его за минуту до удара. Без связи оно так и не ушло.",
+   "space": null
+  },
+  {
+   "id": "w5_04",
+   "who": "narrator",
+   "name": "",
+   "start": 17.89,
+   "caption": "До этой *секунды*.",
+   "space": null
+  },
+  {
+   "id": "w5_05",
+   "who": "narrator",
+   "name": "",
+   "start": 19.9,
+   "caption": "Дима забирает у тебя телефон. И слушает отца, *не дыша*.",
+   "space": null
+  },
+  {
+   "id": "w5_06",
+   "who": "narrator",
+   "name": "",
+   "start": 24.37,
+   "caption": "«Сынок. Я не боюсь. Колесо тугое, но я справлюсь. Береги их. И *прости меня*».",
+   "space": null
+  },
+  {
+   "id": "w5_07",
+   "who": "narrator",
+   "name": "",
+   "start": 32.14,
+   "caption": "Дима опускается на колени прямо в траву. Ты отворачиваешься. Это — *не твоё*.",
+   "space": null
+  },
+  {
+   "id": "w5_08",
+   "who": "narrator",
+   "name": "",
+   "start": 38.57,
+   "caption": "А потом на всех экранах появляется текст. Не оповещение. *Письмо*.",
+   "space": null
+  },
+  {
+   "id": "w5_09",
+   "who": "narrator",
+   "name": "",
+   "start": 43.5,
+   "caption": "«Мы видели вас все три раза. Каждое предупреждение было *от нас*. Мы не могли остановить камни. Только дать вам *время*».",
+   "space": null
+  },
+  {
+   "id": "w5_10",
+   "who": "narrator",
+   "name": "",
+   "start": 52.45,
+   "caption": "«Мы храним голоса тех, кто закрыл дверь *за других*. Этот — мы *вернули*».",
+   "space": null
+  },
+  {
+   "id": "w5_11",
+   "who": "narrator",
+   "name": "",
+   "start": 58.05,
+   "caption": "«Волн больше *не будет*».",
+   "space": null
+  },
+  {
+   "id": "w5_12",
+   "who": "narrator",
+   "name": "",
+   "start": 60.57,
+   "caption": "Камень поднимается в воздух. Беззвучно. И уходит вверх, пока не становится *звездой*.",
+   "space": null
+  },
+  {
+   "id": "w5_13",
+   "who": "narrator",
+   "name": "",
+   "start": 67.34,
+   "caption": "Впервые за неделю небо над городом — *синее*.",
+   "space": null
+  },
+  {
+   "id": "w5_14",
+   "who": "narrator",
+   "name": "",
+   "start": 72.02,
+   "caption": "Вечером ты возвращаешься в депо. Соня бежит навстречу. Ты отдаёшь ей *зайца*: «Мне было не страшно».",
+   "space": null
+  },
+  {
+   "id": "w5_15",
+   "who": "narrator",
+   "name": "",
+   "start": 79.72,
+   "caption": "Дима включает запись ещё раз. Баба Галя слушает и тихо *плачет*. Барсик спит у неё на коленях.",
+   "space": null
+  },
+  {
+   "id": "w5_16",
+   "who": "narrator",
+   "name": "",
+   "start": 87.76,
+   "caption": "Иногда, чтобы спасти многих, хватает одного человека, который *закрыл дверь*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/hum.wav",
+   "start": 0,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 1.5,
+   "end": 19.9
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 0,
+   "gain": -22,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 2.0,
+   "end": 66.57
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 1.56,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 9.86
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 1.76,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 10.16,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 17.99,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 19.9,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 1.5,
+   "end": 38.57
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 24.37,
+   "gain": -30,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 32.14
+  },
+  {
+   "file": "sfx/wheel_creak.wav",
+   "start": 27.37,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 38.57,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 38.57,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.5,
+   "end": 60.57
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 43.5,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 52.45,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 58.05,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 60.57,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/silent_pass.wav",
+   "start": 61.07,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 65.14,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 67.34,
+   "gain": -12,
+   "bus": "music",
+   "fadeIn": 0.5
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 67.34,
+   "gain": -30,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "fadeOut": 1.0,
+   "end": 73.02
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 72.02,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 2.0,
+   "end": 95.89
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 74.34,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 76.14
+  },
+  {
+   "file": "sfx/fire.wav",
+   "start": 79.72,
+   "gain": -20,
+   "bus": "amb",
+   "fadeIn": 1.5,
+   "fadeOut": 1.5,
+   "end": 94.39
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 80.22,
+   "gain": -32,
+   "bus": "sfx",
+   "fadeOut": 1,
+   "end": 84.22
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 93.89,
+   "gain": -12,
+   "bus": "music",
+   "fadeIn": 1.0
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_answer": 0.4,
+  "h_voice": 1.56,
+  "w5_01": 0.4,
+  "w5_01_end": 4.78,
+  "voice1": 5.18,
+  "w5_02": 5.18,
+  "w5_02_end": 9.46,
+  "voicemail": 9.86,
+  "recorded": 12.26,
+  "w5_03": 9.86,
+  "w5_03_end": 17.69,
+  "delivered": 17.89,
+  "w5_04": 17.89,
+  "w5_04_end": 19.3,
+  "dima_takes": 19.9,
+  "w5_05": 19.9,
+  "w5_05_end": 23.97,
+  "memory": 24.37,
+  "w5_06": 24.37,
+  "w5_06_end": 31.54,
+  "kneel": 32.14,
+  "turn_away": 35.22,
+  "w5_07": 32.14,
+  "w5_07_end": 37.77,
+  "letter": 38.57,
+  "w5_08": 38.57,
+  "w5_08_end": 43.2,
+  "letter_text": 43.5,
+  "w5_09": 43.5,
+  "w5_09_end": 52.05,
+  "voices": 52.45,
+  "w5_10": 52.45,
+  "w5_10_end": 57.65,
+  "no_waves": 58.05,
+  "w5_11": 58.05,
+  "w5_11_end": 59.77,
+  "rise": 60.57,
+  "star": 64.74,
+  "w5_12": 60.57,
+  "w5_12_end": 66.74,
+  "blue": 67.34,
+  "w5_13": 67.34,
+  "w5_13_end": 71.22,
+  "home": 72.02,
+  "run": 74.34,
+  "give": 75.89,
+  "w5_14": 72.02,
+  "w5_14_end": 78.92,
+  "fire": 79.72,
+  "galya_cry": 82.02,
+  "w5_15": 79.72,
+  "w5_15_end": 86.76,
+  "last": 87.76,
+  "w5_16": 87.76,
+  "w5_16_end": 93.19,
+  "title": 94.39,
+  "end": 98.89
+ },
+ "beats": {
+  "h_answer": {
+   "start": 0.4,
+   "dur": 1.16
+  },
+  "h_voice": {
+   "start": 1.56,
+   "dur": 3.22
+  },
+  "voice1": {
+   "start": 5.18,
+   "dur": 4.28
+  },
+  "voicemail": {
+   "start": 9.86,
+   "dur": 2.4
+  },
+  "recorded": {
+   "start": 12.26,
+   "dur": 5.44
+  },
+  "delivered": {
+   "start": 17.89,
+   "dur": 1.41
+  },
+  "dima_takes": {
+   "start": 19.9,
+   "dur": 4.07
+  },
+  "memory": {
+   "start": 24.37,
+   "dur": 7.17
+  },
+  "kneel": {
+   "start": 32.14,
+   "dur": 3.08
+  },
+  "turn_away": {
+   "start": 35.22,
+   "dur": 2.55
+  },
+  "letter": {
+   "start": 38.57,
+   "dur": 4.63
+  },
+  "letter_text": {
+   "start": 43.5,
+   "dur": 8.55
+  },
+  "voices": {
+   "start": 52.45,
+   "dur": 5.2
+  },
+  "no_waves": {
+   "start": 58.05,
+   "dur": 1.72
+  },
+  "rise": {
+   "start": 60.57,
+   "dur": 4.17
+  },
+  "star": {
+   "start": 64.74,
+   "dur": 2.01
+  },
+  "blue": {
+   "start": 67.34,
+   "dur": 3.88
+  },
+  "home": {
+   "start": 72.02,
+   "dur": 2.32
+  },
+  "run": {
+   "start": 74.34,
+   "dur": 1.55
+  },
+  "give": {
+   "start": 75.89,
+   "dur": 3.03
+  },
+  "fire": {
+   "start": 79.72,
+   "dur": 2.3
+  },
+  "galya_cry": {
+   "start": 82.02,
+   "dur": 4.75
+  },
+  "last": {
+   "start": 87.76,
+   "dur": 5.43
+  }
+ }
+}
