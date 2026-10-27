@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, random} from 'remotion';
+import {AbsoluteFill, Img, interpolate, staticFile} from 'remotion';
 import {C, FONT, MONO} from '../theme';
 import {easeOut, ramp} from '../util';
 
@@ -69,16 +69,10 @@ export const Subtitle: React.FC<{text: string; who?: string; f: number; start: n
   );
 };
 
-/** Плёночное зерно + виньетка — единая «фактура» всех кадров. */
+/** Плёночное зерно (8 заранее сгенерированных текстур шума, смена каждый кадр) + виньетка. */
 export const Grain: React.FC<{f: number; strength?: number}> = ({f, strength = 0.07}) => (
   <AbsoluteFill style={{pointerEvents: 'none'}}>
-    <svg width="100%" height="100%" style={{position: 'absolute', opacity: strength, mixBlendMode: 'overlay'}}>
-      <filter id="grain">
-        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={Math.floor(random(f) * 1000)} stitchTiles="stitch" />
-        <feColorMatrix type="saturate" values="0" />
-      </filter>
-      <rect width="100%" height="100%" filter="url(#grain)" />
-    </svg>
+    <Img src={staticFile(`fx/grain_${f % 8}.png`)} style={{position: 'absolute', width: '100%', height: '100%', opacity: strength * 1.6, mixBlendMode: 'overlay', imageRendering: 'pixelated'}} />
     <AbsoluteFill style={{background: 'radial-gradient(ellipse 85% 70% at 50% 42%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)'}} />
   </AbsoluteFill>
 );

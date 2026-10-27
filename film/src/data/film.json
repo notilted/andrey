@@ -406,7 +406,7 @@
    "file": "sfx/footsteps_two.wav",
    "start": 15.38,
    "gain": -22,
-   "bus": "sfx",
+   "bus": "amb",
    "end": 16.98,
    "fadeOut": 0.3,
    "space": "room"
@@ -487,7 +487,7 @@
    "file": "sfx/footsteps_two.wav",
    "start": 41.78,
    "gain": -16,
-   "bus": "sfx",
+   "bus": "amb",
    "end": 55.78,
    "fadeOut": 1
   },

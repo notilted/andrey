@@ -18,7 +18,7 @@ def load(rel):
 def reverb(x, space):
     if space not in IR:
         h, _ = sf.read(os.path.join(ROOT, "tools", f"ir_{space}.wav"), dtype="float32"); IR[space] = h
-    h = IR[space]; n = len(x) + len(h); wet = {"room": 0.12, "bunker": 0.26, "stairs": 0.3}[space]
+    h = IR[space]; n = len(x) + len(h); wet = {"room": 0.1, "bunker": 0.16, "stairs": 0.17}[space]
     y = np.stack([np.fft.irfft(np.fft.rfft(x[:, c], n) * np.fft.rfft(h, n), n) for c in range(2)], 1)
     y *= 0.5 * np.abs(x).max() / max(1e-9, np.abs(y).max())
     out = np.vstack([x, np.zeros((len(h), 2), np.float32)])
@@ -39,6 +39,7 @@ def main(path):
     tl = json.load(open(path)); N = int(tl["duration"] * SR)
     buses = {b: np.zeros((N, 2), np.float32) for b in ("dialog", "music", "sfx", "amb")}
     meta = {}
+    chars = {}  # отдельные дорожки персонажей
     for d in tl["dialogue"]:
         x = load(f"voice/{d['id']}.wav"); dur = len(x) / SR
         hop = SR // FPS; mono = x[:, 0]
@@ -46,6 +47,9 @@ def main(path):
         m = max(envl) or 1; meta[d["id"]] = {"duration": dur, "mouth": [round(min(1, v / m * 1.4), 3) for v in envl]}
         if d.get("space"): x = reverb(x, d["space"])
         place(buses["dialog"], x, d["start"], d.get("gain", 0), pan=d.get("pan", 0))
+        who = d.get("who", "other")
+        chars.setdefault(who, np.zeros((N, 2), np.float32))
+        place(chars[who], x, d["start"], d.get("gain", 0), pan=d.get("pan", 0))
     for s in tl["sfx"]:
         if s["start"] >= tl["duration"]:
             continue
@@ -56,7 +60,7 @@ def main(path):
     # приглушение музыки и фона под диалог (сайдчейн, атака 60 мс, отпускание 400 мс)
     lvl = np.abs(buses["dialog"]).max(1); hop = 480
     blocks = np.array([lvl[k:k + hop].max() for k in range(0, N, hop)]) > 0.02
-    g = np.where(blocks, 10 ** (-7 / 20), 1.0); sm = np.empty_like(g); s = 1.0
+    g = np.where(blocks, 10 ** (-10 / 20), 1.0); sm = np.empty_like(g); s = 1.0
     for k, v in enumerate(g): s += (v - s) * (0.5 if v < s else 0.08); sm[k] = s
     duck = np.repeat(sm, hop)[:N, None]
     buses["music"] *= duck; buses["amb"] *= duck
@@ -64,6 +68,9 @@ def main(path):
     name = tl["name"]
     for b, x in buses.items():
         sf.write(os.path.join(ROOT, f"public/mix/{name}_{b}.wav"), x, SR)
+    os.makedirs(os.path.join(ROOT, "public/mix/characters"), exist_ok=True)
+    for w, x in chars.items():
+        sf.write(os.path.join(ROOT, f"public/mix/characters/{name}_{w}.wav"), x, SR)
     raw = os.path.join(ROOT, f"public/mix/{name}_raw.wav")
     sf.write(raw, sum(buses.values()), SR, subtype="FLOAT")
     # мастеринг: мягкая компрессия + громкость под мобильные платформы
