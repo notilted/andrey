@@ -133,3 +133,52 @@ export const AlertPhone: React.FC<{f: number; start: number; remaining: number; 
     </div>
   );
 };
+
+/**
+ * Субтитры рассказчика, как в референсе: по 2–4 слова, крупно, ключевые слова (*слово*) жёлтым,
+ * кадр сменяется вместе с речью (время — по доле символов).
+ */
+export const NarrationCaption: React.FC<{text: string; f: number; start: number; dur: number; y?: number}> = ({text, f, start, dur, y = 1290}) => {
+  const local = f - start;
+  if (local < 0 || local > dur + 6) return null;
+  // слова с пометкой выделения
+  let hl = false;
+  const words = text.split(/\s+/).filter(Boolean).map((w) => {
+    if (w.startsWith('*') || w.startsWith('«*')) hl = true;
+    const res = {w: w.replace(/\*/g, ''), hl};
+    if (/\*[.,!?…:;»—]*$/.test(w)) hl = false;
+    return res;
+  });
+  // группы по 2–4 слова, не длиннее ~22 символов, разрыв после точки
+  const groups: (typeof words)[] = [];
+  let g: typeof words = [];
+  for (const w of words) {
+    const len = g.reduce((a, x) => a + x.w.length + 1, 0) + w.w.length;
+    if (g.length && (len > 22 || g.length >= 4)) { groups.push(g); g = []; }
+    g.push(w);
+    if (/[.!?»…]$/.test(w.w) && g.length >= 2) { groups.push(g); g = []; }
+  }
+  if (g.length) groups.push(g);
+  const total = groups.reduce((a, x) => a + x.reduce((b, y) => b + y.w.length + 1, 0), 0);
+  let acc = 0;
+  let idx = groups.length - 1;
+  let gStart = 0;
+  for (let i = 0; i < groups.length; i++) {
+    const l = groups[i].reduce((b, y) => b + y.w.length + 1, 0);
+    const t0 = (acc / total) * dur;
+    acc += l;
+    if (local < (acc / total) * dur) { idx = i; gStart = t0; break; }
+    gStart = t0;
+  }
+  const k = Math.min(1, (local - gStart) / 4);
+  const out = local > dur ? 1 - (local - dur) / 6 : 1;
+  return (
+    <div style={{position: 'absolute', left: 50, right: 50, top: y, textAlign: 'center', opacity: out, transform: `scale(${0.94 + 0.06 * k})`}}>
+      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 76, lineHeight: 1.1, textTransform: 'uppercase', color: C.white, textShadow: '0 4px 20px rgba(0,0,0,0.7)', opacity: 0.4 + 0.6 * k}}>
+        {groups[idx].map((w, i) => (
+          <span key={i} style={{color: w.hl ? C.warm : C.white}}>{w.w}{i < groups[idx].length - 1 ? ' ' : ''}</span>
+        ))}
+      </div>
+    </div>
+  );
+};

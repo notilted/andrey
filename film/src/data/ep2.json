@@ -1,518 +1,820 @@
 {
  "name": "ep2",
- "duration": 130.17,
+ "duration": 211.15,
  "dialogue": [
   {
-   "id": "e2_galina_1",
-   "who": "galina",
-   "name": "ГАЛИНА",
-   "start": 12.2,
-   "caption": "Опять стучат…",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_lev_1",
-   "who": "lev",
-   "name": "ЛЕВ",
-   "start": 18.48,
-   "caption": "Время пошло *заново*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_mark_1",
-   "who": "mark",
-   "name": "МАРК",
-   "start": 21.31,
-   "caption": "Что значит — заново?",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_lev_2",
-   "who": "lev",
-   "name": "ЛЕВ",
-   "start": 23.11,
-   "caption": "Значит, мы здесь *уже были*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_parrot_1",
-   "who": "parrot",
-   "name": "КЕША",
-   "start": 28.06,
-   "caption": "*Не открывай*. Не открывай.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_galina_2",
-   "who": "galina",
-   "name": "ГАЛИНА",
-   "start": 30.7,
-   "caption": "*Кеша*! Ты где такого набрался?",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_alisa_1",
-   "who": "alisa",
-   "name": "АЛИСА",
-   "start": 33.1,
-   "caption": "Пап… он говорит *твоим голосом*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_mark_2",
-   "who": "mark",
-   "name": "МАРК",
-   "start": 36.76,
-   "caption": "Он не мог этого слышать. Я этого *ещё не говорил*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_lev_3",
-   "who": "lev",
-   "name": "ЛЕВ",
-   "start": 40.31,
-   "caption": "Ещё не говорили. *В этот раз*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_lev_4",
-   "who": "lev",
-   "name": "ЛЕВ",
-   "start": 45.13,
-   "caption": "*Двенадцать партий*. Я записываю каждую.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_mark_3",
-   "who": "mark",
-   "name": "МАРК",
-   "start": 49.33,
-   "caption": "Партий?",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_lev_5",
-   "who": "lev",
-   "name": "ЛЕВ",
-   "start": 50.54,
-   "caption": "Когда таймер доходит до нуля, *всё начинается снова*. И за дверью становится *на одного больше*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_galina_3",
-   "who": "galina",
-   "name": "ГАЛИНА",
-   "start": 60.18,
-   "caption": "На одного *кого*?",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_alisa_2",
-   "who": "alisa",
-   "name": "АЛИСА",
-   "start": 64.75,
-   "caption": "Я это нарисовала дома. Но тут было *по-другому*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_mark_4",
-   "who": "mark",
-   "name": "МАРК",
-   "start": 70.22,
-   "caption": "Когда ты это нарисовала?",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_alisa_3",
-   "who": "alisa",
-   "name": "АЛИСА",
-   "start": 72.27,
-   "caption": "Не помню. Пап, мне кажется, я это уже рисовала. *Много раз*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_mark_5",
-   "who": "mark",
-   "name": "МАРК",
-   "start": 80.88,
-   "caption": "Если ты — это я… скажи, что Алиса *рисовала сегодня вечером*.",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_double_1",
-   "who": "double",
-   "name": "ГОЛОС ЗА ДВЕРЬЮ",
-   "start": 87.67,
-   "caption": "*Дом. Солнце.* И два дерева.",
+   "id": "n01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.3,
+   "caption": "Ранее. Ракетная тревога, *семнадцать минут* до удара. За дверью убежища — человек с *твоим лицом*. И два миллиона *копий*.",
    "space": null
   },
   {
-   "id": "e2_alisa_4",
-   "who": "alisa",
-   "name": "АЛИСА",
-   "start": 91.61,
-   "caption": "Правильно…",
-   "space": "bunker"
-  },
-  {
-   "id": "e2_double_2",
-   "who": "double",
-   "name": "ГОЛОС ЗА ДВЕРЬЮ",
-   "start": 93.58,
-   "caption": "Теперь ты ответь. Как зовут *маму Алисы*?",
+   "id": "n02",
+   "who": "narrator",
+   "name": "",
+   "start": 10.63,
+   "caption": "*Три удара* в дверь. Красная лампа мигает и загорается.",
    "space": null
   },
   {
-   "id": "e2_mark_6",
-   "who": "mark",
-   "name": "МАРК",
-   "start": 101.13,
-   "caption": "Я… *не помню*.",
-   "space": "bunker"
+   "id": "n03",
+   "who": "narrator",
+   "name": "",
+   "start": 14.91,
+   "caption": "Галина Петровна шепчет: «Опять *стучат*».",
+   "space": null
   },
   {
-   "id": "e2_galina_4",
-   "who": "galina",
-   "name": "ГАЛИНА",
-   "start": 104.07,
-   "caption": "Господи…",
-   "space": "bunker"
+   "id": "n04",
+   "who": "narrator",
+   "name": "",
+   "start": 18.27,
+   "caption": "И тут *все телефоны* загораются разом. Таймер снова показывает *семнадцать минут*. Этап второй.",
+   "space": null
   },
   {
-   "id": "e2_alisa_5",
-   "who": "alisa",
-   "name": "АЛИСА",
-   "start": 114.45,
-   "caption": "Пап?..",
-   "space": "bunker"
+   "id": "n05",
+   "who": "narrator",
+   "name": "",
+   "start": 26.67,
+   "caption": "Лев смотрит на экран и спокойно говорит: «Время пошло *заново*». Ты спрашиваешь, что это значит. «Значит, мы здесь *уже были*».",
+   "space": null
+  },
+  {
+   "id": "n06",
+   "who": "narrator",
+   "name": "",
+   "start": 36.13,
+   "caption": "Телефон вибрирует. Сообщение *с твоего же номера*: «Это твоя *тринадцатая* попытка. *Не верь Льву*».",
+   "space": null
+  },
+  {
+   "id": "n07",
+   "who": "narrator",
+   "name": "",
+   "start": 44.18,
+   "caption": "Галина бодрится: «*Без паники*. Я в девяносто восьмом и не такое видела».",
+   "space": null
+  },
+  {
+   "id": "n08",
+   "who": "narrator",
+   "name": "",
+   "start": 50.37,
+   "caption": "А потом в клетке оживает попугай *Кеша*. И говорит *твоим голосом*: «Не открывай. *Не открывай*».",
+   "space": null
+  },
+  {
+   "id": "n09",
+   "who": "narrator",
+   "name": "",
+   "start": 58.71,
+   "caption": "Алиса сжимает твою руку: «Пап, он говорит *твоим голосом*». Но ты этого *ещё не говорил*. «Ещё не говорили, — поправляет Лев. — *В этот раз*».",
+   "space": null
+  },
+  {
+   "id": "n10",
+   "who": "narrator",
+   "name": "",
+   "start": 71.06,
+   "caption": "Лев открывает *блокнот*. Шахматные партии. *Двенадцать* штук.",
+   "space": null
+  },
+  {
+   "id": "n11",
+   "who": "narrator",
+   "name": "",
+   "start": 75.89,
+   "caption": "«Когда таймер доходит до нуля, *всё начинается снова*. И за дверью становится *на одного больше*». На мониторе в коридоре уже *двое*. Потом *трое*.",
+   "space": null
+  },
+  {
+   "id": "n11b",
+   "who": "narrator",
+   "name": "",
+   "start": 86.45,
+   "caption": "Каждый из них смотрит *прямо в камеру*. И каждый из них — *это ты*.",
+   "space": null
+  },
+  {
+   "id": "n12",
+   "who": "narrator",
+   "name": "",
+   "start": 92.86,
+   "caption": "Мужчина со скамьи срывается к двери: «Откройте, может, там *помощь*!» Ты встаёшь у него на пути. *Никто* не откроет эту дверь.",
+   "space": null
+  },
+  {
+   "id": "n13",
+   "who": "narrator",
+   "name": "",
+   "start": 101.68,
+   "caption": "Ты спрашиваешь Льва, *настоящий* ли он. «Я единственный, кто *ни разу* не открыл эту дверь». Он переставляет фигуру: «*Ваш ход*, Марк».",
+   "space": null
+  },
+  {
+   "id": "n14",
+   "who": "narrator",
+   "name": "",
+   "start": 113.99,
+   "caption": "Алиса достаёт из кармана свой *рисунок*. Дом, солнце, два дерева. Но теперь там ещё *гермодверь*. И *два папы*.",
+   "space": null
+  },
+  {
+   "id": "n15",
+   "who": "narrator",
+   "name": "",
+   "start": 122.88,
+   "caption": "«Мне кажется, я это уже рисовала. *Много раз*. Тут папа держит меня за руку. А этот — *за дверью*». Который из них *ты*? Она не знает.",
+   "space": null
+  },
+  {
+   "id": "n16",
+   "who": "narrator",
+   "name": "",
+   "start": 135.79,
+   "caption": "Проверить можно только одним способом. Лев предупреждает: он *помнит всё*, что помнишь ты. Ты подходишь к двери.",
+   "space": null
+  },
+  {
+   "id": "n17",
+   "who": "narrator",
+   "name": "",
+   "start": 144.15,
+   "caption": "«Скажи, что Алиса *рисовала* сегодня вечером». Из-за двери, без паузы: «*Дом. Солнце.* И два дерева». *Правильно*.",
+   "space": null
+  },
+  {
+   "id": "n18",
+   "who": "narrator",
+   "name": "",
+   "start": 153.77,
+   "caption": "«Теперь ты ответь. Как зовут *маму Алисы*?»",
+   "space": null
+  },
+  {
+   "id": "n19",
+   "who": "narrator",
+   "name": "",
+   "start": 159.55,
+   "caption": "Ты открываешь рот. И понимаешь, что *не помнишь*.",
+   "space": null
+  },
+  {
+   "id": "n20",
+   "who": "narrator",
+   "name": "",
+   "start": 164.37,
+   "caption": "Ты оборачиваешься к дочери. Алиса пятится: «Пап, ты же сам сказал. Её имя *нельзя называть*».",
+   "space": null
+  },
+  {
+   "id": "n21",
+   "who": "narrator",
+   "name": "",
+   "start": 172.67,
+   "caption": "Таймер на нуле. На всех экранах одно и то же: этап два *завершён*. Копия *опознана*. *Марк*.",
+   "space": null
+  },
+  {
+   "id": "n22",
+   "who": "narrator",
+   "name": "",
+   "start": 181.8,
+   "caption": "Все медленно *поворачиваются к тебе*. Алиса *отпускает* твою руку.",
+   "space": null
+  },
+  {
+   "id": "n23",
+   "who": "narrator",
+   "name": "",
+   "start": 187.41,
+   "caption": "Щёлкает *замок*. Колесо гермодвери поворачивается *само*. Дверь *открывается*.",
+   "space": null
+  },
+  {
+   "id": "n24",
+   "who": "narrator",
+   "name": "",
+   "start": 195.09,
+   "caption": "И твой голос из коридора ласково говорит: «Алиса. *Пойдём домой*».",
+   "space": null
+  },
+  {
+   "id": "n25",
+   "who": "narrator",
+   "name": "",
+   "start": 203.76,
+   "caption": "Кто вошёл в убежище — узнаешь в *третьей части*. *Подпишись*, чтобы не пропустить.",
+   "space": null
   }
  ],
  "sfx": [
   {
    "file": "music/m02_dread_long.wav",
-   "start": 0.0,
-   "gain": -16,
+   "start": 0,
+   "gain": -18,
    "bus": "music",
    "fadeIn": 0.3,
-   "end": 7.4,
-   "fadeOut": 0.4
+   "fadeOut": 0.4,
+   "end": 9.43
   },
   {
    "file": "sfx/recap_hit.wav",
-   "start": 0.0,
-   "gain": -10,
+   "start": 0.3,
+   "gain": -12,
    "bus": "sfx"
   },
   {
    "file": "sfx/recap_hit.wav",
-   "start": 1.8,
-   "gain": -10,
+   "start": 2.4,
+   "gain": -12,
    "bus": "sfx"
   },
   {
    "file": "sfx/recap_hit.wav",
-   "start": 3.6,
-   "gain": -10,
+   "start": 4.5,
+   "gain": -12,
    "bus": "sfx"
   },
   {
    "file": "sfx/recap_hit.wav",
-   "start": 5.4,
-   "gain": -10,
+   "start": 6.6,
+   "gain": -12,
    "bus": "sfx"
-  },
-  {
-   "file": "sfx/phone_alert.wav",
-   "start": 0.05,
-   "gain": -16,
-   "bus": "sfx",
-   "end": 1.7,
-   "fadeOut": 0.2
-  },
-  {
-   "file": "sfx/static.wav",
-   "start": 1.8,
-   "gain": -20,
-   "bus": "sfx",
-   "end": 3.6,
-   "fadeOut": 0.2
-  },
-  {
-   "file": "sfx/phones_chorus.wav",
-   "start": 3.6,
-   "gain": -16,
-   "bus": "sfx",
-   "end": 5.4,
-   "fadeOut": 0.3
   },
   {
    "file": "sfx/knock.wav",
-   "start": 7.7,
+   "start": 9.63,
    "gain": -8,
    "bus": "sfx"
   },
   {
    "file": "sfx/knock.wav",
-   "start": 9.0,
+   "start": 10.83,
    "gain": -8,
    "bus": "sfx"
   },
   {
    "file": "sfx/knock.wav",
-   "start": 10.3,
+   "start": 12.03,
    "gain": -8,
    "bus": "sfx"
-  },
-  {
-   "file": "sfx/vent.wav",
-   "start": 10.7,
-   "gain": -24,
-   "bus": "amb",
-   "fadeIn": 2.0,
-   "end": 237.2
-  },
-  {
-   "file": "sfx/siren_muffled.wav",
-   "start": 11.0,
-   "gain": -30,
-   "bus": "amb",
-   "fadeIn": 3.0,
-   "end": 67.2,
-   "fadeOut": 3
   },
   {
    "file": "sfx/flicker.wav",
-   "start": 10.8,
+   "start": 12.02,
    "gain": -14,
    "bus": "sfx"
   },
   {
+   "file": "sfx/vent.wav",
+   "start": 12.02,
+   "gain": -24,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "end": 211.15
+  },
+  {
+   "file": "sfx/siren_muffled.wav",
+   "start": 12.02,
+   "gain": -30,
+   "bus": "amb",
+   "fadeIn": 3.0,
+   "fadeOut": 3,
+   "end": 72.02
+  },
+  {
    "file": "music/m08_loop.wav",
-   "start": 11.3,
-   "gain": -15,
+   "start": 12.52,
+   "gain": -16,
    "bus": "music",
    "fadeIn": 4.0,
-   "end": 88.8,
-   "fadeOut": 3
+   "fadeOut": 3,
+   "end": 71.26
   },
   {
    "file": "sfx/phones_chorus.wav",
-   "start": 14.48,
+   "start": 18.72,
    "gain": -12,
    "bus": "sfx"
   },
   {
    "file": "sfx/stinger.wav",
-   "start": 14.48,
+   "start": 18.72,
    "gain": -10,
    "bus": "sfx"
   },
   {
-   "file": "sfx/wings.wav",
-   "start": 27.56,
-   "gain": -18,
+   "file": "sfx/vibrate.wav",
+   "start": 35.83,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 36.23,
+   "gain": -14,
    "bus": "sfx"
   },
   {
    "file": "sfx/wings.wav",
-   "start": 30.2,
+   "start": 50.37,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/parrot.wav",
+   "start": 52.7,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wings.wav",
+   "start": 57.11,
    "gain": -20,
    "bus": "sfx"
   },
   {
    "file": "sfx/page_flip.wav",
-   "start": 44.63,
+   "start": 71.06,
    "gain": -14,
    "bus": "sfx"
   },
   {
    "file": "sfx/page_flip.wav",
-   "start": 45.23,
+   "start": 71.66,
    "gain": -16,
    "bus": "sfx"
   },
   {
+   "file": "music/m04_shelter.wav",
+   "start": 70.76,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 2,
+   "end": 135.79
+  },
+  {
    "file": "sfx/monitor_on.wav",
-   "start": 56.58,
+   "start": 82.77,
    "gain": -16,
    "bus": "sfx"
   },
   {
    "file": "sfx/static.wav",
-   "start": 56.58,
-   "gain": -22,
+   "start": 82.77,
+   "gain": -24,
    "bus": "sfx",
-   "end": 62.58,
-   "fadeOut": 0.4
+   "fadeOut": 0.4,
+   "end": 91.76
   },
   {
    "file": "sfx/recap_hit.wav",
-   "start": 59.18,
+   "start": 85.15,
    "gain": -14,
    "bus": "sfx"
   },
   {
-   "file": "sfx/heartbeat.wav",
-   "start": 61.55,
-   "gain": -20,
-   "bus": "sfx",
-   "end": 64.55
+   "file": "sfx/crowd.wav",
+   "start": 92.36,
+   "gain": -26,
+   "bus": "amb",
+   "fadeIn": 0.5,
+   "fadeOut": 1.5,
+   "end": 98.36
   },
   {
-   "file": "music/m04_shelter.wav",
-   "start": 64.15,
-   "gain": -16,
-   "bus": "music",
-   "fadeIn": 2.0,
-   "end": 104.15,
-   "fadeOut": 2
+   "file": "sfx/footsteps_two.wav",
+   "start": 97.44,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 0.3,
+   "end": 98.94
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 108.57,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 111.19,
+   "gain": -20,
+   "bus": "sfx",
+   "end": 113.59
   },
   {
    "file": "sfx/page_flip.wav",
-   "start": 67.42,
+   "start": 115.99,
    "gain": -16,
    "bus": "sfx"
   },
   {
    "file": "sfx/footsteps_two.wav",
-   "start": 78.68,
+   "start": 142.07,
    "gain": -22,
    "bus": "amb",
-   "end": 80.68,
-   "fadeOut": 0.4
-  },
-  {
-   "file": "sfx/heartbeat.wav",
-   "start": 97.53,
-   "gain": -14,
-   "bus": "sfx",
-   "end": 101.73,
-   "fadeOut": 0.8
+   "fadeOut": 0.4,
+   "end": 144.47
   },
   {
    "file": "music/m06_double.wav",
-   "start": 97.53,
-   "gain": -12,
+   "start": 135.79,
+   "gain": -14,
    "bus": "music",
    "fadeIn": 1.0,
-   "end": 123.53,
-   "fadeOut": 1
+   "fadeOut": 1,
+   "end": 172.37
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 156.95,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.8,
+   "end": 161.15
   },
   {
    "file": "sfx/phones_chorus.wav",
-   "start": 106.65,
+   "start": 172.37,
    "gain": -8,
    "bus": "sfx"
   },
   {
    "file": "music/m07_stage.wav",
-   "start": 106.65,
-   "gain": -8,
+   "start": 172.37,
+   "gain": -9,
    "bus": "music"
   },
   {
    "file": "sfx/riser.wav",
-   "start": 111.65,
+   "start": 181.6,
    "gain": -18,
    "bus": "sfx"
   },
   {
    "file": "sfx/lock_click.wav",
-   "start": 116.17,
+   "start": 187.71,
    "gain": -6,
    "bus": "sfx"
   },
   {
    "file": "sfx/wheel_creak.wav",
-   "start": 116.57,
+   "start": 188.21,
    "gain": -10,
    "bus": "sfx"
   },
   {
    "file": "sfx/door_open.wav",
-   "start": 118.57,
+   "start": 191.52,
    "gain": -8,
    "bus": "sfx"
   },
   {
    "file": "sfx/knock.wav",
-   "start": 123.77,
+   "start": 202.76,
    "gain": -16,
    "bus": "sfx"
   }
  ],
  "marks": {
   "recap": 0.0,
-  "recap_end": 7.2,
-  "c1_light": 10.8,
-  "e2_galina_1": 12.2,
-  "e2_galina_1_end": 13.88,
-  "c1_phones": 14.48,
-  "c1_phones_end": 18.08,
-  "e2_lev_1": 18.48,
-  "e2_lev_1_end": 20.91,
-  "e2_mark_1": 21.31,
-  "e2_mark_1_end": 22.61,
-  "e2_lev_2": 23.11,
-  "e2_lev_2_end": 26.16,
-  "c2": 27.56,
-  "e2_parrot_1": 28.06,
-  "e2_parrot_1_end": 30.1,
-  "e2_galina_2": 30.7,
-  "e2_galina_2_end": 32.6,
-  "e2_alisa_1": 33.1,
-  "e2_alisa_1_end": 36.31,
-  "e2_mark_2": 36.76,
-  "e2_mark_2_end": 39.61,
-  "e2_lev_3": 40.31,
-  "e2_lev_3_end": 43.33,
-  "c3": 44.33,
-  "c3_book": 44.53,
-  "e2_lev_4": 45.13,
-  "e2_lev_4_end": 48.93,
-  "e2_mark_3": 49.33,
-  "e2_mark_3_end": 49.94,
-  "c3_book_end": 50.14,
-  "e2_lev_5": 50.54,
-  "e2_lev_5_end": 59.18,
-  "c3_monitor": 56.58,
-  "c3_monitor3": 59.18,
-  "e2_galina_3": 60.18,
-  "e2_galina_3_end": 61.35,
-  "c3_look": 61.55,
-  "c4": 64.15,
-  "e2_alisa_2": 64.75,
-  "e2_alisa_2_end": 69.42,
-  "c4_draw": 67.42,
-  "c4_draw_mid": 69.42,
-  "e2_mark_4": 70.22,
-  "e2_mark_4_end": 71.77,
-  "e2_alisa_3": 72.27,
-  "e2_alisa_3_end": 77.28,
-  "c4_end": 78.68,
-  "c5": 78.68,
-  "e2_mark_5": 80.88,
-  "e2_mark_5_end": 87.17,
-  "e2_double_1": 87.67,
-  "e2_double_1_end": 91.01,
-  "e2_alisa_4": 91.61,
-  "e2_alisa_4_end": 92.68,
-  "e2_double_2": 93.58,
-  "e2_double_2_end": 97.33,
-  "c5_silence": 97.53,
-  "e2_mark_6": 101.13,
-  "e2_mark_6_end": 103.17,
-  "e2_galina_4": 104.07,
-  "e2_galina_4_end": 105.45,
-  "c6": 106.65,
-  "c6_back": 111.65,
-  "c6_turn": 112.05,
-  "e2_alisa_5": 114.45,
-  "e2_alisa_5_end": 115.17,
-  "c6_lock": 116.17,
-  "c6_open": 118.57,
-  "c6_black": 121.57,
-  "title": 123.17,
-  "end": 130.17
+  "n01": 0.3,
+  "n01_end": 9.03,
+  "recap_end": 9.43,
+  "c1_light": 12.02,
+  "n02": 10.63,
+  "n02_end": 14.51,
+  "e2_galina_1": 14.91,
+  "n03": 14.91,
+  "n03_end": 17.77,
+  "c1_phones": 18.72,
+  "n04": 18.27,
+  "n04_end": 25.07,
+  "c1_phones_end": 26.27,
+  "e2_lev_1": 26.67,
+  "e2_mark_1": 31.16,
+  "e2_lev_2": 33.43,
+  "n05": 26.67,
+  "n05_end": 35.43,
+  "c1_msg": 35.83,
+  "e2_mark_7": 39.83,
+  "n06": 36.13,
+  "n06_end": 43.08,
+  "c1_msg_end": 43.88,
+  "e2_galina_5": 44.18,
+  "n07": 44.18,
+  "n07_end": 49.47,
+  "c2": 50.37,
+  "e2_parrot_1": 53.0,
+  "n08": 50.37,
+  "n08_end": 56.51,
+  "e2_galina_2": 57.11,
+  "e2_alisa_1": 58.71,
+  "e2_mark_2": 63.25,
+  "e2_lev_3": 65.45,
+  "n09": 58.71,
+  "n09_end": 69.36,
+  "c3": 70.76,
+  "c3_book": 71.06,
+  "e2_lev_4": 71.06,
+  "e2_mark_3": 72.85,
+  "n10": 71.06,
+  "n10_end": 75.49,
+  "c3_book_end": 75.89,
+  "e2_lev_5": 75.89,
+  "c3_monitor": 82.77,
+  "c3_monitor3": 85.15,
+  "n11": 75.89,
+  "n11_end": 85.95,
+  "n11b": 86.45,
+  "n11b_end": 90.86,
+  "e2_galina_3": 91.76,
+  "e2_man_1": 92.86,
+  "c3_block": 97.44,
+  "e2_mark_9": 99.26,
+  "n12": 92.86,
+  "n12_end": 101.08,
+  "e2_mark_8": 101.68,
+  "e2_lev_6": 104.36,
+  "c3_chess": 107.97,
+  "e2_lev_7": 109.66,
+  "n13": 101.68,
+  "n13_end": 110.79,
+  "c3_look": 111.19,
+  "c4": 113.59,
+  "e2_alisa_2": 113.99,
+  "c4_draw": 115.99,
+  "e2_mark_4": 119.1,
+  "n14": 113.99,
+  "n14_end": 122.38,
+  "e2_alisa_3": 122.88,
+  "e2_alisa_6": 126.68,
+  "e2_mark_10": 130.99,
+  "e2_alisa_7": 132.59,
+  "n15": 122.88,
+  "n15_end": 133.69,
+  "c4_end": 135.49,
+  "c5": 135.79,
+  "e2_lev_8": 138.54,
+  "e2_mark_11": 142.07,
+  "n16": 135.79,
+  "n16_end": 143.55,
+  "e2_mark_5": 144.15,
+  "e2_double_1": 147.82,
+  "e2_alisa_4": 152.15,
+  "n17": 144.15,
+  "n17_end": 152.97,
+  "e2_double_2": 153.77,
+  "n18": 153.77,
+  "n18_end": 156.75,
+  "c5_silence": 156.95,
+  "e2_mark_6": 159.55,
+  "n19": 159.55,
+  "n19_end": 162.87,
+  "e2_galina_4": 163.17,
+  "e2_mark_12": 164.37,
+  "e2_alisa_8": 166.59,
+  "n20": 164.37,
+  "n20_end": 171.57,
+  "c6": 172.37,
+  "n21": 172.67,
+  "n21_end": 180.2,
+  "c6_back": 181.6,
+  "c6_turn": 181.8,
+  "e2_alisa_5": 184.71,
+  "n22": 181.8,
+  "n22_end": 186.81,
+  "c6_lock": 187.41,
+  "c6_open": 191.52,
+  "n23": 187.41,
+  "n23_end": 192.89,
+  "e2_double_3": 195.09,
+  "n24": 195.09,
+  "n24_end": 199.76,
+  "c6_black": 200.96,
+  "title": 202.16,
+  "n25": 203.76,
+  "n25_end": 209.15,
+  "end": 211.15
+ },
+ "beats": {
+  "c1_light": {
+   "start": 12.02,
+   "dur": 2.49
+  },
+  "e2_galina_1": {
+   "start": 14.91,
+   "dur": 2.86
+  },
+  "c1_phones": {
+   "start": 18.72,
+   "dur": 6.35
+  },
+  "e2_lev_1": {
+   "start": 26.67,
+   "dur": 4.49
+  },
+  "e2_mark_1": {
+   "start": 31.16,
+   "dur": 2.28
+  },
+  "e2_lev_2": {
+   "start": 33.43,
+   "dur": 1.99
+  },
+  "e2_mark_7": {
+   "start": 39.83,
+   "dur": 3.25
+  },
+  "e2_galina_5": {
+   "start": 44.18,
+   "dur": 5.29
+  },
+  "c2": {
+   "start": 50.37,
+   "dur": 2.63
+  },
+  "e2_parrot_1": {
+   "start": 53.0,
+   "dur": 3.51
+  },
+  "e2_galina_2": {
+   "start": 57.11,
+   "dur": 1.4
+  },
+  "e2_alisa_1": {
+   "start": 58.71,
+   "dur": 4.54
+  },
+  "e2_mark_2": {
+   "start": 63.25,
+   "dur": 2.19
+  },
+  "e2_lev_3": {
+   "start": 65.45,
+   "dur": 3.92
+  },
+  "c3_book": {
+   "start": 71.06,
+   "dur": 0.3
+  },
+  "e2_lev_4": {
+   "start": 71.06,
+   "dur": 1.79
+  },
+  "e2_mark_3": {
+   "start": 72.85,
+   "dur": 2.64
+  },
+  "c3_book_end": {
+   "start": 75.89,
+   "dur": 0.3
+  },
+  "e2_lev_5": {
+   "start": 75.89,
+   "dur": 6.88
+  },
+  "c3_monitor": {
+   "start": 82.77,
+   "dur": 2.39
+  },
+  "c3_monitor3": {
+   "start": 85.15,
+   "dur": 0.8
+  },
+  "e2_galina_3": {
+   "start": 91.76,
+   "dur": 0.8
+  },
+  "e2_man_1": {
+   "start": 92.86,
+   "dur": 4.58
+  },
+  "c3_block": {
+   "start": 97.44,
+   "dur": 1.82
+  },
+  "e2_mark_9": {
+   "start": 99.26,
+   "dur": 1.82
+  },
+  "e2_mark_8": {
+   "start": 101.68,
+   "dur": 2.68
+  },
+  "e2_lev_6": {
+   "start": 104.36,
+   "dur": 3.6
+  },
+  "c3_chess": {
+   "start": 107.97,
+   "dur": 1.7
+  },
+  "e2_lev_7": {
+   "start": 109.66,
+   "dur": 1.13
+  },
+  "c3_look": {
+   "start": 111.19,
+   "dur": 2.4
+  },
+  "e2_alisa_2": {
+   "start": 113.99,
+   "dur": 2.0
+  },
+  "c4_draw": {
+   "start": 115.99,
+   "dur": 3.12
+  },
+  "e2_mark_4": {
+   "start": 119.1,
+   "dur": 3.28
+  },
+  "e2_alisa_3": {
+   "start": 122.88,
+   "dur": 3.8
+  },
+  "e2_alisa_6": {
+   "start": 126.68,
+   "dur": 4.31
+  },
+  "e2_mark_10": {
+   "start": 130.99,
+   "dur": 1.6
+  },
+  "e2_alisa_7": {
+   "start": 132.59,
+   "dur": 1.1
+  },
+  "c5": {
+   "start": 135.79,
+   "dur": 2.75
+  },
+  "e2_lev_8": {
+   "start": 138.54,
+   "dur": 3.53
+  },
+  "e2_mark_11": {
+   "start": 142.07,
+   "dur": 1.48
+  },
+  "e2_mark_5": {
+   "start": 144.15,
+   "dur": 3.67
+  },
+  "e2_double_1": {
+   "start": 147.82,
+   "dur": 4.33
+  },
+  "e2_alisa_4": {
+   "start": 152.15,
+   "dur": 0.82
+  },
+  "e2_double_2": {
+   "start": 153.77,
+   "dur": 2.98
+  },
+  "e2_mark_6": {
+   "start": 159.55,
+   "dur": 3.32
+  },
+  "e2_galina_4": {
+   "start": 163.17,
+   "dur": 0.8
+  },
+  "e2_mark_12": {
+   "start": 164.37,
+   "dur": 2.22
+  },
+  "e2_alisa_8": {
+   "start": 166.59,
+   "dur": 4.99
+  },
+  "c6_turn": {
+   "start": 181.8,
+   "dur": 2.91
+  },
+  "e2_alisa_5": {
+   "start": 184.71,
+   "dur": 2.1
+  },
+  "c6_lock": {
+   "start": 187.41,
+   "dur": 4.11
+  },
+  "c6_open": {
+   "start": 191.52,
+   "dur": 1.37
+  },
+  "e2_double_3": {
+   "start": 195.09,
+   "dur": 4.67
+  }
  }
 }

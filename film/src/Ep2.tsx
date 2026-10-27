@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Audio, staticFile, useCurrentFrame} from 'remotion';
-import {BottomFade, Grain, Subtitle} from './components/Overlay';
+import {BottomFade, Grain, NarrationCaption} from './components/Overlay';
 import {Recap} from './scenes/Recap';
 import {SceneEp2} from './scenes/SceneEp2';
 import {C} from './theme';
@@ -13,11 +13,11 @@ export const Ep2: React.FC = () => {
   const BLACK = mk('c6_black');
   return (
     <AbsoluteFill style={{background: C.void}}>
-      {f < R ? <Recap f={f} /> : <SceneEp2 f={f} />}
+      {f < R ? <Recap f={f} total={R} /> : <SceneEp2 f={f} />}
       {f >= mk('c1_light') && f < BLACK && <BottomFade from={1150} />}
       {DIALOGUE.map((d) => {
         const l = line(d.id);
-        return <Subtitle key={d.id} text={l.caption} who={l.name} f={f} start={l.start} dur={l.dur} />;
+        return <NarrationCaption key={d.id} text={l.caption} f={f} start={l.start} dur={l.dur} y={f >= mk('title') ? 1500 : 1290} />;
       })}
       <Grain f={f} />
       <Audio src={staticFile('mix/ep2.wav')} />
