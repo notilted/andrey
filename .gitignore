@@ -2,3 +2,4 @@ node_modules/
 film/public/mix/*_raw.wav
 *.log
 film/public/voice_takes/
+tools/svg/.export.mjs

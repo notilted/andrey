@@ -1,27 +1,73 @@
-# «17 МИНУТ» — анимационный триллер (Remotion)
+# «17 МИНУТ» — анимационный апокалиптический триллер
 
-Статус: **этап 2 — образец первой сцены на согласование** (`output/17_minut_sample.mp4`, 15,5 с, 1080×1920, 30 fps).
+Полностью анимированный 2D-фильм на русском языке: 3 мин 38 с, 1080×1920 (9:16), 30 fps, H.264 + AAC стерео.
+Стиль — по референсу: тёмно-синяя ночная палитра, плоский вектор, здания в разрезе, силуэты в жёлтых окнах,
+крупные субтитры с жёлтыми ключевыми словами, плашки-ярлыки, статус-строка с таймером.
 
-## Структура
-- `film/src/components` — персонажи, город, панельный дом, квартира, телефон и оповещение, субтитры, зерно.
-- `film/src/scenes` — сцены; `film/src/data/*.json` — таймлайн (реплики, звуки) — общий для видео и звука.
-- `film/tools/voice.py` — озвучка, `tools/qc_asr.py` — проверка разборчивости, `tools/sfx.py` — синтез музыки и SFX, `tools/mix.py` — сведение.
-- `script/` — реплики (`lines.json`), визуальный стандарт.
-- `output/` — готовые MP4.
+## Что где лежит
+
+| Папка / файл | Содержимое |
+|---|---|
+| `output/17_minut.mp4` | готовый фильм |
+| `output/17_minut.srt` | русские субтитры SRT (не больше двух строк, синхронны с речью) |
+| `output/17_minut_sample.mp4` | первый 15-секундный образец стиля (этап 2) |
+| `output/svg/` | векторные иллюстрации: 4 персонажа (стоя/сидя), ночной город, квартира, подъезд в разрезе, убежище (обычный и аварийный свет), шахматы, клетка с попугаем |
+| `output/voice_audition/` | пробники голосов, по которым выбирались голоса |
+| `script/сценарий.md` | полный сценарий с таймкодами и пометками интонаций |
+| `script/lines.json` | все реплики: голос, текст, темп, пометка режиссёра |
+| `script/style_guide.md` | визуальный стандарт по референсу (палитра, композиция, темп) |
+| `film/` | редактируемый проект Remotion (React + TypeScript + SVG) |
+| `film/public/voice/` | каждая реплика отдельным WAV (`_report.json` — отчёт автопроверки) |
+| `film/public/mix/characters/` | отдельные дорожки персонажей во всю длину фильма |
+| `film/public/mix/film_{dialog,music,sfx,amb}.wav` | стемы сведения; `film.wav` — мастер |
+| `film/public/music/`, `film/public/sfx/` | музыка и звуковые эффекты (всё синтезировано в `tools/sfx.py`, чужих материалов нет) |
+
+### Код
+- `film/src/components/` — персонажи (`Character.tsx`), город и дом (`City.tsx`, `PanelBuilding.tsx`), квартира (`Apartment.tsx`),
+  подъезд в разрезе (`Section.tsx`), убежище, шахматы, клетка (`Shelter.tsx`), телефоны, экран камеры, титр (`Phone.tsx`),
+  субтитры, плашки, статус-строка, зерно (`Overlay.tsx`).
+- `film/src/scenes/` — сцена 1 (`Scene1.tsx`), сцена 2 (`Scene2.tsx`), сцены 3–7 в убежище (`SceneShelter.tsx`).
+- `film/src/Film.tsx` — сборка фильма; `film/src/timeline.ts`, `timers.ts` — тайминг, липсинк, таймеры «до удара».
+- `film/tools/timeline.py` — **единый таймлайн**: реплики, звуки и маркеры анимации расставляются по реальным длительностям голосов.
+
+## Озвучка
+- Персонажи — **XTTS-v2** (выразительный нейросетевой синтез, встроенные студийные голоса):
+  Марк — Ludvig Milivoj, Алиса — Daisy Studious (+6 % высоты), Галина — Henriette Usha (−6 %), Лев — Aaron Dreschner,
+  голос за дверью — Baldur Sanjin, двойник — голос Марка в более медленном и ровном темпе.
+- Оповещения — **Silero v5.6** (Eugene) с обработкой «громкоговорителя».
+- На каждую реплику — несколько дублей; лучший выбирается автоматически: распознавание (GigaAM v2) должно совпасть с текстом,
+  без лишних слогов-артефактов и с естественной длительностью. Хвостовые артефакты синтеза вырезаются.
+- Обработка: шумоподавление, EQ под персонажа, компрессия, нормализация, реверберация помещений, приглушение «за дверью»,
+  фильтр «динамика монитора»; музыка и фон приглушаются под диалог. Разборчивость проверена распознаванием прямо из финального микса.
 
 ## Повторный рендер
 ```bash
-pip install piper-tts pyworld soundfile numpy sherpa-onnx
-# модели (GitHub-релизы sherpa-onnx): vits-piper-ru_RU-{dmitri,irina,ruslan,denis}-medium,
-# sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19 → в ~/tts-models (или $TTS_MODELS)
+# 1. зависимости
+pip install piper-tts pyworld soundfile numpy sherpa-onnx coqui-tts torch "setuptools<81"
 cd film && npm i
-python3 tools/voice.py ../script/lines.json && python3 tools/qc_asr.py ../script/lines.json
-python3 tools/sfx.py && python3 tools/mix.py src/data/sample.json
-npm run render:sample      # браузер: REMOTION_BROWSER=/путь/к/chrome-headless-shell
-```
 
-## Озвучка — честно об ограничениях
-ElevenLabs, OpenAI TTS, HuggingFace и Silero из этой среды недоступны (сетевая политика), ключей нет.
-Использованы локальные нейросетевые голоса Piper (VITS) с обработкой тембра (WORLD) — не eSpeak,
-но и не уровень актёров: эмоциональный диапазон ограничен. Конвейер готов к замене движка.
-Вся музыка и SFX синтезированы в `tools/sfx.py` — сторонних материалов нет.
+# 2. модели в ~/tts-models (или $TTS_MODELS)
+#    xtts_v2/                 — https://huggingface.co/coqui/XTTS-v2 (config.json, model.pth, vocab.json, speakers_xtts.pth, dvae.pth, mel_stats.pth)
+#    silero_v5_6_ru.pt        — https://models.silero.ai/models/tts/ru/v5_6_ru.pt
+#    sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19/ — GitHub-релизы k2-fsa/sherpa-onnx (asr-models)
+
+# 3. звук
+python3 tools/voice.py ../script/lines.json      # озвучка (можно --only id1,id2)
+python3 tools/sfx.py                              # музыка и эффекты
+python3 tools/timeline.py                         # таймлайн -> src/data/film.json
+python3 tools/mix.py src/data/film.json           # сведение -> public/mix/
+python3 tools/srt.py && python3 tools/scenario.py # субтитры и сценарий
+
+# 4. видео
+npm run render:film     # -> ../output/17_minut.mp4 (≈1,5–2,5 ч на 4 ядрах)
+npm run studio          # интерактивный просмотр и правка в браузере
+```
+Путь к браузеру для рендера задаётся переменной `REMOTION_BROWSER` (см. `film/remotion.config.ts`).
+Векторные иллюстрации заново: `node tools/svg/run.mjs ../output/svg`.
+
+## Честно об ограничениях
+- Голоса синтезированы локальными моделями. Они живее простого синтеза, но это не работа живых актёров:
+  интонации задаются темпом, пунктуацией и подбором дублей, а не режиссурой каждой фразы.
+  Детский голос Алисы — взрослый молодой голос, слегка поднятый по высоте.
+- Чтобы заменить голоса (ElevenLabs или записи актёров), положите WAV с теми же именами в `film/public/voice/`
+  и выполните шаги 3–4, начиная с `timeline.py`: анимация, липсинк и субтитры подстроятся сами.
