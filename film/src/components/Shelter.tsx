@@ -24,7 +24,7 @@ const Lamp: React.FC<{x: number; y: number; on: number; color: string}> = ({x, y
   </g>
 );
 
-export const ShelterBack: React.FC<{f: number; light: ShelterLight; doorShake?: number; doorWheel?: number; doorOpen?: number}> = ({f, light, doorShake = 0, doorWheel = 0, doorOpen = 0}) => {
+export const ShelterBack: React.FC<{f: number; light: ShelterLight; doorShake?: number; doorWheel?: number; doorOpen?: number; sign?: string}> = ({f, light, doorShake = 0, doorWheel = 0, doorOpen = 0, sign = 'УБЕЖИЩЕ № 17'}) => {
   const {left, right, ceil, floor, door} = SH;
   const dj = doorShake ? Math.sin(f * 3.3) * 3 * doorShake : 0;
   return (
@@ -96,7 +96,7 @@ export const ShelterBack: React.FC<{f: number; light: ShelterLight; doorShake?: 
       {/* табличка */}
       <g transform={`translate(${door.x + door.w / 2} ${floor - 520})`}>
         <rect x={-130} y={-26} width={260} height={52} rx={6} fill="#d9d4c7" />
-        <text x={0} y={10} textAnchor="middle" fontFamily="Montserrat" fontWeight={900} fontSize={28} fill="#2a2e35">УБЕЖИЩЕ № 17</text>
+        <text x={0} y={10} textAnchor="middle" fontFamily="Montserrat" fontWeight={900} fontSize={28} fill="#2a2e35">{sign}</text>
       </g>
       {/* громкоговоритель */}
       <g transform="translate(560 420)">

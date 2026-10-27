@@ -1,0 +1,575 @@
+{
+ "name": "tw3",
+ "duration": 112.49,
+ "dialogue": [
+  {
+   "id": "w3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.4,
+   "caption": "Двое суток. Ты думал, это много. Пока не узнал, что дверь закрывается *только снаружи*.",
+   "space": null
+  },
+  {
+   "id": "w3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.62,
+   "caption": "Евгений не спит. Разбирает механизм снова и снова. *Ничего не выходит*.",
+   "space": null
+  },
+  {
+   "id": "w3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 12.8,
+   "caption": "Баба Галя распускает свой шарф. И вяжет Соне *нового зайца*.",
+   "space": null
+  },
+  {
+   "id": "w3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 17.66,
+   "caption": "Соня рисует вас всех. Пятерых. Вместе с *Барсиком*.",
+   "space": null
+  },
+  {
+   "id": "w3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 22.51,
+   "caption": "Ночью Евгений сидит у двери со старой *фотографией*. На ней мальчик лет десяти.",
+   "space": null
+  },
+  {
+   "id": "w3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 27.99,
+   "caption": "«Сын, — говорит он. — Семь лет не разговариваем. Я ему тогда *такого наговорил*…»",
+   "space": null
+  },
+  {
+   "id": "w3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 34.7,
+   "caption": "А охранник со списком весь вечер *не сводит глаз* с Евгения.",
+   "space": null
+  },
+  {
+   "id": "w3_08",
+   "who": "narrator",
+   "name": "",
+   "start": 38.89,
+   "caption": "И ты понимаешь. Это и есть его *сын*. Вот почему вас пустили.",
+   "space": null
+  },
+  {
+   "id": "w3_09",
+   "who": "narrator",
+   "name": "",
+   "start": 44.8,
+   "caption": "Час до удара. Кто-то должен остаться снаружи и закрутить колесо *вручную*.",
+   "space": null
+  },
+  {
+   "id": "w3_10",
+   "who": "narrator",
+   "name": "",
+   "start": 50.1,
+   "caption": "Ты делаешь шаг к двери. Евгений толкает тебя обратно: «У тебя *дочь*. А этот механизм я знаю лучше всех».",
+   "space": null
+  },
+  {
+   "id": "w3_11",
+   "who": "narrator",
+   "name": "",
+   "start": 58.26,
+   "caption": "Он отдаёт тебе сложенную записку: «Передай ему. *Потом*. Не сейчас».",
+   "space": null
+  },
+  {
+   "id": "w3_12",
+   "who": "narrator",
+   "name": "",
+   "start": 64.31,
+   "caption": "Соня протягивает ему вязаного зайца. Чтобы ему было *не страшно*.",
+   "space": null
+  },
+  {
+   "id": "w3_13",
+   "who": "narrator",
+   "name": "",
+   "start": 69.01,
+   "caption": "Он улыбается. Второй раз *за всё время*.",
+   "space": null
+  },
+  {
+   "id": "w3_14",
+   "who": "narrator",
+   "name": "",
+   "start": 73.42,
+   "caption": "Дверь закрывается. Колесо медленно поворачивается. И *останавливается*.",
+   "space": null
+  },
+  {
+   "id": "w3_15",
+   "who": "narrator",
+   "name": "",
+   "start": 83.25,
+   "caption": "Через три дня вы выходите наружу. Небо оранжевое. Тихо. У двери лежит *вязаный заяц*.",
+   "space": null
+  },
+  {
+   "id": "w3_16",
+   "who": "narrator",
+   "name": "",
+   "start": 91.07,
+   "caption": "Ты отдаёшь записку его сыну. «Прости меня. Я *горжусь тобой*. Папа».",
+   "space": null
+  },
+  {
+   "id": "w3_17",
+   "who": "narrator",
+   "name": "",
+   "start": 96.91,
+   "caption": "Парень садится у двери. И *плачет*.",
+   "space": null
+  },
+  {
+   "id": "w3_18",
+   "who": "narrator",
+   "name": "",
+   "start": 100.4,
+   "caption": "Соня берёт тебя за руку. И телефон в твоей руке снова *загорается*.",
+   "space": null
+  },
+  {
+   "id": "w3_19",
+   "who": "narrator",
+   "name": "",
+   "start": 105.55,
+   "caption": "«Обнаружен *новый объект*».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/vent.wav",
+   "start": 0,
+   "gain": -24,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 73.42
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 0.4,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 2.62,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 6.62,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 2.0,
+   "end": 44.8
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 7.02,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 8.62,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/meow.wav",
+   "start": 15.3,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 17.66,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 21.16
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 6.62,
+   "gain": -30,
+   "bus": "amb",
+   "fadeOut": 1,
+   "end": 22.51
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 22.51,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 1.5,
+   "end": 35.7
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 34.7,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 44.8
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 40.25,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 44.8,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 58.26
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 50.1,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 51.3
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 58.26,
+   "gain": -13,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.0,
+   "end": 79.45
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 73.42,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wheel_creak.wav",
+   "start": 74.92,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 77.14,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/meteor_roar.wav",
+   "start": 77.95,
+   "gain": -6,
+   "bus": "sfx",
+   "end": 80.35
+  },
+  {
+   "file": "sfx/big_impact.wav",
+   "start": 80.25,
+   "gain": 0,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 80.85,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 80.65,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 2,
+   "end": 84.65
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 83.25,
+   "gain": -18,
+   "bus": "amb",
+   "fadeIn": 2.0,
+   "fadeOut": 1.0,
+   "end": 108.49
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 84.25,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 2.5,
+   "fadeOut": 1.0,
+   "end": 103.19
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 92.07,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 102.39,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 102.69,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 105.55,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 106.05,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 108.29,
+   "gain": -8,
+   "bus": "music"
+  },
+  {
+   "file": "sfx/meteor_roar.wav",
+   "start": 109.29,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 112.29
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_door": 0.4,
+  "only_out": 2.62,
+  "w3_01": 0.4,
+  "w3_01_end": 6.12,
+  "repair": 6.62,
+  "w3_02": 6.62,
+  "w3_02_end": 12.3,
+  "knit": 12.8,
+  "w3_03": 12.8,
+  "w3_03_end": 17.26,
+  "draw": 17.66,
+  "w3_04": 17.66,
+  "w3_04_end": 21.71,
+  "night": 22.51,
+  "photo": 25.87,
+  "w3_05": 22.51,
+  "w3_05_end": 27.59,
+  "son_talk": 27.99,
+  "w3_06": 27.99,
+  "w3_06_end": 34.1,
+  "guard_look": 34.7,
+  "w3_07": 34.7,
+  "w3_07_end": 38.39,
+  "realize": 38.89,
+  "son_reveal": 40.25,
+  "w3_08": 38.89,
+  "w3_08_end": 43.9,
+  "hour": 44.8,
+  "manual": 45.75,
+  "w3_09": 44.8,
+  "w3_09_end": 49.7,
+  "step": 50.1,
+  "push": 51.89,
+  "w3_10": 50.1,
+  "w3_10_end": 57.76,
+  "note": 58.26,
+  "w3_11": 58.26,
+  "w3_11_end": 63.71,
+  "bunny_give": 64.31,
+  "w3_12": 64.31,
+  "w3_12_end": 68.61,
+  "smile2": 69.01,
+  "w3_13": 69.01,
+  "w3_13_end": 72.62,
+  "close": 73.42,
+  "wheel": 74.92,
+  "stop": 77.44,
+  "w3_14": 73.42,
+  "w3_14_end": 78.85,
+  "impact3": 79.45,
+  "out3": 83.25,
+  "bunny_found": 88.12,
+  "w3_15": 83.25,
+  "w3_15_end": 90.47,
+  "give_note": 91.07,
+  "note_text": 93.42,
+  "w3_16": 91.07,
+  "w3_16_end": 96.41,
+  "cry_son": 96.91,
+  "w3_17": 96.91,
+  "w3_17_end": 99.4,
+  "hand": 100.4,
+  "phone_on": 102.19,
+  "w3_18": 100.4,
+  "w3_18_end": 105.05,
+  "new_obj": 105.55,
+  "w3_19": 105.55,
+  "w3_19_end": 107.49,
+  "title": 108.49,
+  "end": 112.49
+ },
+ "beats": {
+  "h_door": {
+   "start": 0.4,
+   "dur": 2.22
+  },
+  "only_out": {
+   "start": 2.62,
+   "dur": 3.5
+  },
+  "repair": {
+   "start": 6.62,
+   "dur": 5.68
+  },
+  "knit": {
+   "start": 12.8,
+   "dur": 4.46
+  },
+  "draw": {
+   "start": 17.66,
+   "dur": 4.05
+  },
+  "night": {
+   "start": 22.51,
+   "dur": 3.36
+  },
+  "photo": {
+   "start": 25.87,
+   "dur": 1.71
+  },
+  "son_talk": {
+   "start": 27.99,
+   "dur": 6.11
+  },
+  "guard_look": {
+   "start": 34.7,
+   "dur": 3.69
+  },
+  "realize": {
+   "start": 38.89,
+   "dur": 1.36
+  },
+  "son_reveal": {
+   "start": 40.25,
+   "dur": 3.65
+  },
+  "hour": {
+   "start": 44.8,
+   "dur": 0.95
+  },
+  "manual": {
+   "start": 45.75,
+   "dur": 3.95
+  },
+  "step": {
+   "start": 50.1,
+   "dur": 1.79
+  },
+  "push": {
+   "start": 51.89,
+   "dur": 5.88
+  },
+  "note": {
+   "start": 58.26,
+   "dur": 5.45
+  },
+  "bunny_give": {
+   "start": 64.31,
+   "dur": 4.3
+  },
+  "smile2": {
+   "start": 69.01,
+   "dur": 3.61
+  },
+  "close": {
+   "start": 73.42,
+   "dur": 1.5
+  },
+  "wheel": {
+   "start": 74.92,
+   "dur": 2.52
+  },
+  "stop": {
+   "start": 77.44,
+   "dur": 1.42
+  },
+  "impact3": {
+   "start": 79.45,
+   "dur": 3.0
+  },
+  "out3": {
+   "start": 83.25,
+   "dur": 4.87
+  },
+  "bunny_found": {
+   "start": 88.12,
+   "dur": 2.35
+  },
+  "give_note": {
+   "start": 91.07,
+   "dur": 2.35
+  },
+  "note_text": {
+   "start": 93.42,
+   "dur": 3.0
+  },
+  "cry_son": {
+   "start": 96.91,
+   "dur": 2.49
+  },
+  "hand": {
+   "start": 100.4,
+   "dur": 1.79
+  },
+  "phone_on": {
+   "start": 102.19,
+   "dur": 2.86
+  },
+  "new_obj": {
+   "start": 105.55,
+   "dur": 1.94
+  }
+ }
+}

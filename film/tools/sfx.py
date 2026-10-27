@@ -310,7 +310,66 @@ def music_stage(d=5):
     y += (np.sin(2 * np.pi * 220 * x) + np.sin(2 * np.pi * 233.1 * x)) * 0.15 * env(len(x), 0.05, 2.5)
     return y
 
+# ---------- «Три волны» ----------
+def meteor_roar(d=6):
+    # нарастающий рёв входа в атмосферу: шум с поднимающимся срезом + падающий гул
+    x = t(d); k = x / d
+    n = noise(d); lo = lp(n, 180) * 1.2; hi = bp(n, 600, 5000)
+    tone = np.sin(2 * np.pi * np.cumsum(140 - 90 * k) / SR) * 0.35
+    return (lo + hi * k ** 1.5 * 0.8 + tone) * k ** 2 * env(len(x), 0.1, 0.15)
+
+def big_impact(d=10):
+    x = t(d); boom = np.sin(2 * np.pi * (34 * np.exp(-x * 0.8) + 18) * x) * np.exp(-x * 0.5) * 1.6
+    rum = lp(noise(d), 120) * np.exp(-x * 0.35) * 1.8
+    crack = bp(noise(d), 800, 7000) * np.exp(-x * 4) * 0.7
+    return lp(boom + rum + crack + rubble(d) * 0.4, 1600)
+
+def rubble(d=4):
+    out = np.zeros(int(d * SR))
+    for k in range(140):
+        st = abs(rng.normal(0.4, d / 3)) % (d - 0.2); ln = rng.uniform(0.02, 0.12)
+        n = bp(noise(ln), rng.uniform(200, 900), rng.uniform(2000, 6000)) * np.exp(-t(ln) * rng.uniform(30, 90))
+        i = int(st * SR); out[i:i + len(n)] += n * rng.uniform(0.2, 1)
+    return out
+
+def fire(d=20):
+    x = t(d); base = lp(noise(d), 500) * (0.6 + 0.4 * lp(noise(d), 2) * 8)
+    out = base * 0.5
+    for k in range(int(d * 14)):
+        ln = rng.uniform(0.004, 0.02); n = bp(noise(ln), 1500, 8000) * np.exp(-t(ln) * 250)
+        i = int(rng.uniform(0, d - 0.05) * SR); out[i:i + len(n)] += n * rng.uniform(0.2, 1.2)
+    return out
+
+def meow(d=0.9):
+    x = t(d); k = x / d
+    f0 = 480 + 380 * np.sin(np.pi * np.clip(k * 1.3, 0, 1)) - 120 * k
+    ph = 2 * np.pi * np.cumsum(f0) / SR
+    y = sum((0.7 ** h) * np.sin(ph * (h + 1)) for h in range(8))
+    return bp(y, 400, 4000) * env(len(x), 0.06, 0.35) * (1 + 0.15 * np.sin(2 * np.pi * 6 * x))
+
+def wind_ash(d=20):
+    x = t(d); return bp(noise(d), 200, 1400) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.11 * x) ** 2) * 0.6
+
+def music_sad(d=16, bpm=60):  # тихий мотив: Am — F — C — E
+    y = pad([220, 261.6, 329.6], d) * 0.25
+    seq = [440, 523.3, 659.3, 523.3, 349.2, 440, 523.3, 440, 392, 523.3, 659.3, 523.3, 329.6, 415.3, 493.9, 415.3]
+    for i, fr in enumerate(seq):
+        st = i * 60 / bpm; n = note(fr, 2.5, 0.7) * 0.5; j = int(st * SR)
+        if j >= len(y): break
+        y[j:j + len(n)] += n[: len(y) - j]
+    return y
+
+TW = [("meteor_roar", meteor_roar), ("big_impact", big_impact), ("rubble", rubble), ("fire", fire),
+      ("meow", meow), ("wind_ash", wind_ash)]
+
 if __name__ == "__main__":
+    import sys
+    if sys.argv[1:] == ["tw"]:  # только звуки «Трёх волн», старые файлы не трогаем
+        for name, fn in TW:
+            save(f"public/sfx/{name}.wav", fn())
+        save("public/music/m09_sad.wav", music_sad())
+        save("public/music/m10_run.wav", music_stairs(40, 124))
+        sys.exit()
     for d in ("public/sfx", "public/music"): os.makedirs(os.path.join(ROOT, d), exist_ok=True)
     save("public/sfx/phone_alert.wav", phone_alert())
     save("public/sfx/siren_far.wav", siren(dist=0.7))

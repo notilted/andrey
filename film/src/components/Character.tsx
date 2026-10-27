@@ -4,7 +4,7 @@ import React from 'react';
  * Персонаж в плоской векторной стилистике. Начало координат — пол между стопами,
  * персонаж смотрит вправо (facing=-1 — зеркально влево). Размеры в единицах взрослого (~340).
  */
-export type Who = 'mark' | 'alisa' | 'galina' | 'lev';
+export type Who = 'mark' | 'alisa' | 'galina' | 'lev' | 'sonya' | 'evgeny';
 
 export type Pose = {
   sit?: number; // 0 — стоит, 1 — сидит
@@ -41,6 +41,8 @@ export const LOOKS: Record<Who, Look> = {
   mark: {skin: '#c29479', skinShade: '#9c7461', hair: '#171a21', top: '#3d4a5f', topShade: '#2d374a', bottom: '#232833', shoes: '#13161c', scale: 1, headScale: 1, torso: 132, width: 74},
   alisa: {skin: '#d3a689', skinShade: '#ad826b', hair: '#5e3a2a', top: '#c98a36', topShade: '#a06c2a', bottom: '#2c3446', shoes: '#3a2328', scale: 0.66, headScale: 1.22, torso: 120, width: 70},
   galina: {skin: '#c99f88', skinShade: '#a07e6d', hair: '#a7a9ad', top: '#6b2f38', topShade: '#52242c', bottom: '#2f3340', shoes: '#1b1d22', scale: 0.9, headScale: 1.02, torso: 128, width: 80},
+  sonya: {skin: '#d6aa8e', skinShade: '#b0866f', hair: '#8a5a36', top: '#7f9bc4', topShade: '#647fa6', bottom: '#5d7396', shoes: '#c9c3b8', scale: 0.64, headScale: 1.24, torso: 118, width: 68},
+  evgeny: {skin: '#b88a72', skinShade: '#94695a', hair: '#8f9196', top: '#4d4a36', topShade: '#3a3828', bottom: '#262a33', shoes: '#15171b', scale: 1.04, headScale: 1.02, torso: 138, width: 88},
   lev: {skin: '#b98e78', skinShade: '#93705f', hair: '#0f1115', top: '#2c3834', topShade: '#202a27', bottom: '#1d2128', shoes: '#101216', scale: 1.02, headScale: 0.97, torso: 136, width: 66},
 };
 
@@ -78,6 +80,26 @@ const Hair: React.FC<{who: Who; c: string; f: number}> = ({who, c, f}) => {
         <g>
           <circle cx={-22} cy={-44} r={16} fill={c} />
           <path d="M-34 0 C-40 -36 -14 -52 6 -50 C28 -49 38 -36 36 -14 C26 -28 10 -34 -6 -30 C-18 -26 -24 -16 -26 -4 Z" fill={c} />
+        </g>
+      );
+    case 'sonya': {
+      const sw = Math.sin(f / 16) * 2.5;
+      return (
+        <g>
+          {/* два хвостика */}
+          <path d={`M-28 -30 C-46 -34 ${-58 + sw} -14 ${-54 + sw} 8 C${-46 + sw} 4 -38 -10 -30 -16 Z`} fill={c} />
+          <path d={`M10 -50 C18 -64 ${34 + sw} -66 ${40 + sw} -56 C30 -54 22 -50 18 -44 Z`} fill={c} />
+          <circle cx={-30} cy={-26} r={5.5} fill="#d85445" />
+          <path d="M-34 4 C-40 -36 -12 -52 8 -50 C28 -48 40 -36 36 -14 C30 -24 18 -30 4 -30 C-8 -28 -18 -20 -24 -10 C-28 -4 -30 0 -34 4 Z" fill={c} />
+        </g>
+      );
+    }
+    case 'evgeny':
+      return (
+        <g>
+          {/* лысина с седым венчиком */}
+          <path d="M-33 4 C-38 -18 -34 -30 -26 -34 C-22 -22 -24 -10 -22 2 Z" fill={c} />
+          <path d="M-26 -34 C-20 -40 -12 -42 -4 -42 C-14 -36 -20 -30 -22 -24 Z" fill={c} opacity={0.7} />
         </g>
       );
     case 'lev':
@@ -118,7 +140,7 @@ export const Character: React.FC<{
   const ly = lookUp * -3;
   const eyeH = 5.2 * Math.max(0.08, blink);
   const browA = brow * 12;
-  const browC = who === 'galina' ? '#7a7c80' : L.hair;
+  const browC = who === 'galina' || who === 'evgeny' ? '#6f7176' : L.hair;
 
   const leg = (dx: number, phase: number, back: boolean) => {
     const kneeA = tA + phase;
@@ -158,6 +180,8 @@ export const Character: React.FC<{
         />
         <path d={`M${-hw} ${torsoTop + 22} Q${-hw} ${torsoTop} ${-hw + 22} ${torsoTop - 2} L${-hw + 30} ${torsoTop - 2} L${-hw + 16} ${hipY + 8} L${-hw + 4} ${hipY + 8} Z`} fill={L.topShade} />
         {who === 'galina' && <path d={`M-6 ${torsoTop} L6 ${torsoTop} L4 ${hipY + 8} L-4 ${hipY + 8} Z`} fill="#4a1f27" />}
+        {who === 'evgeny' && <rect x={-hw} y={hipY - 46} width={L.width} height={9} fill="#c9b458" opacity={0.85} />}
+        {who === 'evgeny' && <rect x={-hw} y={hipY - 76} width={L.width} height={9} fill="#c9b458" opacity={0.85} />}
         {who === 'lev' && <rect x={-16} y={torsoTop - 12} width={32} height={18} rx={6} fill={L.top} />}
         {/* контровой свет по спине — мягкий градиент по краю силуэта */}
         <path
@@ -185,6 +209,7 @@ export const Character: React.FC<{
               {blink > 0.6 && <circle cx={10} cy={-6} r={1.1} fill="#fff" opacity={0.8} />}
               {/* нос — мягкая тень внутри лица */}
               <path d="M27 2 Q32 9 29 12 Q25 13.5 22.5 11.5 Q26 9 27 2 Z" fill={L.skinShade} />
+              {who === 'evgeny' && <path d="M10 17 Q18 12 24 15 Q30 12 33 17 Q29 22 22 19 Q15 22 10 17 Z" fill="#8f9196" />}
               {/* рот: от линии к открытому, с верхней губой и языком */}
               {mouth > 0.06 ? (
                 <g>

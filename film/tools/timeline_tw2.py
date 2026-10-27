@@ -1,0 +1,68 @@
+"""«Три волны», серия 2 «12 часов»: python3 tools/timeline_tw2.py -> src/data/tw2.json"""
+from narr import B, M, N, S, load, marks, save
+
+load("tw2_narration.json")
+
+# ───────── ЗАЦЕП: таймер 12:00:00 над руинами ─────────
+M("start", 0)
+N("w2_01", 0.4, at=[("h_timer", None), ("h_family", "чтобы найти")])
+# ───────── ДОРОГА К ШКОЛЕ ─────────
+N("w2_02", 0.4, at=[("map", None), ("walk", "Вы идёте")])
+N("w2_03", 0.3, at=[("cars", "Машины")])
+N("w2_04", 0.5, at=[("school", None), ("no_school", "И видите")])
+N("w2_05", 0.4, at=[("map_red", None)])
+N("w2_06", 0.6, at=[("galya_sit", None)])
+N("w2_07", 0.5, at=[("evgeny_says", None), ("bunker_idea", "«Под")])
+N("w2_08", 0.4, at=[("km8", None)])
+# ───────── ПУТЬ К ДЕПО ─────────
+N("w2_09", 0.6, at=[("shoulders", None), ("smile", "Хотя")])
+N("w2_10", 0.3, at=[("galya_limp", None)])
+# ───────── ДЕПО И ОХРАНА ─────────
+N("w2_11", 0.6, at=[("depot", None), ("guard", "А у входа")])
+N("w2_12", 0.3, at=[("list", None), ("no_you", "«Сорок")])
+N("w2_13", 0.5, at=[("stare", None), ("aside", "И молча")])
+N("w2_14", 0.6, at=[("let_in", None)])
+# ───────── ВТОРАЯ ВОЛНА ─────────
+B("roar2", 0.5, 1.6)
+N("w2_15", 0.1, at=[("hit2", None), ("dark", "гаснет")])
+N("w2_16", 0.8, at=[("torch", None), ("pale", "И бледнеет")])
+N("w2_17", 0.4, at=[("broken", None)])
+N("w2_18", 0.6, at=[("alert3", None)])
+M("title", 0.8)
+M("end", 3.4)
+
+m = marks
+S("sfx/stinger.wav", m["h_timer"], -12)
+S("sfx/wind_ash.wav", 0, -20, "amb", fadeIn=1.0, length=m["let_in"], fadeOut=1.0)
+S("sfx/fire.wav", 0, -24, "amb", length=m["walk"], fadeOut=1.5)
+S("music/m02_dread_long.wav", m["h_family"], -18, "music", fadeIn=1.5, length=m["school"] - m["h_family"], fadeOut=1.0)
+S("sfx/ui_tick.wav", m["map"] + 0.3, -14)
+S("sfx/footsteps_two.wav", m["walk"], -20, "amb", length=m["school"] - m["walk"], fadeOut=0.5)
+S("sfx/siren_far.wav", m["cars"], -30, "amb", fadeIn=1, length=8, fadeOut=2)
+S("sfx/stinger.wav", m["no_school"], -10)
+S("sfx/riser.wav", m["map_red"] - 1.5, -20)
+S("sfx/recap_hit.wav", m["map_red"] + 0.3, -12)
+S("sfx/meow.wav", m["galya_sit"] + 2.0, -16)
+S("music/m04_shelter.wav", m["evgeny_says"], -17, "music", fadeIn=2.0, length=m["depot"] - m["evgeny_says"], fadeOut=1.5)
+S("sfx/ui_tick.wav", m["km8"] + 0.2, -14)
+S("sfx/footsteps_two.wav", m["shoulders"], -20, "amb", length=m["depot"] - m["shoulders"], fadeOut=0.5)
+S("music/m06_double.wav", m["depot"], -15, "music", fadeIn=1.0, length=m["roar2"] - m["depot"], fadeOut=1.0)
+S("sfx/crowd.wav", m["depot"] + 1, -26, "amb", fadeIn=1, length=m["let_in"] - m["depot"] + 2, fadeOut=1)
+S("sfx/page_flip.wav", m["list"] + 0.3, -16)
+S("sfx/heartbeat.wav", m["stare"], -18, length=m["let_in"] - m["stare"], fadeOut=0.5)
+S("sfx/door_clank.wav", m["let_in"] + 0.5, -12)
+S("sfx/vent.wav", m["let_in"] + 1, -26, "amb", fadeIn=1, length=m["title"] - m["let_in"] - 1, fadeOut=0.5)
+S("sfx/meteor_roar.wav", m["roar2"] - 2.0, -8, length=3.8)
+S("sfx/big_impact.wav", m["hit2"], -2)
+S("sfx/rubble.wav", m["hit2"] + 0.5, -10)
+S("sfx/flicker.wav", m["dark"] - 0.3, -12)
+S("sfx/tinnitus.wav", m["dark"], -20, length=3, fadeOut=1.5)
+S("sfx/lock_click.wav", m["torch"], -14)
+S("sfx/heartbeat.wav", m["pale"], -16, length=m["alert3"] - m["pale"], fadeOut=0.3)
+S("sfx/door_clank.wav", m["broken"] + 0.2, -16)
+S("sfx/phones_chorus.wav", m["alert3"], -8)
+S("sfx/stinger.wav", m["alert3"] + 0.2, -10)
+S("music/m07_stage.wav", m["title"] - 0.2, -8, "music")
+S("sfx/meteor_roar.wav", m["title"] + 0.3, -18, length=3.0, fadeOut=0.5)
+
+save("tw2")
