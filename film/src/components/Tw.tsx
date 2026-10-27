@@ -38,12 +38,12 @@ export const OrangeSky: React.FC<{k: number; w?: number; h?: number}> = ({k, w =
 );
 
 /** Метеорит: раскалённая голова и хвост; летит из (x0,y0) в (x1,y1), p 0..1. */
-export const Meteor: React.FC<{x0: number; y0: number; x1: number; y1: number; p: number; size?: number}> = ({x0, y0, x1, y1, p, size = 1}) => {
+export const Meteor: React.FC<{x0: number; y0: number; x1: number; y1: number; p: number; size?: number; tailK?: number}> = ({x0, y0, x1, y1, p, size = 1, tailK}) => {
   if (p <= 0 || p >= 1.05) return null;
   const x = x0 + (x1 - x0) * p;
   const y = y0 + (y1 - y0) * p;
   const ang = Math.atan2(y1 - y0, x1 - x0);
-  const tail = 520 * size * Math.min(1, p * 3);
+  const tail = 520 * size * (tailK ?? Math.min(1, p * 3));
   const tx = x - Math.cos(ang) * tail;
   const ty = y - Math.sin(ang) * tail;
   const nx = -Math.sin(ang);

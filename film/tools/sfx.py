@@ -362,8 +362,25 @@ def music_sad(d=16, bpm=60):  # тихий мотив: Am — F — C — E
 TW = [("meteor_roar", meteor_roar), ("big_impact", big_impact), ("rubble", rubble), ("fire", fire),
       ("meow", meow), ("wind_ash", wind_ash)]
 
+def hum(d=8):  # гул камня: низкий тон с биениями и мягким нарастанием
+    x = t(d); y = np.sin(2 * np.pi * 55 * x) + 0.6 * np.sin(2 * np.pi * 55.7 * x) + 0.3 * np.sin(2 * np.pi * 110.4 * x)
+    return y * env(len(x), 2.0, 2.0) * (0.8 + 0.2 * np.sin(2 * np.pi * 0.3 * x))
+
+def ringtone(d=6):  # классический звонок: две ноты, пауза
+    x = t(d); s = (np.sin(2 * np.pi * 1318 * x) + np.sin(2 * np.pi * 1568 * x)) * 0.5
+    gate = ((x % 2.0) < 1.0) * (np.sin(2 * np.pi * 12 * x) > 0)
+    return s * gate * 0.6
+
+def silent_pass(d=7):  # объект проходит без звука: только давление воздуха
+    x = t(d); k = np.sin(np.pi * x / d) ** 2
+    return lp(noise(d), 90) * k * 1.5
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["tw4"]:
+        for name, fn in [("hum", hum), ("ringtone", ringtone), ("silent_pass", silent_pass)]:
+            save(f"public/sfx/{name}.wav", fn())
+        sys.exit()
     if sys.argv[1:] == ["tw"]:  # только звуки «Трёх волн», старые файлы не трогаем
         for name, fn in TW:
             save(f"public/sfx/{name}.wav", fn())

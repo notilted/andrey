@@ -1,0 +1,485 @@
+{
+ "name": "tw4",
+ "duration": 86.67,
+ "dialogue": [
+  {
+   "id": "w4_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.5,
+   "caption": "Метеориты не умеют тормозить. Этот — *затормозил*.",
+   "space": null
+  },
+  {
+   "id": "w4_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.2,
+   "caption": "Прошла неделя после третьей волны. Вы живёте в трамвайном депо. Старший теперь — *Дима*.",
+   "space": null
+  },
+  {
+   "id": "w4_03",
+   "who": "narrator",
+   "name": "",
+   "start": 11.69,
+   "caption": "Записку отца он носит в нагрудном кармане. И каждое утро её *перечитывает*.",
+   "space": null
+  },
+  {
+   "id": "w4_04",
+   "who": "narrator",
+   "name": "",
+   "start": 17.55,
+   "caption": "Соня не расстаётся с *вязаным зайцем*. Баба Галя печёт лепёшки на костре. Барсик их ворует.",
+   "space": null
+  },
+  {
+   "id": "w4_05",
+   "who": "narrator",
+   "name": "",
+   "start": 24.86,
+   "caption": "А телефоны каждый день показывают одно и то же: «Расчёт траектории». *Таймера нет*.",
+   "space": null
+  },
+  {
+   "id": "w4_06",
+   "who": "narrator",
+   "name": "",
+   "start": 31.53,
+   "caption": "Ночью экран меняется: «Объект *снижает скорость*».",
+   "space": null
+  },
+  {
+   "id": "w4_07",
+   "who": "narrator",
+   "name": "",
+   "start": 35.87,
+   "caption": "Дима долго смотрит на телефон: «Такого *не бывает*».",
+   "space": null
+  },
+  {
+   "id": "w4_08",
+   "who": "narrator",
+   "name": "",
+   "start": 40.31,
+   "caption": "Под утро объект проходит над городом *без звука*. И садится в поле за рекой.",
+   "space": null
+  },
+  {
+   "id": "w4_09",
+   "who": "narrator",
+   "name": "",
+   "start": 45.88,
+   "caption": "Ни взрыва. Ни волны. *Тишина*.",
+   "space": null
+  },
+  {
+   "id": "w4_10",
+   "who": "narrator",
+   "name": "",
+   "start": 49.69,
+   "caption": "Дима едет посмотреть, ты — с ним. Соня отдаёт тебе *зайца*: «Чтобы тебе было не страшно».",
+   "space": null
+  },
+  {
+   "id": "w4_11",
+   "who": "narrator",
+   "name": "",
+   "start": 56.77,
+   "caption": "В поле стоит гладкий *чёрный камень* размером с дом. Тёплый. Без единой царапины.",
+   "space": null
+  },
+  {
+   "id": "w4_12",
+   "who": "narrator",
+   "name": "",
+   "start": 63.11,
+   "caption": "Ты касаешься его рукой. И камень *отвечает* — тихим гулом.",
+   "space": null
+  },
+  {
+   "id": "w4_13",
+   "who": "narrator",
+   "name": "",
+   "start": 67.93,
+   "caption": "В нём открывается узкая *щель*. Изнутри падает белый свет.",
+   "space": null
+  },
+  {
+   "id": "w4_14",
+   "who": "narrator",
+   "name": "",
+   "start": 72.94,
+   "caption": "И в эту секунду у вас *звонят телефоны*. Хотя связи нет уже неделю.",
+   "space": null
+  },
+  {
+   "id": "w4_15",
+   "who": "narrator",
+   "name": "",
+   "start": 78.45,
+   "caption": "На экране — номер, который ты знаешь. *Евгений*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 0,
+   "gain": -22,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 31.53
+  },
+  {
+   "file": "sfx/meteor_roar.wav",
+   "start": 0.5,
+   "gain": -12,
+   "bus": "sfx",
+   "fadeOut": 1.5,
+   "end": 3.94
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 2.44,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 3.54,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 5.2,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 2.0,
+   "end": 31.53
+  },
+  {
+   "file": "sfx/fire.wav",
+   "start": 5.2,
+   "gain": -20,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 24.86
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 12.09,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/meow.wav",
+   "start": 23.36,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 25.26,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 24.86,
+   "gain": -28,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 31.53
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 31.53,
+   "gain": -30,
+   "bus": "amb",
+   "fadeOut": 1.0,
+   "end": 40.31
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 31.63,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 31.83,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 31.53,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.5,
+   "end": 45.88
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 35.87,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 40.31
+  },
+  {
+   "file": "sfx/silent_pass.wav",
+   "start": 40.31,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 45.88,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 1.5,
+   "end": 48.88
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 49.69,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.0,
+   "end": 56.77
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 50.19,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 0.4,
+   "end": 52.69
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 56.77,
+   "gain": -20,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 83.07
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 56.77,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 0.5,
+   "end": 72.94
+  },
+  {
+   "file": "sfx/hum.wav",
+   "start": 64.76,
+   "gain": -8,
+   "bus": "sfx",
+   "fadeOut": 1.0,
+   "end": 73.74
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 67.93,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 68.73,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 73.14,
+   "gain": -10,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 84.27
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 73.14,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 81.44,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 82.87,
+   "gain": -8,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_sky": 0.5,
+  "h_brake": 2.94,
+  "w4_01": 0.5,
+  "w4_01_end": 4.4,
+  "camp": 5.2,
+  "dima": 9.8,
+  "w4_02": 5.2,
+  "w4_02_end": 11.39,
+  "note": 11.69,
+  "w4_03": 11.69,
+  "w4_03_end": 17.15,
+  "sonya": 17.55,
+  "galya": 20.38,
+  "cat": 23.06,
+  "w4_04": 17.55,
+  "w4_04_end": 24.36,
+  "calc": 24.86,
+  "w4_05": 24.86,
+  "w4_05_end": 30.73,
+  "slow": 31.53,
+  "w4_06": 31.53,
+  "w4_06_end": 35.47,
+  "dima_night": 35.87,
+  "w4_07": 35.87,
+  "w4_07_end": 39.51,
+  "pass": 40.31,
+  "land": 43.66,
+  "w4_08": 40.31,
+  "w4_08_end": 45.48,
+  "silence": 45.88,
+  "w4_09": 45.88,
+  "w4_09_end": 48.89,
+  "leave": 49.69,
+  "bunny": 52.15,
+  "w4_10": 49.69,
+  "w4_10_end": 55.97,
+  "stone": 56.77,
+  "w4_11": 56.77,
+  "w4_11_end": 62.71,
+  "touch": 63.11,
+  "hum": 64.96,
+  "w4_12": 63.11,
+  "w4_12_end": 67.43,
+  "slit": 67.93,
+  "w4_13": 67.93,
+  "w4_13_end": 72.44,
+  "ring": 72.94,
+  "w4_14": 72.94,
+  "w4_14_end": 77.85,
+  "call": 78.45,
+  "evgeny": 81.44,
+  "w4_15": 78.45,
+  "w4_15_end": 82.07,
+  "title": 83.07,
+  "end": 86.67
+ },
+ "beats": {
+  "h_sky": {
+   "start": 0.5,
+   "dur": 2.44
+  },
+  "h_brake": {
+   "start": 2.94,
+   "dur": 1.46
+  },
+  "camp": {
+   "start": 5.2,
+   "dur": 4.6
+  },
+  "dima": {
+   "start": 9.8,
+   "dur": 1.58
+  },
+  "note": {
+   "start": 11.69,
+   "dur": 5.46
+  },
+  "sonya": {
+   "start": 17.55,
+   "dur": 2.83
+  },
+  "galya": {
+   "start": 20.38,
+   "dur": 2.68
+  },
+  "cat": {
+   "start": 23.06,
+   "dur": 1.3
+  },
+  "calc": {
+   "start": 24.86,
+   "dur": 5.87
+  },
+  "slow": {
+   "start": 31.53,
+   "dur": 3.94
+  },
+  "dima_night": {
+   "start": 35.87,
+   "dur": 3.64
+  },
+  "pass": {
+   "start": 40.31,
+   "dur": 3.35
+  },
+  "land": {
+   "start": 43.66,
+   "dur": 1.82
+  },
+  "silence": {
+   "start": 45.88,
+   "dur": 3.01
+  },
+  "leave": {
+   "start": 49.69,
+   "dur": 2.46
+  },
+  "bunny": {
+   "start": 52.15,
+   "dur": 3.83
+  },
+  "stone": {
+   "start": 56.77,
+   "dur": 5.94
+  },
+  "touch": {
+   "start": 63.11,
+   "dur": 1.85
+  },
+  "hum": {
+   "start": 64.96,
+   "dur": 2.47
+  },
+  "slit": {
+   "start": 67.93,
+   "dur": 4.51
+  },
+  "ring": {
+   "start": 72.94,
+   "dur": 4.91
+  },
+  "call": {
+   "start": 78.45,
+   "dur": 2.99
+  },
+  "evgeny": {
+   "start": 81.44,
+   "dur": 0.63
+  }
+ }
+}
