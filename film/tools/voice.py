@@ -31,6 +31,8 @@ VOICES = {
     "lev":       dict(engine="xtts", speaker="Aaron Dreschner", speed=0.92, temp=0.6),
     "rescuer":   dict(engine="xtts", speaker="Baldur Sanjin", speed=0.95, temp=0.6),
     "announcer": dict(engine="silero", speaker="eugene", speed=1.0),
+    # попугай Кеша повторяет фразу голосом Марка: выше по тону и тембру, «птичья» обработка
+    "parrot":    dict(engine="xtts", speaker="Ludvig Milivoj", speed=1.05, temp=0.6, f0=1.75, formant=1.22),
 }
 
 # обработка «пространства» после синтеза
@@ -41,6 +43,8 @@ FX = {
     "door": "lowpass=f=900,equalizer=f=220:t=q:w=1:g=4,aecho=0.7:0.5:18|35:0.35|0.2",
     "monitor": "highpass=f=450,lowpass=f=3200,acrusher=bits=8:mix=0.2,equalizer=f=1800:t=q:w=1:g=5",
     "whisper": "highpass=f=180,equalizer=f=5000:t=q:w=1:g=3",
+    "parrot": "highpass=f=500,equalizer=f=2600:t=q:w=0.8:g=6,acrusher=bits=11:mix=0.15,"
+              "vibrato=f=11:d=0.18",
 }
 EQ = {
     "mark": "equalizer=f=160:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=1:g=1.5,",
@@ -119,12 +123,15 @@ def cut_tail(x, sr):
     return x
 
 
-def shift_f0(x, sr, k):
-    """Мягкая коррекция высоты голоса без изменения темпа (WORLD)."""
+def shift_f0(x, sr, k, formant=1.0):
+    """Коррекция высоты голоса без изменения темпа (WORLD); formant — сдвиг тембра."""
     import pyworld as pw
     x64 = x.astype(np.float64)
     f0, t = pw.harvest(x64, sr, f0_floor=60, f0_ceil=700, frame_period=5)
     sp = pw.cheaptrick(x64, f0, t, sr); ap = pw.d4c(x64, f0, t, sr)
+    if formant != 1.0:
+        n = sp.shape[1]; src = np.clip(np.arange(n) / formant, 0, n - 1)
+        sp = np.stack([np.interp(src, np.arange(n), row) for row in sp])
     return pw.synthesize(f0 * k, sp, ap, sr, frame_period=5).astype(np.float32)
 
 
@@ -159,13 +166,13 @@ def render(line, ntakes):
     best = max(takes, key=lambda t: t["q"])
     x, sr = sf.read(best["path"], dtype="float32")
     if v.get("f0") and v["f0"] != 1.0:
-        x = shift_f0(x, sr, v["f0"])
+        x = shift_f0(x, sr, v["f0"], v.get("formant", 1.0))
     with tempfile.TemporaryDirectory() as td:
         raw = os.path.join(td, "raw.wav"); sf.write(raw, x, sr)
         chain = EQ.get(line["voice"], "") + BASE
         if line.get("fx"):
             chain += "," + FX[line["fx"]]
-            if line["fx"] in ("door", "monitor", "loudspeaker"):
+            if line["fx"] in ("door", "monitor", "loudspeaker", "parrot"):
                 chain += ",loudnorm=I=-19:TP=-2"
         chain += "," + TRIM
         ffmpeg(raw, os.path.join(OUT, line["id"] + ".wav"), chain)

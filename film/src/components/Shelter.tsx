@@ -24,7 +24,7 @@ const Lamp: React.FC<{x: number; y: number; on: number; color: string}> = ({x, y
   </g>
 );
 
-export const ShelterBack: React.FC<{f: number; light: ShelterLight; doorShake?: number}> = ({f, light, doorShake = 0}) => {
+export const ShelterBack: React.FC<{f: number; light: ShelterLight; doorShake?: number; doorWheel?: number; doorOpen?: number}> = ({f, light, doorShake = 0, doorWheel = 0, doorOpen = 0}) => {
   const {left, right, ceil, floor, door} = SH;
   const dj = doorShake ? Math.sin(f * 3.3) * 3 * doorShake : 0;
   return (
@@ -58,17 +58,41 @@ export const ShelterBack: React.FC<{f: number; light: ShelterLight; doorShake?: 
       {Array.from({length: 9}).map((_, i) => (
         <rect key={i} x={left + 80 + i * 180} y={ceil + 26} width={14} height={34} fill="#2a2f37" />
       ))}
-      {/* гермодверь */}
+      {/* гермодверь: проём со светом, створка поворачивается на петлях слева */}
       <g transform={`translate(${door.x + dj} 0)`}>
         <rect x={-14} y={floor - 470} width={door.w + 28} height={470} fill="#1b1f26" />
-        <rect x={0} y={floor - 456} width={door.w} height={456} rx={8} fill="#3b4048" />
-        <rect x={14} y={floor - 440} width={door.w - 28} height={424} rx={6} fill="none" stroke="#2e333a" strokeWidth={6} />
-        <circle cx={door.w / 2} cy={floor - 230} r={46} fill="none" stroke="#5a606a" strokeWidth={8} />
-        <path d={`M${door.w / 2 - 46} ${floor - 230} H${door.w / 2 + 46} M${door.w / 2} ${floor - 276} V${floor - 184}`} stroke="#5a606a" strokeWidth={6} />
-        {Array.from({length: 4}).map((_, i) => (
-          <rect key={i} x={door.w - 16} y={floor - 400 + i * 110} width={18} height={30} rx={4} fill="#2c3036" />
-        ))}
+        {doorOpen > 0 && (
+          <g>
+            <defs>
+              <linearGradient id="doorLight" x1="0" x2="1">
+                <stop offset="0" stopColor="#fffbe8" />
+                <stop offset="1" stopColor="#e8e2c8" />
+              </linearGradient>
+            </defs>
+            <rect x={0} y={floor - 456} width={door.w} height={456} fill="url(#doorLight)" opacity={Math.min(1, doorOpen * 3)} />
+            {/* силуэт в проёме */}
+            <g opacity={Math.min(1, doorOpen * 2.5)} fill="#0c0e12">
+              <circle cx={door.w * 0.62} cy={floor - 330} r={30} />
+              <path d={`M${door.w * 0.62 - 44} ${floor} L${door.w * 0.62 - 40} ${floor - 290} Q${door.w * 0.62} ${floor - 306} ${door.w * 0.62 + 40} ${floor - 290} L${door.w * 0.62 + 44} ${floor} Z`} />
+            </g>
+          </g>
+        )}
+        <g transform={`translate(0 0) scale(${1 - doorOpen * 0.82} 1)`}>
+          <rect x={0} y={floor - 456} width={door.w} height={456} rx={8} fill="#3b4048" />
+          <rect x={14} y={floor - 440} width={door.w - 28} height={424} rx={6} fill="none" stroke="#2e333a" strokeWidth={6} />
+          <g transform={`rotate(${doorWheel} ${door.w / 2} ${floor - 230})`}>
+            <circle cx={door.w / 2} cy={floor - 230} r={46} fill="none" stroke="#5a606a" strokeWidth={8} />
+            <path d={`M${door.w / 2 - 46} ${floor - 230} H${door.w / 2 + 46} M${door.w / 2} ${floor - 276} V${floor - 184}`} stroke="#5a606a" strokeWidth={6} />
+          </g>
+          {Array.from({length: 4}).map((_, i) => (
+            <rect key={i} x={door.w - 16} y={floor - 400 + i * 110} width={18} height={30} rx={4} fill="#2c3036" />
+          ))}
+        </g>
       </g>
+      {/* полоса света на полу из открытой двери */}
+      {doorOpen > 0 && (
+        <polygon points={`${door.x + door.w * 0.2},${floor} ${door.x + door.w},${floor} ${door.x + door.w + 700 * doorOpen},${floor + 120} ${door.x + 60},${floor + 120}`} fill="#fffbe8" opacity={0.25 * Math.min(1, doorOpen * 3)} />
+      )}
       {/* табличка */}
       <g transform={`translate(${door.x + door.w / 2} ${floor - 520})`}>
         <rect x={-130} y={-26} width={260} height={52} rx={6} fill="#d9d4c7" />
@@ -205,7 +229,7 @@ export const ShelterFront: React.FC<{f: number; light: ShelterLight; chessT?: nu
 };
 
 /** Клетка с попугаем. flap — фаза взмаха крыльев (рад), 0 — сидит. */
-export const Cage: React.FC<{x: number; y: number; f: number; flap?: number; s?: number}> = ({x, y, f, flap = 0, s = 1}) => {
+export const Cage: React.FC<{x: number; y: number; f: number; flap?: number; s?: number; beak?: number}> = ({x, y, f, flap = 0, s = 1, beak = 0}) => {
   const w = Math.sin(flap) * 18;
   const bob = Math.sin(f / 6) * 2;
   return (
@@ -218,7 +242,8 @@ export const Cage: React.FC<{x: number; y: number; f: number; flap?: number; s?:
         <path d={`M-10 -24 Q${-30 - w} ${-14 - w} -14 0 Z`} fill="#3c6f55" />
         <path d={`M10 -24 Q${30 + w} ${-14 - w} 14 0 Z`} fill="#3c6f55" />
         <circle cx={0} cy={-44} r={11} fill="#5a9a76" />
-        <path d="M6 -46 Q16 -44 10 -36 Z" fill={C.warm} />
+        <path d={`M6 -47 Q16 -46 11 ${-40 + beak * 1}`} fill={C.warm} />
+        <path d={`M7 ${-43 + beak * 2} Q14 ${-40 + beak * 4} 9 ${-36 + beak * 4} Z`} fill="#c99a32" />
         <circle cx={2} cy={-47} r={2} fill="#111" />
         <path d="M-2 4 L-6 22 M2 4 L6 22" stroke="#c9a03a" strokeWidth={3} />
         <path d="M-4 4 L-10 30 L2 30 Z" fill="#c0503f" />

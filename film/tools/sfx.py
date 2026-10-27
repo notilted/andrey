@@ -220,6 +220,29 @@ def riser(d=4):
     n = noise(d); k = x / d
     return ((lp(n, 300) * (1 - k) + lp(n, 3300) * k) * 0.5 + y * 0.3) * k ** 2
 
+# ---------- SFX части 2 ----------
+def lock_click(d=1.2):
+    x = t(d); a = metal_hit(d, 220) * 0.4
+    clk = bp(noise(d), 1500, 7000) * np.exp(-x * 90) * 1.5
+    clk2 = np.roll(bp(noise(d), 1000, 5000) * np.exp(-x * 70), int(0.09 * SR))
+    return a + clk + clk2
+
+def creak(d=2.5, f0=180):
+    x = t(d); f = f0 + 60 * np.sin(2 * np.pi * 0.6 * x) + 25 * np.sin(2 * np.pi * 7 * x)
+    stick = (np.sin(2 * np.pi * np.cumsum(f) / SR) > 0.6).astype(float)
+    y = bp(stick + 0.2 * noise(d), 200, 3000) * env(len(x), 0.2, 0.6)
+    return conv(y, ir(1.5, 1.2, 3000), 0.35)
+
+def door_open(d=4):
+    x = t(d); air = lp(noise(d), 600) * np.clip((x - 0.8) / 2.5, 0, 1) * 0.7
+    return creak(d, 140) + air
+
+def page_flip(d=0.6):
+    x = t(d); return bp(noise(d), 1500, 9000) * np.exp(-((x - 0.2) / 0.08) ** 2) * 0.8
+
+def recap_hit(d=1.8):
+    x = t(d); return stinger(d) * 0.8 + bp(noise(d), 3000, 9000) * np.exp(-x * 20) * 0.3
+
 # ---------- музыка ----------
 def note(freq, d, bright=1.0):
     x = t(d); y = sum((0.6 ** k) * np.sin(2 * np.pi * freq * (k + 1) * x) * np.exp(-x * (1.2 + k * 0.9 / bright)) for k in range(6))
@@ -318,6 +341,10 @@ if __name__ == "__main__":
     save("public/music/m07_stage.wav", music_stage())
     save("public/music/m01_night_long.wav", music_night(16))
     save("public/music/m02_dread_long.wav", music_dread(24))
+    for name, fn in [("lock_click", lock_click), ("wheel_creak", lambda: creak(2.5, 210)), ("door_open", door_open),
+                     ("page_flip", page_flip), ("recap_hit", recap_hit)]:
+        save(f"public/sfx/{name}.wav", fn())
+    save("public/music/m08_loop.wav", music_shelter(80) * 0.8 + music_double(80) * 0.6)
     sf.write(os.path.join(ROOT, "tools/ir_room.wav"), ir(0.5, 0.35, 5000).astype(np.float32), SR)
     sf.write(os.path.join(ROOT, "tools/ir_stairs.wav"), ir(1.4, 1.1, 4500).astype(np.float32), SR)
     sf.write(os.path.join(ROOT, "tools/ir_bunker.wav"), ir(2.2, 1.6, 3500).astype(np.float32), SR)

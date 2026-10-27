@@ -84,7 +84,7 @@ export const StageScreen: React.FC<{f: number; start: number; copies: number}> =
 };
 
 /** Изображение с камеры наблюдения: коридор за дверью и двойник Марка. */
-export const CctvView: React.FC<{f: number; mouth: number; approach: number; blink: number}> = ({f, mouth, approach, blink}) => {
+export const CctvView: React.FC<{f: number; mouth: number; approach: number; blink: number; count?: number}> = ({f, mouth, approach, blink, count = 1}) => {
   const roll = (f * 7) % 1400;
   return (
     <svg viewBox="0 0 1000 760" width={1000} height={760} style={{display: 'block'}}>
@@ -110,10 +110,18 @@ export const CctvView: React.FC<{f: number; mouth: number; approach: number; bli
         <rect x={300} y={250} width={400} height={270} fill="#15181c" />
         <rect x={420} y={300} width={160} height={220} fill="#2a2e34" />
         <rect x={470} y={258} width={60} height={20} fill="#d8d8c8" />
-        {/* двойник */}
-        <g transform={`translate(${500} ${700 + approach * 60}) scale(${1.25 + approach * 0.5})`}>
-          <Character who="mark" x={0} y={0} size={1} frame={f} pose={{look: -1.6, lookUp: 0.3, mouth, blink, brow: -0.2, rim: 0, armF: [4, -6], armB: [-4, -6]}} />
-        </g>
+        {/* двойники: первый ближе всех, остальные дальше по коридору */}
+        {Array.from({length: count}).map((_, i) => {
+          const k = count - 1 - i; // рисуем от дальнего к ближнему
+          const xs = [500, 380, 620][k];
+          const sc = [1.25 + approach * 0.5, 0.8, 0.8][k];
+          const ys = [700 + approach * 60, 600, 600][k];
+          return (
+            <g key={k} transform={`translate(${xs} ${ys}) scale(${sc})`}>
+              <Character who="mark" x={0} y={0} size={1} frame={f + k * 7} pose={{look: -1.6, lookUp: 0.3, mouth: k === 0 ? mouth : 0, blink: k === 0 ? blink : 1, brow: -0.2, rim: 0, armF: [4, -6], armB: [-4, -6]}} />
+            </g>
+          );
+        })}
       </g>
       <rect width={1000} height={760} fill="url(#scan)" />
       <rect x={0} y={roll - 200} width={1000} height={60} fill="#fff" opacity={0.04} />
@@ -136,6 +144,40 @@ export const EndCard: React.FC<{f: number; start: number}> = ({f, start}) => {
         17 <span style={{color: C.red}}>МИНУТ</span>
       </div>
       <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 30, color: C.warm, marginTop: 26, letterSpacing: 3, opacity: ramp(local, 30, 46)}}>КАКОЙ ИЗ НИХ НАСТОЯЩИЙ?</div>
+    </div>
+  );
+};
+
+/** Экран «ЭТАП 2 ЗАВЕРШЁН · КОПИЯ ОПОЗНАНА». */
+export const IdentifiedScreen: React.FC<{f: number; start: number; name: string}> = ({f, start, name}) => {
+  const local = f - start;
+  return (
+    <div style={{position: 'absolute', inset: 0, background: '#e8e4da', fontFamily: FONT, color: '#14171d'}}>
+      <div style={{position: 'absolute', top: 120, left: 40, right: 40, padding: '16px 0', borderRadius: 18, background: '#14171d', color: C.white, textAlign: 'center', fontWeight: 900, fontSize: 30, letterSpacing: 2}}>00:00</div>
+      <div style={{position: 'absolute', top: 290, width: '100%', textAlign: 'center', fontWeight: 900, fontSize: 64, lineHeight: 1.05, opacity: fade(local, 4, 10)}}>
+        ЭТАП 2<br />
+        <span style={{color: C.red}}>ЗАВЕРШЁН</span>
+      </div>
+      <div style={{position: 'absolute', top: 520, width: '100%', textAlign: 'center', fontWeight: 800, fontSize: 26, color: '#555b66', opacity: fade(local, 24, 30)}}>КОПИЯ ОПОЗНАНА:</div>
+      <div style={{position: 'absolute', top: 566, left: 60, right: 60, padding: '10px 0', borderRadius: 16, background: C.red, color: C.white, textAlign: 'center', fontWeight: 900, fontSize: 76, letterSpacing: 4, opacity: fade(local, 40, 46), transform: `scale(${0.9 + 0.1 * easeOut(ramp(local, 40, 52))})`}}>
+        {name}
+      </div>
+    </div>
+  );
+};
+
+/** Финальный титр серии N с тизером следующей. */
+export const EpisodeCard: React.FC<{f: number; start: number; part: number; teaser: string}> = ({f, start, part, teaser}) => {
+  const local = f - start;
+  const a = easeOut(ramp(local, 0, 18));
+  return (
+    <div style={{position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: a, transform: `scale(${0.96 + 0.04 * a})`}}>
+      <div style={{fontFamily: FONT, fontWeight: 700, fontSize: 30, color: C.grey, fontStyle: 'italic', marginBottom: 14, opacity: ramp(local, 20, 34)}}>конец {['', 'первой', 'второй', 'третьей', 'четвёртой'][part] ?? part + '-й'} части</div>
+      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 132, color: C.white, letterSpacing: 2, lineHeight: 1}}>
+        17 <span style={{color: C.red}}>МИНУТ</span>
+      </div>
+      <div style={{marginTop: 18, padding: '8px 22px', borderRadius: 22, background: C.white, color: '#14171d', fontFamily: FONT, fontWeight: 900, fontSize: 30, letterSpacing: 3}}>ЧАСТЬ {part}</div>
+      <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 30, color: C.warm, marginTop: 26, letterSpacing: 3, opacity: ramp(local, 30, 46)}}>{teaser}</div>
     </div>
   );
 };
