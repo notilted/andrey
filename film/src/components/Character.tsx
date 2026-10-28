@@ -4,7 +4,7 @@ import React from 'react';
  * Персонаж в плоской векторной стилистике. Начало координат — пол между стопами,
  * персонаж смотрит вправо (facing=-1 — зеркально влево). Размеры в единицах взрослого (~340).
  */
-export type Who = 'mark' | 'alisa' | 'galina' | 'lev' | 'sonya' | 'evgeny' | 'misha' | 'palych' | 'vika';
+export type Who = 'mark' | 'alisa' | 'galina' | 'lev' | 'sonya' | 'evgeny' | 'misha' | 'palych' | 'vika' | 'jordan';
 
 export type Pose = {
   sit?: number; // 0 — стоит, 1 — сидит
@@ -46,6 +46,7 @@ export const LOOKS: Record<Who, Look> = {
   misha: {skin: '#d6a88a', skinShade: '#b0846c', hair: '#6a4a30', top: '#4f8fbf', topShade: '#3d7099', bottom: '#2c3446', shoes: '#c9c3b8', scale: 0.62, headScale: 1.26, torso: 116, width: 66},
   palych: {skin: '#b47e64', skinShade: '#8f6250', hair: '#d0d0cc', top: '#5a5a48', topShade: '#454536', bottom: '#2a2e38', shoes: '#1a1a1e', scale: 0.98, headScale: 1.02, torso: 134, width: 84},
   vika: {skin: '#d2a488', skinShade: '#ac8068', hair: '#2a1a14', top: '#e8e4da', topShade: '#c9c3b8', bottom: '#1f2430', shoes: '#15171b', scale: 0.86, headScale: 1.04, torso: 124, width: 66},
+  jordan: {skin: '#e2b496', skinShade: '#bc8e74', hair: '#4a3020', top: '#22304e', topShade: '#18223a', bottom: '#1c2640', shoes: '#0d0f12', scale: 1, headScale: 1, torso: 132, width: 76},
   lev: {skin: '#b98e78', skinShade: '#93705f', hair: '#0f1115', top: '#2c3834', topShade: '#202a27', bottom: '#1d2128', shoes: '#101216', scale: 1.02, headScale: 0.97, torso: 136, width: 66},
 };
 
@@ -132,6 +133,14 @@ const Hair: React.FC<{who: Who; c: string; f: number}> = ({who, c, f}) => {
           <path d="M-34 4 C-40 -36 -12 -52 8 -50 C28 -48 40 -36 36 -12 C30 -24 18 -32 2 -32 C-10 -30 -20 -22 -26 -10 C-28 -4 -30 0 -34 4 Z" fill={c} />
         </g>
       );
+    case 'jordan':
+      // зачёсанные назад волосы с объёмом
+      return (
+        <g>
+          <path d="M-34 -4 C-40 -38 -18 -56 8 -54 C30 -52 42 -40 38 -24 C30 -36 14 -40 -2 -38 C-16 -36 -24 -26 -28 -12 Z" fill={c} />
+          <path d="M-20 -46 C-4 -54 18 -52 30 -42" stroke="#6a4a30" strokeWidth={4} fill="none" />
+        </g>
+      );
     case 'lev':
       return <path d="M-33 -4 C-36 -42 -10 -54 12 -50 C30 -47 40 -34 37 -20 C26 -34 6 -36 -10 -30 C-20 -24 -26 -14 -28 -2 Z" fill={c} />;
   }
@@ -213,6 +222,8 @@ export const Character: React.FC<{
         {who === 'palych' && <path d={`M${-hw + 8} ${torsoTop} L${-hw + 26} ${torsoTop} L${-hw + 30} ${hipY + 8} L${-hw + 8} ${hipY + 8} Z M${hw - 8} ${torsoTop} L${hw - 26} ${torsoTop} L${hw - 30} ${hipY + 8} L${hw - 8} ${hipY + 8} Z`} fill="#3a3a2c" />}
         {who === 'vika' && <path d={`M${-hw + 6} ${torsoTop + 10} L${-6} ${torsoTop + 10} L${-4} ${hipY + 8} L${-hw + 6} ${hipY + 8} Z M${hw - 6} ${torsoTop + 10} L${6} ${torsoTop + 10} L${4} ${hipY + 8} L${hw - 6} ${hipY + 8} Z`} fill="#2a3040" />}
         {who === 'vika' && <rect x={12} y={torsoTop + 30} width={18} height={10} rx={2} fill={'#f2b448'} />}
+        {who === 'jordan' && <path d={`M-14 ${torsoTop - 2} L0 ${torsoTop + 30} L14 ${torsoTop - 2} Z`} fill="#f2f2ee" />}
+        {who === 'jordan' && <path d={`M-5 ${torsoTop + 8} L5 ${torsoTop + 8} L8 ${torsoTop + 70} L0 ${torsoTop + 80} L-8 ${torsoTop + 70} Z`} fill="#c8302a" />}
         {who === 'evgeny' && <rect x={-hw} y={hipY - 46} width={L.width} height={9} fill="#c9b458" opacity={0.85} />}
         {who === 'evgeny' && <rect x={-hw} y={hipY - 76} width={L.width} height={9} fill="#c9b458" opacity={0.85} />}
         {who === 'lev' && <rect x={-16} y={torsoTop - 12} width={32} height={18} rx={6} fill={L.top} />}

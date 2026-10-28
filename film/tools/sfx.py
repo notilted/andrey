@@ -408,8 +408,45 @@ def clock(d=6):  # тиканье часов
         n = bp(noise(0.02), 2000, 7000) * np.exp(-t(0.02) * 300) * (1 if int(k * 2) % 2 else 0.6); i = int(k * SR); out[i:i + len(n)] += n
     return out
 
+def money_loop(d=32, bpm=104):  # фанк: бас, бочка, хэт, стабы — «деньги текут»
+    out = np.zeros(int(d * SR)); beat = 60 / bpm
+    bass = [55, 55, 82.4, 55, 73.4, 55, 98, 82.4]
+    for k in range(int(d / beat * 2)):
+        st = k * beat / 2; i = int(st * SR); ln = beat / 2 * 0.9
+        x = t(ln); f0 = bass[k % 8]
+        y = (np.sin(2 * np.pi * f0 * x) + 0.4 * np.sin(2 * np.pi * f0 * 2 * x)) * np.exp(-x * 4) * 0.6
+        if k % 2 == 0: y = y + np.sin(2 * np.pi * (60 * np.exp(-x * 30) + 40) * x) * np.exp(-x * 18) * (1.0 if k % 4 == 0 else 0.5)
+        y = y + bp(noise(ln), 6000, 12000) * np.exp(-x * 60) * 0.25
+        if k % 8 == 4: y = y + bp(noise(ln), 1500, 6000) * np.exp(-x * 20) * 0.5
+        if k % 16 in (3, 11):
+            xs = t(ln); y = y + sum(np.sin(2 * np.pi * fr * xs) for fr in (523.3, 659.3, 784)) * np.exp(-xs * 9) * 0.18
+        out[i:i + len(y)] += y[: len(out) - i]
+    return out
+
+def pop(d=0.8):
+    x = t(d); return bp(noise(d), 800, 6000) * np.exp(-x * 40) + np.sin(2 * np.pi * 180 * x) * np.exp(-x * 30) * 0.6 + bp(noise(d), 3000, 9000) * np.exp(-(x - 0.1).clip(0) * 6) * 0.15 * (x > 0.1)
+
+def heli(d=8):
+    x = t(d); chop = (np.sin(2 * np.pi * 11 * x) > 0.6).astype(float)
+    return lp(noise(d), 300) * (0.4 + chop) * env(len(x), 1.0, 1.5)
+
+def flutter(d=4):
+    out = np.zeros(int(d * SR))
+    for k in range(120):
+        ln = rng.uniform(0.03, 0.09); n = bp(noise(ln), 1500, 7000) * np.exp(-t(ln) * 50)
+        i = int(rng.uniform(0, d - 0.1) * SR); out[i:i + len(n)] += n * rng.uniform(0.2, 1)
+    return out
+
+def gavel(d=1.5):
+    x = t(d); return (np.sin(2 * np.pi * 220 * x) * 0.6 + bp(noise(d), 400, 3000)) * np.exp(-x * 25) + np.roll(np.sin(2 * np.pi * 180 * x) * np.exp(-x * 25), int(0.3 * SR)) * 0.6
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["jb"]:
+        for name, fn in [("pop", pop), ("heli", heli), ("flutter", flutter), ("gavel", gavel)]:
+            save(f"public/sfx/{name}.wav", fn())
+        save("public/music/m11_money.wav", money_loop())
+        sys.exit()
     if sys.argv[1:] == ["bm"]:
         for name, fn in [("cash", cash), ("clock", clock)]:
             save(f"public/sfx/{name}.wav", fn())

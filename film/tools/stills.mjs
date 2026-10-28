@@ -8,7 +8,7 @@ const browserExecutable = process.env.REMOTION_BROWSER ?? '/opt/pw-browsers/chro
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const composition = await selectComposition({serveUrl, id: process.env.COMP ?? 'Film', browserExecutable});
 for (const fr of frames) {
-  await renderStill({serveUrl, composition, frame: Number(fr), output: path.join(out, `f${String(fr).padStart(5, '0')}.jpg`), imageFormat: 'jpeg', jpegQuality: 80, browserExecutable, scale: 0.5});
+  await renderStill({serveUrl, composition, frame: Number(fr), output: path.join(out, `f${String(fr).padStart(5, '0')}.jpg`), imageFormat: 'jpeg', jpegQuality: 80, browserExecutable, scale: Number(process.env.SCALE ?? 0.5)});
   process.stdout.write(fr + ' ');
 }
 console.log('done');

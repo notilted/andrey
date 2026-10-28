@@ -1,0 +1,706 @@
+{
+ "name": "jb",
+ "duration": 165.44,
+ "dialogue": [
+  {
+   "id": "j01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.4,
+   "caption": "Тебе двадцать шесть. За год ты заработал *сорок девять миллионов долларов*. И тебя это бесит: до миллиона в неделю не хватило *трёх*.",
+   "space": null
+  },
+  {
+   "id": "j02",
+   "who": "narrator",
+   "name": "",
+   "start": 10.26,
+   "caption": "Тебя зовут Джордан Белфорт. А десять лет назад у тебя не было *ничего*.",
+   "space": null
+  },
+  {
+   "id": "j03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.74,
+   "caption": "Квинс, Нью-Йорк. Отец — бухгалтер. В шестнадцать ты продаёшь мороженое из сумки-холодильника прямо на пляже. За лето — *двадцать тысяч долларов*.",
+   "space": null
+  },
+  {
+   "id": "j04",
+   "who": "narrator",
+   "name": "",
+   "start": 26.99,
+   "caption": "Ты поступаешь на стоматолога. В первый же день декан говорит: «Золотой век стоматологии *закончился*». Ты уходишь в тот же день.",
+   "space": null
+  },
+  {
+   "id": "j05",
+   "who": "narrator",
+   "name": "",
+   "start": 36.86,
+   "caption": "Свой бизнес — мясо и морепродукты. В двадцать пять — *банкротство*.",
+   "space": null
+  },
+  {
+   "id": "j06",
+   "who": "narrator",
+   "name": "",
+   "start": 42.99,
+   "caption": "Тысяча девятьсот восемьдесят седьмой. Ты — стажёр на Уолл-стрит. И видишь, как брокеры зарабатывают *миллионы* одними телефонными звонками.",
+   "space": null
+  },
+  {
+   "id": "j07",
+   "who": "narrator",
+   "name": "",
+   "start": 52.34,
+   "caption": "Ты сдаёшь экзамен на брокера. И в свой первый рабочий день попадаешь в *чёрный понедельник*. Рынок падает на двадцать два процента. Фирма закрывается.",
+   "space": null
+  },
+  {
+   "id": "j08",
+   "who": "narrator",
+   "name": "",
+   "start": 63.1,
+   "caption": "Ты находишь крошечную контору на Лонг-Айленде. Там продают акции по *пенни*. А комиссия — *пятьдесят процентов*.",
+   "space": null
+  },
+  {
+   "id": "j09",
+   "who": "narrator",
+   "name": "",
+   "start": 71.39,
+   "caption": "И ты понимаешь главное: продать можно *что угодно*. Если правильно говорить.",
+   "space": null
+  },
+  {
+   "id": "j10",
+   "who": "narrator",
+   "name": "",
+   "start": 77.35,
+   "caption": "Ты открываешь свою фирму — Stratton Oakmont. Начинали в гараже автосалона. Через пару лет у тебя — *тысяча брокеров*.",
+   "space": null
+  },
+  {
+   "id": "j11",
+   "who": "narrator",
+   "name": "",
+   "start": 86.04,
+   "caption": "Они звонят по твоему скрипту. Вы скупаете дешёвые акции, раздуваете цену — и продаёте их людям. Деньги текут *рекой*.",
+   "space": null
+  },
+  {
+   "id": "j12",
+   "who": "narrator",
+   "name": "",
+   "start": 95.87,
+   "caption": "Белый Lamborghini. Особняк. Вертолёт. Яхта длиной пятьдесят метров. Наличные в швейцарские банки возят, *примотав к телу*.",
+   "space": null
+  },
+  {
+   "id": "j13",
+   "who": "narrator",
+   "name": "",
+   "start": 105.98,
+   "caption": "В офисе — вечеринки. Деньги, шампанское, оркестр. Тебе кажется, что это *никогда не кончится*.",
+   "space": null
+  },
+  {
+   "id": "j14",
+   "who": "narrator",
+   "name": "",
+   "start": 114.56,
+   "caption": "А потом твоя яхта тонет в шторм у берегов Сардинии. Вас спасает итальянский флот. Это *первый знак*.",
+   "space": null
+  },
+  {
+   "id": "j15",
+   "who": "narrator",
+   "name": "",
+   "start": 122.36,
+   "caption": "ФБР уже несколько лет собирает на тебя дело. В девяносто восьмом тебе предъявляют обвинение: мошенничество и *отмывание денег*.",
+   "space": null
+  },
+  {
+   "id": "j16",
+   "who": "narrator",
+   "name": "",
+   "start": 131.63,
+   "caption": "Ты соглашаешься сотрудничать со следствием. И носишь прослушку против *собственных друзей*.",
+   "space": null
+  },
+  {
+   "id": "j17",
+   "who": "narrator",
+   "name": "",
+   "start": 137.76,
+   "caption": "Приговор — четыре года. Ты отсидишь двадцать два месяца. А суд обяжет вернуть пострадавшим *сто десять миллионов долларов*.",
+   "space": null
+  },
+  {
+   "id": "j18",
+   "who": "narrator",
+   "name": "",
+   "start": 147.21,
+   "caption": "Сегодня ты выступаешь по всему миру. Учишь людей продавать. И начинаешь одной фразой:",
+   "space": null
+  },
+  {
+   "id": "j19",
+   "who": "narrator",
+   "name": "",
+   "start": 153.39,
+   "caption": "«Продай мне *эту ручку*».",
+   "space": null
+  },
+  {
+   "id": "j20",
+   "who": "narrator",
+   "name": "",
+   "start": 156.38,
+   "caption": "А полторы тысячи человек так и не вернули *свои сбережения*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 10.26
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 0.9,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flutter.wav",
+   "start": 0.4,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 3.4
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 12.24,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 42.99
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 18.35,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 26.99
+  },
+  {
+   "file": "sfx/gulls.wav",
+   "start": 18.35,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 22.35
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 24.46,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 39.73,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 42.99,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 57.12
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 52.34,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 63.1
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 57.12,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 57.42,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 63.1,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 77.35
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 71.39,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 77.35,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.5,
+   "end": 114.56
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 82.75,
+   "gain": -18,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 95.87
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 82.95,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flutter.wav",
+   "start": 93.83,
+   "gain": -12,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 97.83
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 94.13,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 95.87,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heli.wav",
+   "start": 98.13,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "end": 101.13
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 98.94,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 101.94
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 106.18,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 106.38,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flutter.wav",
+   "start": 106.48,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 110.48
+  },
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 114.56,
+   "gain": -14,
+   "bus": "amb",
+   "fadeIn": 0.5,
+   "fadeOut": 1.0,
+   "end": 122.36
+  },
+  {
+   "file": "sfx/heli.wav",
+   "start": 118.27,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "end": 121.27
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 122.36,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 147.21
+  },
+  {
+   "file": "sfx/siren_far.wav",
+   "start": 122.36,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 1.0,
+   "end": 127.36
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 125.52,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 131.63,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 137.76
+  },
+  {
+   "file": "sfx/gavel.wav",
+   "start": 137.96,
+   "gain": -6,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 139.74,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 147.21,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 156.38
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 147.71,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 150.21
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 153.39,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 156.38,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.5,
+   "end": 163.44
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 161.24,
+   "gain": -10,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_office": 0.4,
+  "h_mad": 5.66,
+  "j01": 0.4,
+  "j01_end": 9.56,
+  "name": 10.26,
+  "nothing": 12.24,
+  "j02": 10.26,
+  "j02_end": 15.14,
+  "queens": 15.74,
+  "beach": 18.35,
+  "summer": 23.86,
+  "j03": 15.74,
+  "j03_end": 26.39,
+  "dental": 26.99,
+  "leave": 34.5,
+  "j04": 26.99,
+  "j04_end": 36.36,
+  "meat": 36.86,
+  "bankrupt": 39.73,
+  "j05": 36.86,
+  "j05_end": 42.19,
+  "wallst": 42.99,
+  "brokers": 47.19,
+  "j06": 42.99,
+  "j06_end": 51.84,
+  "exam": 52.34,
+  "crash": 57.12,
+  "closed": 61.09,
+  "j07": 52.34,
+  "j07_end": 62.3,
+  "penny": 63.1,
+  "fifty": 68.58,
+  "j08": 63.1,
+  "j08_end": 70.99,
+  "phone": 71.39,
+  "j09": 71.39,
+  "j09_end": 76.65,
+  "garage": 77.35,
+  "thousand": 82.75,
+  "j10": 77.35,
+  "j10_end": 85.64,
+  "pump": 86.04,
+  "river": 93.83,
+  "j11": 86.04,
+  "j11_end": 95.37,
+  "lambo": 95.87,
+  "mansion": 97.41,
+  "heli": 98.13,
+  "yacht": 98.94,
+  "swiss": 101.37,
+  "j12": 95.87,
+  "j12_end": 105.58,
+  "party": 105.98,
+  "j13": 105.98,
+  "j13_end": 112.96,
+  "party_hold": 112.96,
+  "storm": 114.56,
+  "navy": 118.27,
+  "j14": 114.56,
+  "j14_end": 121.56,
+  "fbi": 122.36,
+  "charge": 125.52,
+  "j15": 122.36,
+  "j15_end": 131.13,
+  "wire": 131.63,
+  "j16": 131.63,
+  "j16_end": 137.06,
+  "gavel": 137.76,
+  "cell": 139.44,
+  "restitution": 141.74,
+  "j17": 137.76,
+  "j17_end": 146.21,
+  "stage": 147.21,
+  "j18": 147.21,
+  "j18_end": 152.99,
+  "pen": 153.39,
+  "j19": 153.39,
+  "j19_end": 154.78,
+  "pen_hold": 154.78,
+  "victims": 156.38,
+  "j20": 156.38,
+  "j20_end": 160.04,
+  "title": 161.44,
+  "end": 165.44
+ },
+ "beats": {
+  "h_office": {
+   "start": 0.4,
+   "dur": 5.26
+  },
+  "h_mad": {
+   "start": 5.66,
+   "dur": 3.91
+  },
+  "name": {
+   "start": 10.26,
+   "dur": 1.98
+  },
+  "nothing": {
+   "start": 12.24,
+   "dur": 2.9
+  },
+  "queens": {
+   "start": 15.74,
+   "dur": 2.61
+  },
+  "beach": {
+   "start": 18.35,
+   "dur": 5.51
+  },
+  "summer": {
+   "start": 23.86,
+   "dur": 2.53
+  },
+  "dental": {
+   "start": 26.99,
+   "dur": 7.51
+  },
+  "leave": {
+   "start": 34.5,
+   "dur": 1.86
+  },
+  "meat": {
+   "start": 36.86,
+   "dur": 2.87
+  },
+  "bankrupt": {
+   "start": 39.73,
+   "dur": 2.46
+  },
+  "wallst": {
+   "start": 42.99,
+   "dur": 4.2
+  },
+  "brokers": {
+   "start": 47.19,
+   "dur": 4.65
+  },
+  "exam": {
+   "start": 52.34,
+   "dur": 4.78
+  },
+  "crash": {
+   "start": 57.12,
+   "dur": 3.97
+  },
+  "closed": {
+   "start": 61.09,
+   "dur": 1.21
+  },
+  "penny": {
+   "start": 63.1,
+   "dur": 5.48
+  },
+  "fifty": {
+   "start": 68.58,
+   "dur": 2.41
+  },
+  "phone": {
+   "start": 71.39,
+   "dur": 5.26
+  },
+  "garage": {
+   "start": 77.35,
+   "dur": 5.4
+  },
+  "thousand": {
+   "start": 82.75,
+   "dur": 2.88
+  },
+  "pump": {
+   "start": 86.04,
+   "dur": 7.79
+  },
+  "river": {
+   "start": 93.83,
+   "dur": 1.54
+  },
+  "lambo": {
+   "start": 95.87,
+   "dur": 1.54
+  },
+  "mansion": {
+   "start": 97.41,
+   "dur": 0.73
+  },
+  "heli": {
+   "start": 98.13,
+   "dur": 0.81
+  },
+  "yacht": {
+   "start": 98.94,
+   "dur": 2.43
+  },
+  "swiss": {
+   "start": 101.37,
+   "dur": 4.21
+  },
+  "party": {
+   "start": 105.98,
+   "dur": 6.98
+  },
+  "party_hold": {
+   "start": 112.96,
+   "dur": 1.2
+  },
+  "storm": {
+   "start": 114.56,
+   "dur": 3.71
+  },
+  "navy": {
+   "start": 118.27,
+   "dur": 3.29
+  },
+  "fbi": {
+   "start": 122.36,
+   "dur": 3.16
+  },
+  "charge": {
+   "start": 125.52,
+   "dur": 5.61
+  },
+  "wire": {
+   "start": 131.63,
+   "dur": 5.43
+  },
+  "gavel": {
+   "start": 137.76,
+   "dur": 1.68
+  },
+  "cell": {
+   "start": 139.44,
+   "dur": 2.3
+  },
+  "restitution": {
+   "start": 141.74,
+   "dur": 4.47
+  },
+  "stage": {
+   "start": 147.21,
+   "dur": 5.78
+  },
+  "pen": {
+   "start": 153.39,
+   "dur": 1.39
+  },
+  "pen_hold": {
+   "start": 154.78,
+   "dur": 1.0
+  },
+  "victims": {
+   "start": 156.38,
+   "dur": 3.66
+  }
+ }
+}

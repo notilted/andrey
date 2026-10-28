@@ -3,6 +3,7 @@ import {Composition, Still} from 'remotion';
 import './fonts';
 import {CharacterSheet} from './scenes/CharacterSheet';
 import {ShortOverlay} from './scenes/ShortOverlay';
+import {PxTest} from './scenes/PxTest';
 import {FaceTest} from './scenes/FaceTest';
 import {Film} from './Film';
 import {Ep2} from './Ep2';
@@ -29,6 +30,8 @@ import {Bm2} from './Bm2';
 import {DURATION as DURATION_BM2} from './timelineBm2';
 import {Bm3} from './Bm3';
 import {DURATION as DURATION_BM3} from './timelineBm3';
+import {Jb} from './Jb';
+import {DURATION as DURATION_JB} from './timelineJb';
 import {FPS, H, W} from './theme';
 import {DURATION} from './timeline';
 
@@ -47,6 +50,8 @@ export const Root: React.FC = () => (
     <Composition id="Bm1" component={Bm1} durationInFrames={DURATION_BM1} fps={FPS} width={W} height={H} />
     <Composition id="Bm2" component={Bm2} durationInFrames={DURATION_BM2} fps={FPS} width={W} height={H} />
     <Composition id="Bm3" component={Bm3} durationInFrames={DURATION_BM3} fps={FPS} width={W} height={H} />
+    <Composition id="PxTest" component={PxTest} durationInFrames={90} fps={FPS} width={W} height={H} />
+    <Composition id="Jb" component={Jb} durationInFrames={DURATION_JB} fps={FPS} width={W} height={H} />
     <Composition id="Sample" component={Film} durationInFrames={465} fps={FPS} width={W} height={H} />
     <Still id="ShortOverlay" component={ShortOverlay} width={W} height={H} defaultProps={{text: '', kind: 'hook' as const, series: ''}} />
     <Still id="FaceTest" component={FaceTest} width={W} height={H} />
