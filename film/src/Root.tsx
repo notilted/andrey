@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition, Still} from 'remotion';
 import './fonts';
 import {CharacterSheet} from './scenes/CharacterSheet';
+import {ShortOverlay} from './scenes/ShortOverlay';
 import {FaceTest} from './scenes/FaceTest';
 import {Film} from './Film';
 import {Ep2} from './Ep2';
@@ -47,6 +48,7 @@ export const Root: React.FC = () => (
     <Composition id="Bm2" component={Bm2} durationInFrames={DURATION_BM2} fps={FPS} width={W} height={H} />
     <Composition id="Bm3" component={Bm3} durationInFrames={DURATION_BM3} fps={FPS} width={W} height={H} />
     <Composition id="Sample" component={Film} durationInFrames={465} fps={FPS} width={W} height={H} />
+    <Still id="ShortOverlay" component={ShortOverlay} width={W} height={H} defaultProps={{text: '', kind: 'hook' as const, series: ''}} />
     <Still id="FaceTest" component={FaceTest} width={W} height={H} />
     <Still id="CharacterSheet" component={CharacterSheet} width={W} height={H} />
   </>

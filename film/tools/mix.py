@@ -1,6 +1,6 @@
 """Сведение по таймлайну: python3 tools/mix.py src/data/sample.json
 
-Пишет public/mix/<name>.wav (мастер) + стемы dialog/music/sfx/amb
+Пишет public/mix/<name>.wav (мастер) + стемы dialog/music/sfx/amb в stems/
 и src/data/<name>.voice.json (длительности реплик и огибающие для липсинка).
 """
 import json, os, subprocess, sys
@@ -67,10 +67,10 @@ def main(path):
     os.makedirs(os.path.join(ROOT, "public/mix"), exist_ok=True)
     name = tl["name"]
     for b, x in buses.items():
-        sf.write(os.path.join(ROOT, f"public/mix/{name}_{b}.wav"), x, SR)
-    os.makedirs(os.path.join(ROOT, "public/mix/characters"), exist_ok=True)
+        sf.write(os.path.join(ROOT, f"stems/{name}_{b}.wav"), x, SR)
+    os.makedirs(os.path.join(ROOT, "stems/characters"), exist_ok=True)
     for w, x in chars.items():
-        sf.write(os.path.join(ROOT, f"public/mix/characters/{name}_{w}.wav"), x, SR)
+        sf.write(os.path.join(ROOT, f"stems/characters/{name}_{w}.wav"), x, SR)
     raw = os.path.join(ROOT, f"public/mix/{name}_raw.wav")
     sf.write(raw, sum(buses.values()), SR, subtype="FLOAT")
     # мастеринг: мягкая компрессия + громкость под мобильные платформы
