@@ -1,0 +1,483 @@
+{
+ "name": "bm2",
+ "duration": 116.63,
+ "dialogue": [
+  {
+   "id": "b2_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.5,
+   "caption": "Первый покупатель приходит на второй день. Берёт шаурму, откусывает. И она *разваливается* у него в руках.",
+   "space": null
+  },
+  {
+   "id": "b2_02",
+   "who": "narrator",
+   "name": "",
+   "start": 8.04,
+   "caption": "Лаваш рвётся. Соус течёт по пальцам. Он молча выбрасывает её в урну. *У тебя на глазах*.",
+   "space": null
+  },
+  {
+   "id": "b2_03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.96,
+   "caption": "Первый месяц. В кассе — четыре тысячи в день. А чтобы просто не уходить в минус, нужно *двадцать пять*.",
+   "space": null
+  },
+  {
+   "id": "b2_04",
+   "who": "narrator",
+   "name": "",
+   "start": 23.81,
+   "caption": "И ты замечаешь странное. Мяса закупаешь на пятьдесят порций в день. А продаёшь — *тридцать*.",
+   "space": null
+  },
+  {
+   "id": "b2_05",
+   "who": "narrator",
+   "name": "",
+   "start": 31.32,
+   "caption": "Ты ставишь камеру. И видишь, как Лена пробивает чек, потом *отменяет* его — и кладёт деньги в карман.",
+   "space": null
+  },
+  {
+   "id": "b2_06",
+   "who": "narrator",
+   "name": "",
+   "start": 38.55,
+   "caption": "А Рустам по вечерам уходит с пакетом. В пакете — *твоё мясо*.",
+   "space": null
+  },
+  {
+   "id": "b2_07",
+   "who": "narrator",
+   "name": "",
+   "start": 43.83,
+   "caption": "Ты увольняешь обоих. Теперь ты сам и повар, и кассир, и уборщик. Встаёшь в пять. Ложишься в час.",
+   "space": null
+  },
+  {
+   "id": "b2_08",
+   "who": "narrator",
+   "name": "",
+   "start": 53.35,
+   "caption": "А через месяц через дорогу начинают *ремонт*.",
+   "space": null
+  },
+  {
+   "id": "b2_09",
+   "who": "narrator",
+   "name": "",
+   "start": 56.31,
+   "caption": "Красная вывеска. Сорок точек по городу. «Шаурма-Кинг». И баннер на всю витрину: «Шаурма — *девяносто девять рублей*».",
+   "space": null
+  },
+  {
+   "id": "b2_10",
+   "who": "narrator",
+   "name": "",
+   "start": 65.88,
+   "caption": "У тебя — двести восемьдесят. Дешевле ты не можешь: одно мясо стоит *сто десять*.",
+   "space": null
+  },
+  {
+   "id": "b2_11",
+   "who": "narrator",
+   "name": "",
+   "start": 72.04,
+   "caption": "Студенты уходят к ним. У них очередь до остановки. У тебя — *пусто*.",
+   "space": null
+  },
+  {
+   "id": "b2_12",
+   "who": "narrator",
+   "name": "",
+   "start": 78.44,
+   "caption": "А в пятницу утром в дверь стучат. Проверка. Анонимная жалоба: «Отравился шаурмой».",
+   "space": null
+  },
+  {
+   "id": "b2_13",
+   "who": "narrator",
+   "name": "",
+   "start": 85.61,
+   "caption": "Ты никого не травил. Но точку закрывают *на неделю*. До выяснения.",
+   "space": null
+  },
+  {
+   "id": "b2_14",
+   "who": "narrator",
+   "name": "",
+   "start": 91.18,
+   "caption": "На счёте — *одиннадцать тысяч*. Аренду платить через три дня.",
+   "space": null
+  },
+  {
+   "id": "b2_15",
+   "who": "narrator",
+   "name": "",
+   "start": 96.24,
+   "caption": "Ночью ты пишешь объявление: «Продаётся готовый бизнес. *Недорого*». Палец — над кнопкой «Опубликовать».",
+   "space": null
+  },
+  {
+   "id": "b2_16",
+   "who": "narrator",
+   "name": "",
+   "start": 105.59,
+   "caption": "И тут звонит мама: «Я разбирала бабушкины вещи. Тут коробка. На ней — *твоё имя*».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/crowd.wav",
+   "start": 0,
+   "gain": -26,
+   "bus": "amb",
+   "fadeIn": 0.5,
+   "fadeOut": 1.0,
+   "end": 15.96
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 15.96
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 1.3,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 5.41,
+   "gain": -26,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 9.04,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 15.96,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 43.83
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 16.46,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 24.11,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 31.32,
+   "gain": -28,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 38.55
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 36.28,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 38.95,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 43.83,
+   "gain": -17,
+   "bus": "music",
+   "fadeOut": 0.8,
+   "end": 53.35
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 49.06,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 52.06
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 53.35,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 55.31,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 60.6,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 56.31,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 78.44
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 72.04,
+   "gain": -20,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 78.44
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 78.44,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 79.24,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 86.11,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 91.18,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 0.8,
+   "end": 105.59
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 103.99,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 105.89
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 105.59,
+   "gain": -12,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 108.19
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 110.06,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 112.83,
+   "gain": -8,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "first": 0.5,
+  "fall": 5.11,
+  "b2_01": 0.5,
+  "b2_01_end": 7.44,
+  "trash": 8.04,
+  "b2_02": 8.04,
+  "b2_02_end": 15.06,
+  "month": 15.96,
+  "b2_03": 15.96,
+  "b2_03_end": 23.01,
+  "meat": 23.81,
+  "b2_04": 23.81,
+  "b2_04_end": 30.72,
+  "cctv": 31.32,
+  "pocket": 36.28,
+  "b2_05": 31.32,
+  "b2_05_end": 37.95,
+  "rustam": 38.55,
+  "b2_06": 38.55,
+  "b2_06_end": 42.93,
+  "alone": 43.83,
+  "fire": 45.52,
+  "five": 49.06,
+  "b2_07": 43.83,
+  "b2_07_end": 51.55,
+  "alone_hold": 51.55,
+  "reno": 53.35,
+  "b2_08": 53.35,
+  "b2_08_end": 55.91,
+  "king": 56.31,
+  "banner": 60.6,
+  "b2_09": 56.31,
+  "b2_09_end": 65.28,
+  "price": 65.88,
+  "b2_10": 65.88,
+  "b2_10_end": 71.44,
+  "queue": 72.04,
+  "b2_11": 72.04,
+  "b2_11_end": 77.44,
+  "knock": 78.44,
+  "complaint": 81.97,
+  "b2_12": 78.44,
+  "b2_12_end": 85.01,
+  "sealed": 85.61,
+  "b2_13": 85.61,
+  "b2_13_end": 90.38,
+  "broke": 91.18,
+  "b2_14": 91.18,
+  "b2_14_end": 95.34,
+  "ad": 96.24,
+  "b2_15": 96.24,
+  "b2_15_end": 103.79,
+  "hover": 103.99,
+  "call": 105.59,
+  "box": 109.46,
+  "b2_16": 105.59,
+  "b2_16_end": 112.03,
+  "title": 113.03,
+  "end": 116.63
+ },
+ "beats": {
+  "first": {
+   "start": 0.5,
+   "dur": 4.61
+  },
+  "fall": {
+   "start": 5.11,
+   "dur": 2.34
+  },
+  "trash": {
+   "start": 8.04,
+   "dur": 7.02
+  },
+  "month": {
+   "start": 15.96,
+   "dur": 7.05
+  },
+  "meat": {
+   "start": 23.81,
+   "dur": 6.91
+  },
+  "cctv": {
+   "start": 31.32,
+   "dur": 4.96
+  },
+  "pocket": {
+   "start": 36.28,
+   "dur": 1.68
+  },
+  "rustam": {
+   "start": 38.55,
+   "dur": 4.38
+  },
+  "alone": {
+   "start": 43.83,
+   "dur": 1.69
+  },
+  "fire": {
+   "start": 45.52,
+   "dur": 3.54
+  },
+  "five": {
+   "start": 49.06,
+   "dur": 2.49
+  },
+  "alone_hold": {
+   "start": 51.55,
+   "dur": 1.0
+  },
+  "reno": {
+   "start": 53.35,
+   "dur": 2.56
+  },
+  "king": {
+   "start": 56.31,
+   "dur": 4.29
+  },
+  "banner": {
+   "start": 60.6,
+   "dur": 4.68
+  },
+  "price": {
+   "start": 65.88,
+   "dur": 5.56
+  },
+  "queue": {
+   "start": 72.04,
+   "dur": 5.4
+  },
+  "knock": {
+   "start": 78.44,
+   "dur": 3.53
+  },
+  "complaint": {
+   "start": 81.97,
+   "dur": 3.05
+  },
+  "sealed": {
+   "start": 85.61,
+   "dur": 4.77
+  },
+  "broke": {
+   "start": 91.18,
+   "dur": 4.16
+  },
+  "ad": {
+   "start": 96.24,
+   "dur": 7.55
+  },
+  "hover": {
+   "start": 103.99,
+   "dur": 1.4
+  },
+  "call": {
+   "start": 105.59,
+   "dur": 3.87
+  },
+  "box": {
+   "start": 109.46,
+   "dur": 2.58
+  }
+ }
+}

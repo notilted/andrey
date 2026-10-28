@@ -1,0 +1,534 @@
+{
+ "name": "bm3",
+ "duration": 133.18,
+ "dialogue": [
+  {
+   "id": "b3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.5,
+   "caption": "В коробке — старая школьная тетрадь. На обложке бабушкиным почерком: «*Внуку*. Когда будет трудно».",
+   "space": null
+  },
+  {
+   "id": "b3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 8.75,
+   "caption": "Внутри — рецепты. Пирожки, борщ, плов. И на последней странице — маринад. «Для мяса, которое любят *все*».",
+   "space": null
+  },
+  {
+   "id": "b3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 18.73,
+   "caption": "Кефир, зира, чеснок, капля гранатового сока. И приписка: «Не жалей времени. Мясо должно *ночевать* в маринаде».",
+   "space": null
+  },
+  {
+   "id": "b3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 28.52,
+   "caption": "Неделю, пока точка закрыта, ты *учишься*. Сорок попыток. Сорок раз — в мусорку.",
+   "space": null
+  },
+  {
+   "id": "b3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 36.44,
+   "caption": "На сорок первой ты откусываешь — и замираешь. Это вкус *бабушкиной кухни*.",
+   "space": null
+  },
+  {
+   "id": "b3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 44.25,
+   "caption": "Проверка ничего не находит. Точку открывают. Ты ставишь на кассу табличку: «Первая шаурма — *бесплатно*. Не понравится — вторая тоже».",
+   "space": null
+  },
+  {
+   "id": "b3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 54.39,
+   "caption": "Первым заходит тот самый студент, который выбросил твою шаурму в урну. Он откусывает. И берёт *ещё две*.",
+   "space": null
+  },
+  {
+   "id": "b3_08",
+   "who": "narrator",
+   "name": "",
+   "start": 62.37,
+   "caption": "Вечером он выкладывает видео: «Шаурма за девяносто девять против шаурмы за двести восемьдесят». И честно говорит, *какая лучше*.",
+   "space": null
+  },
+  {
+   "id": "b3_09",
+   "who": "narrator",
+   "name": "",
+   "start": 71.16,
+   "caption": "Утром у видео — *миллион просмотров*. А у тебя — очередь до остановки.",
+   "space": null
+  },
+  {
+   "id": "b3_10",
+   "who": "narrator",
+   "name": "",
+   "start": 76.97,
+   "caption": "Через два месяца красная вывеска напротив *гаснет*.",
+   "space": null
+  },
+  {
+   "id": "b3_11",
+   "who": "narrator",
+   "name": "",
+   "start": 81.13,
+   "caption": "А потом к тебе заходит человек в дорогом костюме. Он ничего не заказывает. Просто кладёт на прилавок визитку.",
+   "space": null
+  },
+  {
+   "id": "b3_12",
+   "who": "narrator",
+   "name": "",
+   "start": 88.41,
+   "caption": "«Пять миллионов за рецепт соуса. Подумайте *до утра*».",
+   "space": null
+  },
+  {
+   "id": "b3_13",
+   "who": "narrator",
+   "name": "",
+   "start": 92.31,
+   "caption": "Пять миллионов. В два с половиной раза больше, чем оставила бабушка.",
+   "space": null
+  },
+  {
+   "id": "b3_14",
+   "who": "narrator",
+   "name": "",
+   "start": 97.59,
+   "caption": "Ты всю ночь сидишь над тетрадью. И смотришь на записку: «Не трать на ерунду».",
+   "space": null
+  },
+  {
+   "id": "b3_15",
+   "who": "narrator",
+   "name": "",
+   "start": 103.74,
+   "caption": "Утром ты звонишь по визитке. И говоришь одно слово: «*Нет*».",
+   "space": null
+  },
+  {
+   "id": "b3_16",
+   "who": "narrator",
+   "name": "",
+   "start": 110.01,
+   "caption": "Через год у тебя три точки. Двенадцать сотрудников. И очередь, которая *не кончается*.",
+   "space": null
+  },
+  {
+   "id": "b3_17",
+   "who": "narrator",
+   "name": "",
+   "start": 116.71,
+   "caption": "А на стене первой точки висит бабушкина фотография. Под ней — её записка: «Не трать на ерунду». А рядом — твоим почерком: «*Не потратил*».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m09_sad.wav",
+   "start": 0,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.0,
+   "end": 28.52
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 0.8,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 9.25,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 12.27,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 28.52,
+   "gain": -17,
+   "bus": "music",
+   "fadeOut": 0.8,
+   "end": 36.44
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 29.32,
+   "gain": -26,
+   "bus": "sfx",
+   "end": 29.82
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 30.62,
+   "gain": -26,
+   "bus": "sfx",
+   "end": 31.12
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 31.92,
+   "gain": -26,
+   "bus": "sfx",
+   "end": 32.42
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 33.22,
+   "gain": -26,
+   "bus": "sfx",
+   "end": 33.72
+  },
+  {
+   "file": "sfx/rubble.wav",
+   "start": 34.52,
+   "gain": -26,
+   "bus": "sfx",
+   "end": 35.02
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 40.15,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 42.45,
+   "gain": -12,
+   "bus": "music"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 44.25,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 62.37
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 60.84,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 62.87,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 71.16,
+   "gain": -16,
+   "bus": "music",
+   "fadeOut": 1.0,
+   "end": 81.13
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 71.66,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 74.16
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 73.76,
+   "gain": -18,
+   "bus": "amb",
+   "fadeOut": 1.0,
+   "end": 81.13
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 77.97,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m06_double.wav",
+   "start": 81.13,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 97.59
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 81.33,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 88.41,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 97.59,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 103.74
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 104.04,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 107.56,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 110.01,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 2.0,
+   "end": 130.58
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 110.01,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 1.0,
+   "end": 116.71
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 123.96,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 125.56
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "notebook": 0.5,
+  "b3_01": 0.5,
+  "b3_01_end": 8.05,
+  "recipes": 8.75,
+  "marinade": 12.27,
+  "b3_02": 8.75,
+  "b3_02_end": 18.13,
+  "ingredients": 18.73,
+  "postscript": 22.4,
+  "b3_03": 18.73,
+  "b3_03_end": 27.62,
+  "tries": 28.52,
+  "b3_04": 28.52,
+  "b3_04_end": 34.74,
+  "tries_hold": 34.74,
+  "taste": 36.44,
+  "flash": 40.15,
+  "b3_05": 36.44,
+  "b3_05_end": 42.25,
+  "taste_hold": 42.45,
+  "reopen": 44.25,
+  "free": 47.47,
+  "b3_06": 44.25,
+  "b3_06_end": 53.69,
+  "student": 54.39,
+  "two": 60.44,
+  "b3_07": 54.39,
+  "b3_07_end": 61.57,
+  "video": 62.37,
+  "b3_08": 62.37,
+  "b3_08_end": 70.66,
+  "million": 71.16,
+  "line": 73.76,
+  "b3_09": 71.16,
+  "b3_09_end": 76.07,
+  "king_off": 76.97,
+  "b3_10": 76.97,
+  "b3_10_end": 80.13,
+  "suit": 81.13,
+  "card": 85.87,
+  "b3_11": 81.13,
+  "b3_11_end": 88.01,
+  "offer": 88.41,
+  "b3_12": 88.41,
+  "b3_12_end": 91.71,
+  "compare": 92.31,
+  "b3_13": 92.31,
+  "b3_13_end": 96.69,
+  "night": 97.59,
+  "b3_14": 97.59,
+  "b3_14_end": 102.94,
+  "no": 103.74,
+  "no_word": 107.56,
+  "b3_15": 103.74,
+  "b3_15_end": 108.01,
+  "no_hold": 108.21,
+  "year": 110.01,
+  "b3_16": 110.01,
+  "b3_16_end": 115.81,
+  "wall": 116.71,
+  "note": 120.64,
+  "signed": 123.96,
+  "b3_17": 116.71,
+  "b3_17_end": 126.98,
+  "title": 128.58,
+  "end": 133.18
+ },
+ "beats": {
+  "notebook": {
+   "start": 0.5,
+   "dur": 7.55
+  },
+  "recipes": {
+   "start": 8.75,
+   "dur": 3.52
+  },
+  "marinade": {
+   "start": 12.27,
+   "dur": 5.86
+  },
+  "ingredients": {
+   "start": 18.73,
+   "dur": 3.67
+  },
+  "postscript": {
+   "start": 22.4,
+   "dur": 5.22
+  },
+  "tries": {
+   "start": 28.52,
+   "dur": 6.22
+  },
+  "tries_hold": {
+   "start": 34.74,
+   "dur": 1.4
+  },
+  "taste": {
+   "start": 36.44,
+   "dur": 3.71
+  },
+  "flash": {
+   "start": 40.15,
+   "dur": 2.1
+  },
+  "taste_hold": {
+   "start": 42.45,
+   "dur": 1.0
+  },
+  "reopen": {
+   "start": 44.25,
+   "dur": 3.22
+  },
+  "free": {
+   "start": 47.47,
+   "dur": 6.22
+  },
+  "student": {
+   "start": 54.39,
+   "dur": 6.05
+  },
+  "two": {
+   "start": 60.44,
+   "dur": 1.13
+  },
+  "video": {
+   "start": 62.37,
+   "dur": 8.29
+  },
+  "million": {
+   "start": 71.16,
+   "dur": 2.6
+  },
+  "line": {
+   "start": 73.76,
+   "dur": 2.31
+  },
+  "king_off": {
+   "start": 76.97,
+   "dur": 3.16
+  },
+  "suit": {
+   "start": 81.13,
+   "dur": 4.74
+  },
+  "card": {
+   "start": 85.87,
+   "dur": 2.15
+  },
+  "offer": {
+   "start": 88.41,
+   "dur": 3.3
+  },
+  "compare": {
+   "start": 92.31,
+   "dur": 4.38
+  },
+  "night": {
+   "start": 97.59,
+   "dur": 5.35
+  },
+  "no": {
+   "start": 103.74,
+   "dur": 3.82
+  },
+  "no_word": {
+   "start": 107.56,
+   "dur": 0.44
+  },
+  "no_hold": {
+   "start": 108.21,
+   "dur": 1.0
+  },
+  "year": {
+   "start": 110.01,
+   "dur": 5.8
+  },
+  "wall": {
+   "start": 116.71,
+   "dur": 3.93
+  },
+  "note": {
+   "start": 120.64,
+   "dur": 3.32
+  },
+  "signed": {
+   "start": 123.96,
+   "dur": 3.02
+  }
+ }
+}

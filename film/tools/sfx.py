@@ -397,8 +397,23 @@ def wave_roar(d=6):  # приближающийся рёв волны
     x = t(d); k = x / d; n = noise(d)
     return ((lp(n, 200) * (1 - k) + lp(n, 1000) * k) * 1.2 + bp(n, 800, 3000) * k ** 2 * 0.6) * k ** 1.5 * env(len(x), 0.1, 0.1)
 
+def cash(d=1.2):  # касса: звонок + выдвижной ящик
+    x = t(d); bell = (np.sin(2 * np.pi * 2093 * x) + 0.6 * np.sin(2 * np.pi * 3136 * x)) * np.exp(-x * 6) * 0.6
+    drawer = np.roll(bp(noise(d), 300, 3000) * np.exp(-x * 14) * 0.8, int(0.25 * SR))
+    return bell + drawer
+
+def clock(d=6):  # тиканье часов
+    out = np.zeros(int(d * SR))
+    for k in np.arange(0, d - 0.1, 0.5):
+        n = bp(noise(0.02), 2000, 7000) * np.exp(-t(0.02) * 300) * (1 if int(k * 2) % 2 else 0.6); i = int(k * SR); out[i:i + len(n)] += n
+    return out
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["bm"]:
+        for name, fn in [("cash", cash), ("clock", clock)]:
+            save(f"public/sfx/{name}.wav", fn())
+        sys.exit()
     if sys.argv[1:] == ["dm"]:
         for name, fn in [("surf", surf), ("gulls", gulls), ("water_rush", water_rush), ("wave_roar", wave_roar)]:
             save(f"public/sfx/{name}.wav", fn())

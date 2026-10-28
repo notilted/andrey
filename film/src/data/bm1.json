@@ -1,0 +1,542 @@
+{
+ "name": "bm1",
+ "duration": 138.47,
+ "dialogue": [
+  {
+   "id": "b1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.5,
+   "caption": "Бабушка оставила тебе *два миллиона рублей*. И записку из трёх слов: «Не трать на ерунду».",
+   "space": null
+  },
+  {
+   "id": "b1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.38,
+   "caption": "Тебе двадцать шесть. Ты развозишь еду на велосипеде. И впервые в жизни у тебя на карте — *шесть нулей*.",
+   "space": null
+  },
+  {
+   "id": "b1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.2,
+   "caption": "Мама говорит: «Закрой ипотеку». Друг говорит: «Купи машину, будешь таксовать». Дядя говорит: «*Крипта*, братишка».",
+   "space": null
+  },
+  {
+   "id": "b1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 24.62,
+   "caption": "А ты вспоминаешь бабушкину кухню. Как она кормила пирожками весь двор. И говорила: «Голодный человек всегда *вернётся* туда, где его накормили».",
+   "space": null
+  },
+  {
+   "id": "b1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 35.32,
+   "caption": "Ты решаешь открыть *шаурмичную*.",
+   "space": null
+  },
+  {
+   "id": "b1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 39.93,
+   "caption": "Первая точка — центр города. Людей — море. Аренда — *триста пятьдесят тысяч* в месяц. И в радиусе ста метров уже пять шаурмичных.",
+   "space": null
+  },
+  {
+   "id": "b1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 51.1,
+   "caption": "Вторая — спальный район. Аренда шестьдесят тысяч. Конкурентов нет. Но в семь вечера на улице *ни души*.",
+   "space": null
+  },
+  {
+   "id": "b1_08",
+   "who": "narrator",
+   "name": "",
+   "start": 60.57,
+   "caption": "Третья — угол между колледжем и автосервисом. Аренда — *сто десять*. Ты приходишь туда в семь утра с блокнотом и считаешь прохожих.",
+   "space": null
+  },
+  {
+   "id": "b1_09",
+   "who": "narrator",
+   "name": "",
+   "start": 70.25,
+   "caption": "К вечеру в блокноте *тысяча четыреста* палочек. Студенты, механики, таксисты. И почти все — голодные.",
+   "space": null
+  },
+  {
+   "id": "b1_10",
+   "who": "narrator",
+   "name": "",
+   "start": 78.89,
+   "caption": "Ты подписываешь договор.",
+   "space": null
+  },
+  {
+   "id": "b1_11",
+   "who": "narrator",
+   "name": "",
+   "start": 82.53,
+   "caption": "А дальше деньги начинают *таять*. Ремонт — четыреста тысяч. Оборудование — шестьсот. Вытяжка, которую требует пожарный, — ещё сто восемьдесят.",
+   "space": null
+  },
+  {
+   "id": "b1_12",
+   "who": "narrator",
+   "name": "",
+   "start": 93.37,
+   "caption": "Вывеска, касса, разрешения, первая закупка мяса. Каждое утро ты открываешь банковское приложение — и цифра *меньше*.",
+   "space": null
+  },
+  {
+   "id": "b1_13",
+   "who": "narrator",
+   "name": "",
+   "start": 103.5,
+   "caption": "Ты нанимаешь повара — Рустама, с рынка. И кассира — Лену, студентку с вечернего.",
+   "space": null
+  },
+  {
+   "id": "b1_14",
+   "who": "narrator",
+   "name": "",
+   "start": 110.63,
+   "caption": "Утро открытия. На счёте — *сто девяносто тысяч*. Ты сам надуваешь шарики и переворачиваешь табличку: «Открыто».",
+   "space": null
+  },
+  {
+   "id": "b1_15",
+   "who": "narrator",
+   "name": "",
+   "start": 120.95,
+   "caption": "Восемь утра. Девять. Двенадцать. Колледж выходит на перерыв — и проходит *мимо*.",
+   "space": null
+  },
+  {
+   "id": "b1_16",
+   "who": "narrator",
+   "name": "",
+   "start": 128.49,
+   "caption": "К закрытию в кассе — ноль. За весь день к тебе не зашёл *ни один человек*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m09_sad.wav",
+   "start": 0,
+   "gain": -16,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 7.38
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 3.42,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 7.38,
+   "gain": -26,
+   "bus": "amb",
+   "fadeIn": 1.0,
+   "fadeOut": 0.5,
+   "end": 15.2
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 11.06,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 15.2,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 24.62
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 15.2,
+   "gain": -30,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 24.62
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 24.62,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.0,
+   "end": 37.83
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 35.32,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 37.83,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 1.0,
+   "end": 78.89
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 39.93,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 51.1
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 51.1,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 60.57
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 60.57,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "end": 78.89
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 65.29,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 73.89
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 79.49,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 81.29
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 80.73,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 82.53,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 103.5
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 83.13,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 84.43,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 85.73,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 87.03,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 88.33,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 89.63,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 90.93,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 103.5,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 120.95
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 105.5,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 119.15,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 120.65
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 120.95,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 128.49
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 123.63,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 1,
+   "end": 127.63
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 128.49,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 1.0,
+   "end": 135.87
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 134.67,
+   "gain": -8,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "h_photo": 0.5,
+  "note": 3.42,
+  "b1_01": 0.5,
+  "b1_01_end": 6.48,
+  "courier": 7.38,
+  "card": 11.06,
+  "b1_02": 7.38,
+  "b1_02_end": 14.4,
+  "advice": 15.2,
+  "friend": 17.66,
+  "uncle": 21.28,
+  "b1_03": 15.2,
+  "b1_03_end": 23.82,
+  "memory": 24.62,
+  "quote": 29.67,
+  "b1_04": 24.62,
+  "b1_04_end": 34.72,
+  "decide": 35.32,
+  "b1_05": 35.32,
+  "b1_05_end": 37.23,
+  "map": 37.83,
+  "p1": 39.93,
+  "p1_comp": 46.79,
+  "b1_06": 39.93,
+  "b1_06_end": 50.3,
+  "p2": 51.1,
+  "p2_empty": 56.85,
+  "b1_07": 51.1,
+  "b1_07_end": 59.77,
+  "p3": 60.57,
+  "count": 65.29,
+  "b1_08": 60.57,
+  "b1_08_end": 69.65,
+  "tally": 70.25,
+  "people": 73.89,
+  "b1_09": 70.25,
+  "b1_09_end": 78.09,
+  "sign": 78.89,
+  "b1_10": 78.89,
+  "b1_10_end": 80.73,
+  "sign_hold": 80.73,
+  "melt": 82.53,
+  "b1_11": 82.53,
+  "b1_11_end": 92.97,
+  "melt2": 93.37,
+  "b1_12": 93.37,
+  "b1_12_end": 102.7,
+  "hire": 103.5,
+  "b1_13": 103.5,
+  "b1_13_end": 109.83,
+  "open": 110.63,
+  "b1_14": 110.63,
+  "b1_14_end": 118.95,
+  "open_hold": 119.15,
+  "wait": 120.95,
+  "pass": 123.63,
+  "b1_15": 120.95,
+  "b1_15_end": 127.29,
+  "zero": 128.49,
+  "b1_16": 128.49,
+  "b1_16_end": 133.67,
+  "title": 134.87,
+  "end": 138.47
+ },
+ "beats": {
+  "h_photo": {
+   "start": 0.5,
+   "dur": 2.92
+  },
+  "note": {
+   "start": 3.42,
+   "dur": 3.06
+  },
+  "courier": {
+   "start": 7.38,
+   "dur": 3.68
+  },
+  "card": {
+   "start": 11.06,
+   "dur": 3.34
+  },
+  "advice": {
+   "start": 15.2,
+   "dur": 2.46
+  },
+  "friend": {
+   "start": 17.66,
+   "dur": 3.62
+  },
+  "uncle": {
+   "start": 21.28,
+   "dur": 2.54
+  },
+  "memory": {
+   "start": 24.62,
+   "dur": 5.05
+  },
+  "quote": {
+   "start": 29.67,
+   "dur": 5.05
+  },
+  "decide": {
+   "start": 35.32,
+   "dur": 1.91
+  },
+  "map": {
+   "start": 37.83,
+   "dur": 1.8
+  },
+  "p1": {
+   "start": 39.93,
+   "dur": 6.86
+  },
+  "p1_comp": {
+   "start": 46.79,
+   "dur": 3.51
+  },
+  "p2": {
+   "start": 51.1,
+   "dur": 5.75
+  },
+  "p2_empty": {
+   "start": 56.85,
+   "dur": 2.92
+  },
+  "p3": {
+   "start": 60.57,
+   "dur": 4.72
+  },
+  "count": {
+   "start": 65.29,
+   "dur": 4.36
+  },
+  "tally": {
+   "start": 70.25,
+   "dur": 3.64
+  },
+  "people": {
+   "start": 73.89,
+   "dur": 4.2
+  },
+  "sign": {
+   "start": 78.89,
+   "dur": 1.84
+  },
+  "sign_hold": {
+   "start": 80.73,
+   "dur": 1.2
+  },
+  "melt": {
+   "start": 82.53,
+   "dur": 10.44
+  },
+  "melt2": {
+   "start": 93.37,
+   "dur": 9.33
+  },
+  "hire": {
+   "start": 103.5,
+   "dur": 6.33
+  },
+  "open": {
+   "start": 110.63,
+   "dur": 8.32
+  },
+  "open_hold": {
+   "start": 119.15,
+   "dur": 1.4
+  },
+  "wait": {
+   "start": 120.95,
+   "dur": 2.68
+  },
+  "pass": {
+   "start": 123.63,
+   "dur": 3.66
+  },
+  "zero": {
+   "start": 128.49,
+   "dur": 5.18
+  }
+ }
+}
