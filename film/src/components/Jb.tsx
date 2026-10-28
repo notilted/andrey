@@ -291,9 +291,9 @@ export const Fbi: React.FC<{f: number}> = ({f}) => (
 export const Stage: React.FC<{f: number}> = ({f}) => (
   <g>
     <rect x={-300} y={0} width={1700} height={2000} fill="#0e0a18" />
-    <rect x={140} y={200} width={800} height={460} fill="#1f2a44" />
-    <text x={540} y={420} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={72} fill={J.goldHi}>STRAIGHT LINE</text>
-    <text x={540} y={510} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={44} fill="#e8e4da">SELLING SYSTEM</text>
+    <rect x={140} y={380} width={800} height={440} fill="#1f2a44" />
+    <text x={540} y={590} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={72} fill={J.goldHi}>STRAIGHT LINE</text>
+    <text x={540} y={680} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={44} fill="#e8e4da">SELLING SYSTEM</text>
     <polygon points="540,0 340,1400 740,1400" fill="#fff6d8" opacity={0.18} />
     <rect x={-300} y={1400} width={1700} height={120} fill="#3a2a4a" />
     <Character who="jordan" x={540} y={1400} size={1.2} facing={1} frame={f} override={{scale: 1.02}} pose={{armF: [120, -40], smile: 0.6, mouth: 0.3 + 0.3 * Math.sin(f / 3), blink: 1, look: 0.3, rim: 1, rimColor: '#fff6d8'}} />
