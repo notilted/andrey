@@ -1,0 +1,597 @@
+{
+ "name": "zm1",
+ "duration": 123.55,
+ "dialogue": [
+  {
+   "id": "zm1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 1.4,
+   "caption": "Шесть утра. Тебя будит не будильник. Тебя будит *крик* за стеной.",
+   "space": null
+  },
+  {
+   "id": "zm1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.56,
+   "caption": "Телефон разрывается от оповещений: «Режим ЧС. Оставайтесь дома. Не открывайте двери *никому*».",
+   "space": null
+  },
+  {
+   "id": "zm1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 14.41,
+   "caption": "В новостях говорят про вспышку бешенства. Говорят спокойно. Но за спиной ведущего бегут люди. И кто-то, кто *за ними гонится*.",
+   "space": null
+  },
+  {
+   "id": "zm1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 24.1,
+   "caption": "Родители ещё вечером уехали в ночную смену. Дома только ты и сестра. Соне *восемь*.",
+   "space": null
+  },
+  {
+   "id": "zm1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 30.96,
+   "caption": "«Это учения?» — спрашивает она. Ты говоришь «да». И впервые в жизни ей *врёшь*.",
+   "space": null
+  },
+  {
+   "id": "zm1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 38.08,
+   "caption": "Ты смотришь в окно. Во дворе — соседка, тётя Галя. Она стоит у подъезда и не двигается. Просто смотрит *вверх*. На ваши окна.",
+   "space": null
+  },
+  {
+   "id": "zm1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 48.08,
+   "caption": "Дворник подходит к ней и трогает за плечо. И она *кусает его*. В шею.",
+   "space": null
+  },
+  {
+   "id": "zm1_08",
+   "who": "narrator",
+   "name": "",
+   "start": 55.12,
+   "caption": "Ты задёргиваешь шторы. Двигаешь к двери шкаф. Холодильник. Всё, что можешь сдвинуть.",
+   "space": null
+  },
+  {
+   "id": "zm1_09",
+   "who": "narrator",
+   "name": "",
+   "start": 61.7,
+   "caption": "Пишешь маме — сообщение не уходит. Пишешь папе — *одна галочка*.",
+   "space": null
+  },
+  {
+   "id": "zm1_10",
+   "who": "narrator",
+   "name": "",
+   "start": 68.76,
+   "caption": "Восемь вечера. В подъезде кто-то ходит. Медленно. Шаркая. Останавливается у каждой двери. И *нюхает*.",
+   "space": null
+  },
+  {
+   "id": "zm1_11",
+   "who": "narrator",
+   "name": "",
+   "start": 78.21,
+   "caption": "Шаги останавливаются у вашей.",
+   "space": null
+  },
+  {
+   "id": "zm1_12",
+   "who": "narrator",
+   "name": "",
+   "start": 81.11,
+   "caption": "Соня сжимает твою руку так сильно, что белеют пальцы. Вы не дышите.",
+   "space": null
+  },
+  {
+   "id": "zm1_13",
+   "who": "narrator",
+   "name": "",
+   "start": 88.55,
+   "caption": "Тишина. Минута. Две. Шаги уходят *вниз*.",
+   "space": null
+  },
+  {
+   "id": "zm1_14",
+   "who": "narrator",
+   "name": "",
+   "start": 94.83,
+   "caption": "А в полночь — стук. Три удара. Так всегда стучал папа. И его голос: «Сынок, открой. Это я. Быстрее».",
+   "space": null
+  },
+  {
+   "id": "zm1_15",
+   "who": "narrator",
+   "name": "",
+   "start": 104.69,
+   "caption": "Ты смотришь в глазок. Это правда папа. Живой. Только рукав куртки — *в крови*. И руку он прячет за спину.",
+   "space": null
+  },
+  {
+   "id": "zm1_16",
+   "who": "narrator",
+   "name": "",
+   "start": 113.8,
+   "caption": "Соня уже бежит к двери: «Папа!»",
+   "space": null
+  },
+  {
+   "id": "zm1_17",
+   "who": "narrator",
+   "name": "",
+   "start": 118.02,
+   "caption": "А ты бы *открыл*?",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 0,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 67.16
+  },
+  {
+   "file": "sfx/scream_far.wav",
+   "start": 4.5,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 4.8,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phone_alert.wav",
+   "start": 6.56,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tv_murmur.wav",
+   "start": 14.41,
+   "gain": -22,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "loop": true,
+   "end": 24.1
+  },
+  {
+   "file": "sfx/siren_far.wav",
+   "start": 14.41,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 2,
+   "loop": true,
+   "end": 48.08
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 14.41,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 2,
+   "fadeOut": 0.5,
+   "end": 51.44
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 35.06,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/growl.wav",
+   "start": 44.88,
+   "gain": -20,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/scream_far.wav",
+   "start": 51.64,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 51.44,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 53.32,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 1,
+   "end": 67.16
+  },
+  {
+   "file": "sfx/scrape.wav",
+   "start": 56.73,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/scrape.wav",
+   "start": 58.34,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 62.7,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 65.24,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 67.16,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 68.76
+  },
+  {
+   "file": "sfx/shuffle.wav",
+   "start": 70.1,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "loop": true,
+   "end": 78.81
+  },
+  {
+   "file": "sfx/sniff.wav",
+   "start": 77.4,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/sniff.wav",
+   "start": 79.21,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 78.21,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 90.92
+  },
+  {
+   "file": "sfx/growl.wav",
+   "start": 87.05,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/shuffle.wav",
+   "start": 90.92,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 2,
+   "end": 94.92
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 91.92,
+   "gain": -22,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 1,
+   "end": 94.63
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 94.83,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 95.28,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 95.73,
+   "gain": -8,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 95.83,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 0.5,
+   "end": 119.02
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 108.54,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 117.62,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 119.75,
+   "gain": -10,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "cold": 0.0,
+  "wake": 1.4,
+  "scream": 4.8,
+  "zm1_01": 1.4,
+  "zm1_01_end": 5.86,
+  "alert": 6.56,
+  "never": 11.53,
+  "zm1_02": 6.56,
+  "zm1_02_end": 13.71,
+  "tv": 14.41,
+  "chase": 21.22,
+  "zm1_03": 14.41,
+  "zm1_03_end": 23.4,
+  "home": 24.1,
+  "sonya": 29.35,
+  "zm1_04": 24.1,
+  "zm1_04_end": 30.26,
+  "ask": 30.96,
+  "lie": 35.06,
+  "zm1_05": 30.96,
+  "zm1_05_end": 37.28,
+  "window": 38.08,
+  "galya": 39.62,
+  "up": 44.88,
+  "zm1_06": 38.08,
+  "zm1_06_end": 47.58,
+  "janitor": 48.08,
+  "bite": 51.44,
+  "zm1_07": 48.08,
+  "zm1_07_end": 53.32,
+  "bite_hold": 53.32,
+  "curtain": 55.12,
+  "wardrobe": 56.73,
+  "fridge": 58.34,
+  "zm1_08": 55.12,
+  "zm1_08_end": 61.0,
+  "msg": 61.7,
+  "papa": 64.44,
+  "zm1_09": 61.7,
+  "zm1_09_end": 66.56,
+  "evening": 67.16,
+  "hall": 68.76,
+  "steps": 70.1,
+  "sniffk": 76.8,
+  "zm1_10": 68.76,
+  "zm1_10_end": 77.61,
+  "stop": 78.21,
+  "zm1_11": 78.21,
+  "zm1_11_end": 80.31,
+  "grip": 81.11,
+  "zm1_12": 81.11,
+  "zm1_12_end": 86.15,
+  "silence": 86.55,
+  "wait": 88.55,
+  "away": 90.92,
+  "zm1_13": 88.55,
+  "zm1_13_end": 92.83,
+  "midnight": 93.63,
+  "knock": 94.83,
+  "voice": 99.87,
+  "zm1_14": 94.83,
+  "zm1_14_end": 103.99,
+  "peep": 104.69,
+  "blood": 108.54,
+  "zm1_15": 104.69,
+  "zm1_15_end": 113.3,
+  "run": 113.8,
+  "zm1_16": 113.8,
+  "zm1_16_end": 116.22,
+  "hold": 116.22,
+  "q": 118.02,
+  "zm1_17": 118.02,
+  "zm1_17_end": 118.95,
+  "title": 119.95,
+  "end": 123.55
+ },
+ "beats": {
+  "cold": {
+   "start": 0.0,
+   "dur": 1.2
+  },
+  "wake": {
+   "start": 1.4,
+   "dur": 3.4
+  },
+  "scream": {
+   "start": 4.8,
+   "dur": 1.06
+  },
+  "alert": {
+   "start": 6.56,
+   "dur": 4.97
+  },
+  "never": {
+   "start": 11.53,
+   "dur": 2.18
+  },
+  "tv": {
+   "start": 14.41,
+   "dur": 6.81
+  },
+  "chase": {
+   "start": 21.22,
+   "dur": 2.17
+  },
+  "home": {
+   "start": 24.1,
+   "dur": 5.25
+  },
+  "sonya": {
+   "start": 29.35,
+   "dur": 0.91
+  },
+  "ask": {
+   "start": 30.96,
+   "dur": 4.1
+  },
+  "lie": {
+   "start": 35.06,
+   "dur": 2.22
+  },
+  "window": {
+   "start": 38.08,
+   "dur": 1.54
+  },
+  "galya": {
+   "start": 39.62,
+   "dur": 5.25
+  },
+  "up": {
+   "start": 44.88,
+   "dur": 2.7
+  },
+  "janitor": {
+   "start": 48.08,
+   "dur": 3.36
+  },
+  "bite": {
+   "start": 51.44,
+   "dur": 1.88
+  },
+  "bite_hold": {
+   "start": 53.32,
+   "dur": 1.0
+  },
+  "curtain": {
+   "start": 55.12,
+   "dur": 1.61
+  },
+  "wardrobe": {
+   "start": 56.73,
+   "dur": 1.61
+  },
+  "fridge": {
+   "start": 58.34,
+   "dur": 2.66
+  },
+  "msg": {
+   "start": 61.7,
+   "dur": 2.74
+  },
+  "papa": {
+   "start": 64.44,
+   "dur": 2.12
+  },
+  "evening": {
+   "start": 67.16,
+   "dur": 1.6
+  },
+  "hall": {
+   "start": 68.76,
+   "dur": 1.34
+  },
+  "steps": {
+   "start": 70.1,
+   "dur": 6.7
+  },
+  "sniffk": {
+   "start": 76.8,
+   "dur": 0.8
+  },
+  "stop": {
+   "start": 78.21,
+   "dur": 2.1
+  },
+  "grip": {
+   "start": 81.11,
+   "dur": 5.04
+  },
+  "silence": {
+   "start": 86.55,
+   "dur": 2.0
+  },
+  "wait": {
+   "start": 88.55,
+   "dur": 2.37
+  },
+  "away": {
+   "start": 90.92,
+   "dur": 1.92
+  },
+  "midnight": {
+   "start": 93.63,
+   "dur": 1.2
+  },
+  "knock": {
+   "start": 94.83,
+   "dur": 5.04
+  },
+  "voice": {
+   "start": 99.87,
+   "dur": 4.12
+  },
+  "peep": {
+   "start": 104.69,
+   "dur": 3.85
+  },
+  "blood": {
+   "start": 108.54,
+   "dur": 4.76
+  },
+  "run": {
+   "start": 113.8,
+   "dur": 2.42
+  },
+  "hold": {
+   "start": 116.22,
+   "dur": 1.2
+  },
+  "q": {
+   "start": 118.02,
+   "dur": 0.93
+  }
+ }
+}

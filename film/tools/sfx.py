@@ -487,8 +487,55 @@ def music_void(d=40):  # пустота: два низких тона в дис�
     hi = np.sin(2 * np.pi * 1244 * x) * 0.02 * (0.5 + 0.5 * np.sin(2 * np.pi * 0.11 * x))
     return (dr * 0.45 + air + hi) * env(len(x), 2.0, 2.0)
 
+def shuffle(d=8, rate=0.9):  # шаркающие медленные шаги
+    out = np.zeros(int(d * SR))
+    for k in np.arange(0.2, d - 0.8, 1 / rate):
+        ln = 0.6; n = bp(noise(ln), 200, 2500) * np.sin(np.pi * t(ln) / ln) ** 2 * 0.5; i = int(k * SR)
+        out[i:i + len(n)] += n
+        ln2 = 0.15; m = (np.sin(2 * np.pi * 70 * t(ln2)) + bp(noise(ln2), 100, 800)) * np.exp(-t(ln2) * 20); j = int((k + 0.5) * SR)
+        out[j:j + len(m)] += m[:len(out) - j] * 0.6
+    return out
+
+def sniff(d=2.2):  # три коротких втягивания носом
+    out = np.zeros(int(d * SR))
+    for k in (0.1, 0.45, 0.8):
+        ln = 0.25; n = bp(noise(ln), 1500, 6000) * np.sin(np.pi * t(ln) / ln) * 0.8; i = int(k * SR); out[i:i + len(n)] += n
+    return out
+
+def growl(d=2.5):  # хрип: низкий шум с модуляцией
+    x = t(d); g = bp(noise(d), 90, 700) * (0.6 + 0.4 * np.sin(2 * np.pi * 23 * x)) * (0.6 + 0.4 * np.sin(2 * np.pi * 1.3 * x))
+    return (g + 0.3 * np.sin(2 * np.pi * (70 + 10 * np.sin(2 * np.pi * 3 * x)) * x)) * env(len(x), 0.2, 0.6)
+
+def scrape(d=3.0):  # мебель по полу
+    x = t(d); n = bp(noise(d), 150, 3000) * (0.5 + 0.5 * np.abs(np.sin(2 * np.pi * 7 * x))) + 0.2 * np.sin(2 * np.pi * (110 + 20 * np.sin(2 * np.pi * 2 * x)) * x)
+    return n * env(len(x), 0.1, 0.4)
+
+def scream_far(d=2.5):  # далёкий крик за стеной
+    x = t(d); f0 = 520 + 180 * np.sin(np.pi * x / d) - 120 * x / d
+    v = sum(np.sin(2 * np.pi * np.cumsum(f0 * h) / SR) / h for h in (1, 2, 3, 4))
+    v = lp(v + bp(noise(d), 600, 3000) * 0.4, 1800)
+    return v * env(len(x), 0.08, 0.9) * (1 + 0.15 * np.sin(2 * np.pi * 6 * x))
+
+def gunshot(d=3.0):  # выстрел вдали с эхом
+    x = t(d); hit = (bp(noise(d), 100, 5000) * np.exp(-x * 30) + np.sin(2 * np.pi * 60 * x) * np.exp(-x * 12))
+    return hit + 0.4 * np.roll(hit, int(0.35 * SR)) * (x > 0.35) + 0.2 * np.roll(hit, int(0.8 * SR)) * (x > 0.8)
+
+def music_quarantine(d=60, bpm=70):  # тревожный пульс: бас + высокий писк
+    x = t(d); out = np.sin(2 * np.pi * 43.65 * x) * 0.35 + np.sin(2 * np.pi * 46.25 * x) * 0.2
+    beat = 60 / bpm
+    for k in np.arange(0, d, beat):
+        n = np.sin(2 * np.pi * 52 * t(0.4)) * np.exp(-t(0.4) * 10); i = int(k * SR); out[i:i + len(n)] += n[:len(out) - i] * 0.7
+    out += np.sin(2 * np.pi * 1760 * x) * 0.015 * (0.5 + 0.5 * np.sin(2 * np.pi * 0.05 * x))
+    out += bp(noise(d), 2000, 6000) * 0.02
+    return out * env(len(x), 2.0, 2.0)
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["zm"]:
+        for name, fn in [("shuffle", shuffle), ("sniff", sniff), ("growl", growl), ("scrape", scrape), ("scream_far", scream_far), ("gunshot", gunshot)]:
+            save(f"public/sfx/{name}.wav", fn())
+        save("public/music/m13_quarantine.wav", music_quarantine())
+        sys.exit()
     if sys.argv[1:] == ["el"]:
         for name, fn in [("train_ride", train_ride), ("train_stop", train_stop), ("door_hiss", door_hiss), ("train_depart", train_depart), ("chime", chime)]:
             save(f"public/sfx/{name}.wav", fn())
