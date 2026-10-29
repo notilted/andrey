@@ -1,0 +1,276 @@
+{
+ "name": "cr1",
+ "duration": 53.12,
+ "dialogue": [
+  {
+   "id": "cr1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.2,
+   "caption": "Тебе шестнадцать. Ты чистишь обувь. Через десять лет весь город будет *бояться твоего имени*.",
+   "space": null
+  },
+  {
+   "id": "cr1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.07,
+   "caption": "Каждое утро — площадь. Пятьдесят песо за пару. На ужин хватает. На мечты — *нет*.",
+   "space": null
+  },
+  {
+   "id": "cr1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 14.5,
+   "caption": "Сегодня к тебе садится человек в белом костюме. Дон Октавио. *Хозяин города*.",
+   "space": null
+  },
+  {
+   "id": "cr1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 20.17,
+   "caption": "Ты чистишь его ботинки так, будто от этого зависит твоя жизнь. Он молчит. А потом оставляет на ящике *конверт*.",
+   "space": null
+  },
+  {
+   "id": "cr1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 28.66,
+   "caption": "Пятьсот долларов. Больше, чем ты заработаешь *за год*.",
+   "space": null
+  },
+  {
+   "id": "cr1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 32.37,
+   "caption": "А под деньгами — записка: «Завтра. Шесть утра. Гараж на Санта-Ана. Приходи *один*».",
+   "space": null
+  },
+  {
+   "id": "cr1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 39.35,
+   "caption": "Мама зовёт ужинать. Чино свистит с улицы. А ты смотришь на конверт.",
+   "space": null
+  },
+  {
+   "id": "cr1_08",
+   "who": "narrator",
+   "name": "",
+   "start": 44.7,
+   "caption": "Пойдёшь — или вернёшь? Пиши цифру. Что выберет большинство — *то и случится*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 1,
+   "end": 14.5
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 2.76,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 7.07,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 39.35
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 14.5,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 0.5,
+   "end": 28.66
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 14.5,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 16.5
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 26.53,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 28.66,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 28.66,
+   "gain": -17,
+   "bus": "music",
+   "fadeOut": 0.5,
+   "end": 32.37
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 32.37,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 35.87,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 39.35,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 53.12
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 39.35,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 1,
+   "end": 53.12
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 43.2,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 44.7,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 45.2,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 53.12
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.2,
+  "fear": 2.76,
+  "cr1_01": 0.2,
+  "cr1_01_end": 6.67,
+  "square": 7.07,
+  "pay": 9.12,
+  "cr1_02": 7.07,
+  "cr1_02_end": 14.1,
+  "don": 14.5,
+  "boss": 17.87,
+  "cr1_03": 14.5,
+  "cr1_03_end": 19.77,
+  "shine": 20.17,
+  "env": 25.73,
+  "cr1_04": 20.17,
+  "cr1_04_end": 28.36,
+  "money": 28.66,
+  "cr1_05": 28.66,
+  "cr1_05_end": 32.07,
+  "note": 32.37,
+  "cr1_06": 32.37,
+  "cr1_06_end": 38.95,
+  "home": 39.35,
+  "chino": 40.83,
+  "look": 42.45,
+  "cr1_07": 39.35,
+  "cr1_07_end": 44.3,
+  "choice": 44.7,
+  "cr1_08": 44.7,
+  "cr1_08_end": 50.32,
+  "end": 53.12
+ },
+ "beats": {
+  "hook": {
+   "start": 0.2,
+   "dur": 2.56
+  },
+  "fear": {
+   "start": 2.76,
+   "dur": 3.91
+  },
+  "square": {
+   "start": 7.07,
+   "dur": 2.05
+  },
+  "pay": {
+   "start": 9.12,
+   "dur": 4.98
+  },
+  "don": {
+   "start": 14.5,
+   "dur": 3.37
+  },
+  "boss": {
+   "start": 17.87,
+   "dur": 1.9
+  },
+  "shine": {
+   "start": 20.17,
+   "dur": 5.56
+  },
+  "env": {
+   "start": 25.73,
+   "dur": 2.63
+  },
+  "money": {
+   "start": 28.66,
+   "dur": 3.41
+  },
+  "note": {
+   "start": 32.37,
+   "dur": 6.58
+  },
+  "home": {
+   "start": 39.35,
+   "dur": 1.48
+  },
+  "chino": {
+   "start": 40.83,
+   "dur": 1.63
+  },
+  "look": {
+   "start": 42.45,
+   "dur": 1.85
+  },
+  "choice": {
+   "start": 44.7,
+   "dur": 5.62
+  }
+ }
+}
