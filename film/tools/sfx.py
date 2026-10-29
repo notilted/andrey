@@ -440,8 +440,60 @@ def flutter(d=4):
 def gavel(d=1.5):
     x = t(d); return (np.sin(2 * np.pi * 220 * x) * 0.6 + bp(noise(d), 400, 3000)) * np.exp(-x * 25) + np.roll(np.sin(2 * np.pi * 180 * x) * np.exp(-x * 25), int(0.3 * SR)) * 0.6
 
+def train_ride(d=20, speed=1.0):  # вагон на ходу: низкий гул + стыки рельсов «та-дам»
+    x = t(d); out = lp(noise(d), 180) * 0.6 + np.sin(2 * np.pi * 48 * x) * 0.15
+    per = 1.6 / speed
+    for k in np.arange(0.2, d, per):
+        for dt in (0.0, 0.16):
+            ln = 0.25; n = (bp(noise(ln), 80, 900) + np.sin(2 * np.pi * 70 * t(ln))) * np.exp(-t(ln) * 18); i = int((k + dt) * SR)
+            out[i:i + len(n)] += n[:len(out) - i] * 0.7
+    return out * env(len(x), 0.5, 0.5)
+
+def train_stop(d=6):  # торможение: замедление стыков + скрип колодок
+    x = t(d); out = lp(noise(d), 200) * np.clip(1 - x / d, 0, 1) * 0.6
+    sq = np.sin(2 * np.pi * (2400 + 300 * np.sin(2 * np.pi * 0.7 * x)) * x) * np.clip((x - 1.5) / 1.0, 0, 1) * np.clip((d - 0.5 - x) / 1.5, 0, 1) * 0.12
+    k = 0.2; per = 0.9
+    while k < d - 1.2:
+        ln = 0.25; n = bp(noise(ln), 80, 900) * np.exp(-t(ln) * 18); i = int(k * SR); out[i:i + len(n)] += n * 0.6
+        k += per; per *= 1.35
+    return (out + sq) * env(len(x), 0.05, 0.6)
+
+def door_hiss(d=2.2):  # пневматика дверей + стук створок
+    x = t(d); h = bp(noise(d), 1500, 9000) * np.exp(-x * 2.5) * 0.7
+    thud = np.zeros_like(x); i = int(1.2 * SR); n = (np.sin(2 * np.pi * 90 * t(0.4)) + bp(noise(0.4), 100, 1200)) * np.exp(-t(0.4) * 14)
+    thud[i:i + len(n)] = n
+    return h + thud
+
+def train_depart(d=10):  # поезд трогается и уходит, звук затихает
+    x = t(d); out = lp(noise(d), 220) * np.clip(x / 2, 0, 1) * np.exp(-np.clip(x - 3, 0, None) * 0.5) * 0.8
+    k = 0.6; per = 1.6
+    while k < d - 0.3:
+        ln = 0.25; n = bp(noise(ln), 80, 900) * np.exp(-t(ln) * 18); i = int(k * SR)
+        out[i:i + len(n)] += n[:len(out) - i] * 0.7 * np.exp(-max(0, k - 3) * 0.5)
+        k += per; per = max(0.35, per * 0.8)
+    return out * env(len(x), 0.3, 1.0)
+
+def chime(d=2.4):  # «динь-дон» перед объявлением
+    out = np.zeros(int(d * SR))
+    for k, f in [(0.0, 659.3), (0.55, 523.3)]:
+        n = (np.sin(2 * np.pi * f * t(1.6)) + 0.3 * np.sin(2 * np.pi * 2 * f * t(1.6))) * np.exp(-t(1.6) * 2.5); i = int(k * SR)
+        out[i:i + len(n)] += n
+    return out
+
+def music_void(d=40):  # пустота: два низких тона в диссонансе, медленный «вдох»
+    x = t(d)
+    dr = np.sin(2 * np.pi * 36.7 * x) + 0.8 * np.sin(2 * np.pi * 38.9 * x) + 0.25 * np.sin(2 * np.pi * 146.8 * x + np.sin(2 * np.pi * 0.07 * x))
+    air = bp(noise(d), 300, 1500) * (0.5 + 0.5 * np.sin(2 * np.pi * x / 6.5)) * 0.25
+    hi = np.sin(2 * np.pi * 1244 * x) * 0.02 * (0.5 + 0.5 * np.sin(2 * np.pi * 0.11 * x))
+    return (dr * 0.45 + air + hi) * env(len(x), 2.0, 2.0)
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["el"]:
+        for name, fn in [("train_ride", train_ride), ("train_stop", train_stop), ("door_hiss", door_hiss), ("train_depart", train_depart), ("chime", chime)]:
+            save(f"public/sfx/{name}.wav", fn())
+        save("public/music/m12_void.wav", music_void())
+        sys.exit()
     if sys.argv[1:] == ["jb"]:
         for name, fn in [("pop", pop), ("heli", heli), ("flutter", flutter), ("gavel", gavel)]:
             save(f"public/sfx/{name}.wav", fn())

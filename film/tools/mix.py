@@ -55,6 +55,8 @@ def main(path):
             continue
         x = load(s["file"])
         if s.get("space"): x = reverb(x, s["space"])
+        if s.get("loop") and s.get("end"):  # фон короче отрезка — повторяем
+            x = np.tile(x, (int((s["end"] - s["start"]) * SR) // len(x) + 1, 1))
         place(buses[s.get("bus", "sfx")], x, s["start"], s.get("gain", 0), s.get("fadeIn", 0),
               s.get("end"), s.get("fadeOut", 0), s.get("pan", 0))
     # приглушение музыки и фона под диалог (сайдчейн, атака 60 мс, отпускание 400 мс)

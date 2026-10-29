@@ -1,0 +1,488 @@
+{
+ "name": "el",
+ "duration": 115.95,
+ "dialogue": [
+  {
+   "id": "e_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.6,
+   "caption": "Последняя электричка из Москвы. *Двадцать три пятьдесят восемь*. В вагоне почти никого. Наушники, тёплое окно — и ты засыпаешь.",
+   "space": null
+  },
+  {
+   "id": "e_02",
+   "who": "narrator",
+   "name": "",
+   "start": 12.83,
+   "caption": "Тебя будит *тишина*. Поезд стоит. За окном — платформа, один фонарь и табличка: «Пустошь».",
+   "space": null
+  },
+  {
+   "id": "e_03",
+   "who": "narrator",
+   "name": "",
+   "start": 21.47,
+   "caption": "Ты знаешь эту ветку наизусть. Такой станции на ней *нет*.",
+   "space": null
+  },
+  {
+   "id": "e_04",
+   "who": "narrator",
+   "name": "",
+   "start": 26.07,
+   "caption": "Телефон: нет сети. Часы застыли на *ноль сорок один*.",
+   "space": null
+  },
+  {
+   "id": "e_05",
+   "who": "narrator",
+   "name": "",
+   "start": 31.07,
+   "caption": "И только теперь ты замечаешь: вагон *полный*. Человек сорок. И все сидят к тебе *спиной*. Даже те, кто сидел напротив, — развернулись.",
+   "space": null
+  },
+  {
+   "id": "e_06",
+   "who": "narrator",
+   "name": "",
+   "start": 43.1,
+   "caption": "Уважаемые пассажиры. Поезд дальше не идёт. Просьба… *не оборачиваться*.",
+   "space": null
+  },
+  {
+   "id": "e_07",
+   "who": "narrator",
+   "name": "",
+   "start": 50.1,
+   "caption": "Никто не шевелится. Только у женщины в третьем ряду — бабушкин платок. Тот самый, синий, в цветочек. Его положили бабушке в гроб. *В восемнадцатом году*.",
+   "space": null
+  },
+  {
+   "id": "e_08",
+   "who": "narrator",
+   "name": "",
+   "start": 62.6,
+   "caption": "Ты встаёшь. Идёшь к выходу — мимо затылков. Они *не дышат*.",
+   "space": null
+  },
+  {
+   "id": "e_09",
+   "who": "narrator",
+   "name": "",
+   "start": 67.92,
+   "caption": "Последний ряд у дверей. Куртка — *твоя*. Рюкзак — твой. Наушники — твои. Он спит, прислонившись к окну. Это *ты*.",
+   "space": null
+  },
+  {
+   "id": "e_10",
+   "who": "narrator",
+   "name": "",
+   "start": 79.82,
+   "caption": "Станция Пустошь. Посадка в обратную сторону… *не производится*.",
+   "space": null
+  },
+  {
+   "id": "e_11",
+   "who": "narrator",
+   "name": "",
+   "start": 85.77,
+   "caption": "Ты выходишь. Двери закрываются. Поезд трогается — и в окне последнего вагона ты видишь *себя*. Спящего. И сорок человек медленно *оборачиваются* — к нему.",
+   "space": null
+  },
+  {
+   "id": "e_12",
+   "who": "narrator",
+   "name": "",
+   "start": 98.79,
+   "caption": "Телефон вибрирует. Появилась сеть. Сообщение от мамы, ноль сорок три: «Ты где?! Почему не берёшь? По новостям — про *твою электричку*…»",
+   "space": null
+  },
+  {
+   "id": "e_13",
+   "who": "narrator",
+   "name": "",
+   "start": 110.59,
+   "caption": "А ты бы *вышел*?",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/train_ride.wav",
+   "start": 0,
+   "gain": -14,
+   "bus": "amb",
+   "fadeIn": 0.5,
+   "fadeOut": 1.2,
+   "loop": true,
+   "end": 11.43
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 0,
+   "gain": -22,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.5,
+   "end": 10.43
+  },
+  {
+   "file": "sfx/train_stop.wav",
+   "start": 9.93,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 12.83,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 85.77
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 13.13,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m12_void.wav",
+   "start": 12.83,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 2.0,
+   "fadeOut": 0.6,
+   "end": 41.7
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 26.37,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 35.67,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 41.7,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 43.0,
+   "gain": -30,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 49.5
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 50.1,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 0.8,
+   "end": 78.22
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 57.93,
+   "gain": -13,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 62.6,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 67.92
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 66.16,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 78.22
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 77.09,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_hiss.wav",
+   "start": 78.22,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 79.22,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 79.72,
+   "gain": -30,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 85.27
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 85.77,
+   "gain": -24,
+   "bus": "amb",
+   "fadeIn": 0.5,
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 109.19
+  },
+  {
+   "file": "sfx/door_hiss.wav",
+   "start": 86.97,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/train_depart.wav",
+   "start": 88.33,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m12_void.wav",
+   "start": 85.77,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 1.0,
+   "fadeOut": 0.3,
+   "end": 109.19
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 92.94,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 98.79,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 100.09,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 101.37,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 109.19,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 109.19,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 112.55
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 112.35,
+   "gain": -10,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "ride": 0.6,
+  "sleep": 7.16,
+  "e_01": 0.6,
+  "e_01_end": 10.13,
+  "dark": 10.43,
+  "wake": 12.83,
+  "sign": 15.72,
+  "e_02": 12.83,
+  "e_02_end": 20.77,
+  "map": 21.47,
+  "e_03": 21.47,
+  "e_03_end": 25.47,
+  "phone": 26.07,
+  "e_04": 26.07,
+  "e_04_end": 30.37,
+  "full": 31.07,
+  "backs": 35.67,
+  "e_05": 31.07,
+  "e_05_end": 41.2,
+  "chime": 41.7,
+  "announce": 43.1,
+  "e_06": 43.1,
+  "e_06_end": 49.2,
+  "still": 50.1,
+  "scarf": 51.65,
+  "grave": 57.93,
+  "e_07": 50.1,
+  "e_07_end": 61.8,
+  "walk": 62.6,
+  "nobreath": 66.16,
+  "e_08": 62.6,
+  "e_08_end": 67.22,
+  "last": 67.92,
+  "me": 77.09,
+  "e_09": 67.92,
+  "e_09_end": 77.72,
+  "doors": 78.22,
+  "announce2": 79.82,
+  "e_10": 79.82,
+  "e_10_end": 84.97,
+  "exit": 85.77,
+  "depart": 88.33,
+  "turn": 93.94,
+  "e_11": 85.77,
+  "e_11_end": 97.79,
+  "vibe": 98.79,
+  "sms": 101.37,
+  "e_12": 98.79,
+  "e_12_end": 108.59,
+  "black": 109.19,
+  "q": 110.59,
+  "e_13": 110.59,
+  "e_13_end": 111.55,
+  "title": 112.55,
+  "end": 115.95
+ },
+ "beats": {
+  "ride": {
+   "start": 0.6,
+   "dur": 6.56
+  },
+  "sleep": {
+   "start": 7.16,
+   "dur": 2.97
+  },
+  "dark": {
+   "start": 10.43,
+   "dur": 2.2
+  },
+  "wake": {
+   "start": 12.83,
+   "dur": 2.89
+  },
+  "sign": {
+   "start": 15.72,
+   "dur": 5.05
+  },
+  "map": {
+   "start": 21.47,
+   "dur": 4.0
+  },
+  "phone": {
+   "start": 26.07,
+   "dur": 4.3
+  },
+  "full": {
+   "start": 31.07,
+   "dur": 4.6
+  },
+  "backs": {
+   "start": 35.67,
+   "dur": 5.53
+  },
+  "chime": {
+   "start": 41.7,
+   "dur": 1.4
+  },
+  "announce": {
+   "start": 43.1,
+   "dur": 6.1
+  },
+  "still": {
+   "start": 50.1,
+   "dur": 1.55
+  },
+  "scarf": {
+   "start": 51.65,
+   "dur": 6.28
+  },
+  "grave": {
+   "start": 57.93,
+   "dur": 3.87
+  },
+  "walk": {
+   "start": 62.6,
+   "dur": 3.56
+  },
+  "nobreath": {
+   "start": 66.16,
+   "dur": 1.05
+  },
+  "last": {
+   "start": 67.92,
+   "dur": 9.17
+  },
+  "me": {
+   "start": 77.09,
+   "dur": 0.63
+  },
+  "doors": {
+   "start": 78.22,
+   "dur": 1.6
+  },
+  "announce2": {
+   "start": 79.82,
+   "dur": 5.15
+  },
+  "exit": {
+   "start": 85.77,
+   "dur": 2.56
+  },
+  "depart": {
+   "start": 88.33,
+   "dur": 5.61
+  },
+  "turn": {
+   "start": 93.94,
+   "dur": 3.85
+  },
+  "vibe": {
+   "start": 98.79,
+   "dur": 2.58
+  },
+  "sms": {
+   "start": 101.37,
+   "dur": 7.22
+  },
+  "black": {
+   "start": 109.19,
+   "dur": 1.4
+  },
+  "q": {
+   "start": 110.59,
+   "dur": 0.96
+  }
+ }
+}
