@@ -5,6 +5,7 @@ import {CharacterSheet} from './scenes/CharacterSheet';
 import {ShortOverlay} from './scenes/ShortOverlay';
 import {PxTest} from './scenes/PxTest';
 import {StyleTest} from './scenes/StyleTest';
+import {ToonTest} from './scenes/ToonTest';
 import {FaceTest} from './scenes/FaceTest';
 import {Film} from './Film';
 import {Ep2} from './Ep2';
@@ -66,6 +67,7 @@ export const Root: React.FC = () => (
     <Composition id="Bm1" component={Bm1} durationInFrames={DURATION_BM1} fps={FPS} width={W} height={H} />
     <Composition id="Bm2" component={Bm2} durationInFrames={DURATION_BM2} fps={FPS} width={W} height={H} />
     <Composition id="Bm3" component={Bm3} durationInFrames={DURATION_BM3} fps={FPS} width={W} height={H} />
+    <Composition id="ToonTest" component={ToonTest} durationInFrames={3} fps={FPS} width={W} height={H} />
     <Composition id="StyleTest" component={StyleTest} durationInFrames={7} fps={FPS} width={W} height={H} />
     <Composition id="PxTest" component={PxTest} durationInFrames={90} fps={FPS} width={W} height={H} />
     <Composition id="Jb" component={Jb} durationInFrames={DURATION_JB} fps={FPS} width={W} height={H} />
