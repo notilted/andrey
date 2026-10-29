@@ -1,0 +1,599 @@
+{
+ "name": "zm3",
+ "duration": 134.41,
+ "dialogue": [
+  {
+   "id": "zm3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.5,
+   "caption": "Вы вылетаете из подъезда. Тётя Галя за спиной уже не одна. Их *пятеро*.",
+   "space": null
+  },
+  {
+   "id": "zm3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.21,
+   "caption": "Двор, гаражи, проспект. Машины брошены с открытыми дверями. Где-то горит автобус.",
+   "space": null
+  },
+  {
+   "id": "zm3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 13.58,
+   "caption": "Соня бежит изо всех сил, но она маленькая. Ты сажаешь её на спину. Шесть километров.",
+   "space": null
+  },
+  {
+   "id": "zm3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 20.66,
+   "caption": "На мосту — пробка из брошенных машин. Вы пролезаете между ними. И тут из-под фуры — *рука*. Хватает тебя за ногу.",
+   "space": null
+  },
+  {
+   "id": "zm3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 29.86,
+   "caption": "Ты вырываешься. Падаешь. Встаёшь. Бежишь. И только через километр замечаешь: на лодыжке — *укус*.",
+   "space": null
+  },
+  {
+   "id": "zm3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 38.28,
+   "caption": "Неглубокий. Почти царапина. Ты опускаешь штанину. И ничего не говоришь Соне.",
+   "space": null
+  },
+  {
+   "id": "zm3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 45.91,
+   "caption": "Семнадцать сорок. Стадион. Прожекторы, сетка, солдаты. И очередь из сотен людей.",
+   "space": null
+  },
+  {
+   "id": "zm3_08",
+   "who": "narrator",
+   "name": "",
+   "start": 53.86,
+   "caption": "У ворот — проверка. Каждого раздевают до пояса и светят фонарём. Ищут *укусы*.",
+   "space": null
+  },
+  {
+   "id": "zm3_09",
+   "who": "narrator",
+   "name": "",
+   "start": 60.01,
+   "caption": "Перед тобой — мужчина. У него находят царапину на плече. Его уводят за бетонную стену. *Выстрел*.",
+   "space": null
+  },
+  {
+   "id": "zm3_10",
+   "who": "narrator",
+   "name": "",
+   "start": 69.62,
+   "caption": "Очередь двигается. Лодыжка горит. Тебя начинает *знобить*.",
+   "space": null
+  },
+  {
+   "id": "zm3_11",
+   "who": "narrator",
+   "name": "",
+   "start": 74.83,
+   "caption": "Ты садишься перед Соней на корточки. Застёгиваешь ей куртку. «Иди к тому солдату. Скажи, что тебе восемь и ты ищешь маму. Я догоню».",
+   "space": null
+  },
+  {
+   "id": "zm3_12",
+   "who": "narrator",
+   "name": "",
+   "start": 84.53,
+   "caption": "«Ты правда догонишь?» — «Правда». Второй раз в жизни ты ей *врёшь*.",
+   "space": null
+  },
+  {
+   "id": "zm3_13",
+   "who": "narrator",
+   "name": "",
+   "start": 90.11,
+   "caption": "Солдат берёт её на руки. Она оборачивается и машет тебе. Ты машешь в ответ.",
+   "space": null
+  },
+  {
+   "id": "zm3_14",
+   "who": "narrator",
+   "name": "",
+   "start": 97.5,
+   "caption": "Восемнадцать ноль-ноль. Ворота закрываются. Последний автобус уходит за стену.",
+   "space": null
+  },
+  {
+   "id": "zm3_15",
+   "who": "narrator",
+   "name": "",
+   "start": 103.89,
+   "caption": "Ты сидишь на бордюре за сеткой. Прожекторы гаснут один за другим. Мысли путаются. Ты забываешь, как зовут маму. Потом — как зовут *тебя*.",
+   "space": null
+  },
+  {
+   "id": "zm3_16",
+   "who": "narrator",
+   "name": "",
+   "start": 115.26,
+   "caption": "Но имя «Соня» ты помнишь *до последнего*.",
+   "space": null
+  },
+  {
+   "id": "zm3_17",
+   "who": "narrator",
+   "name": "",
+   "start": 120.52,
+   "caption": "Через месяц в лагере её спросят, кто её спас. Она скажет: «Мой брат. Он скоро придёт».",
+   "space": null
+  },
+  {
+   "id": "zm3_18",
+   "who": "narrator",
+   "name": "",
+   "start": 128.03,
+   "caption": "А ты бы сказал ей *правду*?",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m10_run.wav",
+   "start": 0,
+   "gain": -15,
+   "bus": "music",
+   "fadeOut": 0.6,
+   "end": 20.66
+  },
+  {
+   "file": "sfx/footsteps_crowd.wav",
+   "start": 0,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "loop": true,
+   "end": 20.66
+  },
+  {
+   "file": "sfx/growl.wav",
+   "start": 4.87,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/growl.wav",
+   "start": 6.27,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/fire.wav",
+   "start": 6.21,
+   "gain": -20,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 20.66
+  },
+  {
+   "file": "sfx/siren_far.wav",
+   "start": 6.21,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 45.91
+  },
+  {
+   "file": "sfx/breathing_fast.wav",
+   "start": 13.58,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 38.28
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 20.66,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 1,
+   "end": 45.91
+  },
+  {
+   "file": "sfx/growl.wav",
+   "start": 25.73,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 25.93,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 29.86,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 34.82,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 45.91,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 97.5
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 45.91,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 0.2,
+   "end": 67.34
+  },
+  {
+   "file": "sfx/gunshot.wav",
+   "start": 67.84,
+   "gain": -4,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 68.14,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 1,
+   "end": 70.64
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 69.62,
+   "gain": -15,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 74.83
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 74.83,
+   "gain": -15,
+   "bus": "music",
+   "fadeIn": 2,
+   "fadeOut": 2,
+   "end": 99.5
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 98.3,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/train_depart.wav",
+   "start": 100.66,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 103.89,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 120.52
+  },
+  {
+   "file": "music/m12_void.wav",
+   "start": 103.89,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1,
+   "end": 120.52
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 107.4,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 108.2,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 109.0,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 109.8,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/growl.wav",
+   "start": 119.12,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 120.52,
+   "gain": -14,
+   "bus": "music",
+   "fadeIn": 1.5,
+   "fadeOut": 1.5,
+   "end": 131.61
+  },
+  {
+   "file": "music/m07_stage.wav",
+   "start": 130.41,
+   "gain": -10,
+   "bus": "music"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "out": 0.5,
+  "five": 4.87,
+  "zm3_01": 0.5,
+  "zm3_01_end": 5.61,
+  "street": 6.21,
+  "bus": 11.22,
+  "zm3_02": 6.21,
+  "zm3_02_end": 12.98,
+  "carry": 13.58,
+  "km": 18.67,
+  "zm3_03": 13.58,
+  "zm3_03_end": 19.96,
+  "bridge": 20.66,
+  "hand": 25.73,
+  "zm3_04": 20.66,
+  "zm3_04_end": 29.46,
+  "fall": 29.86,
+  "bite": 33.32,
+  "zm3_05": 29.86,
+  "zm3_05_end": 37.68,
+  "hide": 38.28,
+  "zm3_06": 38.28,
+  "zm3_06_end": 44.31,
+  "hide_hold": 44.31,
+  "stadium": 45.91,
+  "queue": 50.97,
+  "zm3_07": 45.91,
+  "zm3_07_end": 53.26,
+  "check": 53.86,
+  "zm3_08": 53.86,
+  "zm3_08_end": 59.41,
+  "man": 60.01,
+  "wall": 64.81,
+  "shot": 67.34,
+  "zm3_09": 60.01,
+  "zm3_09_end": 68.02,
+  "shot_hold": 68.02,
+  "move": 69.62,
+  "fever": 72.3,
+  "zm3_10": 69.62,
+  "zm3_10_end": 74.03,
+  "kneel": 74.83,
+  "go": 79.1,
+  "zm3_11": 74.83,
+  "zm3_11_end": 83.93,
+  "ask": 84.53,
+  "lie": 87.03,
+  "zm3_12": 84.53,
+  "zm3_12_end": 89.31,
+  "lift": 90.11,
+  "wave": 94.36,
+  "zm3_13": 90.11,
+  "zm3_13_end": 95.7,
+  "wave_hold": 95.7,
+  "gate": 97.5,
+  "busgo": 100.66,
+  "zm3_14": 97.5,
+  "zm3_14_end": 103.09,
+  "curb": 103.89,
+  "lights": 106.4,
+  "forget": 109.06,
+  "zm3_15": 103.89,
+  "zm3_15_end": 114.46,
+  "name": 115.26,
+  "zm3_16": 115.26,
+  "zm3_16_end": 118.12,
+  "dark": 118.52,
+  "camp": 120.52,
+  "brother": 124.0,
+  "zm3_17": 120.52,
+  "zm3_17_end": 127.03,
+  "q": 128.03,
+  "zm3_18": 128.03,
+  "zm3_18_end": 129.61,
+  "title": 130.61,
+  "end": 134.41
+ },
+ "beats": {
+  "out": {
+   "start": 0.5,
+   "dur": 4.37
+  },
+  "five": {
+   "start": 4.87,
+   "dur": 0.74
+  },
+  "street": {
+   "start": 6.21,
+   "dur": 5.01
+  },
+  "bus": {
+   "start": 11.22,
+   "dur": 1.76
+  },
+  "carry": {
+   "start": 13.58,
+   "dur": 5.09
+  },
+  "km": {
+   "start": 18.67,
+   "dur": 1.29
+  },
+  "bridge": {
+   "start": 20.66,
+   "dur": 5.07
+  },
+  "hand": {
+   "start": 25.73,
+   "dur": 3.73
+  },
+  "fall": {
+   "start": 29.86,
+   "dur": 3.46
+  },
+  "bite": {
+   "start": 33.32,
+   "dur": 4.36
+  },
+  "hide": {
+   "start": 38.28,
+   "dur": 6.03
+  },
+  "hide_hold": {
+   "start": 44.31,
+   "dur": 1.0
+  },
+  "stadium": {
+   "start": 45.91,
+   "dur": 5.06
+  },
+  "queue": {
+   "start": 50.97,
+   "dur": 2.3
+  },
+  "check": {
+   "start": 53.86,
+   "dur": 5.55
+  },
+  "man": {
+   "start": 60.01,
+   "dur": 4.8
+  },
+  "wall": {
+   "start": 64.81,
+   "dur": 2.53
+  },
+  "shot": {
+   "start": 67.34,
+   "dur": 0.67
+  },
+  "shot_hold": {
+   "start": 68.02,
+   "dur": 1.2
+  },
+  "move": {
+   "start": 69.62,
+   "dur": 2.68
+  },
+  "fever": {
+   "start": 72.3,
+   "dur": 1.73
+  },
+  "kneel": {
+   "start": 74.83,
+   "dur": 4.27
+  },
+  "go": {
+   "start": 79.1,
+   "dur": 4.83
+  },
+  "ask": {
+   "start": 84.53,
+   "dur": 2.5
+  },
+  "lie": {
+   "start": 87.03,
+   "dur": 2.28
+  },
+  "lift": {
+   "start": 90.11,
+   "dur": 4.25
+  },
+  "wave": {
+   "start": 94.36,
+   "dur": 1.34
+  },
+  "wave_hold": {
+   "start": 95.7,
+   "dur": 1.2
+  },
+  "gate": {
+   "start": 97.5,
+   "dur": 3.16
+  },
+  "busgo": {
+   "start": 100.66,
+   "dur": 2.44
+  },
+  "curb": {
+   "start": 103.89,
+   "dur": 2.51
+  },
+  "lights": {
+   "start": 106.4,
+   "dur": 2.66
+  },
+  "forget": {
+   "start": 109.06,
+   "dur": 5.4
+  },
+  "name": {
+   "start": 115.26,
+   "dur": 2.86
+  },
+  "dark": {
+   "start": 118.52,
+   "dur": 2.0
+  },
+  "camp": {
+   "start": 120.52,
+   "dur": 3.48
+  },
+  "brother": {
+   "start": 124.0,
+   "dur": 3.03
+  },
+  "q": {
+   "start": 128.03,
+   "dur": 1.58
+  }
+ }
+}

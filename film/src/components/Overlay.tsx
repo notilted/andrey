@@ -182,3 +182,8 @@ export const NarrationCaption: React.FC<{text: string; f: number; start: number;
     </div>
   );
 };
+
+/** Только виньетка, без зерна (зерно с overlay-смешиванием вдвое замедляет рендер). */
+export const Vignette: React.FC = () => (
+  <AbsoluteFill style={{pointerEvents: 'none', background: 'radial-gradient(ellipse 85% 70% at 50% 42%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)'}} />
+);
