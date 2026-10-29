@@ -14,9 +14,11 @@ import soundfile as sf  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(ROOT, "public", "voice")
-VOICE_ID = "pNInz6obpgDQGcFmaJgB"  # Adam — низкий, твёрдый голос рассказчика
+VOICE_ID = os.environ.get("EL_VOICE", "pNInz6obpgDQGcFmaJgB")  # по умолчанию Adam — низкий, твёрдый голос рассказчика
 MODEL = "eleven_v4"
 SETTINGS = {"stability": 0.45, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True}
+if os.environ.get("EL_LIVELY"):  # живая разговорная подача (стиль «от первого лица»)
+    SETTINGS = {"stability": 0.3, "similarity_boost": 0.8, "style": 0.6, "use_speaker_boost": True, "speed": 1.08}
 # обработка «как в референсе»: плотный, близкий, громкий голос
 CHAIN = ("highpass=f=60,equalizer=f=120:t=q:w=1:g=2,deesser=i=0.3,"
          "acompressor=threshold=-24dB:ratio=3.5:attack=5:release=120:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=5,"

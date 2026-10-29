@@ -529,8 +529,28 @@ def music_quarantine(d=60, bpm=70):  # тревожный пульс: бас + �
     out += bp(noise(d), 2000, 6000) * 0.02
     return out * env(len(x), 2.0, 2.0)
 
+def whistle(d=4.0):  # насвистывание мелодии
+    out = np.zeros(int(d * SR)); notes = [784, 880, 988, 1047, 988, 880, 784, 659, 784, 880]
+    for k, fr in enumerate(notes):
+        ln = 0.36; x = t(ln); v = np.sin(2 * np.pi * (fr + 8 * np.sin(2 * np.pi * 6 * x)) * x) * np.sin(np.pi * x / ln) ** 0.6
+        i = int(k * 0.38 * SR); out[i:i + len(v)] += v[:len(out) - i] + bp(noise(ln), 1500, 6000)[:len(out) - i] * 0.05
+    return out
+
+def tick(d=6):  # громкое тиканье
+    out = np.zeros(int(d * SR))
+    for k in np.arange(0, d, 0.5):
+        n = bp(noise(0.03), 2000, 8000) * np.exp(-t(0.03) * 120); i = int(k * SR); out[i:i + len(n)] += n * (1 if int(k * 2) % 2 else 0.7)
+    return out
+
+def bus(d=20):  # автобус: дизель + дребезг
+    x = t(d); return (lp(noise(d), 160) * 0.8 + np.sin(2 * np.pi * 38 * x) * 0.25 * (1 + 0.2 * np.sin(2 * np.pi * 0.5 * x)) + bp(noise(d), 1500, 4000) * 0.04 * (np.sin(2 * np.pi * 3 * x) > 0.7)) * env(len(x), 0.5, 0.5)
+
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["cr"]:
+        for name, fn in [("whistle", whistle), ("tick", tick), ("bus", bus)]:
+            save(f"public/sfx/{name}.wav", fn())
+        sys.exit()
     if sys.argv[1:] == ["zm"]:
         for name, fn in [("shuffle", shuffle), ("sniff", sniff), ("growl", growl), ("scrape", scrape), ("scream_far", scream_far), ("gunshot", gunshot)]:
             save(f"public/sfx/{name}.wav", fn())

@@ -1,0 +1,457 @@
+{
+ "name": "cr2",
+ "duration": 89.28,
+ "dialogue": [
+  {
+   "id": "cr2_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.15,
+   "caption": "Вы, суки, проголосовали, чтобы я пошёл в гараж. Спасибо, *блядь*.",
+   "space": null
+  },
+  {
+   "id": "cr2_02",
+   "who": "narrator",
+   "name": "",
+   "start": 4.79,
+   "caption": "Шесть утра, улица Санта-Ана. Гараж воняет бензином и чьими-то *последними решениями*.",
+   "space": null
+  },
+  {
+   "id": "cr2_03",
+   "who": "narrator",
+   "name": "",
+   "start": 11.31,
+   "caption": "Внутри — дон Октавио и два шкафа в пиджаках. Дон говорит: «Правило номер один: *не задавай вопросов*».",
+   "space": null
+  },
+  {
+   "id": "cr2_04",
+   "who": "narrator",
+   "name": "",
+   "start": 18.73,
+   "caption": "Я киваю так, что чуть шею не сломал.",
+   "space": null
+  },
+  {
+   "id": "cr2_05",
+   "who": "narrator",
+   "name": "",
+   "start": 21.48,
+   "caption": "Он даёт мне сумку. Тяжёлую. «Отвезёшь в порт. Правило номер два: *не открывай*».",
+   "space": null
+  },
+  {
+   "id": "cr2_06",
+   "who": "narrator",
+   "name": "",
+   "start": 28.45,
+   "caption": "Я, сука, шестнадцатилетний пацан с сумкой, которую нельзя открывать. Я её не открыл. Я её *потряс*.",
+   "space": null
+  },
+  {
+   "id": "cr2_07",
+   "who": "narrator",
+   "name": "",
+   "start": 36.09,
+   "caption": "Внутри что-то *тикает*. Ну ёб твою мать.",
+   "space": null
+  },
+  {
+   "id": "cr2_08",
+   "who": "narrator",
+   "name": "",
+   "start": 39.62,
+   "caption": "Еду в автобусе. Сумка тикает. Бабка напротив смотрит на сумку, потом на меня — и *крестится*.",
+   "space": null
+  },
+  {
+   "id": "cr2_09",
+   "who": "narrator",
+   "name": "",
+   "start": 46.57,
+   "caption": "Правило номер три: выгляди спокойно. Я свищу. Свищу, блядь, *гимн Колумбии*.",
+   "space": null
+  },
+  {
+   "id": "cr2_10",
+   "who": "narrator",
+   "name": "",
+   "start": 53.59,
+   "caption": "Порт. Меня встречает мужик со шрамом через всё лицо. Открывает сумку. Там — *будильник*.",
+   "space": null
+  },
+  {
+   "id": "cr2_11",
+   "who": "narrator",
+   "name": "",
+   "start": 60.17,
+   "caption": "И записка: «Не открыл. *Добро пожаловать*».",
+   "space": null
+  },
+  {
+   "id": "cr2_12",
+   "who": "narrator",
+   "name": "",
+   "start": 63.56,
+   "caption": "Звонит дон: «Проверку прошёл. Завтра — настоящее дело». Плюс двести долларов. Я больше не чистильщик. Я *посыльный*, мать его.",
+   "space": null
+  },
+  {
+   "id": "cr2_13",
+   "who": "narrator",
+   "name": "",
+   "start": 72.95,
+   "caption": "А у ворот порта стоит Чино. Он всё видел. И дон про него *обязательно спросит*.",
+   "space": null
+  },
+  {
+   "id": "cr2_14",
+   "who": "narrator",
+   "name": "",
+   "start": 79.36,
+   "caption": "Сдать Чино — или соврать дону? Пиши цифру. И да — вы опять, сволочи, *решаете за меня*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 11.31
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 3.86,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 4.79,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 39.62
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 11.31,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.8,
+   "fadeOut": 0.4,
+   "end": 36.09
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 18.73,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 22.08,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tick.wav",
+   "start": 36.09,
+   "gain": -10,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "loop": true,
+   "end": 53.59
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 37.93,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/bus.wav",
+   "start": 39.62,
+   "gain": -20,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 53.59
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 45.43,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whistle.wav",
+   "start": 50.2,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/gulls.wav",
+   "start": 53.59,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 63.56
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 53.59,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 63.56
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 58.78,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 60.17,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 72.95
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 63.36,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 64.76
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 67.64,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 72.95,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.8,
+   "end": 89.28
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 78.16,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 79.36,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 79.86,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 89.28
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "vote": 0.15,
+  "thanks": 3.46,
+  "cr2_01": 0.15,
+  "cr2_01_end": 4.49,
+  "garage": 4.79,
+  "smell": 6.96,
+  "cr2_02": 4.79,
+  "cr2_02_end": 11.01,
+  "inside": 11.31,
+  "rule1": 14.56,
+  "cr2_03": 11.31,
+  "cr2_03_end": 18.53,
+  "nod": 18.73,
+  "cr2_04": 18.73,
+  "cr2_04_end": 21.18,
+  "bag": 21.48,
+  "rule2": 23.96,
+  "cr2_05": 21.48,
+  "cr2_05_end": 28.15,
+  "hold": 28.45,
+  "shake": 34.97,
+  "cr2_06": 28.45,
+  "cr2_06_end": 35.89,
+  "ticking": 36.09,
+  "efm": 37.93,
+  "cr2_07": 36.09,
+  "cr2_07_end": 39.27,
+  "bus": 39.62,
+  "granny": 41.83,
+  "cross": 45.43,
+  "cr2_08": 39.62,
+  "cr2_08_end": 46.32,
+  "rule3": 46.57,
+  "whistle": 49.9,
+  "cr2_09": 46.57,
+  "cr2_09_end": 53.24,
+  "port": 53.59,
+  "scar": 54.03,
+  "open": 57.52,
+  "clock": 58.78,
+  "cr2_10": 53.59,
+  "cr2_10_end": 59.97,
+  "note": 60.17,
+  "cr2_11": 60.17,
+  "cr2_11_end": 63.21,
+  "call": 63.56,
+  "plus": 67.64,
+  "rank": 69.24,
+  "cr2_12": 63.56,
+  "cr2_12_end": 72.6,
+  "chino": 72.95,
+  "ask": 76.28,
+  "cr2_13": 72.95,
+  "cr2_13_end": 79.06,
+  "choice": 79.36,
+  "cr2_14": 79.36,
+  "cr2_14_end": 86.28,
+  "end": 89.28
+ },
+ "beats": {
+  "vote": {
+   "start": 0.15,
+   "dur": 3.31
+  },
+  "thanks": {
+   "start": 3.46,
+   "dur": 1.03
+  },
+  "garage": {
+   "start": 4.79,
+   "dur": 2.17
+  },
+  "smell": {
+   "start": 6.96,
+   "dur": 4.05
+  },
+  "inside": {
+   "start": 11.31,
+   "dur": 3.25
+  },
+  "rule1": {
+   "start": 14.56,
+   "dur": 3.97
+  },
+  "nod": {
+   "start": 18.73,
+   "dur": 2.45
+  },
+  "bag": {
+   "start": 21.48,
+   "dur": 2.48
+  },
+  "rule2": {
+   "start": 23.96,
+   "dur": 4.19
+  },
+  "hold": {
+   "start": 28.45,
+   "dur": 6.52
+  },
+  "shake": {
+   "start": 34.97,
+   "dur": 0.92
+  },
+  "ticking": {
+   "start": 36.09,
+   "dur": 1.84
+  },
+  "efm": {
+   "start": 37.93,
+   "dur": 1.34
+  },
+  "bus": {
+   "start": 39.62,
+   "dur": 2.21
+  },
+  "granny": {
+   "start": 41.83,
+   "dur": 3.61
+  },
+  "cross": {
+   "start": 45.43,
+   "dur": 0.88
+  },
+  "rule3": {
+   "start": 46.57,
+   "dur": 3.33
+  },
+  "whistle": {
+   "start": 49.9,
+   "dur": 3.33
+  },
+  "port": {
+   "start": 53.59,
+   "dur": 0.44
+  },
+  "scar": {
+   "start": 54.03,
+   "dur": 3.48
+  },
+  "open": {
+   "start": 57.52,
+   "dur": 1.26
+  },
+  "clock": {
+   "start": 58.78,
+   "dur": 1.19
+  },
+  "note": {
+   "start": 60.17,
+   "dur": 3.04
+  },
+  "call": {
+   "start": 63.56,
+   "dur": 4.08
+  },
+  "plus": {
+   "start": 67.64,
+   "dur": 1.6
+  },
+  "rank": {
+   "start": 69.24,
+   "dur": 3.35
+  },
+  "chino": {
+   "start": 72.95,
+   "dur": 3.33
+  },
+  "ask": {
+   "start": 76.28,
+   "dur": 2.78
+  },
+  "choice": {
+   "start": 79.36,
+   "dur": 6.92
+  }
+ }
+}

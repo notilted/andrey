@@ -4,7 +4,7 @@ import React from 'react';
 
 export type ToonLook = {
   skin: string; skinD: string; hair: string; top: string; topD: string; legs: string; legsD: string; shoes: string;
-  band?: string; bald?: boolean; messy?: boolean; hoodie?: boolean; mustache?: boolean; hat?: string; tie?: string; scale?: number;
+  band?: string; bald?: boolean; messy?: boolean; hoodie?: boolean; mustache?: boolean; hat?: string; tie?: string; scale?: number; scar?: boolean; scarf?: string;
 };
 
 export type ToonPose = {
@@ -116,6 +116,8 @@ export const Toon: React.FC<{x: number; y: number; s?: number; facing?: 1 | -1; 
           p.mouth === 'open' ? <ellipse cx={0} cy={52} rx={14} ry={16} fill="#5a1a1a" /> :
           <path d="M-18 46 Q0 62 18 46" stroke="#3a1a14" strokeWidth={5} fill="none" strokeLinecap="round" />}
         {p.blush !== false && [-56, 56].map((bx) => <ellipse key={bx} cx={bx} cy={34} rx={16} ry={10} fill="#ff8a9a" opacity={0.55} />)}
+        {L.scar && <path d="M-60 -50 L40 60" stroke="#c86a6a" strokeWidth={8} strokeLinecap="round" />}
+        {L.scarf && <path d="M-100 -10 Q-100 -110 0 -112 Q100 -110 100 -10 L104 60 Q60 20 70 -20 Q0 -60 -70 -20 Q-60 20 -104 60 Z" fill={L.scarf} />}
         {p.sweat && <path d="M66 -30 q10 16 0 24 q-10 -8 0 -24 Z" fill="#7ac8f0" />}
       </g>
     </g>
