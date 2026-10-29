@@ -5,7 +5,7 @@ import {FONT} from '../theme';
 import {SVG} from './twkit';
 
 /** Проба тун-стиля для «Из низов»: 0 — площадь, 1 — страх у двери, 2 — дон крупно. */
-const KID: ToonLook = {skin: '#f4cfae', skinD: '#e6b894', hair: '#3a2418', top: '#ffa82a', topD: '#ff8a1a', legs: '#3a3a8a', legsD: '#2e2e74', shoes: '#1a1424', band: '#7a8a3a'};
+const KID: ToonLook = {skin: '#e2b494', skinD: '#c99878', hair: '#171a21', top: '#4a5a78', topD: '#3a4862', legs: '#262b36', legsD: '#1e222c', shoes: '#e8e4da', messy: true, hoodie: true};
 const DON: ToonLook = {skin: '#f0c8a8', skinD: '#dcb090', hair: '#e8e4da', top: '#f6f4ee', topD: '#dcd8ce', legs: '#f0eee6', legsD: '#d8d4ca', shoes: '#4a2a1a', mustache: true, bald: true, hat: '#f2f0e8', tie: '#c83030', scale: 1.08};
 const GUARD: ToonLook = {skin: '#d8a888', skinD: '#c09070', hair: '#14110e', top: '#2a2a3a', topD: '#1e1e2c', legs: '#22222e', legsD: '#1a1a24', shoes: '#0a0a10'};
 

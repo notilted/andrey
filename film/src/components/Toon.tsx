@@ -4,7 +4,7 @@ import React from 'react';
 
 export type ToonLook = {
   skin: string; skinD: string; hair: string; top: string; topD: string; legs: string; legsD: string; shoes: string;
-  band?: string; bald?: boolean; mustache?: boolean; hat?: string; tie?: string; scale?: number;
+  band?: string; bald?: boolean; messy?: boolean; hoodie?: boolean; mustache?: boolean; hat?: string; tie?: string; scale?: number;
 };
 
 export type ToonPose = {
@@ -70,6 +70,12 @@ export const Toon: React.FC<{x: number; y: number; s?: number; facing?: 1 | -1; 
       <g>
         <rect x={-82} y={hipY - 250} width={164} height={262} rx={34} fill={L.topD} />
         <g clipPath={`url(#${clipL})`}><rect x={-82} y={hipY - 250} width={164} height={262} rx={34} fill={L.top} /></g>
+        {L.hoodie && <g>
+          <path d={`M-62 ${hipY - 250} Q0 ${hipY - 196} 62 ${hipY - 250} L50 ${hipY - 262} Q0 ${hipY - 220} -50 ${hipY - 262} Z`} fill={L.topD} />
+          <path d={`M-16 ${hipY - 226} l-4 70 M16 ${hipY - 226} l4 70`} stroke="#e8e4da" strokeWidth={6} strokeLinecap="round" />
+          <circle cx={-20} cy={hipY - 154} r={6} fill="#e8e4da" /><circle cx={20} cy={hipY - 154} r={6} fill="#e8e4da" />
+          <rect x={-56} y={hipY - 110} width={112} height={46} rx={14} fill="#000" opacity={0.12} />
+        </g>}
         {L.tie && <path d={`M0 ${hipY - 246} l-14 24 l14 120 l14 -120 Z`} fill={L.tie} />}
       </g>
       <Arm x={-62} y={hipY - 225} a={p.armL} side={-1} c={L.top} skin={L.skin} />
@@ -80,7 +86,8 @@ export const Toon: React.FC<{x: number; y: number; s?: number; facing?: 1 | -1; 
       <g transform={`translate(0 ${hipY - 370})`}>
         <circle r={92} fill={L.skinD} />
         <g clipPath={`url(#${clipL})`}><circle r={92} fill={L.skin} /></g>
-        {!L.bald && <path d="M-92 -6 A92 92 0 0 1 92 -6 Q92 -40 70 -40 L-70 -40 Q-92 -40 -92 -6 Z" fill={L.hair} transform="translate(0 -22)" />}
+        {L.messy && <path d="M-94 2 Q-100 -70 -40 -94 Q10 -112 60 -90 Q100 -70 96 -6 L84 -24 L74 -6 L62 -34 Q30 -20 -6 -40 L-20 -18 L-34 -42 Q-60 -26 -80 -30 Z" fill={L.hair} />}
+        {!L.bald && !L.messy && <path d="M-92 -6 A92 92 0 0 1 92 -6 Q92 -40 70 -40 L-70 -40 Q-92 -40 -92 -6 Z" fill={L.hair} transform="translate(0 -22)" />}
         {L.bald && <path d="M-92 4 Q-96 -30 -78 -34 L-70 10 Z M92 4 Q96 -30 78 -34 L70 10 Z" fill={L.hair} />}
         {L.hat && <g><ellipse cx={0} cy={-74} rx={130} ry={22} fill={L.hat} /><path d="M-70 -76 Q-66 -150 0 -152 Q66 -150 70 -76 Z" fill={L.hat} /><rect x={-70} y={-96} width={140} height={14} fill="#1a1410" /></g>}
         {L.band && <g><rect x={-94} y={-46} width={188} height={26} rx={6} fill={L.band} /><path d="M-90 -40 l-46 -14 l10 26 Z" fill={L.band} /></g>}
