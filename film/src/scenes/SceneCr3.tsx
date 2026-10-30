@@ -59,7 +59,7 @@ const Voter: React.FC<{f: number; start: number}> = ({f, start}) => {
 };
 
 /** Кабинет дона: стол, лампа. */
-const Office: React.FC<{f: number}> = ({f}) => (
+export const Office: React.FC<{f: number}> = ({f}) => (
   <g>
     <Glow f={f} c1="#8a5a3a" c2="#1a0e12" cy={700} id="goff" />
     <rect x={-200} y={1320} width={1480} height={900} fill="#2a1a16" />
@@ -67,7 +67,7 @@ const Office: React.FC<{f: number}> = ({f}) => (
     {[0, 1, 2].map((i) => <rect key={i} x={200 + i * 250} y={400} width={200} height={340} fill="#5a3a2a" opacity={0.6} />)}
   </g>
 );
-const Desk: React.FC = () => (
+export const Desk: React.FC = () => (
   <g>
     <rect x={380} y={1080} width={660} height={60} rx={10} fill="#6a3a24" />
     <rect x={710} y={1080} width={330} height={60} rx={10} fill="#000" opacity={0.15} />
@@ -75,7 +75,7 @@ const Desk: React.FC = () => (
     <rect x={900} y={980} width={14} height={100} fill="#2a2a2a" /><path d="M860 980 L960 980 L930 940 L890 940 Z" fill="#2a6a4a" />
   </g>
 );
-const Orange: React.FC<{x: number; y: number; peel: number; f: number}> = ({x, y, peel, f}) => (
+export const Orange: React.FC<{x: number; y: number; peel: number; f: number}> = ({x, y, peel, f}) => (
   <g transform={`translate(${x} ${y})`}>
     <circle r={34} fill={peel > 0.5 ? '#f6c28a' : '#f28a2a'} />
     {peel <= 0.5 && <circle r={34} fill="none" stroke="#e0701a" strokeWidth={4} />}
@@ -85,7 +85,7 @@ const Orange: React.FC<{x: number; y: number; peel: number; f: number}> = ({x, y
 );
 
 /** Фото из почтового ящика: лицом / оборотом. */
-const Photo: React.FC<{f: number; back: boolean; t: number}> = ({f, back, t}) => {
+export const Photo: React.FC<{f: number; back: boolean; t: number}> = ({f, back, t}) => {
   const flip = back ? Math.cos(Math.min(1, t / 10) * Math.PI) : 1;
   return (
     <g>

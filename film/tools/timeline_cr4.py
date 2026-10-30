@@ -1,0 +1,42 @@
+"""«Из низов», серия 4 «Мендоса» (ветка «рассказать дону»): python3 tools/timeline_cr4.py -> src/data/cr4.json"""
+from narr import B, M, N, S, load, marks, save
+
+load("cr4_narration.json")
+
+M("start", 0)
+N("cr4_01", 0.15, at=[("results", None), ("turnout", "Явка"), ("proud", "Дон бы")])
+N("cr4_02", 0.3, at=[("kolbasa", None)])
+N("cr4_03", 0.35, at=[("office", None), ("flip", "Переворачиваю")])
+N("cr4_04", 0.3, at=[("silence", None), ("mendosa", "Потом")])
+N("cr4_05", 0.3, at=[("rival", None), ("oranges", "Дон его")])
+N("cr4_06", 0.3, at=[("knows", None), ("you", "И про")])
+N("cr4_07", 0.35, at=[("drawer", None), ("rule5", "Правило")])
+N("cr4_08", 0.3, at=[("driver", None), ("bike", "Водить"), ("rank", "Но я")])
+N("cr4_09", 0.35, at=[("lucia", None), ("withyou", "И говорит")])
+N("cr4_10", 0.3, at=[("look", None), ("coffin", "Взгляд")])
+N("cr4_11", 0.35, at=[("choice", None)])
+M("end", 3.0)
+
+m = marks
+S("music/m11_money.wav", 0, -21, "music", fadeIn=0.3, length=m["office"], fadeOut=0.8)
+S("sfx/cheer.wav", m["turnout"] + 0.3, -20, length=2.5, fadeOut=0.8)
+S("sfx/recap_hit.wav", m["proud"], -14)
+S("sfx/pop.wav", m["kolbasa"] + 0.2, -12)
+S("sfx/room_tone.wav", m["office"], -24, "amb", length=m["driver"] - m["office"], fadeOut=0.5, loop=True)
+S("music/m02_dread_long.wav", m["office"], -19, "music", fadeIn=1, length=m["driver"] - m["office"], fadeOut=0.8)
+S("sfx/page_flip.wav", m["flip"], -12)
+S("sfx/clock.wav", m["silence"], -18, length=m["mendosa"] - m["silence"] + 0.5, fadeOut=0.3)
+S("sfx/stinger.wav", m["mendosa"] + 1.0, -10)
+S("sfx/pencil.wav", m["oranges"] + 1.0, -16, length=2.0, fadeOut=0.3)
+S("sfx/impact_low.wav", m["you"] + 0.4, -10)
+S("sfx/chair.wav", m["drawer"], -14)
+S("sfx/lock_click.wav", m["drawer"] + 1.2, -12)
+S("music/m10_run.wav", m["driver"], -19, "music", fadeIn=0.3, length=m["lucia"] - m["driver"], fadeOut=0.5)
+S("sfx/whoosh.wav", m["lucia"], -14)
+S("music/m09_sad.wav", m["lucia"], -18, "music", fadeIn=0.6, length=m["look"] - m["lucia"], fadeOut=0.4)
+S("music/m13_quarantine.wav", m["look"], -19, "music", fadeIn=0.4, length=m["end"] - m["look"], fadeOut=0.8)
+S("sfx/stinger.wav", m["coffin"] + 1.5, -12)
+S("sfx/riser.wav", m["choice"] - 1.2, -15)
+S("sfx/clock.wav", m["choice"] + 0.5, -17, length=m["end"] - m["choice"] - 0.5, fadeOut=0.5, loop=True)
+
+save("cr4")

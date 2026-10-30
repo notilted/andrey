@@ -1,0 +1,381 @@
+{
+ "name": "cr4",
+ "duration": 81.65,
+ "dialogue": [
+  {
+   "id": "cr4_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.15,
+   "caption": "Итоги голосования. За «рассказать дону» — восемь. Против — два. Явка выросла с одного человека до *десяти*. Рост девятьсот процентов. Дон бы мной гордился.",
+   "space": null
+  },
+  {
+   "id": "cr4_02",
+   "who": "narrator",
+   "name": "",
+   "start": 13.14,
+   "caption": "Особый привет амбасадору колбасы. С таким ником тебе прямая дорога *в картель*.",
+   "space": null
+  },
+  {
+   "id": "cr4_03",
+   "who": "narrator",
+   "name": "",
+   "start": 18.61,
+   "caption": "Вечер. Кабинет дона. Я кладу на стол фотографию. Переворачиваю. «Я жив. *Я всё знаю*».",
+   "space": null
+  },
+  {
+   "id": "cr4_04",
+   "who": "narrator",
+   "name": "",
+   "start": 26.58,
+   "caption": "Дон долго молчит. Потом говорит одно слово: *«Мендоса»*.",
+   "space": null
+  },
+  {
+   "id": "cr4_05",
+   "who": "narrator",
+   "name": "",
+   "start": 31.64,
+   "caption": "Мендоса — это второй картель в городе. Дон его ненавидит так, что даже апельсины теперь чистит *злее*.",
+   "space": null
+  },
+  {
+   "id": "cr4_06",
+   "who": "narrator",
+   "name": "",
+   "start": 38.67,
+   "caption": "«Чино работает на него. Значит, Мендоса знает про порт. Про сумку. И про *тебя*».",
+   "space": null
+  },
+  {
+   "id": "cr4_07",
+   "who": "narrator",
+   "name": "",
+   "start": 44.9,
+   "caption": "Дон открывает ящик стола и кладёт передо мной ключи от машины и адрес. Правило номер пять: *назад дороги нет*.",
+   "space": null
+  },
+  {
+   "id": "cr4_08",
+   "who": "narrator",
+   "name": "",
+   "start": 53.75,
+   "caption": "Мне шестнадцать. Прав нет. Водить я умею только велосипед. Но я теперь, сука, *водитель*.",
+   "space": null
+  },
+  {
+   "id": "cr4_09",
+   "who": "narrator",
+   "name": "",
+   "start": 60.39,
+   "caption": "А в дверях стоит Лусия, дочь дона. И говорит: «Я поеду *с тобой*».",
+   "space": null
+  },
+  {
+   "id": "cr4_10",
+   "who": "narrator",
+   "name": "",
+   "start": 65.17,
+   "caption": "Дон смотрит на неё. Потом на меня. Взгляд такой, будто он уже выбирает мне *гроб*.",
+   "space": null
+  },
+  {
+   "id": "cr4_11",
+   "who": "narrator",
+   "name": "",
+   "start": 71.21,
+   "caption": "Поехать одному — или взять Лусию? Пиши цифру. Явка десять человек — давайте сто. Я в вас верю, *суки*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 18.61
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 5.76,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.8,
+   "end": 8.26
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 11.1,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 13.34,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 18.61,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 53.75
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 18.61,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 0.8,
+   "end": 53.75
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 23.08,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 26.58,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 28.67
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 29.17,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 35.27,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 37.27
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 44.06,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/chair.wav",
+   "start": 44.9,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 46.1,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 53.75,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.5,
+   "end": 60.39
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 60.39,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 60.39,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.4,
+   "end": 65.17
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 65.17,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.8,
+   "end": 81.65
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 69.16,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 70.01,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 71.71,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 81.65
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "results": 0.15,
+  "turnout": 5.46,
+  "proud": 11.1,
+  "cr4_01": 0.15,
+  "cr4_01_end": 12.84,
+  "kolbasa": 13.14,
+  "cr4_02": 13.14,
+  "cr4_02_end": 18.26,
+  "office": 18.61,
+  "flip": 23.08,
+  "cr4_03": 18.61,
+  "cr4_03_end": 26.28,
+  "silence": 26.58,
+  "mendosa": 28.17,
+  "cr4_04": 26.58,
+  "cr4_04_end": 31.34,
+  "rival": 31.64,
+  "oranges": 34.27,
+  "cr4_05": 31.64,
+  "cr4_05_end": 38.37,
+  "knows": 38.67,
+  "you": 43.66,
+  "cr4_06": 38.67,
+  "cr4_06_end": 44.55,
+  "drawer": 44.9,
+  "rule5": 50.52,
+  "cr4_07": 44.9,
+  "cr4_07_end": 53.45,
+  "driver": 53.75,
+  "bike": 55.7,
+  "rank": 58.01,
+  "cr4_08": 53.75,
+  "cr4_08_end": 60.04,
+  "lucia": 60.39,
+  "withyou": 62.84,
+  "cr4_09": 60.39,
+  "cr4_09_end": 64.87,
+  "look": 65.17,
+  "coffin": 67.66,
+  "cr4_10": 65.17,
+  "cr4_10_end": 70.86,
+  "choice": 71.21,
+  "cr4_11": 71.21,
+  "cr4_11_end": 78.65,
+  "end": 81.65
+ },
+ "beats": {
+  "results": {
+   "start": 0.15,
+   "dur": 5.31
+  },
+  "turnout": {
+   "start": 5.46,
+   "dur": 5.64
+  },
+  "proud": {
+   "start": 11.1,
+   "dur": 1.74
+  },
+  "kolbasa": {
+   "start": 13.14,
+   "dur": 5.12
+  },
+  "office": {
+   "start": 18.61,
+   "dur": 4.47
+  },
+  "flip": {
+   "start": 23.08,
+   "dur": 3.2
+  },
+  "silence": {
+   "start": 26.58,
+   "dur": 1.59
+  },
+  "mendosa": {
+   "start": 28.17,
+   "dur": 3.18
+  },
+  "rival": {
+   "start": 31.64,
+   "dur": 2.63
+  },
+  "oranges": {
+   "start": 34.27,
+   "dur": 4.11
+  },
+  "knows": {
+   "start": 38.67,
+   "dur": 4.99
+  },
+  "you": {
+   "start": 43.66,
+   "dur": 0.89
+  },
+  "drawer": {
+   "start": 44.9,
+   "dur": 5.62
+  },
+  "rule5": {
+   "start": 50.52,
+   "dur": 2.93
+  },
+  "driver": {
+   "start": 53.75,
+   "dur": 1.95
+  },
+  "bike": {
+   "start": 55.7,
+   "dur": 2.31
+  },
+  "rank": {
+   "start": 58.01,
+   "dur": 2.02
+  },
+  "lucia": {
+   "start": 60.39,
+   "dur": 2.45
+  },
+  "withyou": {
+   "start": 62.84,
+   "dur": 2.03
+  },
+  "look": {
+   "start": 65.17,
+   "dur": 2.49
+  },
+  "coffin": {
+   "start": 67.66,
+   "dur": 3.2
+  },
+  "choice": {
+   "start": 71.21,
+   "dur": 7.44
+  }
+ }
+}

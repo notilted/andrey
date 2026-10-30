@@ -4,7 +4,7 @@ import React from 'react';
 
 export type ToonLook = {
   skin: string; skinD: string; hair: string; top: string; topD: string; legs: string; legsD: string; shoes: string;
-  band?: string; bald?: boolean; messy?: boolean; hoodie?: boolean; mustache?: boolean; hat?: string; tie?: string; scale?: number; scar?: boolean; scarf?: string;
+  band?: string; bald?: boolean; messy?: boolean; hoodie?: boolean; mustache?: boolean; hat?: string; tie?: string; scale?: number; scar?: boolean; scarf?: string; longHair?: boolean; shades?: boolean; chain?: boolean;
 };
 
 export type ToonPose = {
@@ -76,6 +76,7 @@ export const Toon: React.FC<{x: number; y: number; s?: number; facing?: 1 | -1; 
           <circle cx={-20} cy={hipY - 154} r={6} fill="#e8e4da" /><circle cx={20} cy={hipY - 154} r={6} fill="#e8e4da" />
           <rect x={-56} y={hipY - 110} width={112} height={46} rx={14} fill="#000" opacity={0.12} />
         </g>}
+        {L.chain && <path d={`M-40 ${hipY - 246} Q0 ${hipY - 170} 40 ${hipY - 246}`} stroke="#e8c84a" strokeWidth={10} fill="none" />}
         {L.tie && <path d={`M0 ${hipY - 246} l-14 24 l14 120 l14 -120 Z`} fill={L.tie} />}
       </g>
       <Arm x={-62} y={hipY - 225} a={p.armL} side={-1} c={L.top} skin={L.skin} />
@@ -84,6 +85,7 @@ export const Toon: React.FC<{x: number; y: number; s?: number; facing?: 1 | -1; 
       <rect x={-17} y={hipY - 286} width={34} height={44} fill={L.skinD} />
       {/* голова */}
       <g transform={`translate(0 ${hipY - 370})`}>
+        {L.longHair && <path d="M-100 -10 Q-110 -110 0 -116 Q110 -110 100 -10 L112 150 Q60 170 40 120 L-40 120 Q-60 170 -112 150 Z" fill={L.hair} />}
         <circle r={92} fill={L.skinD} />
         <g clipPath={`url(#${clipL})`}><circle r={92} fill={L.skin} /></g>
         {L.messy && <path d="M-94 2 Q-100 -70 -40 -94 Q10 -112 60 -90 Q100 -70 96 -6 L84 -24 L74 -6 L62 -34 Q30 -20 -6 -40 L-20 -18 L-34 -42 Q-60 -26 -80 -30 Z" fill={L.hair} />}
@@ -116,6 +118,8 @@ export const Toon: React.FC<{x: number; y: number; s?: number; facing?: 1 | -1; 
           p.mouth === 'open' ? <ellipse cx={0} cy={52} rx={14} ry={16} fill="#5a1a1a" /> :
           <path d="M-18 46 Q0 62 18 46" stroke="#3a1a14" strokeWidth={5} fill="none" strokeLinecap="round" />}
         {p.blush !== false && [-56, 56].map((bx) => <ellipse key={bx} cx={bx} cy={34} rx={16} ry={10} fill="#ff8a9a" opacity={0.55} />)}
+        {L.longHair && <path d="M-94 -6 Q-90 -96 0 -100 Q70 -98 92 -20 Q40 -60 -20 -50 Q-60 -40 -94 -6 Z" fill={L.hair} />}
+        {L.shades && <g><rect x={-62} y={-8} width={52} height={30} rx={10} fill="#14110e" /><rect x={10} y={-8} width={52} height={30} rx={10} fill="#14110e" /><rect x={-10} y={0} width={20} height={6} fill="#14110e" /></g>}
         {L.scar && <path d="M-60 -50 L40 60" stroke="#c86a6a" strokeWidth={8} strokeLinecap="round" />}
         {L.scarf && <path d="M-100 -10 Q-100 -110 0 -112 Q100 -110 100 -10 L104 60 Q60 20 70 -20 Q0 -60 -70 -20 Q-60 20 -104 60 Z" fill={L.scarf} />}
         {p.sweat && <path d="M66 -30 q10 16 0 24 q-10 -8 0 -24 Z" fill="#7ac8f0" />}
