@@ -1,0 +1,40 @@
+"""Новость: взлом Binance на $6,3 млрд: python3 tools/timeline_bn.py -> src/data/bn.json"""
+from narr import B, M, N, S, load, marks, save
+
+load("bn_narration.json")
+
+M("start", 0)
+N("bn_01", 0.1, at=[("hook", None), ("night", "Их украли"), ("laptop0", "И всё")])
+N("bn_02", 0.35, at=[("binance", None), ("hacked", "Она объявила"), ("record", "Это крупнейшая")])
+N("bn_03", 0.3, at=[("how", None), ("eng", "через рабочий"), ("path", "Одно")])
+N("bn_04", 0.3, at=[("scale", None)])
+N("bn_05", 0.3, at=[("freeze", None), ("users", "Миллионы")])
+N("bn_06", 0.3, at=[("market", None), ("bnb", "токен")])
+N("bn_07", 0.3, at=[("who", None), ("dprk", "Аналитики"), ("deny", "Сама")])
+N("bn_08", 0.35, at=[("good", None), ("frozen", "Больше"), ("cover", "А Binance")])
+N("bn_09", 0.35, at=[("hours", None), ("q", "А ты бы")])
+M("end", 2.8)
+
+m = marks
+S("sfx/impact_low.wav", 0.05, -9)
+S("music/m13_quarantine.wav", 0, -20, "music", fadeIn=0.2, length=m["freeze"], fadeOut=0.6)
+S("sfx/cash.wav", 0.4, -16)
+S("sfx/stinger.wav", m["laptop0"], -12)
+S("sfx/phone_alert.wav", m["hacked"], -16)
+S("sfx/recap_hit.wav", m["record"], -13)
+S("sfx/ui_tick.wav", m["eng"], -12)
+S("sfx/static.wav", m["path"], -26, length=2.5, fadeOut=0.5)
+S("sfx/crowd.wav", m["scale"], -24, "amb", length=m["freeze"] - m["scale"], fadeOut=0.5, loop=True)
+S("sfx/ui_tick.wav", m["users"] + 1.0, -10)
+S("sfx/ui_tick.wav", m["users"] + 1.4, -10)
+S("music/m02_dread_long.wav", m["freeze"], -19, "music", fadeIn=0.5, length=m["good"] - m["freeze"], fadeOut=0.6)
+S("sfx/impact_low.wav", m["market"] + 0.6, -11)
+S("sfx/whoosh.wav", m["bnb"], -14)
+S("sfx/static.wav", m["who"], -26, length=2.0, fadeOut=0.5)
+S("music/m05_relief.wav", m["good"], -18, "music")
+S("music/m04_shelter.wav", m["good"] + 2, -21, "music", fadeIn=1, length=m["hours"] - m["good"] - 2, fadeOut=0.6)
+S("sfx/lock_click.wav", m["frozen"] + 0.6, -12)
+S("sfx/clock.wav", m["hours"], -17, length=m["end"] - m["hours"], fadeOut=0.5, loop=True)
+S("music/m13_quarantine.wav", m["hours"], -21, "music", fadeIn=0.4, length=m["end"] - m["hours"], fadeOut=0.8)
+
+save("bn")

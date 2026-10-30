@@ -1,0 +1,356 @@
+{
+ "name": "bn",
+ "duration": 75.48,
+ "dialogue": [
+  {
+   "id": "bn_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.1,
+   "caption": "Шесть миллиардов триста миллионов долларов. Их украли за одну ночь. И всё началось с *одного ноутбука*.",
+   "space": null
+  },
+  {
+   "id": "bn_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.55,
+   "caption": "Это Binance — самая большая криптобиржа в мире. Она объявила, что её взломали. Это крупнейшая кража криптовалюты *в истории*.",
+   "space": null
+  },
+  {
+   "id": "bn_03",
+   "who": "narrator",
+   "name": "",
+   "start": 17.0,
+   "caption": "По данным самой биржи, хакеры получили доступ через рабочий ноутбук одного инженера. Одно заражённое устройство — и открыт путь *к миллиардам*.",
+   "space": null
+  },
+  {
+   "id": "bn_04",
+   "who": "narrator",
+   "name": "",
+   "start": 26.84,
+   "caption": "Для масштаба: это как если бы каждый житель Москвы отдал по *пятьсот долларов*.",
+   "space": null
+  },
+  {
+   "id": "bn_05",
+   "who": "narrator",
+   "name": "",
+   "start": 31.96,
+   "caption": "Биржа сразу остановила вывод средств. Миллионы пользователей открыли приложение — и не смогли забрать *свои деньги*.",
+   "space": null
+  },
+  {
+   "id": "bn_06",
+   "who": "narrator",
+   "name": "",
+   "start": 39.91,
+   "caption": "Рынок отреагировал мгновенно: биткоин упал примерно на четыре процента, токен биржи BNB — *на шесть*.",
+   "space": null
+  },
+  {
+   "id": "bn_07",
+   "who": "narrator",
+   "name": "",
+   "start": 47.15,
+   "caption": "Кто за этим стоит? Аналитики блокчейна указывают на хакеров из Северной Кореи. Сама биржа это *пока не подтверждает*.",
+   "space": null
+  },
+  {
+   "id": "bn_08",
+   "who": "narrator",
+   "name": "",
+   "start": 55.92,
+   "caption": "Но есть и хорошие новости. Больше трёх миллиардов украденного уже заморожено. А Binance заявила, что покроет потери *из собственных средств*.",
+   "space": null
+  },
+  {
+   "id": "bn_09",
+   "who": "narrator",
+   "name": "",
+   "start": 65.43,
+   "caption": "Вывод обещают вернуть примерно через сорок часов. А ты бы сейчас держал деньги на бирже? *Напиши в комментариях*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.6,
+   "end": 31.96
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 0.4,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 4.88,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phone_alert.wav",
+   "start": 11.12,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 13.43,
+   "gain": -13,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 20.11,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 22.75,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 25.25
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 26.84,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 31.96
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 35.51,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 35.91,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 31.96,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 0.6,
+   "end": 55.92
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 40.51,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 44.96,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 47.15,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 49.15
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 55.92,
+   "gain": -18,
+   "bus": "music"
+  },
+  {
+   "file": "music/m04_shelter.wav",
+   "start": 57.92,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 0.6,
+   "end": 65.43
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 58.3,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 65.43,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 75.48
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 65.43,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.8,
+   "end": 75.48
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.1,
+  "night": 3.19,
+  "laptop0": 4.88,
+  "bn_01": 0.1,
+  "bn_01_end": 7.2,
+  "binance": 7.55,
+  "hacked": 11.12,
+  "record": 13.43,
+  "bn_02": 7.55,
+  "bn_02_end": 16.7,
+  "how": 17.0,
+  "eng": 20.11,
+  "path": 22.75,
+  "bn_03": 17.0,
+  "bn_03_end": 26.54,
+  "scale": 26.84,
+  "bn_04": 26.84,
+  "bn_04_end": 31.66,
+  "freeze": 31.96,
+  "users": 34.51,
+  "bn_05": 31.96,
+  "bn_05_end": 39.61,
+  "market": 39.91,
+  "bnb": 44.96,
+  "bn_06": 39.91,
+  "bn_06_end": 46.85,
+  "who": 47.15,
+  "dprk": 48.54,
+  "deny": 52.93,
+  "bn_07": 47.15,
+  "bn_07_end": 55.57,
+  "good": 55.92,
+  "frozen": 57.7,
+  "cover": 61.06,
+  "bn_08": 55.92,
+  "bn_08_end": 65.08,
+  "hours": 65.43,
+  "q": 68.7,
+  "bn_09": 65.43,
+  "bn_09_end": 72.68,
+  "end": 75.48
+ },
+ "beats": {
+  "hook": {
+   "start": 0.1,
+   "dur": 3.09
+  },
+  "night": {
+   "start": 3.19,
+   "dur": 1.69
+  },
+  "laptop0": {
+   "start": 4.88,
+   "dur": 2.32
+  },
+  "binance": {
+   "start": 7.55,
+   "dur": 3.57
+  },
+  "hacked": {
+   "start": 11.12,
+   "dur": 2.31
+  },
+  "record": {
+   "start": 13.43,
+   "dur": 3.27
+  },
+  "how": {
+   "start": 17.0,
+   "dur": 3.11
+  },
+  "eng": {
+   "start": 20.11,
+   "dur": 2.64
+  },
+  "path": {
+   "start": 22.75,
+   "dur": 3.79
+  },
+  "scale": {
+   "start": 26.84,
+   "dur": 4.82
+  },
+  "freeze": {
+   "start": 31.96,
+   "dur": 2.55
+  },
+  "users": {
+   "start": 34.51,
+   "dur": 5.1
+  },
+  "market": {
+   "start": 39.91,
+   "dur": 5.05
+  },
+  "bnb": {
+   "start": 44.96,
+   "dur": 1.89
+  },
+  "who": {
+   "start": 47.15,
+   "dur": 1.39
+  },
+  "dprk": {
+   "start": 48.54,
+   "dur": 4.39
+  },
+  "deny": {
+   "start": 52.93,
+   "dur": 2.64
+  },
+  "good": {
+   "start": 55.92,
+   "dur": 1.78
+  },
+  "frozen": {
+   "start": 57.7,
+   "dur": 3.36
+  },
+  "cover": {
+   "start": 61.06,
+   "dur": 4.02
+  },
+  "hours": {
+   "start": 65.43,
+   "dur": 3.27
+  },
+  "q": {
+   "start": 68.7,
+   "dur": 3.99
+  }
+ }
+}
