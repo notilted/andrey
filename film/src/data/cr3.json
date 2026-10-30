@@ -1,0 +1,396 @@
+{
+ "name": "cr3",
+ "duration": 82.66,
+ "dialogue": [
+  {
+   "id": "cr3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.15,
+   "caption": "Итак, итоги голосования. За «сдать Чино» — *один голос*. Против — ноль. Явка — один человек. Один, сука. Это не голосование, это *личная просьба*.",
+   "space": null
+  },
+  {
+   "id": "cr3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 12.64,
+   "caption": "Данность, это всё ты. В одиночку решаешь судьбу моего лучшего друга. Уважение. Надеюсь, *спишь спокойно*.",
+   "space": null
+  },
+  {
+   "id": "cr3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 20.91,
+   "caption": "Вечер. Дон сидит в кабинете и чистит апельсин ножом. Медленно. Как в кино, где потом кого-то *находят в реке*.",
+   "space": null
+  },
+  {
+   "id": "cr3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 29.02,
+   "caption": "«Кто был у ворот порта?» Правило номер четыре: дону не врут. Я говорю: *«Чино»*.",
+   "space": null
+  },
+  {
+   "id": "cr3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 36.21,
+   "caption": "Дон кивает. Охранник молча выходит. Апельсин дочищен. Я, блядь, больше никогда в жизни *не буду есть апельсины*.",
+   "space": null
+  },
+  {
+   "id": "cr3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 44.84,
+   "caption": "Ночью я не сплю. Утром иду на площадь. Ящик Чино стоит на месте. А Чино — *нет*.",
+   "space": null
+  },
+  {
+   "id": "cr3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 51.87,
+   "caption": "Через неделю дон зовёт меня снова: «Ты не соврал. Это редкость». Плюс тысяча долларов. Я теперь *курьер*.",
+   "space": null
+  },
+  {
+   "id": "cr3_08",
+   "who": "narrator",
+   "name": "",
+   "start": 59.8,
+   "caption": "А вечером в почтовом ящике — фотография. Я и Чино, нам по десять лет. На обороте: *«Я жив. Я всё знаю»*.",
+   "space": null
+  },
+  {
+   "id": "cr3_09",
+   "who": "narrator",
+   "name": "",
+   "start": 68.61,
+   "caption": "Ну ёб твою мать.",
+   "space": null
+  },
+  {
+   "id": "cr3_10",
+   "who": "narrator",
+   "name": "",
+   "start": 70.9,
+   "caption": "Рассказать дону про записку — или найти Чино самому? Пиши цифру. И приведи друзей, а то этот сериал смотрят *ты, я и моя мама*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 20.91
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 6.16,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cheer.wav",
+   "start": 12.94,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "end": 14.54
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 20.91,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 44.84
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 20.91,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 0.8,
+   "end": 44.84
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 21.41,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 29.52
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 35.01,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 37.11,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 39.11
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 38.71,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 44.84,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "loop": true,
+   "end": 46.3
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 46.3,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 51.87
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 48.18,
+   "gain": -17,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 1,
+   "end": 52.87
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 56.65,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 56.65,
+   "gain": -20,
+   "bus": "music",
+   "fadeOut": 0.6,
+   "end": 59.8
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 63.26,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 65.71,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 65.71,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.8,
+   "end": 82.66
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 68.61,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 69.7,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 71.4,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 82.66
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "results": 0.15,
+  "one": 6.16,
+  "ask": 8.99,
+  "cr3_01": 0.15,
+  "cr3_01_end": 12.34,
+  "voter": 12.64,
+  "sleep": 18.72,
+  "cr3_02": 12.64,
+  "cr3_02_end": 20.56,
+  "office": 20.91,
+  "river": 25.46,
+  "cr3_03": 20.91,
+  "cr3_03_end": 28.72,
+  "q": 29.02,
+  "rule4": 31.23,
+  "say": 34.41,
+  "cr3_04": 29.02,
+  "cr3_04_end": 35.91,
+  "nod": 36.21,
+  "guard": 37.11,
+  "orange": 38.92,
+  "never": 40.27,
+  "cr3_05": 36.21,
+  "cr3_05_end": 44.49,
+  "night": 44.84,
+  "morning": 46.3,
+  "box": 48.18,
+  "cr3_06": 44.84,
+  "cr3_06_end": 51.52,
+  "week": 51.87,
+  "plus": 56.65,
+  "rank": 58.27,
+  "cr3_07": 51.87,
+  "cr3_07_end": 59.45,
+  "mail": 59.8,
+  "photo": 63.26,
+  "back": 65.71,
+  "cr3_08": 59.8,
+  "cr3_08_end": 68.41,
+  "efm": 68.61,
+  "cr3_09": 68.61,
+  "cr3_09_end": 70.5,
+  "choice": 70.9,
+  "friends": 75.45,
+  "cr3_10": 70.9,
+  "cr3_10_end": 79.66,
+  "end": 82.66
+ },
+ "beats": {
+  "results": {
+   "start": 0.15,
+   "dur": 6.01
+  },
+  "one": {
+   "start": 6.16,
+   "dur": 2.83
+  },
+  "ask": {
+   "start": 8.99,
+   "dur": 3.35
+  },
+  "voter": {
+   "start": 12.64,
+   "dur": 6.08
+  },
+  "sleep": {
+   "start": 18.72,
+   "dur": 1.85
+  },
+  "office": {
+   "start": 20.91,
+   "dur": 4.55
+  },
+  "river": {
+   "start": 25.46,
+   "dur": 3.25
+  },
+  "q": {
+   "start": 29.02,
+   "dur": 2.21
+  },
+  "rule4": {
+   "start": 31.23,
+   "dur": 3.18
+  },
+  "say": {
+   "start": 34.41,
+   "dur": 1.5
+  },
+  "nod": {
+   "start": 36.21,
+   "dur": 0.9
+  },
+  "guard": {
+   "start": 37.11,
+   "dur": 1.81
+  },
+  "orange": {
+   "start": 38.92,
+   "dur": 1.35
+  },
+  "never": {
+   "start": 40.27,
+   "dur": 4.22
+  },
+  "night": {
+   "start": 44.84,
+   "dur": 1.46
+  },
+  "morning": {
+   "start": 46.3,
+   "dur": 1.88
+  },
+  "box": {
+   "start": 48.18,
+   "dur": 3.34
+  },
+  "week": {
+   "start": 51.87,
+   "dur": 4.78
+  },
+  "plus": {
+   "start": 56.65,
+   "dur": 1.62
+  },
+  "rank": {
+   "start": 58.27,
+   "dur": 1.18
+  },
+  "mail": {
+   "start": 59.8,
+   "dur": 3.46
+  },
+  "photo": {
+   "start": 63.26,
+   "dur": 2.45
+  },
+  "back": {
+   "start": 65.71,
+   "dur": 2.7
+  },
+  "efm": {
+   "start": 68.61,
+   "dur": 1.89
+  },
+  "choice": {
+   "start": 70.9,
+   "dur": 4.55
+  },
+  "friends": {
+   "start": 75.45,
+   "dur": 4.2
+  }
+ }
+}

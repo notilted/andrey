@@ -1,0 +1,41 @@
+"""«Из низов», серия 3 «Апельсин» (ветка «сдать Чино»): python3 tools/timeline_cr3.py -> src/data/cr3.json"""
+from narr import B, M, N, S, load, marks, save
+
+load("cr3_narration.json")
+
+M("start", 0)
+N("cr3_01", 0.15, at=[("results", None), ("one", "Явка"), ("ask", "Это не")])
+N("cr3_02", 0.3, at=[("voter", None), ("sleep", "Надеюсь")])
+N("cr3_03", 0.35, at=[("office", None), ("river", "Как в кино")])
+N("cr3_04", 0.3, at=[("q", None), ("rule4", "Правило"), ("say", "Я говорю")])
+N("cr3_05", 0.3, at=[("nod", None), ("guard", "Охранник"), ("orange", "Апельсин"), ("never", "Я, блядь")])
+N("cr3_06", 0.35, at=[("night", None), ("morning", "Утром"), ("box", "Ящик")])
+N("cr3_07", 0.35, at=[("week", None), ("plus", "Плюс"), ("rank", "Я теперь")])
+N("cr3_08", 0.35, at=[("mail", None), ("photo", "Я и Чино"), ("back", "На обороте")])
+N("cr3_09", 0.2, at=[("efm", None)])
+N("cr3_10", 0.4, at=[("choice", None), ("friends", "И приведи")])
+M("end", 3.0)
+
+m = marks
+S("music/m11_money.wav", 0, -21, "music", fadeIn=0.3, length=m["office"], fadeOut=0.8)
+S("sfx/recap_hit.wav", m["one"], -12)
+S("sfx/cheer.wav", m["voter"] + 0.3, -24, length=1.6, fadeOut=0.6)
+S("sfx/room_tone.wav", m["office"], -24, "amb", length=m["night"] - m["office"], fadeOut=0.5, loop=True)
+S("music/m02_dread_long.wav", m["office"], -19, "music", fadeIn=1, length=m["night"] - m["office"], fadeOut=0.8)
+S("sfx/pencil.wav", m["office"] + 0.5, -20, length=m["q"] - m["office"], fadeOut=0.3)
+S("sfx/stinger.wav", m["say"] + 0.6, -12)
+S("sfx/footsteps_two.wav", m["guard"], -18, length=2.0, fadeOut=0.4)
+S("sfx/door_clank.wav", m["guard"] + 1.6, -16)
+S("sfx/clock.wav", m["night"], -18, length=m["morning"] - m["night"], fadeOut=0.3, loop=True)
+S("sfx/crowd.wav", m["morning"], -26, "amb", length=m["week"] - m["morning"], fadeOut=0.5, loop=True)
+S("music/m09_sad.wav", m["box"], -17, "music", fadeIn=1, length=m["week"] - m["box"] + 1, fadeOut=1)
+S("sfx/cash.wav", m["plus"], -10)
+S("music/m11_money.wav", m["plus"], -20, "music", length=m["mail"] - m["plus"], fadeOut=0.6)
+S("sfx/page_flip.wav", m["photo"], -12)
+S("sfx/page_flip.wav", m["back"], -12)
+S("music/m13_quarantine.wav", m["back"], -19, "music", fadeIn=0.4, length=m["end"] - m["back"], fadeOut=0.8)
+S("sfx/impact_low.wav", m["efm"], -9)
+S("sfx/riser.wav", m["choice"] - 1.2, -15)
+S("sfx/clock.wav", m["choice"] + 0.5, -17, length=m["end"] - m["choice"] - 0.5, fadeOut=0.5, loop=True)
+
+save("cr3")
