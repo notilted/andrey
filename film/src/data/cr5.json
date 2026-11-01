@@ -1,0 +1,387 @@
+{
+ "name": "cr5",
+ "duration": 80.66,
+ "dialogue": [
+  {
+   "id": "cr5_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.15,
+   "caption": "Голосование вышло почти вничью — семь против шести. Едем *с Лусией*.",
+   "space": null
+  },
+  {
+   "id": "cr5_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.49,
+   "caption": "Ночь. Мне шестнадцать, прав нет, а я за рулём машины дона. Глохну на первом же перекрёстке. Лусия смотрит на меня как на *ошибку природы*.",
+   "space": null
+  },
+  {
+   "id": "cr5_03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.76,
+   "caption": "«Двигайся», — говорит она. И садится за руль сама. Правило номер шесть: *не спорь с дочерью дона*.",
+   "space": null
+  },
+  {
+   "id": "cr5_04",
+   "who": "narrator",
+   "name": "",
+   "start": 23.03,
+   "caption": "Сан-Мигель, четырнадцать. Закрытая прачечная. В окне горит свет. А внутри — *Чино*.",
+   "space": null
+  },
+  {
+   "id": "cr5_05",
+   "who": "narrator",
+   "name": "",
+   "start": 29.91,
+   "caption": "Рядом с ним мужик в тёмных очках. Ночью. В помещении. Это может быть только *Мендоса*.",
+   "space": null
+  },
+  {
+   "id": "cr5_06",
+   "who": "narrator",
+   "name": "",
+   "start": 36.54,
+   "caption": "Лусия достаёт фотоаппарат. Щёлк. *Вспышка*. Ну ёб твою мать, Лусия. Вспышка. Ночью.",
+   "space": null
+  },
+  {
+   "id": "cr5_07",
+   "who": "narrator",
+   "name": "",
+   "start": 45.02,
+   "caption": "Дверь прачечной открывается. Мы уже едем. А за нами — *фары*.",
+   "space": null
+  },
+  {
+   "id": "cr5_08",
+   "who": "narrator",
+   "name": "",
+   "start": 49.9,
+   "caption": "Лусия водит так, будто мы в кино. Я ору, держусь за ручку и вспоминаю всех святых Колумбии. Через три квартала фары *отстают*.",
+   "space": null
+  },
+  {
+   "id": "cr5_09",
+   "who": "narrator",
+   "name": "",
+   "start": 59.96,
+   "caption": "У дома дона она глушит мотор и говорит тихо: «Отец не должен узнать, что Чино жив. Он решит, что ты *соврал*».",
+   "space": null
+  },
+  {
+   "id": "cr5_10",
+   "who": "narrator",
+   "name": "",
+   "start": 67.73,
+   "caption": "А дону, напомню, *не врут*.",
+   "space": null
+  },
+  {
+   "id": "cr5_11",
+   "who": "narrator",
+   "name": "",
+   "start": 70.11,
+   "caption": "Рассказать дону про фото — или сохранить секрет Лусии? Пиши цифру. Ваш выбор решает, *что будет дальше*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 5.49
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 5.49,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 23.03
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 10.41,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 15.76,
+   "gain": -18,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 5.49,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.6,
+   "end": 23.03
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 23.03,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.8,
+   "fadeOut": 0.4,
+   "end": 45.02
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 28.91,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 38.54,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/recap_hit.wav",
+   "start": 39.87,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 45.02,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/siren_near.wav",
+   "start": 48.28,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 1.0,
+   "end": 57.1
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 47.27,
+   "gain": -15,
+   "bus": "music",
+   "fadeOut": 0.8,
+   "end": 59.96
+  },
+  {
+   "file": "sfx/train_ride.wav",
+   "start": 47.27,
+   "gain": -18,
+   "bus": "amb",
+   "fadeOut": 0.8,
+   "loop": true,
+   "end": 59.96
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 50.9,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 53.76,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 59.96,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.8,
+   "fadeOut": 0.6,
+   "end": 70.11
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 67.73,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 68.91,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 70.61,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 80.66
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 70.11,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.8,
+   "end": 80.66
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "results": 0.15,
+  "cr5_01": 0.15,
+  "cr5_01_end": 5.19,
+  "night": 5.49,
+  "stall": 9.81,
+  "stare": 12.23,
+  "cr5_02": 5.49,
+  "cr5_02_end": 15.46,
+  "move": 15.76,
+  "rule6": 19.44,
+  "cr5_03": 15.76,
+  "cr5_03_end": 22.68,
+  "addr": 23.03,
+  "light": 26.77,
+  "chino": 28.31,
+  "cr5_04": 23.03,
+  "cr5_04_end": 29.61,
+  "mendosa": 29.91,
+  "cr5_05": 29.91,
+  "cr5_05_end": 36.24,
+  "camera": 36.54,
+  "flash": 39.87,
+  "efm": 40.78,
+  "cr5_06": 36.54,
+  "cr5_06_end": 44.72,
+  "door": 45.02,
+  "go": 47.27,
+  "lights": 48.28,
+  "cr5_07": 45.02,
+  "cr5_07_end": 49.6,
+  "chase": 49.9,
+  "scream": 52.56,
+  "lost": 57.1,
+  "cr5_08": 49.9,
+  "cr5_08_end": 59.61,
+  "house": 59.96,
+  "whisper": 61.97,
+  "cr5_09": 59.96,
+  "cr5_09_end": 67.43,
+  "rule4": 67.73,
+  "cr5_10": 67.73,
+  "cr5_10_end": 69.76,
+  "choice": 70.11,
+  "cr5_11": 70.11,
+  "cr5_11_end": 77.66,
+  "end": 80.66
+ },
+ "beats": {
+  "results": {
+   "start": 0.15,
+   "dur": 5.04
+  },
+  "night": {
+   "start": 5.49,
+   "dur": 4.32
+  },
+  "stall": {
+   "start": 9.81,
+   "dur": 2.42
+  },
+  "stare": {
+   "start": 12.23,
+   "dur": 3.22
+  },
+  "move": {
+   "start": 15.76,
+   "dur": 3.68
+  },
+  "rule6": {
+   "start": 19.44,
+   "dur": 3.25
+  },
+  "addr": {
+   "start": 23.03,
+   "dur": 3.74
+  },
+  "light": {
+   "start": 26.77,
+   "dur": 1.54
+  },
+  "chino": {
+   "start": 28.31,
+   "dur": 1.3
+  },
+  "mendosa": {
+   "start": 29.91,
+   "dur": 6.33
+  },
+  "camera": {
+   "start": 36.54,
+   "dur": 3.33
+  },
+  "flash": {
+   "start": 39.87,
+   "dur": 0.91
+  },
+  "efm": {
+   "start": 40.78,
+   "dur": 3.94
+  },
+  "door": {
+   "start": 45.02,
+   "dur": 2.25
+  },
+  "go": {
+   "start": 47.27,
+   "dur": 1.01
+  },
+  "lights": {
+   "start": 48.28,
+   "dur": 1.32
+  },
+  "chase": {
+   "start": 49.9,
+   "dur": 2.66
+  },
+  "scream": {
+   "start": 52.56,
+   "dur": 4.54
+  },
+  "lost": {
+   "start": 57.1,
+   "dur": 2.51
+  },
+  "house": {
+   "start": 59.96,
+   "dur": 2.01
+  },
+  "whisper": {
+   "start": 61.97,
+   "dur": 5.47
+  },
+  "rule4": {
+   "start": 67.73,
+   "dur": 2.03
+  },
+  "choice": {
+   "start": 70.11,
+   "dur": 7.55
+  }
+ }
+}

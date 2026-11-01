@@ -1,0 +1,42 @@
+"""«Из низов», серия 5 «Вспышка» (ветка «взять Лусию»): python3 tools/timeline_cr5.py -> src/data/cr5.json"""
+from narr import B, M, N, S, load, marks, save
+
+load("cr5_narration.json")
+
+M("start", 0)
+N("cr5_01", 0.15, at=[("results", None)])
+N("cr5_02", 0.3, at=[("night", None), ("stall", "Глохну"), ("stare", "Лусия")])
+N("cr5_03", 0.3, at=[("move", None), ("rule6", "Правило")])
+N("cr5_04", 0.35, at=[("addr", None), ("light", "В окне"), ("chino", "А внутри")])
+N("cr5_05", 0.3, at=[("mendosa", None)])
+N("cr5_06", 0.3, at=[("camera", None), ("flash", "Вспышка"), ("efm", "Ну")])
+N("cr5_07", 0.3, at=[("door", None), ("go", "Мы уже"), ("lights", "А за")])
+N("cr5_08", 0.3, at=[("chase", None), ("scream", "Я ору"), ("lost", "Через")])
+N("cr5_09", 0.35, at=[("house", None), ("whisper", "и говорит")])
+N("cr5_10", 0.3, at=[("rule4", None)])
+N("cr5_11", 0.35, at=[("choice", None)])
+M("end", 3.0)
+
+m = marks
+S("music/m11_money.wav", 0, -21, "music", fadeIn=0.3, length=m["night"], fadeOut=0.6)
+S("sfx/night_city.wav", m["night"], -24, "amb", length=m["addr"] - m["night"], fadeOut=0.5, loop=True)
+S("sfx/impact_low.wav", m["stall"] + 0.6, -14)
+S("sfx/door_open.wav", m["move"], -18)
+S("music/m01_night_long.wav", m["night"], -21, "music", fadeIn=0.6, length=m["addr"] - m["night"], fadeOut=0.6)
+S("music/m02_dread_long.wav", m["addr"], -19, "music", fadeIn=0.8, length=m["door"] - m["addr"], fadeOut=0.4)
+S("sfx/stinger.wav", m["chino"] + 0.6, -12)
+S("sfx/ui_tick.wav", m["camera"] + 2.0, -10)
+S("sfx/recap_hit.wav", m["flash"], -10)
+S("sfx/door_clank.wav", m["door"], -12)
+S("sfx/siren_near.wav", m["lights"], -24, length=m["lost"] - m["lights"], fadeOut=1.0)
+S("music/m10_run.wav", m["go"], -15, "music", length=m["house"] - m["go"], fadeOut=0.8)
+S("sfx/train_ride.wav", m["go"], -18, "amb", length=m["house"] - m["go"], fadeOut=0.8, loop=True)
+S("sfx/whoosh.wav", m["chase"] + 1.0, -12)
+S("sfx/whoosh.wav", m["scream"] + 1.2, -12)
+S("music/m09_sad.wav", m["house"], -19, "music", fadeIn=0.8, length=m["choice"] - m["house"], fadeOut=0.6)
+S("sfx/stinger.wav", m["rule4"], -11)
+S("sfx/riser.wav", m["choice"] - 1.2, -15)
+S("sfx/clock.wav", m["choice"] + 0.5, -17, length=m["end"] - m["choice"] - 0.5, fadeOut=0.5, loop=True)
+S("music/m13_quarantine.wav", m["choice"], -21, "music", fadeIn=0.4, length=m["end"] - m["choice"], fadeOut=0.8)
+
+save("cr5")
