@@ -1,0 +1,357 @@
+{
+ "name": "cr6",
+ "duration": 74.5,
+ "dialogue": [
+  {
+   "id": "cr6_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.15,
+   "caption": "Голосов немного, но решение есть: двое против одного. *Рассказываем дону*.",
+   "space": null
+  },
+  {
+   "id": "cr6_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.19,
+   "caption": "Утро. Кабинет. Я кладу на стол фотографию. Лусия стоит у двери и смотрит на меня так, что я забываю, *как дышать*.",
+   "space": null
+  },
+  {
+   "id": "cr6_03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.32,
+   "caption": "Дон долго смотрит на фото. Потом берёт лупу. Между Чино и Мендосой на столе — *карта порта*. И красный крестик на нашем причале.",
+   "space": null
+  },
+  {
+   "id": "cr6_04",
+   "who": "narrator",
+   "name": "",
+   "start": 24.88,
+   "caption": "«Пятница, — говорит дон. — Они придут в пятницу». Правило номер семь: *кто предупреждён — тот вооружён*.",
+   "space": null
+  },
+  {
+   "id": "cr6_05",
+   "who": "narrator",
+   "name": "",
+   "start": 33.02,
+   "caption": "Потом он смотрит на меня: «Второй раз не соврал. Это уже *привычка*». Плюс пять тысяч долларов. Я теперь — *правая рука*.",
+   "space": null
+  },
+  {
+   "id": "cr6_06",
+   "who": "narrator",
+   "name": "",
+   "start": 41.66,
+   "caption": "В коридоре Лусия проходит мимо и шепчет: «Ты меня сдал». Ну ёб твою мать. Я хотел *как лучше*.",
+   "space": null
+  },
+  {
+   "id": "cr6_07",
+   "who": "narrator",
+   "name": "",
+   "start": 49.2,
+   "caption": "Вечером дон зовёт снова: «В пятницу ты будешь в порту. Чино будет там. Привези его *живым*».",
+   "space": null
+  },
+  {
+   "id": "cr6_08",
+   "who": "narrator",
+   "name": "",
+   "start": 56.13,
+   "caption": "А ночью в окно стучит камешек. Так Чино звал меня гулять, когда нам было *по десять*.",
+   "space": null
+  },
+  {
+   "id": "cr6_09",
+   "who": "narrator",
+   "name": "",
+   "start": 61.77,
+   "caption": "Он внизу. Под окном. Ждёт *ответа*.",
+   "space": null
+  },
+  {
+   "id": "cr6_10",
+   "who": "narrator",
+   "name": "",
+   "start": 64.95,
+   "caption": "Схватить Чино для дона — или предупредить друга про пятницу? Пиши цифру. Решать *снова вам*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 6.19
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 6.19,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 56.13
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 6.19,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.8,
+   "fadeOut": 0.6,
+   "end": 33.02
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 6.99,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 17.3,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 22.41,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 24.88,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "loop": true,
+   "end": 33.02
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 37.84,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 37.84,
+   "gain": -20,
+   "bus": "music",
+   "fadeOut": 0.5,
+   "end": 41.66
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 41.66,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 49.2
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 46.11,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 49.2,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 56.13
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 56.13,
+   "gain": -25,
+   "bus": "amb",
+   "fadeOut": 0.8,
+   "loop": true,
+   "end": 74.5
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 56.13,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.8,
+   "fadeOut": 0.5,
+   "end": 64.95
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 56.73,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 57.43,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 61.77,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 63.75,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 65.45,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 74.5
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "results": 0.15,
+  "cr6_01": 0.15,
+  "cr6_01_end": 5.89,
+  "office": 6.19,
+  "lucia": 9.58,
+  "cr6_02": 6.19,
+  "cr6_02_end": 15.02,
+  "look": 15.32,
+  "loupe": 17.3,
+  "map": 18.63,
+  "cross": 22.01,
+  "cr6_03": 15.32,
+  "cr6_03_end": 24.58,
+  "friday": 24.88,
+  "rule7": 28.72,
+  "cr6_04": 24.88,
+  "cr6_04_end": 32.72,
+  "praise": 33.02,
+  "plus": 37.84,
+  "rank": 39.68,
+  "cr6_05": 33.02,
+  "cr6_05_end": 41.31,
+  "hall": 41.66,
+  "efm": 46.11,
+  "cr6_06": 41.66,
+  "cr6_06_end": 48.85,
+  "order": 49.2,
+  "alive": 54.35,
+  "cr6_07": 49.2,
+  "cr6_07_end": 55.73,
+  "night": 56.13,
+  "kids": 58.12,
+  "cr6_08": 56.13,
+  "cr6_08_end": 61.47,
+  "below": 61.77,
+  "cr6_09": 61.77,
+  "cr6_09_end": 64.6,
+  "choice": 64.95,
+  "cr6_10": 64.95,
+  "cr6_10_end": 71.5,
+  "end": 74.5
+ },
+ "beats": {
+  "results": {
+   "start": 0.15,
+   "dur": 5.74
+  },
+  "office": {
+   "start": 6.19,
+   "dur": 3.39
+  },
+  "lucia": {
+   "start": 9.58,
+   "dur": 5.44
+  },
+  "look": {
+   "start": 15.32,
+   "dur": 1.98
+  },
+  "loupe": {
+   "start": 17.3,
+   "dur": 1.32
+  },
+  "map": {
+   "start": 18.63,
+   "dur": 3.38
+  },
+  "cross": {
+   "start": 22.01,
+   "dur": 2.57
+  },
+  "friday": {
+   "start": 24.88,
+   "dur": 3.84
+  },
+  "rule7": {
+   "start": 28.72,
+   "dur": 4.0
+  },
+  "praise": {
+   "start": 33.02,
+   "dur": 4.82
+  },
+  "plus": {
+   "start": 37.84,
+   "dur": 1.84
+  },
+  "rank": {
+   "start": 39.68,
+   "dur": 1.63
+  },
+  "hall": {
+   "start": 41.66,
+   "dur": 4.45
+  },
+  "efm": {
+   "start": 46.11,
+   "dur": 2.73
+  },
+  "order": {
+   "start": 49.2,
+   "dur": 5.15
+  },
+  "alive": {
+   "start": 54.35,
+   "dur": 1.38
+  },
+  "night": {
+   "start": 56.13,
+   "dur": 1.99
+  },
+  "kids": {
+   "start": 58.12,
+   "dur": 3.34
+  },
+  "below": {
+   "start": 61.77,
+   "dur": 2.83
+  },
+  "choice": {
+   "start": 64.95,
+   "dur": 6.55
+  }
+ }
+}
