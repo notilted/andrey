@@ -1,0 +1,327 @@
+{
+ "name": "cr7",
+ "duration": 71.4,
+ "dialogue": [
+  {
+   "id": "cr7_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.15,
+   "caption": "Опрос в комментариях: восемь из десяти — схватить Чино. Значит, так тому и быть. *Пятница*.",
+   "space": null
+  },
+  {
+   "id": "cr7_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.72,
+   "caption": "Я спускаюсь к Чино и говорю: «В пятницу, порт, полночь. Есть дело». Он кивает. Он мне *верит*.",
+   "space": null
+  },
+  {
+   "id": "cr7_03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.8,
+   "caption": "Пятница. Порт. Туман такой, что не видно собственных ботинок. Люди дона прячутся *за контейнерами*.",
+   "space": null
+  },
+  {
+   "id": "cr7_04",
+   "who": "narrator",
+   "name": "",
+   "start": 23.05,
+   "caption": "Чино приходит один. Без Мендосы. Без охраны. Просто с пакетом эмпанад — *как раньше*.",
+   "space": null
+  },
+  {
+   "id": "cr7_05",
+   "who": "narrator",
+   "name": "",
+   "start": 29.53,
+   "caption": "Правило номер восемь: не смотри в глаза тому, кого сдаёшь. Я смотрю. И меня, сука, *ломает*.",
+   "space": null
+  },
+  {
+   "id": "cr7_06",
+   "who": "narrator",
+   "name": "",
+   "start": 37.34,
+   "caption": "Из тумана выходят люди дона. Чино даже не бежит. Смотрит на меня и тихо говорит: «Я не на Мендосу *работаю*».",
+   "space": null
+  },
+  {
+   "id": "cr7_07",
+   "who": "narrator",
+   "name": "",
+   "start": 45.99,
+   "caption": "«Я там из-за Лусии. Это она носит Мендосе всё про порт. А фото — чтобы дон подумал *на меня*».",
+   "space": null
+  },
+  {
+   "id": "cr7_08",
+   "who": "narrator",
+   "name": "",
+   "start": 52.74,
+   "caption": "Тут из тумана выходит сам дон. Смотрит на Чино. Потом на меня. «Ну, правая рука. *Что скажешь?*»",
+   "space": null
+  },
+  {
+   "id": "cr7_09",
+   "who": "narrator",
+   "name": "",
+   "start": 61.52,
+   "caption": "Сдать Чино, как приказано — или рассказать дону про Лусию, его родную дочь? Голосуй *в опросе в комментариях*.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 7.72
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 6.77,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 7.72,
+   "gain": -25,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 15.8
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 7.72,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 15.8
+  },
+  {
+   "file": "sfx/surf.wav",
+   "start": 15.8,
+   "gain": -22,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 61.52
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 15.8,
+   "gain": -28,
+   "bus": "amb",
+   "fadeOut": 1,
+   "loop": true,
+   "end": 61.52
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 15.8,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 1,
+   "fadeOut": 0.5,
+   "end": 37.34
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 23.05,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 25.55
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 29.53,
+   "gain": -15,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "loop": true,
+   "end": 37.34
+  },
+  {
+   "file": "sfx/footsteps_crowd.wav",
+   "start": 37.34,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "end": 39.84
+  },
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 41.16,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.5,
+   "end": 52.74
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 46.49,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 51.36,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/footsteps_two.wav",
+   "start": 52.74,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 54.74
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 52.74,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.8,
+   "end": 71.4
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 60.32,
+   "gain": -15,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 62.02,
+   "gain": -17,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 71.4
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "results": 0.15,
+  "friday": 6.77,
+  "cr7_01": 0.15,
+  "cr7_01_end": 7.42,
+  "window": 7.72,
+  "trust": 13.43,
+  "cr7_02": 7.72,
+  "cr7_02_end": 15.45,
+  "port": 15.8,
+  "hide": 20.24,
+  "cr7_03": 15.8,
+  "cr7_03_end": 22.75,
+  "chino": 23.05,
+  "bag": 26.4,
+  "cr7_04": 23.05,
+  "cr7_04_end": 29.23,
+  "rule8": 29.53,
+  "look": 34.45,
+  "cr7_05": 29.53,
+  "cr7_05_end": 37.04,
+  "guards": 37.34,
+  "says": 41.16,
+  "cr7_06": 37.34,
+  "cr7_06_end": 45.69,
+  "lucia": 45.99,
+  "photo": 49.86,
+  "cr7_07": 45.99,
+  "cr7_07_end": 52.34,
+  "don": 52.74,
+  "ask": 58.39,
+  "cr7_08": 52.74,
+  "cr7_08_end": 61.17,
+  "choice": 61.52,
+  "cr7_09": 61.52,
+  "cr7_09_end": 68.4,
+  "end": 71.4
+ },
+ "beats": {
+  "results": {
+   "start": 0.15,
+   "dur": 6.62
+  },
+  "friday": {
+   "start": 6.77,
+   "dur": 0.65
+  },
+  "window": {
+   "start": 7.72,
+   "dur": 5.71
+  },
+  "trust": {
+   "start": 13.43,
+   "dur": 2.02
+  },
+  "port": {
+   "start": 15.8,
+   "dur": 4.44
+  },
+  "hide": {
+   "start": 20.24,
+   "dur": 2.51
+  },
+  "chino": {
+   "start": 23.05,
+   "dur": 3.35
+  },
+  "bag": {
+   "start": 26.4,
+   "dur": 2.83
+  },
+  "rule8": {
+   "start": 29.53,
+   "dur": 4.92
+  },
+  "look": {
+   "start": 34.45,
+   "dur": 2.59
+  },
+  "guards": {
+   "start": 37.34,
+   "dur": 3.82
+  },
+  "says": {
+   "start": 41.16,
+   "dur": 4.53
+  },
+  "lucia": {
+   "start": 45.99,
+   "dur": 3.87
+  },
+  "photo": {
+   "start": 49.86,
+   "dur": 2.48
+  },
+  "don": {
+   "start": 52.74,
+   "dur": 5.65
+  },
+  "ask": {
+   "start": 58.39,
+   "dur": 2.78
+  },
+  "choice": {
+   "start": 61.52,
+   "dur": 6.88
+  }
+ }
+}
