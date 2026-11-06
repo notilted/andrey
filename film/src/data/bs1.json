@@ -1,0 +1,291 @@
+{
+ "name": "bs1",
+ "duration": 60.52,
+ "dialogue": [
+  {
+   "id": "bs1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Сегодня все гуглят магнитную бурю. А теперь представь бурю *как в 1859 году*.",
+   "space": null
+  },
+  {
+   "id": "bs1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.82,
+   "caption": "Это было на самом деле. Солнце выбросило облако плазмы — и телеграф по всему миру *сошёл с ума*. Провода искрили, операторов било током.",
+   "space": null
+  },
+  {
+   "id": "bs1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 17.12,
+   "caption": "Северное сияние видели даже *у Карибских островов*.",
+   "space": null
+  },
+  {
+   "id": "bs1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 20.54,
+   "caption": "Тогда не было интернета. А теперь — *есть*.",
+   "space": null
+  },
+  {
+   "id": "bs1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 23.91,
+   "caption": "Ты просыпаешься. Телефон: нет сети. Вайфай: нет. Свет: *нет*.",
+   "space": null
+  },
+  {
+   "id": "bs1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 30.19,
+   "caption": "В 1989-м буря намного слабее за полторы минуты обесточила целую провинцию Канады. Шесть миллионов человек — *девять часов без света*.",
+   "space": null
+  },
+  {
+   "id": "bs1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 41.25,
+   "caption": "А в нашей истории — буря как в 1859-м. И первое, что ты слышишь утром, — *тишина*.",
+   "space": null
+  },
+  {
+   "id": "bs1_08",
+   "who": "narrator",
+   "name": "",
+   "start": 48.67,
+   "caption": "Что будет через сутки без связи, света и денег на карте? Часть два — завтра в 19:00. *Подпишись*, чтобы не пропустить.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 0,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.6,
+   "end": 23.91
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 8.62,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 11.1,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 17.12
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 13.95,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 17.12,
+   "gain": -20,
+   "bus": "music"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 21.04,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 23.91,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.4,
+   "loop": true,
+   "end": 30.19
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 26.03,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 27.03,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 29.18,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 23.91,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 41.25
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 30.99,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 45.5,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 1.0,
+   "end": 48.0
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 48.67,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 60.52
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 52.22,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "y1859": 3.09,
+  "bs1_01": 0.05,
+  "bs1_01_end": 6.57,
+  "real": 6.82,
+  "cme": 8.62,
+  "tele": 11.1,
+  "spark": 13.95,
+  "bs1_02": 6.82,
+  "bs1_02_end": 16.87,
+  "aurora": 17.12,
+  "bs1_03": 17.12,
+  "bs1_03_end": 20.29,
+  "now": 20.54,
+  "bs1_04": 20.54,
+  "bs1_04_end": 23.61,
+  "wake": 23.91,
+  "nonet": 25.63,
+  "nolight": 28.88,
+  "bs1_05": 23.91,
+  "bs1_05_end": 29.89,
+  "quebec": 30.19,
+  "people": 36.93,
+  "bs1_06": 30.19,
+  "bs1_06_end": 40.95,
+  "ours": 41.25,
+  "silence": 44.7,
+  "bs1_07": 41.25,
+  "bs1_07_end": 48.32,
+  "next": 48.67,
+  "sub": 53.22,
+  "bs1_08": 48.67,
+  "bs1_08_end": 57.92,
+  "end": 60.52
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.04
+  },
+  "y1859": {
+   "start": 3.09,
+   "dur": 3.47
+  },
+  "real": {
+   "start": 6.82,
+   "dur": 1.8
+  },
+  "cme": {
+   "start": 8.62,
+   "dur": 2.47
+  },
+  "tele": {
+   "start": 11.1,
+   "dur": 2.85
+  },
+  "spark": {
+   "start": 13.95,
+   "dur": 2.93
+  },
+  "aurora": {
+   "start": 17.12,
+   "dur": 3.17
+  },
+  "now": {
+   "start": 20.54,
+   "dur": 3.07
+  },
+  "wake": {
+   "start": 23.91,
+   "dur": 1.72
+  },
+  "nonet": {
+   "start": 25.63,
+   "dur": 3.24
+  },
+  "nolight": {
+   "start": 28.88,
+   "dur": 1.01
+  },
+  "quebec": {
+   "start": 30.19,
+   "dur": 6.74
+  },
+  "people": {
+   "start": 36.93,
+   "dur": 4.03
+  },
+  "ours": {
+   "start": 41.25,
+   "dur": 3.45
+  },
+  "silence": {
+   "start": 44.7,
+   "dur": 3.62
+  },
+  "next": {
+   "start": 48.67,
+   "dur": 4.55
+  },
+  "sub": {
+   "start": 53.22,
+   "dur": 4.71
+  }
+ }
+}
