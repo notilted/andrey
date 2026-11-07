@@ -1,0 +1,313 @@
+{
+ "name": "gt1",
+ "duration": 40.0,
+ "dialogue": [
+  {
+   "id": "gt1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Тринадцать лет ожидания. И вот — *день релиза*.",
+   "space": null
+  },
+  {
+   "id": "gt1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 4.13,
+   "caption": "Марк взял отгул, закупил энергетики и выключил телефон.",
+   "space": null
+  },
+  {
+   "id": "gt1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 8.29,
+   "caption": "Полночь. Загрузка. Девяносто девять процентов…",
+   "space": null
+  },
+  {
+   "id": "gt1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 12.03,
+   "caption": "И свет гаснет. *Во всём доме*.",
+   "space": null
+  },
+  {
+   "id": "gt1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 14.85,
+   "caption": "Сосед с перфоратором? Нет. Это весь район в одну секунду включил приставки.",
+   "space": null
+  },
+  {
+   "id": "gt1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 20.24,
+   "caption": "Марк зажёг свечу, сел перед чёрным экраном и прошептал: тринадцать лет ждал — подожду ещё час.",
+   "space": null
+  },
+  {
+   "id": "gt1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 27.66,
+   "caption": "Через час свет дали. А сервера — *нет*.",
+   "space": null
+  },
+  {
+   "id": "gt1_08",
+   "who": "narrator",
+   "name": "",
+   "start": 31.61,
+   "caption": "Подпишись — каждый день новые истории. А в семь вечера — вторая часть «Без сигнала».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.5,
+   "end": 8.29
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 5.54,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 7.29,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 8.29,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 12.03
+  },
+  {
+   "file": "sfx/hum.wav",
+   "start": 8.99,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.05,
+   "end": 12.03
+  },
+  {
+   "file": "music/m02_dread.wav",
+   "start": 8.99,
+   "gain": -22,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.05,
+   "end": 12.03
+  },
+  {
+   "file": "sfx/big_impact.wav",
+   "start": 12.03,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 12.13,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 12.03,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.5,
+   "loop": true,
+   "end": 31.61
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 15.15,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 16.33,
+   "gain": -13,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 20.24,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 27.66
+  },
+  {
+   "file": "sfx/fire.wav",
+   "start": 20.24,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 27.66
+  },
+  {
+   "file": "sfx/monitor_on.wav",
+   "start": 28.06,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 30.15,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 31.61,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 40.0
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 33.48,
+   "gain": -17,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "day": 2.18,
+  "gt1_01": 0.05,
+  "gt1_01_end": 3.88,
+  "prep": 4.13,
+  "cans": 5.34,
+  "phone": 6.69,
+  "gt1_02": 4.13,
+  "gt1_02_end": 8.04,
+  "night": 8.29,
+  "load": 8.99,
+  "p99": 9.77,
+  "gt1_03": 8.29,
+  "gt1_03_end": 11.88,
+  "off": 12.03,
+  "house": 13.33,
+  "gt1_04": 12.03,
+  "gt1_04_end": 14.45,
+  "drill": 14.85,
+  "district": 16.33,
+  "gt1_05": 14.85,
+  "gt1_05_end": 19.89,
+  "candle": 20.24,
+  "whisper": 23.5,
+  "gt1_06": 20.24,
+  "gt1_06_end": 27.36,
+  "hour": 27.66,
+  "servers": 29.65,
+  "gt1_07": 27.66,
+  "gt1_07_end": 31.16,
+  "sub": 31.61,
+  "tonight": 34.48,
+  "gt1_08": 31.61,
+  "gt1_08_end": 37.8,
+  "end": 40.0
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.13
+  },
+  "day": {
+   "start": 2.18,
+   "dur": 1.7
+  },
+  "prep": {
+   "start": 4.13,
+   "dur": 1.21
+  },
+  "cans": {
+   "start": 5.34,
+   "dur": 1.35
+  },
+  "phone": {
+   "start": 6.69,
+   "dur": 1.35
+  },
+  "night": {
+   "start": 8.29,
+   "dur": 0.7
+  },
+  "load": {
+   "start": 8.99,
+   "dur": 0.78
+  },
+  "p99": {
+   "start": 9.77,
+   "dur": 2.11
+  },
+  "off": {
+   "start": 12.03,
+   "dur": 1.3
+  },
+  "house": {
+   "start": 13.33,
+   "dur": 1.12
+  },
+  "drill": {
+   "start": 14.85,
+   "dur": 1.48
+  },
+  "district": {
+   "start": 16.33,
+   "dur": 3.56
+  },
+  "candle": {
+   "start": 20.24,
+   "dur": 3.26
+  },
+  "whisper": {
+   "start": 23.5,
+   "dur": 3.86
+  },
+  "hour": {
+   "start": 27.66,
+   "dur": 1.99
+  },
+  "servers": {
+   "start": 29.65,
+   "dur": 1.51
+  },
+  "sub": {
+   "start": 31.61,
+   "dur": 2.87
+  },
+  "tonight": {
+   "start": 34.48,
+   "dur": 3.31
+  }
+ }
+}
