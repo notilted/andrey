@@ -1,0 +1,253 @@
+{
+ "name": "nz1",
+ "duration": 44.47,
+ "dialogue": [
+  {
+   "id": "nz1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Человек ушёл, а завещания нет. Кому достанутся *квартира и деньги*?",
+   "space": null
+  },
+  {
+   "id": "nz1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.04,
+   "caption": "Тогда работает закон — очереди наследников. Первая очередь: дети, супруг и родители. Они делят всё *поровну*.",
+   "space": null
+  },
+  {
+   "id": "nz1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 13.26,
+   "caption": "Нет никого из первой — наследует вторая: братья, сёстры, бабушки и дедушки.",
+   "space": null
+  },
+  {
+   "id": "nz1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 19.42,
+   "caption": "А вот с кем прожили двадцать лет без штампа — по закону *не наследник*.",
+   "space": null
+  },
+  {
+   "id": "nz1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 24.12,
+   "caption": "И главное: на принятие наследства — *шесть месяцев*. Пропустил — восстанавливать срок придётся уже через суд.",
+   "space": null
+  },
+  {
+   "id": "nz1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 32.07,
+   "caption": "А если наследников нет совсем — всё переходит *государству*.",
+   "space": null
+  },
+  {
+   "id": "nz1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 36.46,
+   "caption": "Подпишись — каждый день новые истории. А в семь вечера — вторая часть «Без сигнала».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.5,
+   "end": 19.42
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/gavel.wav",
+   "start": 5.24,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 8.6,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 11.73,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 13.56,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 22.95,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread.wav",
+   "start": 19.42,
+   "gain": -22,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.4,
+   "end": 32.07
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 26.69,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 28.77
+  },
+  {
+   "file": "sfx/gavel.wav",
+   "start": 28.97,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/big_impact.wav",
+   "start": 35.19,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 36.46,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 44.47
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 38.16,
+   "gain": -17,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "flat": 3.44,
+  "nz1_01": 0.05,
+  "nz1_01_end": 4.74,
+  "law": 5.04,
+  "q1": 8.3,
+  "equal": 11.33,
+  "nz1_02": 5.04,
+  "nz1_02_end": 12.96,
+  "q2": 13.26,
+  "q2list": 16.47,
+  "nz1_03": 13.26,
+  "nz1_03_end": 19.12,
+  "couple": 19.42,
+  "nope": 22.35,
+  "nz1_04": 19.42,
+  "nz1_04_end": 23.82,
+  "term": 24.12,
+  "six": 26.69,
+  "court": 27.77,
+  "nz1_05": 24.12,
+  "nz1_05_end": 31.77,
+  "state": 32.07,
+  "gov": 35.19,
+  "nz1_06": 32.07,
+  "nz1_06_end": 36.01,
+  "sub": 36.46,
+  "tonight": 39.16,
+  "nz1_07": 36.46,
+  "nz1_07_end": 42.27,
+  "end": 44.47
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.39
+  },
+  "flat": {
+   "start": 3.44,
+   "dur": 1.3
+  },
+  "law": {
+   "start": 5.04,
+   "dur": 3.26
+  },
+  "q1": {
+   "start": 8.3,
+   "dur": 3.03
+  },
+  "equal": {
+   "start": 11.33,
+   "dur": 1.63
+  },
+  "q2": {
+   "start": 13.26,
+   "dur": 3.21
+  },
+  "q2list": {
+   "start": 16.47,
+   "dur": 2.66
+  },
+  "couple": {
+   "start": 19.42,
+   "dur": 2.93
+  },
+  "nope": {
+   "start": 22.35,
+   "dur": 1.47
+  },
+  "term": {
+   "start": 24.12,
+   "dur": 2.57
+  },
+  "six": {
+   "start": 26.69,
+   "dur": 1.07
+  },
+  "court": {
+   "start": 27.77,
+   "dur": 4.0
+  },
+  "state": {
+   "start": 32.07,
+   "dur": 3.12
+  },
+  "gov": {
+   "start": 35.19,
+   "dur": 0.81
+  },
+  "sub": {
+   "start": 36.46,
+   "dur": 2.7
+  },
+  "tonight": {
+   "start": 39.16,
+   "dur": 3.11
+  }
+ }
+}
