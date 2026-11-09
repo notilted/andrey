@@ -36,6 +36,8 @@ import {Cr5} from './Cr5';
 import {Cr6} from './Cr6';
 import {Cr7} from './Cr7';
 import {Bs1} from './Bs1';
+import {Bs2} from './Bs2';
+import {DURATION as DURATION_BS2} from './timelineBs2';
 import {Gt1} from './Gt1';
 import {Nz1} from './Nz1';
 import {DURATION as DURATION_NZ1} from './timelineNz1';
@@ -84,6 +86,7 @@ export const Root: React.FC = () => (
     <Composition id="Zm1" component={Zm1} durationInFrames={DURATION_ZM1} fps={FPS} width={W} height={H} />
     <Composition id="Bn" component={Bn} durationInFrames={DURATION_BN} fps={FPS} width={W} height={H} />
     <Composition id="Bs1" component={Bs1} durationInFrames={DURATION_BS1} fps={FPS} width={W} height={H} />
+    <Composition id="Bs2" component={Bs2} durationInFrames={DURATION_BS2} fps={FPS} width={W} height={H} />
     <Composition id="Gt1" component={Gt1} durationInFrames={DURATION_GT1} fps={FPS} width={W} height={H} />
     <Composition id="Nz1" component={Nz1} durationInFrames={DURATION_NZ1} fps={FPS} width={W} height={H} />
     <Composition id="Cr7" component={Cr7} durationInFrames={DURATION_CR7} fps={FPS} width={W} height={H} />

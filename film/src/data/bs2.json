@@ -1,0 +1,283 @@
+{
+ "name": "bs2",
+ "duration": 48.91,
+ "dialogue": [
+  {
+   "id": "bs2_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Без сигнала. Часть вторая. Прошло шесть часов — света нет *во всём городе*.",
+   "space": null
+  },
+  {
+   "id": "bs2_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.47,
+   "caption": "Марк идёт в магазин. Касса не работает, терминал мёртвый. На двери: *только наличные*.",
+   "space": null
+  },
+  {
+   "id": "bs2_03",
+   "who": "narrator",
+   "name": "",
+   "start": 13.68,
+   "caption": "А наличных у Марка — ноль. Всё на карте. Банкомат тоже *чёрный*.",
+   "space": null
+  },
+  {
+   "id": "bs2_04",
+   "who": "narrator",
+   "name": "",
+   "start": 19.38,
+   "caption": "Дома из крана течёт тонкая струйка — и всё. Насосам, которые качают воду наверх, тоже нужен *свет*.",
+   "space": null
+  },
+  {
+   "id": "bs2_05",
+   "who": "narrator",
+   "name": "",
+   "start": 26.56,
+   "caption": "Холодильник тает. Телефон — три процента. Новостей нет, и никто не знает, *когда всё вернут*.",
+   "space": null
+  },
+  {
+   "id": "bs2_06",
+   "who": "narrator",
+   "name": "",
+   "start": 33.76,
+   "caption": "К вечеру во дворе собираются соседи. И кто-то говорит: у меня есть генератор… но бензина *на всех не хватит*.",
+   "space": null
+  },
+  {
+   "id": "bs2_07",
+   "who": "narrator",
+   "name": "",
+   "start": 41.39,
+   "caption": "Часть третья — завтра в семь вечера. Подпишись, чтобы не пропустить.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m13_quarantine.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.5,
+   "end": 19.38
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 2.31,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 6.47
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 6.67,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 8.8,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 9.4,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 11.64,
+   "gain": -13,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 17.75,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 19.38,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 0.5,
+   "end": 33.76
+  },
+  {
+   "file": "sfx/water_rush.wav",
+   "start": 19.38,
+   "gain": -28,
+   "bus": "sfx",
+   "fadeOut": 1.2,
+   "end": 20.98
+  },
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 28.21,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/room_tone.wav",
+   "start": 26.56,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.4,
+   "loop": true,
+   "end": 33.76
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 33.76,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "end": 41.39
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 39.8,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 41.39,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 48.91
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 43.17,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "city": 2.31,
+  "bs2_01": 0.05,
+  "bs2_01_end": 6.17,
+  "shop": 6.47,
+  "term": 8.2,
+  "cash": 11.24,
+  "bs2_02": 6.47,
+  "bs2_02_end": 13.38,
+  "zero": 13.68,
+  "atm": 17.25,
+  "bs2_03": 13.68,
+  "bs2_03_end": 19.08,
+  "tap": 19.38,
+  "pump": 22.5,
+  "bs2_04": 19.38,
+  "bs2_04_end": 26.26,
+  "fridge": 26.56,
+  "phone": 27.91,
+  "nonews": 29.72,
+  "bs2_05": 26.56,
+  "bs2_05_end": 33.41,
+  "yard": 33.76,
+  "gen": 37.45,
+  "short": 39.0,
+  "bs2_06": 33.76,
+  "bs2_06_end": 40.94,
+  "next": 41.39,
+  "sub": 44.17,
+  "bs2_07": 41.39,
+  "bs2_07_end": 46.51,
+  "end": 48.91
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.26
+  },
+  "city": {
+   "start": 2.31,
+   "dur": 3.86
+  },
+  "shop": {
+   "start": 6.47,
+   "dur": 1.73
+  },
+  "term": {
+   "start": 8.2,
+   "dur": 3.04
+  },
+  "cash": {
+   "start": 11.24,
+   "dur": 2.14
+  },
+  "zero": {
+   "start": 13.68,
+   "dur": 3.57
+  },
+  "atm": {
+   "start": 17.25,
+   "dur": 1.83
+  },
+  "tap": {
+   "start": 19.38,
+   "dur": 3.12
+  },
+  "pump": {
+   "start": 22.5,
+   "dur": 3.76
+  },
+  "fridge": {
+   "start": 26.56,
+   "dur": 1.35
+  },
+  "phone": {
+   "start": 27.91,
+   "dur": 1.81
+  },
+  "nonews": {
+   "start": 29.72,
+   "dur": 3.69
+  },
+  "yard": {
+   "start": 33.76,
+   "dur": 3.69
+  },
+  "gen": {
+   "start": 37.45,
+   "dur": 1.54
+  },
+  "short": {
+   "start": 39.0,
+   "dur": 1.95
+  },
+  "next": {
+   "start": 41.39,
+   "dur": 2.78
+  },
+  "sub": {
+   "start": 44.17,
+   "dur": 2.33
+  }
+ }
+}
