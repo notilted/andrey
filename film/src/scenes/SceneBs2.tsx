@@ -56,7 +56,7 @@ const Atm: React.FC<{f: number}> = ({f}) => (
   </g>
 );
 
-const Kitchen: React.FC<{f: number; mode: 'tap' | 'fridge'; drip: number}> = ({f, mode, drip}) => (
+export const Kitchen: React.FC<{f: number; mode: 'tap' | 'fridge'; drip: number}> = ({f, mode, drip}) => (
   <g>
     <Glow f={f} c1="#1a2230" c2="#05060a" cy={600} id="gkit" />
     <rect x={-200} y={1150} width={1480} height={900} fill="#151a22" />
@@ -81,7 +81,7 @@ const Kitchen: React.FC<{f: number; mode: 'tap' | 'fridge'; drip: number}> = ({f
   </g>
 );
 
-const Yard: React.FC<{f: number; gen: boolean}> = ({f, gen}) => (
+export const Yard: React.FC<{f: number; gen: boolean}> = ({f, gen}) => (
   <g>
     <rect x={-200} y={-200} width={1480} height={2400} fill="#070910" />
     <rect x={-200} y={200} width={1480} height={1050} fill="#10141c" />

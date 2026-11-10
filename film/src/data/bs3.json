@@ -1,0 +1,302 @@
+{
+ "name": "bs3",
+ "duration": 46.93,
+ "dialogue": [
+  {
+   "id": "bs3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Без сигнала. Часть третья — финал. Ночь. Генератор один, а соседей — *двадцать*.",
+   "space": null
+  },
+  {
+   "id": "bs3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.77,
+   "caption": "И тут баба Валя говорит: заряжаем телефоны по очереди, а еду из холодильников — *на общий стол*.",
+   "space": null
+  },
+  {
+   "id": "bs3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 14.3,
+   "caption": "У неё нашлось то, чего не было ни у кого: *наличные* и старое радио на батарейках.",
+   "space": null
+  },
+  {
+   "id": "bs3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 20.7,
+   "caption": "Из радио — первая новость за сутки: сеть восстанавливают, свет дадут *к утру*.",
+   "space": null
+  },
+  {
+   "id": "bs3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 26.26,
+   "caption": "Шесть утра. Щёлкает холодильник. Загорается лампа. Телефон взрывается *сотней уведомлений*.",
+   "space": null
+  },
+  {
+   "id": "bs3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 33.32,
+   "caption": "А Марк собирает в ящик то, что спасло двор: наличные, фонарик, пауэрбанк, воду и *радио*.",
+   "space": null
+  },
+  {
+   "id": "bs3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 40.42,
+   "caption": "Конец. Подпишись — завтра начнётся новая история.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 20.7
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/hum.wav",
+   "start": 3.38,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 20.7
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 7.77,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 14.3
+  },
+  {
+   "file": "sfx/static.wav",
+   "start": 18.79,
+   "gain": -22,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 26.26
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 20.7,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 33.32
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 27.37,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/monitor_on.wav",
+   "start": 29.07,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/phones_chorus.wav",
+   "start": 30.64,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.8,
+   "end": 33.14
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 36.88,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 37.65,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 38.33,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 39.18,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 39.56,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 40.42,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 46.93
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 40.52,
+   "gain": -13,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "night": 3.38,
+  "bs3_01": 0.05,
+  "bs3_01_end": 7.47,
+  "gran": 7.77,
+  "queue": 9.43,
+  "table": 11.41,
+  "bs3_02": 7.77,
+  "bs3_02_end": 14.0,
+  "cash": 14.3,
+  "radio": 18.19,
+  "bs3_03": 14.3,
+  "bs3_03_end": 20.4,
+  "news": 20.7,
+  "morning": 24.64,
+  "bs3_04": 20.7,
+  "bs3_04_end": 25.86,
+  "six": 26.26,
+  "fridge": 27.17,
+  "lamp": 28.77,
+  "notif": 30.14,
+  "bs3_05": 26.26,
+  "bs3_05_end": 33.02,
+  "kit": 33.32,
+  "k1": 36.68,
+  "k2": 37.45,
+  "k3": 38.13,
+  "k4": 38.98,
+  "k5": 39.36,
+  "bs3_06": 33.32,
+  "bs3_06_end": 39.97,
+  "end": 40.42,
+  "sub": 41.01,
+  "bs3_07": 40.42,
+  "bs3_07_end": 44.53,
+  "fin": 46.93
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.33
+  },
+  "night": {
+   "start": 3.38,
+   "dur": 4.09
+  },
+  "gran": {
+   "start": 7.77,
+   "dur": 1.66
+  },
+  "queue": {
+   "start": 9.43,
+   "dur": 1.99
+  },
+  "table": {
+   "start": 11.41,
+   "dur": 2.58
+  },
+  "cash": {
+   "start": 14.3,
+   "dur": 3.89
+  },
+  "radio": {
+   "start": 18.19,
+   "dur": 2.21
+  },
+  "news": {
+   "start": 20.7,
+   "dur": 3.94
+  },
+  "morning": {
+   "start": 24.64,
+   "dur": 1.22
+  },
+  "six": {
+   "start": 26.26,
+   "dur": 0.91
+  },
+  "fridge": {
+   "start": 27.17,
+   "dur": 1.6
+  },
+  "lamp": {
+   "start": 28.77,
+   "dur": 1.37
+  },
+  "notif": {
+   "start": 30.14,
+   "dur": 2.89
+  },
+  "kit": {
+   "start": 33.32,
+   "dur": 3.36
+  },
+  "k1": {
+   "start": 36.68,
+   "dur": 0.76
+  },
+  "k2": {
+   "start": 37.45,
+   "dur": 0.69
+  },
+  "k3": {
+   "start": 38.13,
+   "dur": 0.84
+  },
+  "k4": {
+   "start": 38.98,
+   "dur": 0.38
+  },
+  "k5": {
+   "start": 39.36,
+   "dur": 0.61
+  },
+  "end": {
+   "start": 40.42,
+   "dur": 0.59
+  },
+  "sub": {
+   "start": 41.01,
+   "dur": 3.52
+  }
+ }
+}
