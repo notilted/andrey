@@ -1,0 +1,271 @@
+{
+ "name": "ny1",
+ "duration": 41.99,
+ "dialogue": [
+  {
+   "id": "ny1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Официально: новогодние каникулы — *одиннадцать дней*. С тридцать первого декабря по десятое января.",
+   "space": null
+  },
+  {
+   "id": "ny1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.78,
+   "caption": "План Марка: спортзал, английский, выспаться и наконец закрыть все дела.",
+   "space": null
+  },
+  {
+   "id": "ny1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 12.56,
+   "caption": "День первый: салаты. День второй: салаты. День третий… *какой сегодня день?*",
+   "space": null
+  },
+  {
+   "id": "ny1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 20.19,
+   "caption": "Седьмое января. Спортзал — ноль. Английский — ноль. Сериал — *сорок восемь серий*.",
+   "space": null
+  },
+  {
+   "id": "ny1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 27.6,
+   "caption": "Десятое, вечер. Марк понимает: на дела времени не было — он был *очень занят отдыхом*.",
+   "space": null
+  },
+  {
+   "id": "ny1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 34.75,
+   "caption": "А одиннадцатого — на работу. Подпишись — каждый день новые истории.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.5,
+   "end": 20.19
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 0.05,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 7.71,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 8.48,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 9.4,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pencil.wav",
+   "start": 10.17,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 12.56,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 14.64,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 16.72,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tv_murmur.wav",
+   "start": 20.19,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 34.75
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 22.01,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 23.52,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 25.61,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 27.6,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 0.4,
+   "end": 34.75
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 35.05,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 34.75,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 41.99
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "range": 3.5,
+  "ny1_01": 0.05,
+  "ny1_01_end": 6.48,
+  "plan": 6.78,
+  "gym": 7.71,
+  "eng": 8.48,
+  "sleep": 9.4,
+  "todo": 10.17,
+  "ny1_02": 6.78,
+  "ny1_02_end": 12.26,
+  "d1": 12.56,
+  "d2": 14.64,
+  "d3": 16.72,
+  "ny1_03": 12.56,
+  "ny1_03_end": 19.89,
+  "jan7": 20.19,
+  "st1": 21.61,
+  "st2": 23.12,
+  "st3": 24.81,
+  "ny1_04": 20.19,
+  "ny1_04_end": 27.3,
+  "eve": 27.6,
+  "busy": 32.18,
+  "ny1_05": 27.6,
+  "ny1_05_end": 34.35,
+  "work": 34.75,
+  "sub": 36.93,
+  "ny1_06": 34.75,
+  "ny1_06_end": 39.79,
+  "end": 41.99
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.45
+  },
+  "range": {
+   "start": 3.5,
+   "dur": 2.98
+  },
+  "plan": {
+   "start": 6.78,
+   "dur": 0.93
+  },
+  "gym": {
+   "start": 7.71,
+   "dur": 0.77
+  },
+  "eng": {
+   "start": 8.48,
+   "dur": 0.93
+  },
+  "sleep": {
+   "start": 9.4,
+   "dur": 0.77
+  },
+  "todo": {
+   "start": 10.17,
+   "dur": 2.08
+  },
+  "d1": {
+   "start": 12.56,
+   "dur": 2.08
+  },
+  "d2": {
+   "start": 14.64,
+   "dur": 2.08
+  },
+  "d3": {
+   "start": 16.72,
+   "dur": 3.17
+  },
+  "jan7": {
+   "start": 20.19,
+   "dur": 1.42
+  },
+  "st1": {
+   "start": 21.61,
+   "dur": 1.51
+  },
+  "st2": {
+   "start": 23.12,
+   "dur": 1.69
+  },
+  "st3": {
+   "start": 24.81,
+   "dur": 2.49
+  },
+  "eve": {
+   "start": 27.6,
+   "dur": 4.58
+  },
+  "busy": {
+   "start": 32.18,
+   "dur": 2.17
+  },
+  "work": {
+   "start": 34.75,
+   "dur": 2.18
+  },
+  "sub": {
+   "start": 36.93,
+   "dur": 2.86
+  }
+ }
+}
