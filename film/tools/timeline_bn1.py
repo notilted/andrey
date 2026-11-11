@@ -1,0 +1,26 @@
+"""«Бабушкины 2 миллиона», сезон 2, часть 1: python3 tools/timeline_bn1.py -> src/data/bn1.json"""
+from narr import M, N, S, load, marks, save
+
+load("bn1_narration.json")
+M("start", 0)
+N("bn1_01", 0.05, at=[("hook", None), ("year", "Прошёл"), ("three", "У тебя")])
+N("bn1_02", 0.3, at=[("mar", None), ("nobody", "Рецепт")])
+N("bn1_03", 0.35, at=[("mail", None), ("tm", "Название")])
+N("bn1_04", 0.3, at=[("days", None), ("court", "Иначе")])
+N("bn1_05", 0.4, at=[("docs", None), ("name", "И видишь")])
+N("bn1_06", 0.5, at=[("him", None), ("no", "Которому")])
+N("bn1_07", 0.5, at=[("next", None), ("sub", "Подпишись")])
+M("end", 2.3)
+m = marks
+S("music/m11_money.wav", 0, -20, "music", fadeIn=0.2, length=m["mail"], fadeOut=0.5)
+S("sfx/impact_low.wav", 0.05, -10)
+S("sfx/crowd.wav", m["three"], -26, length=m["mar"] - m["three"], fadeOut=0.4)
+S("sfx/ping.wav", m["mail"] + 0.3, -12)
+S("music/m02_dread_long.wav", m["mail"], -20, "music", fadeIn=0.5, length=m["next"] - m["mail"], fadeOut=0.5)
+S("sfx/gavel.wav", m["court"] + 0.4, -12)
+S("sfx/page_flip.wav", m["docs"] + 0.2, -14); S("sfx/page_flip.wav", m["docs"] + 1.0, -14)
+S("sfx/heartbeat.wav", m["name"], -18, length=m["next"] - m["name"], fadeOut=0.5)
+S("sfx/stinger.wav", m["him"] + 0.2, -10)
+S("music/m10_run.wav", m["next"], -18, "music", fadeIn=0.3, length=m["end"] - m["next"], fadeOut=0.8)
+S("sfx/riser.wav", m["sub"] - 1.0, -16)
+save("bn1")

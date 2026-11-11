@@ -1,0 +1,244 @@
+{
+ "name": "bn1",
+ "duration": 44.62,
+ "dialogue": [
+  {
+   "id": "bn1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Бабушкины два миллиона. Сезон второй. Прошёл год. У тебя три шаурмичные и очередь, которая *не кончается*.",
+   "space": null
+  },
+  {
+   "id": "bn1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 8.4,
+   "caption": "Каждое утро ты сам маринуешь мясо по бабушкиной тетради. Рецепт не знает *никто*.",
+   "space": null
+  },
+  {
+   "id": "bn1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 14.29,
+   "caption": "А сегодня в почте — письмо от юристов. Название «Бабушкины» зарегистрировал *кто-то другой*.",
+   "space": null
+  },
+  {
+   "id": "bn1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 21.0,
+   "caption": "Тридцать дней, чтобы снять все вывески. Иначе — суд и иск *на миллионы*.",
+   "space": null
+  },
+  {
+   "id": "bn1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 26.75,
+   "caption": "Ты листаешь документы до последней страницы. И видишь имя владельца.",
+   "space": null
+  },
+  {
+   "id": "bn1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 31.64,
+   "caption": "Это тот самый человек в дорогом костюме. Которому ты год назад *сказал «нет»*.",
+   "space": null
+  },
+  {
+   "id": "bn1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 37.39,
+   "caption": "Часть вторая — завтра в семь вечера. Подпишись, чтобы не пропустить.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.5,
+   "end": 14.29
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/crowd.wav",
+   "start": 3.92,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 8.4
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 14.59,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 14.29,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 0.5,
+   "end": 37.39
+  },
+  {
+   "file": "sfx/gavel.wav",
+   "start": 24.46,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 26.95,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 27.75,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 29.66,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 37.39
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 31.84,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 37.39,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 44.62
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 39.07,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "year": 2.99,
+  "three": 3.92,
+  "bn1_01": 0.05,
+  "bn1_01_end": 8.1,
+  "mar": 8.4,
+  "nobody": 12.4,
+  "bn1_02": 8.4,
+  "bn1_02_end": 13.94,
+  "mail": 14.29,
+  "tm": 17.07,
+  "bn1_03": 14.29,
+  "bn1_03_end": 20.7,
+  "days": 21.0,
+  "court": 24.06,
+  "bn1_04": 21.0,
+  "bn1_04_end": 26.35,
+  "docs": 26.75,
+  "name": 29.66,
+  "bn1_05": 26.75,
+  "bn1_05_end": 31.14,
+  "him": 31.64,
+  "no": 34.47,
+  "bn1_06": 31.64,
+  "bn1_06_end": 36.89,
+  "next": 37.39,
+  "sub": 40.07,
+  "bn1_07": 37.39,
+  "bn1_07_end": 42.32,
+  "end": 44.62
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.94
+  },
+  "year": {
+   "start": 2.99,
+   "dur": 0.93
+  },
+  "three": {
+   "start": 3.92,
+   "dur": 4.18
+  },
+  "mar": {
+   "start": 8.4,
+   "dur": 4.0
+  },
+  "nobody": {
+   "start": 12.4,
+   "dur": 1.54
+  },
+  "mail": {
+   "start": 14.29,
+   "dur": 2.78
+  },
+  "tm": {
+   "start": 17.07,
+   "dur": 3.63
+  },
+  "days": {
+   "start": 21.0,
+   "dur": 3.06
+  },
+  "court": {
+   "start": 24.06,
+   "dur": 2.29
+  },
+  "docs": {
+   "start": 26.75,
+   "dur": 2.91
+  },
+  "name": {
+   "start": 29.66,
+   "dur": 1.49
+  },
+  "him": {
+   "start": 31.64,
+   "dur": 2.83
+  },
+  "no": {
+   "start": 34.47,
+   "dur": 2.42
+  },
+  "next": {
+   "start": 37.39,
+   "dur": 2.68
+  },
+  "sub": {
+   "start": 40.07,
+   "dur": 2.25
+  }
+ }
+}
