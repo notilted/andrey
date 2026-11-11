@@ -1,0 +1,243 @@
+{
+ "name": "sl1",
+ "duration": 48.44,
+ "dialogue": [
+  {
+   "id": "sl1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Одиннадцать одиннадцать — день гигантских распродаж. И пять приёмов, на которые ты *точно попадался*.",
+   "space": null
+  },
+  {
+   "id": "sl1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.21,
+   "caption": "Первый: зачёркнутая цена. Её бывает поднимают незадолго до акции — и минус пятьдесят процентов выглядит как *подарок*.",
+   "space": null
+  },
+  {
+   "id": "sl1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 15.77,
+   "caption": "Второй: «осталось две штуки» и таймер. Спешка *выключает голову*.",
+   "space": null
+  },
+  {
+   "id": "sl1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 21.38,
+   "caption": "Третий: бесплатная доставка от двух тысяч. И вот ты докупаешь носки, которые *не нужны*.",
+   "space": null
+  },
+  {
+   "id": "sl1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 27.79,
+   "caption": "Четвёртый: оплата частями. Четыре платежа кажутся мелочью — пока их не стало *десять*.",
+   "space": null
+  },
+  {
+   "id": "sl1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 34.35,
+   "caption": "Пятый: «вам может понравиться». Пришёл за одним — ушёл *с пятью*.",
+   "space": null
+  },
+  {
+   "id": "sl1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 39.96,
+   "caption": "Совет: перед покупкой проверь историю цены. Подпишись — каждый день новые истории.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 1.0,
+   "loop": true,
+   "end": 48.44
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 0.05,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 7.01,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 15.57,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 21.18,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 27.59,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 34.15,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 9.55,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 16.27,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 18.77
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 24.91,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 32.53,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/cash.wav",
+   "start": 37.5,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 39.96,
+   "gain": -14,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "five": 3.7,
+  "sl1_01": 0.05,
+  "sl1_01_end": 6.86,
+  "t1": 7.21,
+  "up": 9.05,
+  "gift": 11.95,
+  "sl1_02": 7.21,
+  "sl1_02_end": 15.42,
+  "t2": 15.77,
+  "rush": 19.02,
+  "sl1_03": 15.77,
+  "sl1_03_end": 21.03,
+  "t3": 21.38,
+  "socks": 24.41,
+  "sl1_04": 21.38,
+  "sl1_04_end": 27.44,
+  "t4": 27.79,
+  "ten": 32.23,
+  "sl1_05": 27.79,
+  "sl1_05_end": 34.0,
+  "t5": 34.35,
+  "cart": 37.0,
+  "sl1_06": 34.35,
+  "sl1_06_end": 39.56,
+  "tip": 39.96,
+  "sub": 43.44,
+  "sl1_07": 39.96,
+  "sl1_07_end": 46.44,
+  "end": 48.44
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.65
+  },
+  "five": {
+   "start": 3.7,
+   "dur": 3.16
+  },
+  "t1": {
+   "start": 7.21,
+   "dur": 1.84
+  },
+  "up": {
+   "start": 9.05,
+   "dur": 2.9
+  },
+  "gift": {
+   "start": 11.95,
+   "dur": 3.47
+  },
+  "t2": {
+   "start": 15.77,
+   "dur": 3.25
+  },
+  "rush": {
+   "start": 19.02,
+   "dur": 2.0
+  },
+  "t3": {
+   "start": 21.38,
+   "dur": 3.03
+  },
+  "socks": {
+   "start": 24.41,
+   "dur": 3.03
+  },
+  "t4": {
+   "start": 27.79,
+   "dur": 4.44
+  },
+  "ten": {
+   "start": 32.23,
+   "dur": 1.77
+  },
+  "t5": {
+   "start": 34.35,
+   "dur": 2.65
+  },
+  "cart": {
+   "start": 37.0,
+   "dur": 2.56
+  },
+  "tip": {
+   "start": 39.96,
+   "dur": 3.48
+  },
+  "sub": {
+   "start": 43.44,
+   "dur": 3.0
+  }
+ }
+}

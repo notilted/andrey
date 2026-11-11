@@ -43,6 +43,8 @@ import {Bs3} from './Bs3';
 import {DURATION as DURATION_BS3} from './timelineBs3';
 import {DURATION as DURATION_BS2} from './timelineBs2';
 import {Gt1} from './Gt1';
+import {Sl1} from './Sl1';
+import {DURATION as DURATION_SL1} from './timelineSl1';
 import {Ny1} from './Ny1';
 import {DURATION as DURATION_NY1} from './timelineNy1';
 import {Nz1} from './Nz1';
@@ -96,6 +98,7 @@ export const Root: React.FC = () => (
     <Composition id="Bs2" component={Bs2} durationInFrames={DURATION_BS2} fps={FPS} width={W} height={H} />
     <Composition id="Bs3" component={Bs3} durationInFrames={DURATION_BS3} fps={FPS} width={W} height={H} />
     <Composition id="Gt1" component={Gt1} durationInFrames={DURATION_GT1} fps={FPS} width={W} height={H} />
+    <Composition id="Sl1" component={Sl1} durationInFrames={DURATION_SL1} fps={FPS} width={W} height={H} />
     <Composition id="Ny1" component={Ny1} durationInFrames={DURATION_NY1} fps={FPS} width={W} height={H} />
     <Composition id="Nz1" component={Nz1} durationInFrames={DURATION_NZ1} fps={FPS} width={W} height={H} />
     <Composition id="Cr7" component={Cr7} durationInFrames={DURATION_CR7} fps={FPS} width={W} height={H} />
