@@ -1,0 +1,299 @@
+{
+ "name": "bn2",
+ "duration": 52.06,
+ "dialogue": [
+  {
+   "id": "bn2_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Бабушкины два миллиона. Сезон второй, часть вторая. Юрист говорит прямо: знак принадлежит тому, кто *первым* его зарегистрировал.",
+   "space": null
+  },
+  {
+   "id": "bn2_02",
+   "who": "narrator",
+   "name": "",
+   "start": 9.48,
+   "caption": "Два пути. Сменить название и все вывески. Или бороться — если доказать, что ты пользовался именем *раньше*.",
+   "space": null
+  },
+  {
+   "id": "bn2_03",
+   "who": "narrator",
+   "name": "",
+   "start": 17.59,
+   "caption": "Нужны доказательства: чеки, договоры, фото вывески — *с датами*.",
+   "space": null
+  },
+  {
+   "id": "bn2_04",
+   "who": "narrator",
+   "name": "",
+   "start": 22.69,
+   "caption": "И ты вспоминаешь: год назад студент снял видео у твоей точки. Миллион просмотров. А на заднем плане — вывеска «Бабушкины» и *дата публикации*.",
+   "space": null
+  },
+  {
+   "id": "bn2_05",
+   "who": "narrator",
+   "name": "",
+   "start": 33.44,
+   "caption": "Впервые за неделю ты выдыхаешь. Ночью приходишь закрыть кассу — и видишь: дверь *приоткрыта*.",
+   "space": null
+  },
+  {
+   "id": "bn2_06",
+   "who": "narrator",
+   "name": "",
+   "start": 40.85,
+   "caption": "Деньги на месте. Пропало только одно — *бабушкина тетрадь*.",
+   "space": null
+  },
+  {
+   "id": "bn2_07",
+   "who": "narrator",
+   "name": "",
+   "start": 45.46,
+   "caption": "Финал — завтра в семь вечера. Подпишись, чтобы не пропустить.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m02_dread.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.2,
+   "fadeOut": 0.5,
+   "end": 22.69
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 4.07,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 10.42,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 12.8,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 19.48,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 19.94,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 20.7,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 22.69,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.5,
+   "end": 35.87
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 32.11,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/night_city.wav",
+   "start": 35.87,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 45.46
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 38.7,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 38.3,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.5,
+   "end": 45.46
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 42.68,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 45.46,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 52.06
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 46.57,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "law": 3.77,
+  "first": 5.27,
+  "bn2_01": 0.05,
+  "bn2_01_end": 9.13,
+  "paths": 9.48,
+  "p1": 10.22,
+  "p2": 12.6,
+  "bn2_02": 9.48,
+  "bn2_02_end": 17.29,
+  "ev": 17.59,
+  "e1": 19.28,
+  "e2": 19.74,
+  "e3": 20.5,
+  "bn2_03": 17.59,
+  "bn2_03_end": 22.34,
+  "rem": 22.69,
+  "vid": 27.27,
+  "sign": 28.75,
+  "date": 31.71,
+  "bn2_04": 22.69,
+  "bn2_04_end": 33.04,
+  "relief": 33.44,
+  "night": 35.87,
+  "door": 38.3,
+  "bn2_05": 33.44,
+  "bn2_05_end": 40.35,
+  "gone": 40.85,
+  "book": 42.08,
+  "bn2_06": 40.85,
+  "bn2_06_end": 44.96,
+  "next": 45.46,
+  "sub": 47.57,
+  "bn2_07": 45.46,
+  "bn2_07_end": 49.76,
+  "end": 52.06
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.72
+  },
+  "law": {
+   "start": 3.77,
+   "dur": 1.5
+  },
+  "first": {
+   "start": 5.27,
+   "dur": 3.86
+  },
+  "paths": {
+   "start": 9.48,
+   "dur": 0.74
+  },
+  "p1": {
+   "start": 10.22,
+   "dur": 2.38
+  },
+  "p2": {
+   "start": 12.6,
+   "dur": 4.69
+  },
+  "ev": {
+   "start": 17.59,
+   "dur": 1.69
+  },
+  "e1": {
+   "start": 19.28,
+   "dur": 0.46
+  },
+  "e2": {
+   "start": 19.74,
+   "dur": 0.77
+  },
+  "e3": {
+   "start": 20.5,
+   "dur": 1.84
+  },
+  "rem": {
+   "start": 22.69,
+   "dur": 4.58
+  },
+  "vid": {
+   "start": 27.27,
+   "dur": 1.48
+  },
+  "sign": {
+   "start": 28.75,
+   "dur": 2.96
+  },
+  "date": {
+   "start": 31.71,
+   "dur": 1.33
+  },
+  "relief": {
+   "start": 33.44,
+   "dur": 2.43
+  },
+  "night": {
+   "start": 35.87,
+   "dur": 2.43
+  },
+  "door": {
+   "start": 38.3,
+   "dur": 2.05
+  },
+  "gone": {
+   "start": 40.85,
+   "dur": 1.23
+  },
+  "book": {
+   "start": 42.08,
+   "dur": 2.89
+  },
+  "next": {
+   "start": 45.46,
+   "dur": 2.11
+  },
+  "sub": {
+   "start": 47.57,
+   "dur": 2.19
+  }
+ }
+}
