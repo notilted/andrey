@@ -1,0 +1,26 @@
+"""«Пятница 13»: python3 tools/timeline_fr1.py -> src/data/fr1.json"""
+from narr import M, N, S, load, marks, save
+
+load("fr1_narration.json")
+M("start", 0)
+N("fr1_01", 0.05, at=[("hook", None), ("third", "И это")])
+N("fr1_02", 0.35, at=[("phob", None), ("word", "параскаведекатриафобия"), ("say", "Попробуй")])
+N("fr1_03", 0.35, at=[("floor", None), ("skip", "после"), ("plane", "А в некоторых")])
+N("fr1_04", 0.35, at=[("nextf", None), ("aug", "только")])
+N("fr1_05", 0.45, at=[("lift", None), ("press", "Жмёт"), ("ride", "Лифт едет"), ("stop", "и останавливается")])
+N("fr1_06", 0.6, at=[("sub", None), ("tonight", "А в семь")])
+M("end", 2.0)
+m = marks
+S("music/m12_void.wav", 0, -20, "music", fadeIn=0.3, length=m["lift"], fadeOut=0.5)
+S("sfx/impact_low.wav", 0.05, -10)
+S("sfx/pop.wav", m["word"] + 0.3, -14)
+S("sfx/ui_tick.wav", m["skip"] + 0.4, -12)
+S("sfx/whoosh.wav", m["plane"], -14)
+S("sfx/page_flip.wav", m["aug"], -14)
+S("music/m02_dread.wav", m["lift"], -19, "music", fadeIn=0.4, length=m["sub"] - m["lift"], fadeOut=0.4)
+S("sfx/ui_tick.wav", m["press"] + 0.6, -10)
+S("sfx/hum.wav", m["ride"], -22, length=m["stop"] - m["ride"] + 0.5, fadeOut=0.2)
+S("sfx/door_clank.wav", m["stop"] + 1.0, -10)
+S("sfx/flicker.wav", m["stop"] + 1.3, -14)
+S("music/m10_run.wav", m["sub"], -19, "music", fadeIn=0.3, length=m["end"] - m["sub"], fadeOut=0.8)
+save("fr1")

@@ -1,0 +1,237 @@
+{
+ "name": "fr1",
+ "duration": 45.16,
+ "dialogue": [
+  {
+   "id": "fr1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Сегодня пятница, тринадцатое. И это уже *третья* в этом году — после февраля и марта.",
+   "space": null
+  },
+  {
+   "id": "fr1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.25,
+   "caption": "У страха перед этим днём есть название: *параскаведекатриафобия*. Попробуй выговорить.",
+   "space": null
+  },
+  {
+   "id": "fr1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 12.36,
+   "caption": "Во многих зданиях мира нет тринадцатого этажа — после двенадцатого сразу *четырнадцатый*. А в некоторых самолётах нет тринадцатого ряда.",
+   "space": null
+  },
+  {
+   "id": "fr1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 21.53,
+   "caption": "Следующая пятница, тринадцатое — только в *августе* двадцать седьмого.",
+   "space": null
+  },
+  {
+   "id": "fr1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 26.29,
+   "caption": "Марк смеётся над приметами. Заходит в лифт. Жмёт свой этаж — четырнадцатый. Лифт едет… и останавливается *на тринадцатом*.",
+   "space": null
+  },
+  {
+   "id": "fr1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 36.36,
+   "caption": "Подпишись — каждый день новые истории. А в семь вечера — вторая часть «Бабушкиных двух миллионов».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m12_void.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.5,
+   "end": 26.29
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 9.29,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 15.92,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 18.15,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 23.62,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread.wav",
+   "start": 26.29,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.4,
+   "end": 36.36
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 30.36,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/hum.wav",
+   "start": 32.29,
+   "gain": -22,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 33.66
+  },
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 34.16,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 34.46,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 36.36,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 45.16
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "third": 2.16,
+  "fr1_01": 0.05,
+  "fr1_01_end": 5.9,
+  "phob": 6.25,
+  "word": 8.99,
+  "say": 10.64,
+  "fr1_02": 6.25,
+  "fr1_02_end": 12.01,
+  "floor": 12.36,
+  "skip": 15.52,
+  "plane": 18.15,
+  "fr1_03": 12.36,
+  "fr1_03_end": 21.18,
+  "nextf": 21.53,
+  "aug": 23.62,
+  "fr1_04": 21.53,
+  "fr1_04_end": 25.84,
+  "lift": 26.29,
+  "press": 29.76,
+  "ride": 32.29,
+  "stop": 33.16,
+  "fr1_05": 26.29,
+  "fr1_05_end": 35.76,
+  "sub": 36.36,
+  "tonight": 39.07,
+  "fr1_06": 36.36,
+  "fr1_06_end": 43.16,
+  "end": 45.16
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.11
+  },
+  "third": {
+   "start": 2.16,
+   "dur": 3.73
+  },
+  "phob": {
+   "start": 6.25,
+   "dur": 2.74
+  },
+  "word": {
+   "start": 8.99,
+   "dur": 1.65
+  },
+  "say": {
+   "start": 10.64,
+   "dur": 1.37
+  },
+  "floor": {
+   "start": 12.36,
+   "dur": 3.16
+  },
+  "skip": {
+   "start": 15.52,
+   "dur": 2.63
+  },
+  "plane": {
+   "start": 18.15,
+   "dur": 3.03
+  },
+  "nextf": {
+   "start": 21.53,
+   "dur": 2.09
+  },
+  "aug": {
+   "start": 23.62,
+   "dur": 2.22
+  },
+  "lift": {
+   "start": 26.29,
+   "dur": 3.47
+  },
+  "press": {
+   "start": 29.76,
+   "dur": 2.53
+  },
+  "ride": {
+   "start": 32.29,
+   "dur": 0.87
+  },
+  "stop": {
+   "start": 33.16,
+   "dur": 2.61
+  },
+  "sub": {
+   "start": 36.36,
+   "dur": 2.71
+  },
+  "tonight": {
+   "start": 39.07,
+   "dur": 4.09
+  }
+ }
+}
