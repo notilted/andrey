@@ -1,0 +1,291 @@
+{
+ "name": "bn3",
+ "duration": 52.22,
+ "dialogue": [
+  {
+   "id": "bn3_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Бабушкины два миллиона. Сезон второй — финал. Тетрадь украли. Кажется, это *конец*.",
+   "space": null
+  },
+  {
+   "id": "bn3_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.25,
+   "caption": "Но утром руки сами достают кефир, зиру, чеснок, гранатовый сок. Ты делал этот маринад *каждый день* целый год.",
+   "space": null
+  },
+  {
+   "id": "bn3_03",
+   "who": "narrator",
+   "name": "",
+   "start": 16.34,
+   "caption": "Рецепт был не в тетради. Он был *в тебе*.",
+   "space": null
+  },
+  {
+   "id": "bn3_04",
+   "who": "narrator",
+   "name": "",
+   "start": 19.51,
+   "caption": "Через неделю напротив открывается чужая точка «Бабушкины». По украденному рецепту. И очередь у неё — *ноль*.",
+   "space": null
+  },
+  {
+   "id": "bn3_05",
+   "who": "narrator",
+   "name": "",
+   "start": 27.26,
+   "caption": "Потому что мясо должно ночевать в маринаде. А они спешили. А в суде твой юрист показывает видео с датой — и знак *аннулируют*.",
+   "space": null
+  },
+  {
+   "id": "bn3_06",
+   "who": "narrator",
+   "name": "",
+   "start": 35.77,
+   "caption": "Через месяц приходит посылка без обратного адреса. Внутри — бабушкина тетрадь. И записка: «Не получилось. *Извини*».",
+   "space": null
+  },
+  {
+   "id": "bn3_07",
+   "who": "narrator",
+   "name": "",
+   "start": 44.94,
+   "caption": "Конец второго сезона. Подпишись — завтра начнётся новая история.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m09_sad.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.5,
+   "end": 7.25
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 0.05,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 9.54,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 10.1,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 10.59,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 11.24,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 7.25,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 19.51
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 18.38,
+   "gain": -13,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 19.51,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.5,
+   "end": 35.77
+  },
+  {
+   "file": "sfx/wind_ash.wav",
+   "start": 25.3,
+   "gain": -24,
+   "bus": "sfx",
+   "fadeOut": 0.6,
+   "end": 27.3
+  },
+  {
+   "file": "sfx/gavel.wav",
+   "start": 34.61,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/knock.wav",
+   "start": 35.97,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/page_flip.wav",
+   "start": 40.05,
+   "gain": -13,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m09_sad.wav",
+   "start": 35.77,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.6,
+   "fadeOut": 0.5,
+   "end": 44.94
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 44.94,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 52.22
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "stolen": 3.94,
+  "bn3_01": 0.05,
+  "bn3_01_end": 6.9,
+  "hands": 7.25,
+  "i1": 9.44,
+  "i2": 10.0,
+  "i3": 10.49,
+  "i4": 11.14,
+  "year": 12.43,
+  "bn3_02": 7.25,
+  "bn3_02_end": 15.99,
+  "inyou": 16.34,
+  "you": 18.08,
+  "bn3_03": 16.34,
+  "bn3_03_end": 19.06,
+  "rival": 19.51,
+  "zero": 25.3,
+  "bn3_04": 19.51,
+  "bn3_04_end": 26.91,
+  "why": 27.26,
+  "court": 31.07,
+  "annul": 34.11,
+  "bn3_05": 27.26,
+  "bn3_05_end": 35.27,
+  "parcel": 35.77,
+  "book": 39.65,
+  "note": 41.78,
+  "bn3_06": 35.77,
+  "bn3_06_end": 44.44,
+  "end": 44.94,
+  "sub": 46.65,
+  "bn3_07": 44.94,
+  "bn3_07_end": 49.92,
+  "fin": 52.22
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.89
+  },
+  "stolen": {
+   "start": 3.94,
+   "dur": 2.96
+  },
+  "hands": {
+   "start": 7.25,
+   "dur": 2.19
+  },
+  "i1": {
+   "start": 9.44,
+   "dur": 0.57
+  },
+  "i2": {
+   "start": 10.0,
+   "dur": 0.49
+  },
+  "i3": {
+   "start": 10.49,
+   "dur": 0.65
+  },
+  "i4": {
+   "start": 11.14,
+   "dur": 1.3
+  },
+  "year": {
+   "start": 12.43,
+   "dur": 3.56
+  },
+  "inyou": {
+   "start": 16.34,
+   "dur": 1.74
+  },
+  "you": {
+   "start": 18.08,
+   "dur": 0.98
+  },
+  "rival": {
+   "start": 19.51,
+   "dur": 5.79
+  },
+  "zero": {
+   "start": 25.3,
+   "dur": 1.6
+  },
+  "why": {
+   "start": 27.26,
+   "dur": 3.81
+  },
+  "court": {
+   "start": 31.07,
+   "dur": 3.04
+  },
+  "annul": {
+   "start": 34.11,
+   "dur": 1.16
+  },
+  "parcel": {
+   "start": 35.77,
+   "dur": 3.88
+  },
+  "book": {
+   "start": 39.65,
+   "dur": 2.13
+  },
+  "note": {
+   "start": 41.78,
+   "dur": 2.66
+  },
+  "end": {
+   "start": 44.94,
+   "dur": 1.71
+  },
+  "sub": {
+   "start": 46.65,
+   "dur": 3.27
+  }
+ }
+}
