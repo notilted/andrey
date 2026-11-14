@@ -1,0 +1,26 @@
+"""«Чужой телефон», часть 1: python3 tools/timeline_cf1.py -> src/data/cf1.json"""
+from narr import M, N, S, load, marks, save
+
+load("cf1_narration.json")
+M("start", 0)
+N("cf1_01", 0.05, at=[("hook", None), ("taxi", "Ты садишься"), ("ring", "и на заднем")])
+N("cf1_02", 0.35, at=[("driver", None), ("pick", "Ты берёшь"), ("silence", "Тишина"), ("name", "А потом")])
+N("cf1_03", 0.45, at=[("cut", None), ("msg", "Новое")])
+N("cf1_04", 0.4, at=[("gal", None), ("p1", "Там"), ("p2", "Твоё окно"), ("today", "Сегодняшнее")])
+N("cf1_05", 0.45, at=[("mirror", None), ("turn", "И молча")])
+N("cf1_06", 0.5, at=[("next", None), ("sub", "Подпишись")])
+M("end", 2.3)
+m = marks
+S("sfx/night_city.wav", 0, -24, "amb", length=m["next"], fadeOut=0.6, loop=True)
+S("music/m01_night_long.wav", 0, -21, "music", fadeIn=0.3, length=m["gal"], fadeOut=0.5)
+S("sfx/ringtone.wav", m["ring"], -16, length=m["pick"] - m["ring"], fadeOut=0.2)
+S("sfx/tinnitus.wav", m["silence"], -28, length=1.5, fadeOut=0.5)
+S("sfx/stinger.wav", m["name"] + 0.4, -11)
+S("sfx/ping.wav", m["msg"] + 0.2, -12)
+S("music/m02_dread_long.wav", m["gal"], -19, "music", fadeIn=0.4, length=m["next"] - m["gal"], fadeOut=0.5)
+S("sfx/heartbeat.wav", m["today"], -18, length=m["next"] - m["today"], fadeOut=0.5)
+S("sfx/tick.wav", m["turn"] + 0.3, -14, length=2.0, fadeOut=0.3)
+S("sfx/impact_low.wav", m["turn"] + 1.4, -10)
+S("music/m10_run.wav", m["next"], -18, "music", fadeIn=0.3, length=m["end"] - m["next"], fadeOut=0.8)
+S("sfx/riser.wav", m["sub"] - 1.0, -16)
+save("cf1")

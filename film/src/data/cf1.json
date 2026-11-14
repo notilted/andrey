@@ -1,0 +1,251 @@
+{
+ "name": "cf1",
+ "duration": 40.54,
+ "dialogue": [
+  {
+   "id": "cf1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Чужой телефон. Часть первая. Ты садишься в такси — и на заднем сиденье *звонит телефон*. Не твой.",
+   "space": null
+  },
+  {
+   "id": "cf1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 7.66,
+   "caption": "Водитель пожимает плечами: пассажир до вас забыл. Ты берёшь трубку. Тишина. А потом — *твоё имя*.",
+   "space": null
+  },
+  {
+   "id": "cf1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 16.01,
+   "caption": "Звонок обрывается. Новое сообщение: «Не выключай. Через двадцать минут *он позвонит снова*».",
+   "space": null
+  },
+  {
+   "id": "cf1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 22.78,
+   "caption": "Ты открываешь галерею. Там твой подъезд. Твоё окно. *Сегодняшнее* фото.",
+   "space": null
+  },
+  {
+   "id": "cf1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 28.63,
+   "caption": "Таксист смотрит на тебя в зеркало. И молча сворачивает *не туда*.",
+   "space": null
+  },
+  {
+   "id": "cf1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 33.36,
+   "caption": "Часть вторая — завтра в семь вечера. Подпишись, чтобы не пропустить.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/night_city.wav",
+   "start": 0,
+   "gain": -24,
+   "bus": "amb",
+   "fadeOut": 0.6,
+   "loop": true,
+   "end": 33.36
+  },
+  {
+   "file": "music/m01_night_long.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.5,
+   "end": 22.78
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 3.95,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.2,
+   "end": 11.82
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 13.31,
+   "gain": -28,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 14.81
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 14.38,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ping.wav",
+   "start": 17.55,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 22.78,
+   "gain": -19,
+   "bus": "music",
+   "fadeIn": 0.4,
+   "fadeOut": 0.5,
+   "end": 33.36
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 26.85,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 33.36
+  },
+  {
+   "file": "sfx/tick.wav",
+   "start": 31.28,
+   "gain": -14,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 33.28
+  },
+  {
+   "file": "sfx/impact_low.wav",
+   "start": 32.38,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 33.36,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 40.54
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 35.02,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "taxi": 2.27,
+  "ring": 3.95,
+  "cf1_01": 0.05,
+  "cf1_01_end": 7.31,
+  "driver": 7.66,
+  "pick": 11.82,
+  "silence": 13.31,
+  "name": 13.98,
+  "cf1_02": 7.66,
+  "cf1_02_end": 15.56,
+  "cut": 16.01,
+  "msg": 17.35,
+  "cf1_03": 16.01,
+  "cf1_03_end": 22.38,
+  "gal": 22.78,
+  "p1": 24.58,
+  "p2": 25.99,
+  "today": 26.85,
+  "cf1_04": 22.78,
+  "cf1_04_end": 28.18,
+  "mirror": 28.63,
+  "turn": 30.98,
+  "cf1_05": 28.63,
+  "cf1_05_end": 32.86,
+  "next": 33.36,
+  "sub": 36.02,
+  "cf1_06": 33.36,
+  "cf1_06_end": 38.24,
+  "end": 40.54
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.22
+  },
+  "taxi": {
+   "start": 2.27,
+   "dur": 1.68
+  },
+  "ring": {
+   "start": 3.95,
+   "dur": 3.36
+  },
+  "driver": {
+   "start": 7.66,
+   "dur": 4.16
+  },
+  "pick": {
+   "start": 11.82,
+   "dur": 1.5
+  },
+  "silence": {
+   "start": 13.31,
+   "dur": 0.67
+  },
+  "name": {
+   "start": 13.98,
+   "dur": 1.58
+  },
+  "cut": {
+   "start": 16.01,
+   "dur": 1.34
+  },
+  "msg": {
+   "start": 17.35,
+   "dur": 5.02
+  },
+  "gal": {
+   "start": 22.78,
+   "dur": 1.8
+  },
+  "p1": {
+   "start": 24.58,
+   "dur": 1.41
+  },
+  "p2": {
+   "start": 25.99,
+   "dur": 0.86
+  },
+  "today": {
+   "start": 26.85,
+   "dur": 1.33
+  },
+  "mirror": {
+   "start": 28.63,
+   "dur": 2.35
+  },
+  "turn": {
+   "start": 30.98,
+   "dur": 1.88
+  },
+  "next": {
+   "start": 33.36,
+   "dur": 2.66
+  },
+  "sub": {
+   "start": 36.02,
+   "dur": 2.23
+  }
+ }
+}
