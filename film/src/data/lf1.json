@@ -1,0 +1,201 @@
+{
+ "name": "lf1",
+ "duration": 41.58,
+ "dialogue": [
+  {
+   "id": "lf1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Лифт дёрнулся и встал между этажами. Что делать? Пять правил, которые *реально работают*.",
+   "space": null
+  },
+  {
+   "id": "lf1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.85,
+   "caption": "Первое: не паникуй и не прыгай. Лифт от этого не поедет — только *раскачаешь кабину*.",
+   "space": null
+  },
+  {
+   "id": "lf1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 13.03,
+   "caption": "Второе: нажми кнопку вызова диспетчера — ту, что с *колокольчиком*.",
+   "space": null
+  },
+  {
+   "id": "lf1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 17.83,
+   "caption": "Третье: никто не ответил — звони *сто двенадцать*. С мобильного это бесплатно.",
+   "space": null
+  },
+  {
+   "id": "lf1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 23.55,
+   "caption": "Четвёртое: не разжимай двери и не лезь в люк. Кабина может *тронуться* в любой момент.",
+   "space": null
+  },
+  {
+   "id": "lf1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 29.53,
+   "caption": "Пятое: береги заряд телефона и жди. *Помощь приедет*.",
+   "space": null
+  },
+  {
+   "id": "lf1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 34.67,
+   "caption": "Сохрани, чтобы не забыть. Подпишись — каждый день новые истории.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/door_clank.wav",
+   "start": 0.05,
+   "gain": -9,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/flicker.wav",
+   "start": 0.4,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m02_dread.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 1.0,
+   "loop": true,
+   "end": 41.58
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 6.65,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 12.83,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 17.63,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 23.35,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 29.33,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ui_tick.wav",
+   "start": 15.03,
+   "gain": -10,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 19.03,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 20.63
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 34.67,
+   "gain": -14,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "five": 3.65,
+  "lf1_01": 0.05,
+  "lf1_01_end": 6.45,
+  "r1": 6.85,
+  "lf1_02": 6.85,
+  "lf1_02_end": 12.63,
+  "r2": 13.03,
+  "lf1_03": 13.03,
+  "lf1_03_end": 17.43,
+  "r3": 17.83,
+  "free": 21.26,
+  "lf1_04": 17.83,
+  "lf1_04_end": 23.15,
+  "r4": 23.55,
+  "lf1_05": 23.55,
+  "lf1_05_end": 29.13,
+  "r5": 29.53,
+  "lf1_06": 29.53,
+  "lf1_06_end": 34.17,
+  "sub": 34.67,
+  "lf1_07": 34.67,
+  "lf1_07_end": 39.58,
+  "end": 41.58
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.6
+  },
+  "five": {
+   "start": 3.65,
+   "dur": 2.79
+  },
+  "r1": {
+   "start": 6.85,
+   "dur": 5.78
+  },
+  "r2": {
+   "start": 13.03,
+   "dur": 4.4
+  },
+  "r3": {
+   "start": 17.83,
+   "dur": 3.43
+  },
+  "free": {
+   "start": 21.26,
+   "dur": 1.89
+  },
+  "r4": {
+   "start": 23.55,
+   "dur": 5.58
+  },
+  "r5": {
+   "start": 29.53,
+   "dur": 4.64
+  },
+  "sub": {
+   "start": 34.67,
+   "dur": 4.91
+  }
+ }
+}
