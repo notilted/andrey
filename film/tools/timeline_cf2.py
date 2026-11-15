@@ -1,0 +1,25 @@
+"""«Чужой телефон», часть 2: python3 tools/timeline_cf2.py -> src/data/cf2.json"""
+from narr import M, N, S, load, marks, save
+
+load("cf2_narration.json")
+M("start", 0)
+N("cf2_01", 0.05, at=[("hook", None), ("yard", "Такси"), ("lights", "и гасит")])
+N("cf2_02", 0.4, at=[("whisper", None), ("grey", "Серая")])
+N("cf2_03", 0.35, at=[("notvillain", None)])
+N("cf2_04", 0.4, at=[("pass", None), ("stop", "И останавливается")])
+N("cf2_05", 0.5, at=[("ring", None), ("voice", "Голос"), ("who", "если хочешь")])
+N("cf2_06", 0.4, at=[("door", None), ("open", "Но ты")])
+N("cf2_07", 0.5, at=[("next", None), ("sub", "Подпишись")])
+M("end", 2.3)
+m = marks
+S("sfx/night_city.wav", 0, -26, "amb", length=m["next"], fadeOut=0.6, loop=True)
+S("music/m02_dread_long.wav", 0, -20, "music", fadeIn=0.3, length=m["next"], fadeOut=0.6)
+S("sfx/lock_click.wav", m["lights"] + 0.4, -12)
+S("sfx/heartbeat.wav", m["pass"], -18, length=m["ring"] - m["pass"], fadeOut=0.4)
+S("sfx/whoosh.wav", m["pass"] + 0.5, -16)
+S("sfx/ringtone.wav", m["ring"] + 0.3, -16, length=2.2, fadeOut=0.3)
+S("sfx/stinger.wav", m["who"] + 1.0, -11)
+S("sfx/door_open.wav", m["open"] + 0.5, -12)
+S("music/m10_run.wav", m["next"], -18, "music", fadeIn=0.3, length=m["end"] - m["next"], fadeOut=0.8)
+S("sfx/riser.wav", m["sub"] - 1.0, -16)
+save("cf2")

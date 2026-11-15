@@ -1,0 +1,232 @@
+{
+ "name": "cf2",
+ "duration": 43.15,
+ "dialogue": [
+  {
+   "id": "cf2_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Чужой телефон. Часть вторая. Такси сворачивает в тёмный двор и *гасит фары*.",
+   "space": null
+  },
+  {
+   "id": "cf2_02",
+   "who": "narrator",
+   "name": "",
+   "start": 6.08,
+   "caption": "Водитель шепчет: от самого твоего дома за нами ехала машина. Серая. *Без передних номеров*.",
+   "space": null
+  },
+  {
+   "id": "cf2_03",
+   "who": "narrator",
+   "name": "",
+   "start": 12.54,
+   "caption": "Он не похититель. Он просто *заметил хвост*.",
+   "space": null
+  },
+  {
+   "id": "cf2_04",
+   "who": "narrator",
+   "name": "",
+   "start": 15.82,
+   "caption": "Серая машина медленно проезжает мимо двора. И останавливается *в конце улицы*.",
+   "space": null
+  },
+  {
+   "id": "cf2_05",
+   "who": "narrator",
+   "name": "",
+   "start": 21.34,
+   "caption": "Ровно через двадцать минут чужой телефон звонит снова. Голос спокойный: привези телефон к старому мосту — если хочешь узнать, *кто тебя фотографировал*.",
+   "space": null
+  },
+  {
+   "id": "cf2_06",
+   "who": "narrator",
+   "name": "",
+   "start": 31.54,
+   "caption": "Таксист качает головой: не езди. Но ты уже *открываешь дверь*.",
+   "space": null
+  },
+  {
+   "id": "cf2_07",
+   "who": "narrator",
+   "name": "",
+   "start": 36.55,
+   "caption": "Финал — завтра в семь вечера. Подпишись, чтобы не пропустить.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/night_city.wav",
+   "start": 0,
+   "gain": -26,
+   "bus": "amb",
+   "fadeOut": 0.6,
+   "loop": true,
+   "end": 36.55
+  },
+  {
+   "file": "music/m02_dread_long.wav",
+   "start": 0,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 36.55
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 5.09,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/heartbeat.wav",
+   "start": 15.82,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 21.34
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 16.32,
+   "gain": -16,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 21.64,
+   "gain": -16,
+   "bus": "sfx",
+   "fadeOut": 0.3,
+   "end": 23.84
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 29.27,
+   "gain": -11,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/door_open.wav",
+   "start": 34.52,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m10_run.wav",
+   "start": 36.55,
+   "gain": -18,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.8,
+   "end": 43.15
+  },
+  {
+   "file": "sfx/riser.wav",
+   "start": 37.66,
+   "gain": -16,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "yard": 2.25,
+  "lights": 4.69,
+  "cf2_01": 0.05,
+  "cf2_01_end": 5.68,
+  "whisper": 6.08,
+  "grey": 10.26,
+  "cf2_02": 6.08,
+  "cf2_02_end": 12.19,
+  "notvillain": 12.54,
+  "cf2_03": 12.54,
+  "cf2_03_end": 15.42,
+  "pass": 15.82,
+  "stop": 18.73,
+  "cf2_04": 15.82,
+  "cf2_04_end": 20.84,
+  "ring": 21.34,
+  "voice": 24.93,
+  "who": 28.27,
+  "cf2_05": 21.34,
+  "cf2_05_end": 31.14,
+  "door": 31.54,
+  "open": 34.02,
+  "cf2_06": 31.54,
+  "cf2_06_end": 36.05,
+  "next": 36.55,
+  "sub": 38.66,
+  "cf2_07": 36.55,
+  "cf2_07_end": 40.85,
+  "end": 43.15
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.2
+  },
+  "yard": {
+   "start": 2.25,
+   "dur": 2.43
+  },
+  "lights": {
+   "start": 4.69,
+   "dur": 0.99
+  },
+  "whisper": {
+   "start": 6.08,
+   "dur": 4.18
+  },
+  "grey": {
+   "start": 10.26,
+   "dur": 1.92
+  },
+  "notvillain": {
+   "start": 12.54,
+   "dur": 2.88
+  },
+  "pass": {
+   "start": 15.82,
+   "dur": 2.91
+  },
+  "stop": {
+   "start": 18.73,
+   "dur": 2.11
+  },
+  "ring": {
+   "start": 21.34,
+   "dur": 3.59
+  },
+  "voice": {
+   "start": 24.93,
+   "dur": 3.33
+  },
+  "who": {
+   "start": 28.27,
+   "dur": 2.87
+  },
+  "door": {
+   "start": 31.54,
+   "dur": 2.48
+  },
+  "open": {
+   "start": 34.02,
+   "dur": 2.03
+  },
+  "next": {
+   "start": 36.55,
+   "dur": 2.11
+  },
+  "sub": {
+   "start": 38.66,
+   "dur": 2.18
+  }
+ }
+}

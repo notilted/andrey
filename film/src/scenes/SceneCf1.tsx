@@ -12,7 +12,7 @@ import {SVG} from './twkit';
 
 const DRIVER: ToonLook = {skin: '#d8a888', skinD: '#c09070', hair: '#1a1410', top: '#2a2a2e', topD: '#1e1e22', legs: '#1e1e22', legsD: '#16161a', shoes: '#0a0a10', mustache: true, hat: '#2a2a2e', scale: 1.05};
 
-const Taxi: React.FC<{f: number; turn: number; dim: number}> = ({f, turn, dim}) => (
+export const Taxi: React.FC<{f: number; turn: number; dim: number}> = ({f, turn, dim}) => (
   <g>
     <rect x={-200} y={-200} width={1480} height={2400} fill="#05060a" />
     <g transform={`translate(${-turn * 120} 0)`}>
@@ -29,7 +29,7 @@ const Taxi: React.FC<{f: number; turn: number; dim: number}> = ({f, turn, dim}) 
   </g>
 );
 
-const Phone: React.FC<{f: number; children: React.ReactNode; ring?: boolean}> = ({f, children, ring}) => (
+export const Phone: React.FC<{f: number; children: React.ReactNode; ring?: boolean}> = ({f, children, ring}) => (
   <div style={{position: 'absolute', left: 240, top: 260, width: 600, height: 1000, borderRadius: 60, background: '#0a0b10', border: '10px solid #2a2e38', padding: 30, transform: ring ? `rotate(${Math.sin(f * 1.7) * 3}deg)` : 'none', display: 'flex', flexDirection: 'column', gap: 20}}>{children}</div>
 );
 
