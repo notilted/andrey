@@ -1,0 +1,174 @@
+{
+ "name": "lp1",
+ "duration": 42.46,
+ "dialogue": [
+  {
+   "id": "lp1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Потерял телефон? Первые десять минут решают всё. *Четыре шага*.",
+   "space": null
+  },
+  {
+   "id": "lp1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.24,
+   "caption": "Первый: позвони на свой номер с чужого телефона. Вдруг он под диваном — или его нашёл *честный человек*.",
+   "space": null
+  },
+  {
+   "id": "lp1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 12.21,
+   "caption": "Второй: зайди в «Найти устройство» или «Локатор» с компьютера. Там видно телефон на карте — и его можно *заблокировать*.",
+   "space": null
+  },
+  {
+   "id": "lp1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 20.7,
+   "caption": "Третий: позвони в банк и заблокируй карты. Это *самое главное*.",
+   "space": null
+  },
+  {
+   "id": "lp1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 25.7,
+   "caption": "Четвёртый: попроси оператора заблокировать сим-карту. Новую выдадут *с тем же номером*.",
+   "space": null
+  },
+  {
+   "id": "lp1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 32.51,
+   "caption": "И сохрани IMEI с коробки — пригодится для заявления. Подпишись — а в семь вечера новый сериал «Чужой телефон».",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/vibrate.wav",
+   "start": 0.05,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m11_money.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 1.0,
+   "loop": true,
+   "end": 42.46
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 5.04,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 12.01,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 20.5,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 25.5,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/ringtone.wav",
+   "start": 6.24,
+   "gain": -20,
+   "bus": "sfx",
+   "fadeOut": 0.4,
+   "end": 7.74
+  },
+  {
+   "file": "sfx/lock_click.wav",
+   "start": 22.2,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 32.51,
+   "gain": -14,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "four": 3.9,
+  "lp1_01": 0.05,
+  "lp1_01_end": 4.84,
+  "r1": 5.24,
+  "lp1_02": 5.24,
+  "lp1_02_end": 11.81,
+  "r2": 12.21,
+  "lp1_03": 12.21,
+  "lp1_03_end": 20.3,
+  "r3": 20.7,
+  "lp1_04": 20.7,
+  "lp1_04_end": 25.3,
+  "r4": 25.7,
+  "lp1_05": 25.7,
+  "lp1_05_end": 32.01,
+  "imei": 32.51,
+  "sub": 36.34,
+  "lp1_06": 32.51,
+  "lp1_06_end": 40.46,
+  "end": 42.46
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 3.85
+  },
+  "four": {
+   "start": 3.9,
+   "dur": 0.94
+  },
+  "r1": {
+   "start": 5.24,
+   "dur": 6.57
+  },
+  "r2": {
+   "start": 12.21,
+   "dur": 8.09
+  },
+  "r3": {
+   "start": 20.7,
+   "dur": 4.6
+  },
+  "r4": {
+   "start": 25.7,
+   "dur": 6.31
+  },
+  "imei": {
+   "start": 32.51,
+   "dur": 3.83
+  },
+  "sub": {
+   "start": 36.34,
+   "dur": 4.12
+  }
+ }
+}
