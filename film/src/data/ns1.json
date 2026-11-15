@@ -1,0 +1,203 @@
+{
+ "name": "ns1",
+ "duration": 40.85,
+ "dialogue": [
+  {
+   "id": "ns1_01",
+   "who": "narrator",
+   "name": "",
+   "start": 0.05,
+   "caption": "Что будет, если не спать сутки? Спойлер: ты будешь *как пьяный*.",
+   "space": null
+  },
+  {
+   "id": "ns1_02",
+   "who": "narrator",
+   "name": "",
+   "start": 5.11,
+   "caption": "Через семнадцать часов без сна реакция — как у человека с *половиной промилле* в крови.",
+   "space": null
+  },
+  {
+   "id": "ns1_03",
+   "who": "narrator",
+   "name": "",
+   "start": 11.08,
+   "caption": "Через двадцать четыре часа — как с *целым промилле*. За руль в таком состоянии нельзя.",
+   "space": null
+  },
+  {
+   "id": "ns1_04",
+   "who": "narrator",
+   "name": "",
+   "start": 17.23,
+   "caption": "Мозг начинает отключаться кусками: микросон на пару секунд. И ты его *даже не заметишь*.",
+   "space": null
+  },
+  {
+   "id": "ns1_05",
+   "who": "narrator",
+   "name": "",
+   "start": 23.97,
+   "caption": "Растёт аппетит — особенно на *сладкое* и фастфуд.",
+   "space": null
+  },
+  {
+   "id": "ns1_06",
+   "who": "narrator",
+   "name": "",
+   "start": 27.78,
+   "caption": "И вернуть всё помогает только сон. Не кофе. Не энергетик. *Сон*.",
+   "space": null
+  },
+  {
+   "id": "ns1_07",
+   "who": "narrator",
+   "name": "",
+   "start": 33.46,
+   "caption": "Отправь другу, который сидит до утра. Подпишись — каждый день новые истории.",
+   "space": null
+  }
+ ],
+ "sfx": [
+  {
+   "file": "music/m12_void.wav",
+   "start": 0,
+   "gain": -21,
+   "bus": "music",
+   "fadeIn": 0.3,
+   "fadeOut": 0.6,
+   "end": 27.78
+  },
+  {
+   "file": "sfx/clock.wav",
+   "start": 0,
+   "gain": -18,
+   "bus": "sfx",
+   "fadeOut": 0.5,
+   "end": 14.08
+  },
+  {
+   "file": "sfx/stinger.wav",
+   "start": 2.96,
+   "gain": -12,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 4.91,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/whoosh.wav",
+   "start": 10.88,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "sfx/tinnitus.wav",
+   "start": 19.81,
+   "gain": -26,
+   "bus": "sfx",
+   "fadeOut": 0.8,
+   "end": 21.81
+  },
+  {
+   "file": "sfx/pop.wav",
+   "start": 24.47,
+   "gain": -14,
+   "bus": "sfx"
+  },
+  {
+   "file": "music/m05_relief.wav",
+   "start": 27.78,
+   "gain": -20,
+   "bus": "music",
+   "fadeIn": 0.5,
+   "fadeOut": 1.0,
+   "end": 40.85
+  },
+  {
+   "file": "sfx/chime.wav",
+   "start": 33.46,
+   "gain": -14,
+   "bus": "sfx"
+  }
+ ],
+ "marks": {
+  "start": 0.0,
+  "hook": 0.05,
+  "drunk": 2.46,
+  "ns1_01": 0.05,
+  "ns1_01_end": 4.71,
+  "h17": 5.11,
+  "ns1_02": 5.11,
+  "ns1_02_end": 10.68,
+  "h24": 11.08,
+  "car": 14.57,
+  "ns1_03": 11.08,
+  "ns1_03_end": 16.83,
+  "micro": 17.23,
+  "blink": 19.81,
+  "ns1_04": 17.23,
+  "ns1_04_end": 23.57,
+  "food": 23.97,
+  "ns1_05": 23.97,
+  "ns1_05_end": 27.38,
+  "sleep": 27.78,
+  "nocoffee": 30.71,
+  "ns1_06": 27.78,
+  "ns1_06_end": 32.96,
+  "sub": 33.46,
+  "ns1_07": 33.46,
+  "ns1_07_end": 38.85,
+  "end": 40.85
+ },
+ "beats": {
+  "hook": {
+   "start": 0.05,
+   "dur": 2.41
+  },
+  "drunk": {
+   "start": 2.46,
+   "dur": 2.26
+  },
+  "h17": {
+   "start": 5.11,
+   "dur": 5.57
+  },
+  "h24": {
+   "start": 11.08,
+   "dur": 3.49
+  },
+  "car": {
+   "start": 14.57,
+   "dur": 2.26
+  },
+  "micro": {
+   "start": 17.23,
+   "dur": 2.58
+  },
+  "blink": {
+   "start": 19.81,
+   "dur": 3.76
+  },
+  "food": {
+   "start": 23.97,
+   "dur": 3.41
+  },
+  "sleep": {
+   "start": 27.78,
+   "dur": 2.93
+  },
+  "nocoffee": {
+   "start": 30.71,
+   "dur": 2.26
+  },
+  "sub": {
+   "start": 33.46,
+   "dur": 5.39
+  }
+ }
+}
